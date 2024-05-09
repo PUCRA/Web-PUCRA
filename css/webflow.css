@@ -31,6 +31,16 @@
 .w-icon-dropdown-toggle:before {
   content: "\e603";
 }
+
+/* Flechita para selector de idomas en el movil */
+.w-icon-phone-toggle:before {
+  content: "\e603";
+}
+.w-icon-phone-eng-toggle:before {
+  content: "\e603";
+}
+
+
 .w-icon-file-upload-remove:before {
   content: "\e900";
 }
@@ -1107,6 +1117,39 @@ textarea.w-select {
   width: 1em;
   height: 1em;
 }
+/* .w-icon-phone-toggle {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 20px;
+  margin: auto;
+  margin-right: -20px;
+  width: 1em;
+  height: 1em;
+} */
+
+/* Flechita para el menú de idiomas (Catalan y castellano) */
+.w-icon-phone-toggle {
+  position: relative;
+  bottom: -18px;
+  left: -90px;
+  right: 0px;
+  margin: auto;
+  width: 1em;
+  height: 1em;
+}
+
+/* Flechita para el menú de idiomas (Ingles) */
+.w-icon-phone-eng-toggle {
+  position: relative;
+  bottom: -16px;
+  left: -30px;
+  right: 0px;
+  margin: auto;
+  width: 1em;
+  height: 1em;
+}
+
 .w-dropdown-list {
   position: absolute;
   background: #dddddd;
