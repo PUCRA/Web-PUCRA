@@ -40,6 +40,10 @@
   content: "\e603";
 }
 
+/* Flechita para la historia de PUCRA  */
+.w-icon-history-toggle:before {
+  content: "\e603";
+}
 
 .w-icon-file-upload-remove:before {
   content: "\e900";
@@ -1117,16 +1121,18 @@ textarea.w-select {
   width: 1em;
   height: 1em;
 }
-/* .w-icon-phone-toggle {
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  right: 20px;
-  margin: auto;
-  margin-right: -20px;
-  width: 1em;
-  height: 1em;
-} */
+
+
+/* Flechita para la historia de PUCRA  */
+.w-icon-history-toggle {
+  position: relative;
+  bottom: -30px;
+  right: 0px;
+  left: 100%;
+  width: 0.8em;
+  height: 0.8em;
+}
+
 
 /* Flechita para el menú de idiomas (Catalan y castellano) */
 .w-icon-phone-toggle {

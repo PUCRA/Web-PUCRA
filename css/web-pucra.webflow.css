@@ -505,7 +505,7 @@ p {
   z-index: 50;
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;s
+  display: -ms-flexbox;
   display: flex;
   padding: 15px 30px 10px;
   -webkit-box-pack: center;
@@ -789,7 +789,7 @@ p {
 .phone-dropdown {
   display: inline-block;
   position: relative;
-  max-height: 130px; /* Modificar esto para cambiar la distancia entre textos (*/
+  max-height: 100px; /* Modificar esto para cambiar la distancia entre textos */
 }
 
 .phone-dropdown-menu {
@@ -800,7 +800,6 @@ p {
   left: -10%; /* Ajusta la posición del menú desplegable hacia la izquierda */
   transform: scale(0.8); /* Ajusta el tamaño del menú desplegable */
   overflow: auto;
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0);
   
 }
 
@@ -812,7 +811,7 @@ p {
   background-color: #131313;
   font-family: 'Mollen personal use', sans-serif;
   font-size: 20px;
-  line-height: 16px;
+  line-height: 16apx;
   font-weight: 600;
 }
 
@@ -1202,7 +1201,7 @@ p {
 .heading-3 {
   margin-right: 10%;
   margin-bottom: 30px;
-  margin-left: 10%;s
+  margin-left: 10%;
   font-family: 'Mollen personal use', sans-serif;
   color: #fff;
   font-size: 50px;
@@ -1821,7 +1820,7 @@ p {
 .columna-info{
   /* border: 1px solid rgb(204, 0, 255);  */
   width: 500px;
-  display: inline-block;½   
+  display: inline-block;
   margin-top: 10px;
 }
 
@@ -2496,7 +2495,7 @@ p {
 }
 .paragraph-31 {
   margin-bottom: 25px;
-  font-family: 'Mollen personal use', sans-serif;<
+  font-family: 'Mollen personal use', sans-serif;
   color: #fff;
   /*font-size: 25px; */
   font-size: 25px;
@@ -3509,7 +3508,7 @@ p {
   
   .paragraph-31{
     margin-bottom: 25px;
-    font-family: 'Mollen personal use', sans-serif;<
+    font-family: 'Mollen personal use', sans-serif;
     color: #fff;
     font-size: 20px;
     line-height: 20px;
