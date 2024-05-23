@@ -789,7 +789,7 @@ p {
 .phone-dropdown {
   display: inline-block;
   position: relative;
-  max-height: 100px; /* Modificar esto para cambiar la distancia entre textos */
+  max-height: 130px; /* Modificar esto para cambiar la distancia entre textos */
 }
 
 .phone-dropdown-menu {
@@ -811,7 +811,7 @@ p {
   background-color: #131313;
   font-family: 'Mollen personal use', sans-serif;
   font-size: 20px;
-  line-height: 16apx;
+  line-height: 16px;
   font-weight: 600;
 }
 
