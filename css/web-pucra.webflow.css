@@ -180,6 +180,127 @@
   background-color: #353535;
 }
 
+/* Container sponsors del apartado de SPONSORS*/
+
+.letra-titulo-sponsors {
+  margin-bottom: 50px;
+  font-family: 'Mollen personal use', sans-serif;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: left;
+  font-family: 'Helvetica Now', sans-serif;
+}
+
+.container-sponsors {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding-top: 90px;
+  padding-bottom: 220px;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url('../images/fondovex1.png'); */
+  background-position: 0px 0px, 50% 50%;
+  background-size: cover;
+}
+
+.title-sponsors-container {
+  position: relative; 
+  top: 0px; 
+  left: 0px; 
+  display: flex;
+  justify-content: center;
+  
+}
+
+.sponsors-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sponsor-box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  top: 30px;
+  transition: transform 0.3s ease; /* Añadir transición para suavizar el cambio de escala */
+  
+}
+
+.sponsor-box:hover {
+  transform: scale(1.1); /* Aplicar el efecto de zoom */
+}
+
+.sponsor-box-content {
+  background-color: rgba(0, 0, 0, 0.7); /* Aumentar opacidad para mejor contraste */
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #751938; /* Añadir borde de color */
+  
+}
+
+.sponsor-box h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sponsor-box p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Medida para versión móvil */
+@media (max-width: 768px) {
+  .letra-titulo-sponsors {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .title-sponsors-container {
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sponsor-box {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .sponsor-box-content {
+    padding: 10px;
+  }
+
+  .container-sponsors {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+}
+
 
 /* Images */
 .logo-sponsors {
@@ -507,7 +628,7 @@ p {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px 30px 10px;
+  padding: 10px 30px 10px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -657,8 +778,8 @@ p {
 }
 
 .dropdown {
-  margin-right: 0px;
-  margin-left: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .text-block {
@@ -904,16 +1025,6 @@ p {
   line-height: 25px;
 }
 
-.div-block-4 {
-  margin-right: 30px;
-  margin-left: 20px;
-}
-
-.image-6 {
-  max-width: 550px;
-  margin-top: -150px;
-  padding-inline: 100px;
-}
 
 .image_pucra_home {
   max-width: 550px;
@@ -955,6 +1066,14 @@ p {
   background-image: url('../images/pucra-timeline-2000x2829.png');
   background-position: 50% 50%;
   background-size: cover;
+}
+
+/* Ajuste para la versión móvil de la parte de index*/
+@media screen and (max-width: 991px) { 
+  .container-3 {
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
 }
 
 .heading {
@@ -1604,74 +1723,124 @@ p {
   text-align: center;
 }
 
-.container-Vex-2022 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+/* Containers Events */
+.container-Vex-2019, .container-Vex-2020, .container-Vex-2021, .container-Vex-2022, .container-Vex-2023, .container-Vex-2024 {
   display: flex;
   max-width: 100%;
   padding-top: 200px;
   padding-bottom: 200px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/bg_VEX_SPAIN_2022.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)) ,url('../images/bg_VEX_SPAIN_2022.jpg');
-  background-position: 0px 0px, 50% 50%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911));
+  background-position: 0 0, 50% 50%;
   background-size: auto, cover;
+}
 
+.container-Vex-2019 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/dsc-207-2000x1326.jpg');
+}
+
+.container-Vex-2020 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/49492274747-891927b4bb-o-1-2000x1335.jpg');
+}
+
+.container-Vex-2021 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/bg_VEX_SPAIN_2021.jpg');
+}
+
+.container-Vex-2022 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/bg_VEX_SPAIN_2022.jpg');
 }
 
 .container-Vex-2023 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 100%;
-  padding-top: 320px;
-  padding-bottom: 220px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  /* background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/bg_VEX_SPAIN_2023.jpg'); */
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)) ,url('../images/Fondo_VEX_2023_Events.png');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/Fondo_VEX_2023_Events.png');
 }
 
 .container-Vex-2024 {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/Foto_Regional_2023.png');
+}
+
+/*Imagen de fondo para la sección de eventos*/
+.imagen-vexweb {
+  max-width: 550px;
+  margin-top: -150px;
+  padding-inline: 100px;
+}
+
+/* Div-blocks Eventos*/
+.div-block-22 {
+  width: 500px;
+}
+
+.div-block-21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100%;
-  padding-top: 320px;
-  padding-bottom: 220px;
+  width: 500px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  /* background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/bg_VEX_SPAIN_2023.jpg'); */
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)) ,url('../images/Foto_Regional_2023.png');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  text-align: right;
 }
+
+@media screen and (max-width: 991px) {
+  .container-Vex-2019, .container-Vex-2020, .container-Vex-2021, .container-Vex-2022, .container-Vex-2023, .container-Vex-2024 {
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .imagen-vexweb {
+    max-width: 300px;
+    margin-top: 10px;
+    padding-inline: 20px;
+  }
+
+  .imagen-vexweb {
+    order: 1; /* Cambia el orden en dispositivos móviles */
+  }
+
+  .div-block-21, .div-block-22 {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* Para pantallas mas peques */
+@media screen and (max-width: 767px) {
+  .container-Vex-2019, .container-Vex-2020, .container-Vex-2021, .container-Vex-2022, .container-Vex-2023, .container-Vex-2024 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .imagen-vexweb {
+    max-width: 300px;
+    padding-inline: 10px;
+    order: 1; /* Cambia el orden en dispositivos móviles */
+  }
+
+  .div-block-21, .div-block-22 {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .paragraph {
+    padding: 0 10px;
+  }
+}
+
 
 .container-toggle {
   /*display: -webkit-box;
@@ -1715,78 +1884,9 @@ p {
 
 
 
-.container-8 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 100%;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/bg_VEX_SPAIN_2021.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)) , url('../images/bg_VEX_SPAIN_2021.jpg');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-}
 
-.container-9 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 100%;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/49580238598-b9ee7777c5-o-2000x1333.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/49580238598-b9ee7777c5-o-2000x1333.jpg');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-}
 
-.image-8 {
-  max-width: 800px;
-  padding-inline: 100px;
-  width: 550px;
 
-}
-
-.div-block-21 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 500px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  text-align: right;
-}
 
 .TopButton{
 	border: 10px solid red;
@@ -1796,9 +1896,7 @@ p {
 	float:left; 
 }
 
-.div-block-22 {
-  	width: 500px;
-}
+
 
 
 .Desplegable-2023{
@@ -1847,54 +1945,6 @@ p {
   align-self: center; 
 }
 
-.container-10 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 100%;
-  padding-top: 350px;
-  padding-bottom: 200px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/49492274747-891927b4bb-o-1-2000x1335.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)) , url('../images/49492274747-891927b4bb-o-1-2000x1335.jpg');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-}
-
-.container-11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 100%;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/dsc-207-2000x1326.jpg');
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)) , url('../images/dsc-207-2000x1326.jpg');
-  background-position: 0px 0px, 50% 50%;
-  background-size: auto, cover;
-}
 
 .paragraph-24 {
   font-family: 'Mollen personal use', sans-serif;
@@ -2936,18 +2986,7 @@ p {
     margin-left: 60px;
   }
 
-  .div-block-4 {
-    margin-right: 20px;
-  }
-
-  .image-6 {
-    /*max-width: 550px;
-  	margin-top: 10px;*/
-    max-width: 0px;
-  	margin-top: 0px;
-	margin-bottom: 15px;
-  	padding-inline: 100px;
-  }
+  
 	
 	.image_pucra_home{
     max-width: 550px;
@@ -3196,26 +3235,6 @@ p {
     text-align: center;
   }
 
-  .container-Vex-2022 {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .container-Vex-2023 {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
   .container-toggle {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -3226,59 +3245,8 @@ p {
     flex-direction: column;
   }
 
-  .container-8 {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
 
-  .container-9 {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
 
-  .image-8 {
-    margin-top: 25px;
-    padding-inline: 100px;
-    width: 390px;
-  }
-
-  .div-block-21 {
-    margin-top: 50px;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .container-10 {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .container-11 {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
 
   .paragraph-24 {
     font-family: 'Mollen personal use', sans-serif;
@@ -3551,17 +3519,7 @@ p {
     margin-left: 40px;
   }
 
-  .div-block-4 {
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-
-  .image-6 {
-    max-width: 550px;
-  	margin-top: 10px;
-	margin-bottom: 15px;
-  	padding-inline: 100px;
-  }
+  
 	.image_pucra_home{
     max-width: 550px;
   	margin-top: 10px;
@@ -3674,15 +3632,6 @@ p {
     margin-bottom: 50px;
   }
 
-  .div-block-21 {
-    width: auto;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  .div-block-22 {
-    width: auto;
-  }
 
   .background-video {
     -webkit-box-orient: vertical;
@@ -3856,18 +3805,11 @@ p {
 
 @media screen and (max-width: 479px) {
 	
-	
 	.paragraph-26 {
     font-size: 18px;
     line-height: 21px;
 	margin-left: 18px;
 	margin-right: 18px;
-  }
-
-  .image-8 {
-    margin-top: 25px;
-    padding-inline: 100px;
-    width: 0px;
   }
   
   .image-5 {
@@ -3918,14 +3860,7 @@ p {
     margin-left: 0px;
   }
 
-  .image-6 {
-    /*max-width: 550px;
-  	margin-top: 10px;*/
-    max-width: 0px;
-  	margin-top: 0px;
-	margin-bottom: 15px;
-  	padding-inline: 100px;
-  }
+  
 	.image_pucra_home{
     /*max-width: 550px;
   	margin-top: 10px;*/
@@ -4074,44 +4009,14 @@ p {
     padding-bottom: 120px;
   }
 
-  .container-Vex-2022 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  .container-Vex-2023 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
 
   .container-toggle {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  
 
-  .container-8 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
 
-  .container-9 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  .div-block-21 {
-    margin-top: 20px;
-  }
-
-  .container-10 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  .container-11 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
 
   .div-block-24 {
     width: auto;

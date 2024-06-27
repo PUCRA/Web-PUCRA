@@ -1123,16 +1123,6 @@ textarea.w-select {
 }
 
 
-/* Flechita para la historia de PUCRA  */
-.w-icon-history-toggle {
-  position: relative;
-  bottom: -30px;
-  right: 0px;
-  left: 100%;
-  width: 0.8em;
-  height: 0.8em;
-}
-
 
 /* Flechita para el menú de idiomas (Catalan y castellano) */
 .w-icon-phone-toggle {
@@ -1142,7 +1132,7 @@ textarea.w-select {
   right: 0px;
   margin: auto;
   width: 1em;
-  height: 1em;
+  height: 1em;  
 }
 
 /* Flechita para el menú de idiomas (Ingles) */
@@ -1155,6 +1145,42 @@ textarea.w-select {
   width: 1em;
   height: 1em;
 }
+
+
+/* Apartado competiciones en SOBRE NOSOTROS */
+
+/* Flechita para la historia de PUCRA  */
+.w-icon-history-toggle {
+  position: relative;
+  bottom: -5px;
+  right: 0px;
+  left: 100%;
+  width: 0.8em;
+  height: 0.18em;
+}
+
+
+@media screen and (max-width: 768px) {
+  .w-icon-history-toggle {
+    position: relative;
+    bottom: -5px;
+    left: 342px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .w-icon-history-toggle {
+    position: relative;
+    bottom: -5px;
+    left: 260px;
+  }
+  .dropdown h1 {
+    font-size: 23px;
+  }
+  
+}
+
+
 
 .w-dropdown-list {
   position: absolute;
