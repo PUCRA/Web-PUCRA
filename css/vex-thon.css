@@ -1,0 +1,684 @@
+
+
+/* Esto sirve para que el navegador no aplique estilos por defecto a los elementos HTML. 
+Es una buena práctica para evitar problemas de compatibilidad entre navegadores. Si lo quitas
+Aparecera un borde blanco alrededor de la pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+
+
+body {
+    font-family: 'Poppins', sans-serif; 
+}
+
+
+.main-container {
+    background: url('../images/Imagenes-Vex-Thon/portada\ a\ la\ pàgina\ de\ la\ VEX-Thon.png') no-repeat center center;
+    background-size: 100% auto; /* Ajustar el ancho al 100% y la altura automática */
+    position: relative;
+    height: 100vh; 
+    background-position: bottom; /* Si quieres alinear la imagen en la parte superior */
+}
+
+.background-info-container {
+    background: url('../images/pucra-timeline-2000x2829-p-1080.png') no-repeat center center;
+    background-size: cover;
+}
+
+.espacio-boton {
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+}
+
+.main-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 100px;
+    height: 800px;
+}
+
+.recuadro-boton-formulario {
+    position: relative;
+    bottom: 40px;
+    height: auto; /* Solo ocupa el espacio necesario para el contenido */
+    justify-content: center; /* Centra el botón horizontalmente */
+    padding: 20px; /* Espaciado interno si es necesario */
+}
+
+
+
+.boton-formulario {
+    position: relative;
+    top: 70px;
+    padding: 30px 50px;
+    color: #ffffff;
+    background-color: #800040;
+    border: 2px solid #a9075b;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+    transition: 0.4s ease-in-out; /* Suaviza la transición */
+    box-shadow: 0 0 0px rgba(0, 0, 255, 0); /* Sin sombra inicialmente */
+}
+
+.boton-formulario:hover {
+    background-color: #a7245d; 
+    border: 2px solid #ffffff; 
+    box-shadow: 0 0 20px #bd1254, 0 0 40px #ee4798; /* Brillo azul */
+    transition: all 0.4s ease-in-out; 
+}
+
+/* Nuevo botón con especificaciones diferentes */
+.boton-formulario-principal {
+    position: relative;
+    background-color: 1px solid #520029;
+    border: 4px solid #a9075b;
+    top: 10px;
+    padding: 40px 120px;
+    font-size: 40px;
+}
+
+.left-column {
+    position: relative;
+    padding-right: 35px;
+}
+
+.right-column {
+    position: relative; 
+    padding-left: 35px;
+}
+
+.separator {
+    position: relative;
+    margin-top: -50px;
+}
+
+.Imagen-Separador {
+    width: 90%;
+    top : 50px;
+}
+
+.info, .novetats {
+    margin: 20px 0;
+}
+
+.info h2,.info p {
+    color: white;
+}
+
+
+.explicacion-vex {
+    padding: 50px;
+    text-align: justify;
+    color: white; /* Texto de párrafos en blanco */
+}
+
+
+.explicacion-vex-thon {
+    padding: 50px;
+    text-align: justify;
+    color: white; /* Texto de párrafos en blanco */
+    margin-top: -70px; /* Ajusta este valor según sea necesario para subir el apartado */
+}
+
+.explicacion-vex h2, 
+.explicacion-vex-thon h2 {
+    font-size: 30px;
+    text-align: center; /* Centra los títulos */
+    color: white; 
+    margin-bottom: 20px; /* Añade una separación de 20px */
+}
+
+.explicacion-vex p,
+.explicacion-vex-thon p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0; /* Asegura que no haya margen superior en los párrafos */
+}
+
+
+
+
+
+
+.itinerario {
+    background-color: green;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Parte de FAQS */
+
+.faqs-container {
+    background-image: url('../images/Imagenes-Vex-Thon/Fondo\ FAQs\ VEX-Thon.png');
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.faqs-container h1 {
+    font-size: 36px;
+    margin-bottom: 70px;
+}
+
+.faqs-container.full-width {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+.faqs-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-column {
+    width: 45%;
+    margin-bottom: 30px;
+}
+
+.faq-section {
+    margin-bottom: 30px;
+}
+
+.faq-section h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.faq {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    color: white;
+    text-align: left;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    white-space: nowrap;
+    left: 33px; /* Ajuste en móviles más adelante */
+}
+
+.faq-question .question-text {
+    margin-left: 0;
+    vertical-align: middle;
+}
+
+.faq-answer {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding-top 0.3s ease;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 65px;
+}
+
+.faq-answer p {
+    margin: 0;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.faq-question.active .plus-minus {
+    color: #fff;
+}
+
+.faq-question .plus-minus {
+    font-size: 24px;
+    color: #fcfcfc;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+
+
+/* Parte de Novetats */
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 190px;
+    padding: 15px;
+    background: #fff;
+    border: 6px solid #000;
+    box-shadow: 6px 6px 0 #000; /* Reducción de la sombra */
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px auto; /* Centrar el .card horizontalmente */
+    top: 70px;
+}
+
+.card:hover {
+    transform: translate(-6px, -6px); /* Ajuste del desplazamiento */
+    box-shadow: 9px 9px 0 #000; /* Ajuste del tamaño de la sombra en hover */
+}
+
+.card__title {
+    font-size: 32px;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    line-height: 1.2; /* Aumenta la anchura de la línea */
+}
+
+.card__title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+}
+
+.card:hover .card__title::after {
+    transform: translateX(0);
+}
+
+.card__content {
+    font-size: 19px;
+    line-height: 1.2;
+    color: #000;
+    text-align: left; 
+    padding-left: 15px;
+}
+
+
+
+
+
+
+
+/* PIE DE PAGINA */
+
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #242424;
+  max-width: 100%;
+}
+
+.footer-top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 50px 0 30px;
+  background-color: #1a1a1a;
+}
+
+.footer-divider {
+  width: 80%;
+  height: 2px;
+  background-color: #c43a69;
+}
+
+.footer-slogan-text {
+  margin: 30px 0;
+  font-family: 'Mollen personal use', sans-serif;
+  color: #fff;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.footer-follow-us-text {
+  margin-top: 40px;
+  font-family: 'Mollen personal use', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-social-links-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.footer-social-link {
+  margin: 0 10px;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-social-link i {
+  color: #c43a69; /* Color rosa de los íconos */
+}
+
+.footer-bottom-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.footer-logo-link {
+  margin-right: 80px;
+}
+
+.footer-logo-image {
+  max-width: 80px;
+}
+
+.footer-address-section, .footer-contact-section, .footer-links-section {
+  margin-right: 40px;
+}
+
+.footer-title-text {
+  margin-bottom: 30px;
+  font-family: 'Mollen personal use', sans-serif;
+  color: #c43a69;
+  font-size: 20px;
+}
+
+.footer-info-text {
+  font-family: 'Mollen personal use', sans-serif;
+  color: #fff;
+  font-size: 17px;
+  line-height: 23px;
+  text-decoration: none;
+}
+
+.footer-divider {
+  width: 80%;
+  height: 2px;
+  margin-bottom: 15px;
+  background-color: #363636;
+}
+
+.footer-copyright-text {
+  margin-bottom: 30px;
+  font-family: 'Mollen personal use', sans-serif;
+  color: #fff;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+
+
+
+
+
+
+
+/* Ajustes de movil */
+@media (max-width: 992px) {
+    
+    
+    .main-content {
+        background-size: cover; /* En pantallas pequeñas también cubrirá completamente */
+        flex-direction: column;
+        padding: 20px; 
+        height: 1850px;
+    }
+    
+    .boton-formulario-principal {
+        padding: 15px 30px; 
+        font-size: 18px;    
+        width: 80%;         
+        margin: 0 auto;     
+    }
+    
+    .espacio-boton {
+        height: 120px;       
+        font-size: 1.2em;    
+        padding: 10px;       
+        text-align: center;  
+    }
+    
+    .left-column, .right-column {
+        flex: 1;
+        padding: 10px;      
+    }
+    
+    .separator {
+        margin-top: -100px;  
+        margin-bottom: -150px;
+        margin-left: 0;
+    }
+    
+    .separator img {
+        transform: rotate(90deg);
+        width: 10%;          
+    }
+    
+    .card {
+        width: 95%;          
+        margin: 15px auto;   
+        padding: 10px;       
+    }
+    
+    .main-container{
+        background: url('../images/Imagenes-Vex-Thon/portada\ VEX-Thon\ versión\ movil.png') no-repeat center center;
+        background-color: #38001c;
+        background-size: cover; /* Ajustar el ancho al 100% y la altura automática */
+        background-position: bottom; /* Si quieres alinear la imagen en la parte superior */
+    }
+    
+    .explicacion-vex-thon {
+        margin-top: 0; /* Eliminar margen negativo */
+    }
+
+    /* Ajuste adicional para las explicaciones */
+    .explicacion-vex, .explicacion-vex-thon {
+        padding: 20px;       
+        font-size: 14px;     
+    }
+    
+    .explicacion-vex h2, .explicacion-vex-thon h2 {
+        font-size: 24px;     
+        margin-bottom: 15px;
+    }
+
+    .explicacion-vex-thon h2 {
+        font-size: 24px; /* Reduce el tamaño de los títulos */
+    }
+    
+    .explicacion-vex-thon p {
+        font-size: 14px; /* Reduce el tamaño del texto de los párrafos */
+        line-height: 1.4em; /* Aumenta el interlineado */
+    }
+    
+    .faq-column {
+        width: 100%;
+    }
+
+
+
+    .faqs-container {
+        padding: 10px;
+    }
+
+    .faqs-container h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .faq-section h2 {
+        font-size: 20px; 
+    }
+
+    .faq-question {
+        font-size: 14px;
+        white-space: normal; 
+        word-wrap: break-word; 
+        left: 0; 
+        padding-left: 15px; 
+    }
+
+    .faq-answer p {
+        font-size: 12px; 
+    }
+
+    .faq-answer {
+        padding-left: 15px; 
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* PIE DE PAGINA VERSIÓN MOVIL*/
+
+
+
+    /* Ajuste del contenedor general para móvil */
+  .footer-container {
+    padding: 20px;
+  }
+
+  /* Ajuste de la sección superior del footer para pantallas pequeñas */
+  .footer-top-section {
+    padding: 30px 0;
+    margin-bottom: 30px;
+  }
+
+  /* Ajustes en márgenes y tamaños de texto para mejor legibilidad en móvil */
+  .footer-slogan-text {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 20px 0;
+  }
+
+  .footer-follow-us-text {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+
+  /* Ajuste de los íconos sociales */
+  .footer-social-links-container {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .footer-social-link {
+    margin: 0 15px; /* Ajusta la separación horizontal entre íconos */
+  }
+
+  /* Ajuste de la sección inferior del footer para móvil */
+  .footer-bottom-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-logo-link {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-address-section, .footer-contact-section, .footer-links-section {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-title-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .footer-info-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  /* Ajustes en el copyright y los divisores */
+  .footer-divider {
+    width: 90%;
+  }
+
+  .footer-copyright-text {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+}
+
+  
+@media only screen and (max-width: 992px) and (orientation: landscape) {
+    .main-container {
+        background: url('../images/Imagenes-Vex-Thon/portada\ a\ la\ pàgina\ de\ la\ VEX-Thon.png') no-repeat center center;
+        background-size: 100% auto; /* Ajustar el ancho al 100% y la altura automática */
+        position: relative;
+        height: 85vh; 
+        background-position: bottom; /* Si quieres alinear la imagen en la parte superior */
+        background-color: #38001c;
+    }
+    
+    .separator{
+        margin-top: -280px;  
+        margin-bottom: -250px;
+        margin-left: 0;
+    }
+
+    .main-content {
+        height: 1300px;
+    }
+  }
+  
+
+

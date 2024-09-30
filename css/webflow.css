@@ -83,6 +83,18 @@ html.w-mod-touch * {
   max-width: 100%;
   display: inline-block;
 }
+
+.w-inline-block-2 {
+  max-width: 100%;
+  display: inline-block;
+  position: relative;
+  left:150px;
+}
+@media (max-width: 992px) {
+  .w-inline-block-2 {
+    left:50px;
+  }
+}
 .w-clearfix:before,
 .w-clearfix:after {
   content: " ";
