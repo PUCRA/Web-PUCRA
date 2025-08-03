@@ -152,160 +152,9 @@
   background-size: auto, cover;
 }
 
-#Sponsor-Mitsubishi-EFA {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-#Sponsor-HP {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-#Sponsor-JBC-Tools {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-#Sponsor-Milwaukee {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #353535;
-}
-#Sponsor-Beta-Tools {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #353535;
-}
-#Sponsor-Beta-Robots {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #353535;
-}
-
-/* Container sponsors del apartado de SPONSORS*/
-
-.letra-titulo-sponsors {
-  margin-bottom: 50px;
-  font-family: 'Mollen personal use', sans-serif;
-  color: #fff;
-  font-size: 40px;
-  font-weight: 600;
-  text-align: left;
-  font-family: 'Helvetica Now', sans-serif;
-}
-
-.container-sponsors {
-  position: relative; 
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  padding-top: 90px;
-  padding-bottom: 220px;
-  justify-content: center;
-  align-items: center;
-  /* background-image: url('../images/fondovex1.png'); */
-  background-position: 0px 0px, 50% 50%;
-  background-size: cover;
-}
-
-.title-sponsors-container {
-  position: relative; 
-  top: 0px; 
-  left: 0px; 
-  display: flex;
-  justify-content: center;
-  
-}
-
-.sponsors-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.sponsor-box {
-  position: relative;
-  width: 300px;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  top: 30px;
-  transition: transform 0.3s ease; /* Añadir transición para suavizar el cambio de escala */
-  
-}
-
-.sponsor-box:hover {
-  transform: scale(1.1); /* Aplicar el efecto de zoom */
-}
-
-.sponsor-box-content {
-  background-color: rgba(0, 0, 0, 0.7); /* Aumentar opacidad para mejor contraste */
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 4px solid #751938; /* Añadir borde de color */
-  
-}
-
-.sponsor-box h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.sponsor-box p {
-  font-size: 16px;
-  margin: 0;
-}
-
-/* Medida para versión móvil */
-@media (max-width: 768px) {
-  .letra-titulo-sponsors {
-    font-size: 28px;
-    text-align: center;
-  }
-
-  .title-sponsors-container {
-    top: 50px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .sponsor-box {
-    width: 90%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .sponsor-box-content {
-    padding: 10px;
-  }
-
-  .container-sponsors {
-    padding-top: 200px;
-    padding-bottom: 100px;
-  }
-}
 
 
-/* Images */
-.logo-sponsors {
-  max-width: 350px;
-}
+
 .img-about-us {
   width: 100%;
   border-radius: 10px;
@@ -393,19 +242,7 @@ p {
   font-size: 22px;
   line-height: 30px;
 }
-.sponsors-text-in-video {
-  font-family: 'Mollen personal use', sans-serif;
-  color: #000;
-  font-size: 20px;
-  line-height: 25px;
-}
-.sponsors-text {
-  font-family: 'Mollen personal use', sans-serif;
-  color: #fff;
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 400;
-}
+
 .dates-about-us {
   margin-top: 30px;
   font-family: 'Mollen personal use', sans-serif;
@@ -446,12 +283,6 @@ p {
     padding-left: 30px;
   }
 
-  .logo-beside-text {
-
-  }
-  .logo-sponsors {
-    max-width: 250px;
-  }
 
   .icon-menu-wrapped {
     margin-bottom: 0px;
@@ -474,17 +305,6 @@ p {
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-  }
-  .sponsors-text-in-video {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .sponsors-text {
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
   }
   .text-about-us {
     font-size: 17px;
@@ -530,18 +350,12 @@ p {
 	width: 100px;
 }
 	
-  .logo-sponsors {
-    margin-bottom: 30px;
-  }
 
   p {
     padding-right: 0px;
     padding-left: 0px;
     font-size: 16px;
     line-height: 22px;
-    text-align: center;
-  }
-  .sponsors-text-in-video {
     text-align: center;
   }
   .text-about-us {
@@ -1713,30 +1527,7 @@ p {
   background-size: cover;
 }
 
-.container-7-sponsors {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 600vh;
-  max-width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: url('../images/pucra-timeline-2000x2829.png');
-  background-position: 50% 50%;
-  background-size: cover;
-}
+
 
 .heading-4 {
   margin-top: 0px;
@@ -1761,7 +1552,8 @@ p {
 }
 
 /* Containers Events */
-.container-Vex-2019, .container-Vex-2020, .container-Vex-2021, .container-Vex-2022, .container-Vex-2023, .container-Vex-2024 {
+.container-Vex-2019, .container-Vex-2020, .container-Vex-2021, .container-Vex-2022, 
+.container-Vex-2023, .container-Vex-2024, .container-Vex-Thon{
   display: flex;
   max-width: 100%;
   padding-top: 200px;
@@ -1797,9 +1589,20 @@ p {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/Foto_Regional_2023.png');
 }
 
+.container-Vex-Thon {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/Imagenes-Vex-Thon/Vex-Thon-Fondo.jpg');
+}
+
+
 /*Imagen de fondo para la sección de eventos*/
 .imagen-vexweb {
   max-width: 550px;
+  margin-top: -150px;
+  padding-inline: 100px;
+}
+
+.imagen-vex-thon-logo {
+  max-width: 650px;
   margin-top: -150px;
   padding-inline: 100px;
 }
@@ -1832,7 +1635,8 @@ p {
 }
 
 @media screen and (max-width: 991px) {
-  .container-Vex-2019, .container-Vex-2020, .container-Vex-2021, .container-Vex-2022, .container-Vex-2023, .container-Vex-2024 {
+  .container-Vex-2019, .container-Vex-2020, .container-Vex-2021, .container-Vex-2022, 
+  .container-Vex-2023, .container-Vex-2024, .container-Vex-Thon {
     flex-direction: column;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -1844,7 +1648,17 @@ p {
     padding-inline: 20px;
   }
 
+  .imagen-vex-thon-logo {
+    max-width: 300px;
+    margin-top: 10px;
+    padding-inline: 20px;
+  }
+
   .imagen-vexweb {
+    order: 1; /* Cambia el orden en dispositivos móviles */
+  }
+
+  .imagen-vex-thon-logo {
     order: 1; /* Cambia el orden en dispositivos móviles */
   }
 
@@ -1857,12 +1671,18 @@ p {
 
 /* Para pantallas mas peques */
 @media screen and (max-width: 767px) {
-  .container-Vex-2019, .container-Vex-2020, .container-Vex-2021, .container-Vex-2022, .container-Vex-2023, .container-Vex-2024 {
+  .container-Vex-2019, .container-Vex-2020, .container-Vex-2021, .container-Vex-2022, .container-Vex-2023, .container-Vex-2024, .container-Vex-Thon {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
   .imagen-vexweb {
+    max-width: 300px;
+    padding-inline: 10px;
+    order: 1; /* Cambia el orden en dispositivos móviles */
+  }
+
+  .imagen-vex-thon-logo {
     max-width: 300px;
     padding-inline: 10px;
     order: 1; /* Cambia el orden en dispositivos móviles */
@@ -2024,6 +1844,7 @@ p {
 	float: left;
 	width: 100px;
 }
+
 .container-12 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2039,6 +1860,8 @@ p {
   -ms-flex-align: center;
   align-items: center; 
 }
+
+
 
 .background-video {
   display: -webkit-box;
