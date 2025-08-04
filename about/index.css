@@ -1,3 +1,15 @@
+.upper-case {
+  text-transform: uppercase;
+}
+
+.lower-case {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
 #competitionsBtn {
   opacity: 0.7;
 }
