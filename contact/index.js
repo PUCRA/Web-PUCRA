@@ -1,11 +1,24 @@
-function changeLanguageSponsors(lang) {
+function changeLanguageContact(lang) {
   localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
   fillContentAbout();
 }
 
-const PUCRA_Sponsors = document.getElementById("PUCRA_sponsors");
-const PUCRA_benefits = document.getElementById("sponsor_benefits");
+
 const mobileMenuNavbar = document.getElementById("mobile-menu-navbar");
+
+function showCompetition() {
+  timelineHistory.style.display = "none";
+  timelineCompetition.style.display = "flex";
+  historyBtn.style.opacity = 0.4;
+  competitionBtn.style.opacity = 1;
+}
+
+function showHistory() {
+  timelineCompetition.style.display = "none";
+  timelineHistory.style.display = "flex";
+  historyBtn.style.opacity = 1;
+  competitionBtn.style.opacity = 0.4;
+}
 
 function showMobileMenu() {
   mobileMenuNavbar.style.opacity = "1";

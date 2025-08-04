@@ -39,10 +39,10 @@
       }
     </style>
   </head>
-  <body>
-    <div class="navbar">
+  <body onload="fillContentAbout()">
+    <navbar class="navbar">
       <div class="div-block">
-        <a href="index.html" class="w-inline-block"
+        <a href="/" class="w-inline-block"
           ><img
             src="../images/logo-pucra-blanco2-1-536x143.png"
             loading="lazy"
@@ -57,13 +57,13 @@
         <!-- <a href="vex-thon-es.html" class="w-inline-block-2"><img src="images/Imagenes-Vex-Thon/Logo VEXThon.png" loading="lazy" sizes="(max-width: 479px) 100px, (max-width: 767px) 150px, 200px" alt="" class="image-5"></a> -->
       </div>
       <div class="div-block-2">
-        <a id="home" href="/" class="link">Inicio</a>
-        <a id="events" href="/events" class="link">Eventos</a>
-        <a id="sponsors" href="/sponsors" class="link">Sponsors</a>
-        <a id="about_us" href="/about" class="link">Sobre Nosotros</a>
+        <a href="/" class="home link">Inicio</a>
+        <a href="/events" class="events link">Eventos</a>
+        <a href="/sponsors" class="sponsors link">Sponsors</a>
+        <a href="/about" class="about-us link">Sobre Nosotros</a>
         <div data-hover="" data-delay="200" class="dropdown w-dropdown">
           <div class="dropdown-toggle w-dropdown-toggle">
-            <div id="lang-menu" class="link">ES</div>
+            <div id="lang-menu" class="link upper-case">ES</div>
             <div class="icon w-icon-dropdown-toggle"></div>
           </div>
           <nav class="dropdown-list w-dropdown-list">
@@ -72,114 +72,92 @@
               style="background-color: transparent"
               id="cat"
               class="dropdown-link w-dropdown-link"
-              onclick="changeLanguageAbout('cat')"
+              onclick="changeLanguageSponsors('cat')"
             >
-              CAT
+              catalan
             </button>
             <button
               style="background-color: transparent"
               id="en"
               class="dropdown-link w-dropdown-link"
-              onclick="changeLanguageAbout('en')"
+              onclick="changeLanguageSponsors('en')"
             >
-              ENG
+              english
             </button>
             <button
               style="background-color: transparent"
               id="es"
               class="dropdown-link w-dropdown-link"
-              onclick="changeLanguageAbout('es')"
+              onclick="changeLanguageSponsors('es')"
             >
-              ESP
+              spanish
             </button>
           </nav>
         </div>
-        <a id="contact" href="/contact" class="button w-button">CONTACTO</a>
+        <a href="/contact" class="contact button w-button">CONTACTO</a>
       </div>
-      <div
-        data-w-id="52de9913-24cf-0715-8fd4-a768c41994ac"
-        class="div-tablet-inf"
+      <button
+        class="paragraph-22"
+        onclick="showMobileMenu()"
+        style="background-color: transparent"
       >
-        <a href="#" class="link-block-8 w-inline-block">
-          <p class="paragraph-22"></p>
-        </a>
-      </div>
-    </div>
-    <div
-      style="
-        opacity: 0;
-        -webkit-transform: translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0)
-          rotateY(0) rotateZ(0) skew(0, 0);
-        -moz-transform: translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0)
-          rotateY(0) rotateZ(0) skew(0, 0);
-        -ms-transform: translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0)
-          rotateY(0) rotateZ(0) skew(0, 0);
-        transform: translate3d(100%, 0, 0) scale3d(1, 1, 1) rotateX(0)
-          rotateY(0) rotateZ(0) skew(0, 0);
-        display: none;
-      "
-      class="burger-menu"
-    >
-      <div
-        data-w-id="36747a06-7e30-d654-918f-2d3c7a67a62f"
-        class="close-burger-div"
-      ></div>
+        
+      </button>
+    </navbar>
+    <div id="mobile-menu-navbar" class="burger-menu">
+      <div class="close-burger-div"></div>
       <div class="div-block-17">
-        <a
-          data-w-id="36747a06-7e30-d654-918f-2d3c7a67a631"
-          href="#"
-          class="link-block-7 w-inline-block"
+        <button
+          class="paragraph-22"
+          onclick="hideMobileMenu()"
+          style="background-color: transparent; padding-block: 20px"
         >
-          <p class="paragraph-20"></p>
-        </a>
-        <a id="home" href="/" class="link-2">Inicio</a>
-        <a id="events" href="/events" class="link-2">Eventos</a>
+          
+        </button>
+        <a href="/" class="home link-2">Inicio</a>
+        <a href="/events" class="events link-2">Eventos</a>
         <!-- <a href="content-creator.html" class="link-5">Content Creator</a> -->
-        <a id="sponsors" href="/sponsors" aria-current="page" class="link-2 w--current"
-          >Sponsors</a
+        <a href="/sponsors" class="sponsors link-2">Sponsors</a>
+        <!-- <a href="about-es.html" aria-current="page" class="link-2 w--current">Sobre Nosotros</a> -->
+        <a href="/about/" class="about-us link-2 w--current">Sobre Nosotros</a>
+
+        <p id="languages" class="paragraph-21">IDIOMAS</p>
+        <button
+          style="background-color: transparent; color: white"
+          id="cat-mobile"
+          onclick="changeLanguageSponsors('cat')"
         >
-
-        <!-- Dropdown Sobre Nosotros Mobile -->
-        <div class="phone-dropdown">
-          <div class="icon w-icon-phone-toggle"></div>
-          <a id="about_us" href="#" class="link-2 w--current">Sobre Nosotros</a>
-          <div class="phone-dropdown-menu">
-            <a id="about-history" href="/about">Historia</a>
-            <a id="about-competitions" href="/competitions">Competiciones</a>
-          </div>
-        </div>
-
-        <p class="paragraph-21">IDIOMAS</p>
-        <a id="lang-cat" href="/sponsors" class="link-2">CAT</a>
-        <a id="lang-eng" href="/sponsors" class="link-2">ENG</a>
-        <p id="social" class="paragraph-21">REDES</p>
-        <div class="div-block-12">
-          <a
-            data-w-id="36747a06-7e30-d654-918f-2d3c7a67a645"
-            href="https://youtu.be/IH2Nb8DPKt0"
-            target="_blank"
-            class="link-block-5 w-inline-block"
-          >
-            <p class="paragraph-16"></p>
+          CAT
+        </button>
+        <button
+          style="background-color: transparent; color: white"
+          id="en-mobile"
+          onclick="changeLanguageSponsors('en')"
+        >
+          EN
+        </button>
+        <button
+          style="background-color: transparent; color: white"
+          id="es-mobile"
+          onclick="changeLanguageSponsors('es')"
+        >
+          ES
+        </button>
+        <p id="social-network" class="paragraph-21">REDES</p>
+        <div class="social-icons">
+          <a href="https://youtu.be/IH2Nb8DPKt0" target="_blank"
+            ><p class="paragraph-16"></p>
+          </a>
+          <a href="https://www.instagram.com/pucra.upc/" target="_blank"
+            ><p class="paragraph-16"></p>
           </a>
           <a
-            data-w-id="36747a06-7e30-d654-918f-2d3c7a67a648"
-            href="https://www.instagram.com/pucra.upc/"
-            target="_blank"
-            class="link-block-5 w-inline-block"
-          >
-            <p class="paragraph-16"></p>
-          </a>
-          <a
-            data-w-id="36747a06-7e30-d654-918f-2d3c7a67a64e"
             href="https://www.linkedin.com/company/pucraupc?originalSubdomain=es"
             target="_blank"
-            class="link-block-5 w-inline-block"
-          >
-            <p class="paragraph-16"></p>
+            ><p class="paragraph-16"></p>
           </a>
         </div>
-        <a id="contact" href="/contact" class="button-6 w-button">Contacto</a>
+        <a href="/contact" class="contact button-6 w-button">Contacto</a>
       </div>
     </div>
 
