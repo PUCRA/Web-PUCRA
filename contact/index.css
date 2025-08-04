@@ -1,0 +1,5 @@
+#mobile-menu-navbar {
+  /* Animate transition of hideMobileMenu() & showMobileMenu */
+  will-change: opacity, transform;
+  transition: all 0.5s;
+}
