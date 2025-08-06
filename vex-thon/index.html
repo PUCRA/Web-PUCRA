@@ -182,41 +182,51 @@
         >
       </div>
 
-      <div class="main-content">
-        <div class="right-column">
-          <div class="explicacion-vex">
-            <h2>VEX-Thon</h2>
-            <p>
+      <div
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 50px;
+          align-items: center;
+        "
+      >
+        <div style="max-width: 600px">
+          <div>
+            <h2 id="vex-thon" style="color: white; text-align: center">
+              VEX-Thon
+            </h2>
+            <p
+              id="vex-thon-text"
+              style="padding: 20px; text-align: justify; color: white"
+            >
               ¡Bienvenidos a la <strong>VEX-Thon</strong>! Este emocionante
               evento de <strong>robótica </strong>les ofrece una oportunidad
               única para que demuestren sus habilidades de ingeniería en un
               formato inspirado en la reconocida
-              <strong>VEX Robotics Competition</strong>.
-            </p>
-            <p>
-              Los participantes, organizados en equipos, dispondrán de una
-              semana para <strong>diseñar, construir y programar</strong> un
-              robot capaz de superar un desafío específico. Esta competición
-              estilo <strong>Hackathon</strong> se inicia un sábado y culmina el
+              <strong>VEX Robotics Competition</strong>. Los participantes,
+              organizados en equipos, dispondrán de una semana para
+              <strong>diseñar, construir y programar</strong> un robot capaz de
+              superar un desafío específico. Esta competición estilo
+              <strong>Hackathon</strong> se inicia un sábado y culmina el
               domingo siguiente, brindando un horario flexible que les permitirá
               explorar su creatividad al máximo.
             </p>
           </div>
-          <div class="explicacion-vex-thon">
-            <h2>¿Qué es la VEX?</h2>
-            <p>
+          <div style="max-width: 600px">
+            <h2 id="what-is-vex" style="color: white; text-align: center">
+              ¿Qué es VEX?
+            </h2>
+            <p
+              id="what-is-vex-text"
+              style="padding: 20px; text-align: justify; color: white"
+            >
               La <strong>VEX Robotics Competition</strong> es un desafío de
               robótica dirigida a estudiantes de todas las edades, organizado
               por <strong>Robotics Education & Competition Foundation</strong>.
-            </p>
-            <p>
               Los equipos participantes tienen que
               <strong>diseñar, construir y programar</strong> un robot con el
               objetivo de superar un desafío y competir contra otros equipos en
-              un campo de juego.
-            </p>
-            <p>
-              Esta competición fomenta habilidades en
+              un campo de juego. Esta competición fomenta habilidades en
               <strong>STEM</strong> (ciencia, tecnología, ingeniería y
               matemáticas), promoviendo la innovación, el trabajo en equipo y la
               resolución de problemas mientras los participantes se preparan
@@ -485,17 +495,17 @@
           />
         </a>
         <div class="footer-section">
-          <p class="footer-title-text">Dirección</p>
+          <p id="address" class="footer-title-text">Dirección</p>
           <p class="footer-info-text">
             Avinguda d'Eduard Maristany 16, Edifici A. 08019 Barcelona
           </p>
         </div>
         <div class="footer-section">
-          <p class="footer-title-text">Contactos</p>
+          <p id="contacts" class="footer-title-text">Contactos</p>
           <p class="footer-info-text">Email: pucra.eebe@upc.edu</p>
         </div>
         <div class="footer-section">
-          <p class="footer-title-text">Enlaces</p>
+          <p id="links" class="footer-title-text">Enlaces</p>
           <a
             href="https://eebe.upc.edu/ca/lescola/associacions/content-associacions/pucra"
             class="footer-info-text"
@@ -505,8 +515,10 @@
       </div>
 
       <div class="footer-copyright-text">
-        © Copyright <span id="actual-year">2024</span> PUCRA - All Rights
-        Reserved
+        <span>
+          © Copyright <span id="actual-year">2024</span> PUCRA - All Rights
+          Reserved
+        </span>
       </div>
     </footer>
     <script src="../js/language.js"></script>

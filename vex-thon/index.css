@@ -46,7 +46,6 @@
       grid-template-columns: auto;
       grid-template-rows: auto;
     }
-
   }
   .footer-info {
     flex-direction: column;
@@ -106,8 +105,6 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
-    border-bottom: 1px solid gray;
-
     .footer-logo-image {
       max-width: 80px;
     }
@@ -131,16 +128,22 @@
   }
 
   .footer-copyright-text {
-    font-family: "Mollen personal use", sans-serif;
-    color: #fff;
-    font-size: 15px;
-    line-height: 15px;
     background-color: #242424;
-    padding-block: 30px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    span {
+      width: 90%;
+      border-top: 1px solid gray;
+
+      padding-block: 30px;
+
+      text-align: center;
+      font-family: "Mollen personal use", sans-serif;
+      color: #fff;
+      font-size: 15px;
+    }
   }
 }
-
 
 /* Estilo sin editar */
 
@@ -264,34 +267,6 @@ body {
   color: white;
 }
 
-.explicacion-vex {
-  padding: 50px;
-  text-align: justify;
-  color: white; /* Texto de párrafos en blanco */
-}
-
-.explicacion-vex-thon {
-  padding: 50px;
-  text-align: justify;
-  color: white; /* Texto de párrafos en blanco */
-  margin-top: -70px; /* Ajusta este valor según sea necesario para subir el apartado */
-}
-
-.explicacion-vex h2,
-.explicacion-vex-thon h2 {
-  font-size: 30px;
-  text-align: center; /* Centra los títulos */
-  color: white;
-  margin-bottom: 20px; /* Añade una separación de 20px */
-}
-
-.explicacion-vex p,
-.explicacion-vex-thon p {
-  font-size: 16px;
-  font-weight: 500;
-  margin-top: 0; /* Asegura que no haya margen superior en los párrafos */
-}
-
 .itinerario {
   background-color: green;
   height: 800px;
@@ -384,7 +359,7 @@ body {
   .left-column,
   .right-column {
     flex: 1;
-    padding: 10px;
+    padding: 50px;
   }
 
   .separator {
