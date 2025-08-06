@@ -36,11 +36,6 @@
       summary {
         font-weight: bold;
       }
-      details {
-        margin-bottom: 15px;
-        margin-top: 15px;
-        color: rgb(226, 226, 226);
-      }
     }
   }
 }
@@ -51,25 +46,101 @@
       grid-template-columns: auto;
       grid-template-rows: auto;
     }
-    section {
-      max-width: none; /* Elimina el ancho máximo */
-    }
+
+  }
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    width: 250px;
   }
 }
 
-footer {
-  .footer-slogan-text {
-    width: 90%;
-    border-top: 2px solid #c43a69;
-    border-bottom: 2px solid #c43a69;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    font-size: 25px;
-    text-align: center;
-    color: #fff;
+.footer-container {
+  .footer-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #1a1a1a;
+
+    .footer-slogan-text {
+      width: 90%;
+      border-top: 2px solid #c43a69;
+      border-bottom: 2px solid #c43a69;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      font-size: 25px;
+      text-align: center;
+      color: #fff;
+      font-family: "Mollen personal use", sans-serif;
+    }
+    #follow-us {
+      margin-top: 40px;
+      font-family: "Mollen personal use", sans-serif;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .footer-social-links-container {
+      display: flex;
+      padding-top: 20px;
+      gap: 15px;
+
+      .footer-social-link {
+        font-size: 20px;
+        color: #c43a69;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .footer-info {
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    border-bottom: 1px solid gray;
+
+    .footer-logo-image {
+      max-width: 80px;
+    }
+    .footer-section {
+      max-width: 250px;
+    }
+
+    .footer-title-text {
+      margin-bottom: 30px;
+      font-family: "Mollen personal use", sans-serif;
+      color: #c43a69;
+      font-size: 20px;
+    }
+    .footer-info-text {
+      font-family: "Mollen personal use", sans-serif;
+      color: #fff;
+      font-size: 17px;
+      line-height: 23px;
+      text-decoration: none;
+    }
+  }
+
+  .footer-copyright-text {
     font-family: "Mollen personal use", sans-serif;
+    color: #fff;
+    font-size: 15px;
+    line-height: 15px;
+    background-color: #242424;
+    padding-block: 30px;
+    text-align: center;
   }
 }
+
 
 /* Estilo sin editar */
 
@@ -287,96 +358,6 @@ body {
   padding-left: 15px;
 }
 
-/* PIE DE PAGINA */
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #242424;
-  max-width: 100%;
-}
-
-.footer-top-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 50px;
-  padding: 50px 0 30px;
-  background-color: #1a1a1a;
-}
-
-.footer-follow-us-text {
-  margin-top: 40px;
-  font-family: "Mollen personal use", sans-serif;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.footer-social-links-container {
-  display: flex;
-  margin-top: 10px;
-}
-
-.footer-social-link {
-  margin: 0 10px;
-  font-size: 30px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-social-link i {
-  color: #c43a69; /* Color rosa de los íconos */
-}
-
-.footer-bottom-section {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-bottom: 50px;
-}
-
-.footer-logo-link {
-  margin-right: 80px;
-}
-
-.footer-logo-image {
-  max-width: 80px;
-}
-
-.footer-address-section,
-.footer-contact-section,
-.footer-links-section {
-  margin-right: 40px;
-}
-
-.footer-title-text {
-  margin-bottom: 30px;
-  font-family: "Mollen personal use", sans-serif;
-  color: #c43a69;
-  font-size: 20px;
-}
-
-.footer-info-text {
-  font-family: "Mollen personal use", sans-serif;
-  color: #fff;
-  font-size: 17px;
-  line-height: 23px;
-  text-decoration: none;
-}
-
-.footer-copyright-text {
-  margin-bottom: 30px;
-  font-family: "Mollen personal use", sans-serif;
-  color: #fff;
-  font-size: 15px;
-  line-height: 15px;
-}
-
 /* Ajustes de movil */
 @media (max-width: 992px) {
   .main-content {
@@ -488,69 +469,6 @@ body {
 
   .faq-answer {
     padding-left: 15px;
-  }
-
-  /* PIE DE PAGINA VERSIÓN MOVIL*/
-
-  /* Ajuste del contenedor general para móvil */
-  .footer-container {
-    padding: 20px;
-  }
-
-  /* Ajuste de la sección superior del footer para pantallas pequeñas */
-  .footer-top-section {
-    padding: 30px 0;
-    margin-bottom: 30px;
-  }
-
-  .footer-follow-us-text {
-    font-size: 14px;
-    margin-top: 20px;
-  }
-
-  /* Ajuste de los íconos sociales */
-  .footer-social-links-container {
-    display: flex;
-    margin-top: 10px;
-  }
-
-  .footer-social-link {
-    margin: 0 15px; /* Ajusta la separación horizontal entre íconos */
-  }
-
-  /* Ajuste de la sección inferior del footer para móvil */
-  .footer-bottom-section {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer-logo-link {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .footer-address-section,
-  .footer-contact-section,
-  .footer-links-section {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .footer-title-text {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-
-  .footer-info-text {
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .footer-copyright-text {
-    font-size: 13px;
-    line-height: 18px;
-    margin-bottom: 20px;
   }
 }
 
