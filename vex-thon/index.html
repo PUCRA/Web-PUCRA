@@ -65,12 +65,12 @@
 
       <!-- Menú de escritorio -->
       <div class="desktop-menu">
-        <a href="/" class="link-2">Inicio</a>
-        <a href="/events" class="link-2">Eventos</a>
+        <a href="/" class="home link-2">Inicio</a>
+        <a href="/events" class="events link-2">Eventos</a>
         <a href="/sponsors" aria-current="page" class="link-2 w--current"
           >Sponsors</a
         >
-        <a href="/about" aria-current="page" class="link-2 w--current"
+        <a href="/about" aria-current="page" class="about-us link-2 w--current"
           >Sobre Nosotros</a
         >
         <div class="dropdown">
@@ -85,7 +85,7 @@
               class="dropdown-link w-dropdown-link"
               onclick="changeLanguageVexThon('cat')"
             >
-              catalan
+              CAT
             </button>
             <button
               style="background-color: transparent"
@@ -93,7 +93,7 @@
               class="dropdown-link w-dropdown-link"
               onclick="changeLanguageVexThon('en')"
             >
-              english
+              EN
             </button>
             <button
               style="background-color: transparent"
@@ -101,11 +101,11 @@
               class="dropdown-link w-dropdown-link"
               onclick="changeLanguageVexThon('es')"
             >
-              spanish
+              ES
             </button>
           </nav>
         </div>
-        <a href="/contact" class="button w-button">CONTACTO</a>
+        <a href="/contact" class="contact button w-button">CONTACTO</a>
       </div>
 
       <!-- Icono del menú burger (visible en móviles) -->
@@ -119,8 +119,8 @@
       <div class="close-menu-icon">
         <span class="close-icon">✕</span>
       </div>
-      <a href="/" class="link-2">Inicio</a>
-      <a href="/events" class="link-2">Eventos</a>
+      <a href="/" class="home link-2">Inicio</a>
+      <a href="/events" class="events link-2">Eventos</a>
       <a href="/sponsors" aria-current="page" class="link-2 w--current"
         >Sponsors</a
       >
@@ -128,7 +128,10 @@
       <!-- "Sobre Nosaltres" con flechita y submenú -->
       <div class="dropdown">
         <div id="sobre-nosaltres-toggle">
-          <a href="/about" aria-current="page" class="link-2 w--current"
+          <a
+            href="/about"
+            aria-current="page"
+            class="about-us link-2 w--current"
             >Sobre Nosotros</a
           >
         </div>
@@ -166,7 +169,7 @@
         <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
       </div>
 
-      <a href="/contact" class="button w-button">Contacto</a>
+      <a href="/contact" class="contact button w-button">Contacto</a>
     </navbar>
 
     <!-- Inicio de la pagina -->
@@ -196,15 +199,21 @@
               VEX-Thon
             </h2>
             <p
-              id="vex-thon-text"
-              style="padding: 20px; text-align: justify; color: white"
+              class="vex-thon-text"
+              style="padding: 10px; text-align: justify; color: white"
             >
               ¡Bienvenidos a la <strong>VEX-Thon</strong>! Este emocionante
               evento de <strong>robótica </strong>les ofrece una oportunidad
               única para que demuestren sus habilidades de ingeniería en un
               formato inspirado en la reconocida
-              <strong>VEX Robotics Competition</strong>. Los participantes,
-              organizados en equipos, dispondrán de una semana para
+              <strong>VEX Robotics Competition</strong>.
+            </p>
+            <p
+              class="vex-thon-text"
+              style="padding: 10px; text-align: justify; color: white"
+            >
+              Los participantes, organizados en equipos, dispondrán de una
+              semana para
               <strong>diseñar, construir y programar</strong> un robot capaz de
               superar un desafío específico. Esta competición estilo
               <strong>Hackathon</strong> se inicia un sábado y culmina el
@@ -216,13 +225,19 @@
             <h2 id="what-is-vex" style="color: white; text-align: center">
               ¿Qué es VEX?
             </h2>
+
             <p
-              id="what-is-vex-text"
-              style="padding: 20px; text-align: justify; color: white"
+              class="what-is-vex-text"
+              style="padding: 10px; text-align: justify; color: white"
             >
               La <strong>VEX Robotics Competition</strong> es un desafío de
               robótica dirigida a estudiantes de todas las edades, organizado
               por <strong>Robotics Education & Competition Foundation</strong>.
+            </p>
+            <p
+              class="what-is-vex-text"
+              style="padding: 10px; text-align: justify; color: white"
+            >
               Los equipos participantes tienen que
               <strong>diseñar, construir y programar</strong> un robot con el
               objetivo de superar un desafío y competir contra otros equipos en

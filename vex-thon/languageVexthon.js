@@ -16,13 +16,18 @@ const vexthonEs = {
 
   vexThon: {
     title: "VEX-Thon",
-    description:
-      "¡Bienvenidos a la <strong>VEX-Thon</strong>! Este emocionante evento de robótica les ofrece una oportunidad única para que demuestren sus habilidades de ingeniería en un formato inspirado en la reconocida VEX Robotics Competition.\n\nLos participantes, organizados en equipos, dispondrán de una semana para diseñar, construir y programar un robot capaz de superar un desafío específico. Esta competición estilo Hackathon se inicia un sábado y culmina el domingo siguiente, brindando un horario flexible que les permitirá explorar su creatividad al máximo.",
+    description: [
+      "¡Bienvenidos a la <strong>VEX-Thon</strong>! Este emocionante evento de robótica les ofrece una oportunidad única para que demuestren sus habilidades de ingeniería en un formato inspirado en la reconocida VEX Robotics Competition.",
+      "Los participantes, organizados en equipos, dispondrán de una semana para diseñar, construir y programar un robot capaz de superar un desafío específico. Esta competición estilo Hackathon se inicia un sábado y culmina el domingo siguiente, brindando un horario flexible que les permitirá explorar su creatividad al máximo.",
+    ],
   },
   vex: {
     title: "¿Qué es la VEX?",
-    description:
-      "La VEX Robotics Competition es un desafío de robótica dirigida a estudiantes de todas las edades, organizado por Robotics Education & Competition Foundation.\n\nLos equipos participantes tienen que diseñar, construir y programar un robot con el objetivo de superar un desafío y competir contra otros equipos en un campo de juego.\n\nEsta competición fomenta habilidades en STEM (ciencia, tecnología, ingeniería y matemáticas), promoviendo la innovación, el trabajo en equipo y la resolución de problemas mientras los participantes se preparan para futuras carreras en tecnología.",
+    description: [
+      "La VEX Robotics Competition es un desafío de robótica dirigida a estudiantes de todas las edades, organizado por Robotics Education & Competition Foundation.",
+      "Los equipos participantes tienen que diseñar, construir y programar un robot con el objetivo de superar un desafío y competir contra otros equipos en un campo de juego.",
+      "Esta competición fomenta habilidades en STEM (ciencia, tecnología, ingeniería y matemáticas), promoviendo la innovación, el trabajo en equipo y la resolución de problemas mientras los participantes se preparan para futuras carreras en tecnología.",
+    ],
   },
 
   location: {
@@ -148,13 +153,18 @@ const vexthonEn = {
   contacts: "Contacts",
   vexThon: {
     title: "VEX-Thon",
-    description:
-      "Welcome to the <strong>VEX-Thon</strong>! This exciting robotics event offers a unique opportunity to showcase your engineering skills in a format inspired by the renowned VEX Robotics Competition.\n\nParticipants, organized in teams, will have one week to design, build, and program a robot capable of overcoming a specific challenge. This Hackathon-style competition begins on a Saturday and ends the following Sunday, providing a flexible schedule that will allow you to explore your creativity to the fullest.",
+    description: [
+      "Welcome to the <strong>VEX-Thon</strong>! This exciting robotics event offers a unique opportunity to showcase your engineering skills in a format inspired by the renowned VEX Robotics Competition.",
+      "Participants, organized in teams, will have one week to design, build, and program a robot capable of overcoming a specific challenge. This Hackathon-style competition begins on a Saturday and ends the following Sunday, providing a flexible schedule that will allow you to explore your creativity to the fullest.",
+    ],
   },
   vex: {
     title: "What is VEX?",
-    description:
-      "The VEX Robotics Competition is a robotics challenge aimed at students of all ages, organized by the Robotics Education & Competition Foundation.\n\nParticipating teams must design, build, and program a robot to overcome a challenge and compete against other teams in a game field.\n\nThis competition develops STEM skills (science, technology, engineering, and mathematics), promoting innovation, teamwork, and problem-solving while preparing participants for future careers in technology.",
+    description: [
+      "The VEX Robotics Competition is a robotics challenge aimed at students of all ages, organized by the Robotics Education & Competition Foundation.",
+      "Participating teams must design, build, and program a robot to overcome a challenge and compete against other teams in a game field.",
+      "This competition develops STEM skills (science, technology, engineering, and mathematics), promoting innovation, teamwork, and problem-solving while preparing participants for future careers in technology.",
+    ],
   },
 
   location: {
@@ -253,7 +263,7 @@ const vexthonEn = {
       {
         question: "Is there a registration limit?",
         answer:
-          "We have a registration limit based on the materials available. Don’t miss out!",
+          "We have a registration limit based on the materials available. Don't miss out!",
       },
     ],
   },
@@ -276,26 +286,31 @@ const vexthonCat = {
   contacts: "Contactes",
   vexThon: {
     title: "VEX-Thon",
-    description:
-      "Benvinguts a la <strong>VEX-Thon</strong>! Aquest emocionant esdeveniment de robòtica us ofereix una oportunitat única per demostrar les vostres habilitats d'enginyeria en un format inspirat en la reconeguda VEX Robotics Competition.\n\nEls participants, organitzats en equips, disposaran d’una setmana per dissenyar, construir i programar un robot capaç de superar un repte específic. Aquesta competició estil Hackathon s’inicia un dissabte i culmina el diumenge següent, oferint un horari flexible que us permetrà explorar la creativitat al màxim.",
+    description: [
+      "Benvinguts a la <strong>VEX-Thon</strong>! Aquest emocionant esdeveniment de robòtica us ofereix una oportunitat única per demostrar les vostres habilitats d'enginyeria en un format inspirat en la reconeguda VEX Robotics Competition.",
+      "Els participants, organitzats en equips, disposaran d'una setmana per dissenyar, construir i programar un robot capaç de superar un repte específic. Aquesta competició estil Hackathon s'inicia un dissabte i culmina el diumenge següent, oferint un horari flexible que us permetrà explorar la creativitat al màxim.",
+    ],
   },
   vex: {
     title: "Què és la VEX?",
-    description:
-      "La VEX Robotics Competition és un repte de robòtica adreçat a estudiants de totes les edats, organitzat per la Robotics Education & Competition Foundation.\n\nEls equips participants han de dissenyar, construir i programar un robot amb l’objectiu de superar un repte i competir contra altres equips en un camp de joc.\n\nAquesta competició fomenta habilitats en STEM (ciència, tecnologia, enginyeria i matemàtiques), promovent la innovació, el treball en equip i la resolució de problemes mentre els participants es preparen per a futures carreres en tecnologia.",
+    description: [
+      "La VEX Robotics Competition és un repte de robòtica adreçat a estudiants de totes les edats, organitzat per la Robotics Education & Competition Foundation.",
+      "Els equips participants han de dissenyar, construir i programar un robot amb l'objectiu de superar un repte i competir contra altres equips en un camp de joc.",
+      "Aquesta competició fomenta habilitats en STEM (ciència, tecnologia, enginyeria i matemàtiques), promovent la innovació, el treball en equip i la resolució de problemes mentre els participants es preparen per a futures carreres en tecnologia.",
+    ],
   },
 
   location: {
     title: "Ubicació",
-    description: "A la sala polivalent de l’edifici A de l’EEBE",
+    description: "A la sala polivalent de l'edifici A de l'EEBE",
   },
   date: {
     title: "Data",
-    description: "Del 19 al 27 d’octubre",
+    description: "Del 19 al 27 d'octubre",
   },
   news: {
     title: "Novetats",
-    description: "S’obren inscripcions per a la primera edició de la VEX-Thon!",
+    description: "S'obren inscripcions per a la primera edició de la VEX-Thon!",
   },
 
   about_vex_thon: {
@@ -304,17 +319,17 @@ const vexthonCat = {
       {
         question: "Què és la VEX-Thon?", // .about-vex-quiz
         answer:
-          "Aquest emocionant esdeveniment de robòtica t’ofereix una oportunitat única per demostrar les teves habilitats d'enginyeria, amb un format inspirat en la reconeguda VEX Robotics Competition.",
+          "Aquest emocionant esdeveniment de robòtica t'ofereix una oportunitat única per demostrar les teves habilitats d'enginyeria, amb un format inspirat en la reconeguda VEX Robotics Competition.",
       },
       {
         question: "Quan és la VEX-Thon?",
         answer:
-          "Se celebrarà entre el 19 i el 27 d’octubre, amb un horari flexible per explorar la teva creativitat al màxim.",
+          "Se celebrarà entre el 19 i el 27 d'octubre, amb un horari flexible per explorar la teva creativitat al màxim.",
       },
       {
         question: "On es farà la VEX-Thon?",
         answer:
-          "L’esdeveniment tindrà lloc al Campus Diagonal Besòs, a la sala polivalent de l’edifici A, amb indicacions per arribar a l’aula on es farà l’activitat.",
+          "L'esdeveniment tindrà lloc al Campus Diagonal Besòs, a la sala polivalent de l'edifici A, amb indicacions per arribar a l'aula on es farà l'activitat.",
       },
     ],
   },
@@ -324,7 +339,7 @@ const vexthonCat = {
       {
         question: "Quin és el format de competició?", // .competition-quiz
         answer:
-          "El format de la competició es basarà en la VEX Robotics Competition. Els participants, organitzats en equips, tindran una setmana per dissenyar, construir i programar un robot capaç de superar un repte específic, i s’enfrontaran a altres competidors en un torneig per decidir el guanyador de la VEX-Thon.",
+          "El format de la competició es basarà en la VEX Robotics Competition. Els participants, organitzats en equips, tindran una setmana per dissenyar, construir i programar un robot capaç de superar un repte específic, i s'enfrontaran a altres competidors en un torneig per decidir el guanyador de la VEX-Thon.",
       },
       {
         question: "Què proporcionarem a la VEX-Thon?",
@@ -345,22 +360,22 @@ const vexthonCat = {
       {
         question: "Qui pot participar?", // .participation-quiz
         answer:
-          "La 1a edició de la VEX-Thon està dirigida a estudiants del Campus Diagonal Besòs de la Universitat Politècnica de Catalunya. Tanmateix, en futures edicions tenim pensat acceptar inscripcions d’altres centres i edats.",
+          "La 1a edició de la VEX-Thon està dirigida a estudiants del Campus Diagonal Besòs de la Universitat Politècnica de Catalunya. Tanmateix, en futures edicions tenim pensat acceptar inscripcions d'altres centres i edats.",
       },
       {
         question: "Què passa si no tinc experiència en robòtica?",
         answer:
-          "No hi ha cap problema! A l’inici de l’esdeveniment, farem una formació sobre el material que proporcionarem. A més, podràs buscar el que vulguis a internet i et facilitarem altres recursos addicionals.",
+          "No hi ha cap problema! A l'inici de l'esdeveniment, farem una formació sobre el material que proporcionarem. A més, podràs buscar el que vulguis a internet i et facilitarem altres recursos addicionals.",
       },
       {
         question: "Què passa si no tinc equip?",
         answer:
-          "A la inscripció podràs indicar que no tens equip. En els dies previs a l’esdeveniment, formarem equips amb les persones que triïn aquesta opció.",
+          "A la inscripció podràs indicar que no tens equip. En els dies previs a l'esdeveniment, formarem equips amb les persones que triïn aquesta opció.",
       },
       {
-        question: "Què passa si no sóc de l’EEBE o de la UPC?",
+        question: "Què passa si no sóc de l'EEBE o de la UPC?",
         answer:
-          "Malauradament, en aquesta primera edició només ens centrarem en estudiants de l’EEBE, però estigues atent a futures edicions, on tenim previst ampliar horitzons.",
+          "Malauradament, en aquesta primera edició només ens centrarem en estudiants de l'EEBE, però estigues atent a futures edicions, on tenim previst ampliar horitzons.",
       },
     ],
   },
@@ -373,14 +388,14 @@ const vexthonCat = {
           "La quantitat recomanable és de 4 persones per equip, però poden tenir un mínim de 3 i un màxim de 6 persones. Si sou més de 6, recomanem fer dos equips diferents. En cas que els equips no siguin equilibrats, plantejarem modificar-los per a una millor experiència.",
       },
       {
-        question: "Es poden canviar membres després d’inscriure’s?",
+        question: "Es poden canviar membres després d'inscriure's?",
         answer:
-          "Es poden modificar els membres de l’equip contactant-nos a través dels canals que us proporcionarem un cop estigueu inscrits.",
+          "Es poden modificar els membres de l'equip contactant-nos a través dels canals que us proporcionarem un cop estigueu inscrits.",
       },
       {
-        question: "Hi ha límit d’inscripcions?",
+        question: "Hi ha límit d'inscripcions?",
         answer:
-          "Tenim un límit d’inscripcions segons el material disponible. No et quedis fora!",
+          "Tenim un límit d'inscripcions segons el material disponible. No et quedis fora!",
       },
     ],
   },
@@ -436,13 +451,24 @@ function fillContentVexthon() {
 
   let contentVexthon = changeLanguage();
   console.log("Contenido de VEX-Thon:", contentVexthon);
+  //Navbar
+  $$("home").forEach((el) => (el.innerHTML = contentVexthon.home));
+  $$("events").forEach((el) => (el.innerHTML = contentVexthon.events));
+  $$("about-us").forEach((el) => (el.innerHTML = contentVexthon.about_us));
+  $$("contact").forEach((el) => (el.innerHTML = contentVexthon.contact));
 
   // Explanations
   $("vex-thon").innerHTML = contentVexthon.vexThon.title;
-  $("vex-thon-text").innerHTML = contentVexthon.vexThon.description;
+  for (let i = 0; i < contentVexthon.vexThon.description.length; i++) {
+    const description = contentVexthon.vexThon.description[i];
+    $$("vex-thon-text")[i].innerHTML = description;
+  }
 
   $("what-is-vex").innerHTML = contentVexthon.vex.title;
-  $("what-is-vex-text").innerHTML = contentVexthon.vex.description;
+  for (let i = 0; i < contentVexthon.vex.description.length; i++) {
+    const description = contentVexthon.vex.description[i];
+    $$("what-is-vex-text")[i].innerHTML = description;
+  }
 
   //FAQS
   $("about-vex-thon").innerHTML = contentVexthon.about_vex_thon.title;
