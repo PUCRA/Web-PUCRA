@@ -34,7 +34,7 @@
     />
   </head>
 
-  <body onload="fillContentVexthon()">
+  <body onload="fillContentVexthon()" class="background-info-container">
     <navbar class="navbar">
       <div class="div-block">
         <a href="/" class="w-inline-block">
@@ -173,23 +173,38 @@
     </navbar>
 
     <!-- Inicio de la pagina -->
+    <header>
+      <h1>VEX-Thon</h1>
+      <img
+        src="../images/logo-pucra-blanco2-1-536x143.png"
+        loading="lazy"
+        sizes="(max-width: 479px) 100px, (max-width: 767px) 150px, 200px"
+        srcset="
+          ../images/logo-pucra-blanco2-1-536x143-p-500.png 500w,
+          ../images/logo-pucra-blanco2-1-536x143.png       536w
+        "
+        alt="PUCRA Logo"
+      />
+      <p>
+        ¡Participa en la <strong>Competición de Robótica</strong> más
+        innovadora!
+      </p>
+      <p>OCTUBRE 2024</p>
 
-    <div class="main-container"></div>
-
-    <div class="background-info-container">
-      <div class="espacio-boton">
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSc2ftCuJFatNN81ndJdQsU4kUw3tXncVrjqr73O1opRP28YEw/viewform?usp=sf_link"
-          class="boton-formulario boton-formulario-principal"
-          >¡Inscríbete!</a
-        >
-      </div>
-
+      <img
+        height="400"
+        src="./images/left-vexthon-team.webp"
+        alt="Un equipo de VEX-Thon"
+      />
+      <img height="400" src="./images/right-vexthon-team.webp" alt="Icono" />
+    </header>
+    <div>
       <div
         style="
           display: flex;
           justify-content: center;
           gap: 50px;
+          flex-wrap: wrap;
           align-items: center;
         "
       >
@@ -241,7 +256,13 @@
               Los equipos participantes tienen que
               <strong>diseñar, construir y programar</strong> un robot con el
               objetivo de superar un desafío y competir contra otros equipos en
-              un campo de juego. Esta competición fomenta habilidades en
+              un campo de juego.
+            </p>
+            <p
+              class="what-is-vex-text"
+              style="padding: 10px; text-align: justify; color: white"
+            >
+              Esta competición fomenta habilidades en
               <strong>STEM</strong> (ciencia, tecnología, ingeniería y
               matemáticas), promoviendo la innovación, el trabajo en equipo y la
               resolución de problemas mientras los participantes se preparan
@@ -257,25 +278,27 @@
           />
         </div>
 
-        <div class="left-column">
+        <div>
           <div class="info">
-            <h2>Localización</h2>
-            <p>En la sala polivalente del edificio A <br />de la EEBE</p>
-            <h2>Fecha</h2>
-            <p>Del 19 al 27 de octubre</p>
+            <h2 id="location">Localización</h2>
+            <p id="location-info">
+              En la sala polivalente del edificio A <br />de la EEBE
+            </p>
+            <h2 id="date">Fecha</h2>
+            <p id="date-info">Del 19 al 27 de octubre</p>
           </div>
           <div class="recuadro-boton-formulario">
             <a
+              id="subscribe"
               href="https://docs.google.com/forms/d/e/1FAIpQLSc2ftCuJFatNN81ndJdQsU4kUw3tXncVrjqr73O1opRP28YEw/viewform?usp=sf_link"
               class="boton-formulario"
               >¡Inscríbete!</a
             >
           </div>
           <div class="card">
-            <span class="card__title">Novedades</span>
-            <p class="card__content">
+            <span id="news" class="card__title">Novedades</span>
+            <p id="news-info" class="card__content">
               ¡Se abren inscripciones para la primera edición de la VEX-Thon!
-              <br />
             </p>
           </div>
         </div>

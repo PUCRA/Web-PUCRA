@@ -13,7 +13,6 @@ const vexthonEs = {
   links: "Enlaces",
   contact: "Contacto",
   contacts: "Contactos",
-
   vexThon: {
     title: "VEX-Thon",
     description: [
@@ -452,10 +451,18 @@ function fillContentVexthon() {
   let contentVexthon = changeLanguage();
   console.log("Contenido de VEX-Thon:", contentVexthon);
   //Navbar
-  $$("home").forEach((el) => (el.innerHTML = contentVexthon.home));
-  $$("events").forEach((el) => (el.innerHTML = contentVexthon.events));
-  $$("about-us").forEach((el) => (el.innerHTML = contentVexthon.about_us));
-  $$("contact").forEach((el) => (el.innerHTML = contentVexthon.contact));
+  for (let i = 0; i < $$("home").length; i++) {
+    $$("home")[i].innerHTML = contentVexthon.home;
+  }
+  for (let i = 0; i < $$("events").length; i++) {
+    $$("events")[i].innerHTML = contentVexthon.events;
+  }
+  for (let i = 0; i < $$("about-us").length; i++) {
+    $$("about-us")[i].innerHTML = contentVexthon.about_us;
+  }
+  for (let i = 0; i < $$("contact").length; i++) {
+    $$("contact")[i].innerHTML = contentVexthon.contact;
+  }
 
   // Explanations
   $("vex-thon").innerHTML = contentVexthon.vexThon.title;
@@ -469,6 +476,17 @@ function fillContentVexthon() {
     const description = contentVexthon.vex.description[i];
     $$("what-is-vex-text")[i].innerHTML = description;
   }
+
+  // Location and date
+  $("location").innerHTML = contentVexthon.location.title;
+  $("location-info").innerHTML = contentVexthon.location.description;
+  $("date").innerHTML = contentVexthon.date.title;
+  $("date-info").innerHTML = contentVexthon.date.description;
+  $("subscribe").innerHTML = contentVexthon.subscribe;
+
+  // News
+  $("news").innerHTML = contentVexthon.news.title;
+  $("news-info").innerHTML = contentVexthon.news.description;
 
   //FAQS
   $("about-vex-thon").innerHTML = contentVexthon.about_vex_thon.title;

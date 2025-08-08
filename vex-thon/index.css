@@ -40,6 +40,12 @@
   }
 }
 
+@media screen and (max-width: 1240px) {
+  .separator {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .faqs-container {
     article {
@@ -237,19 +243,9 @@ body {
   font-size: 40px;
 }
 
-.left-column {
-  position: relative;
-  padding-right: 35px;
-}
-
 .right-column {
   position: relative;
   padding-left: 35px;
-}
-
-.separator {
-  position: relative;
-  margin-top: -50px;
 }
 
 .Imagen-Separador {
@@ -335,13 +331,6 @@ body {
 
 /* Ajustes de movil */
 @media (max-width: 992px) {
-  .main-content {
-    background-size: cover; /* En pantallas pequeñas también cubrirá completamente */
-    flex-direction: column;
-    padding: 20px;
-    height: 1850px;
-  }
-
   .boton-formulario-principal {
     padding: 15px 30px;
     font-size: 18px;
@@ -354,23 +343,6 @@ body {
     font-size: 1.2em;
     padding: 10px;
     text-align: center;
-  }
-
-  .left-column,
-  .right-column {
-    flex: 1;
-    padding: 50px;
-  }
-
-  .separator {
-    margin-top: -100px;
-    margin-bottom: -150px;
-    margin-left: 0;
-  }
-
-  .separator img {
-    transform: rotate(90deg);
-    width: 10%;
   }
 
   .card {
@@ -456,12 +428,6 @@ body {
     height: 85vh;
     background-position: bottom; /* Si quieres alinear la imagen en la parte superior */
     background-color: #38001c;
-  }
-
-  .separator {
-    margin-top: -280px;
-    margin-bottom: -250px;
-    margin-left: 0;
   }
 
   .main-content {
