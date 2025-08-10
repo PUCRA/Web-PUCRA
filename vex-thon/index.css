@@ -1,3 +1,79 @@
+.shadow-image {
+  filter: drop-shadow(0px 1px 16px rgba(0, 0, 0, 0.75));
+}
+
+.container-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow-x: scroll;
+}
+
+.relative-wrapper {
+  position: relative;
+}
+
+.left-route {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  height: 90%;
+  width: auto;
+}
+
+.right-route {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  height: 90%;
+  width: auto;
+}
+
+/* Tint images teams */
+.tint-image {
+  position: relative;
+  width: max-content;
+  height: 100;
+}
+
+.tint-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.blue-image {
+  background-color: blue;
+  -webkit-mask-image: var(--mask);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  mask-image: var(--mask);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.red-image {
+  background-color: red;
+  -webkit-mask-image: var(--mask);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  mask-image: var(--mask);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.tint-image img {
+  opacity: 0.8;
+  object-fit: cover;
+  height: 400px;
+}
+
 .faqs-container {
   background-image: url("../images/Imagenes-Vex-Thon/Fondo\ FAQs\ VEX-Thon.png");
   color: white;
