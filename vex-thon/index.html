@@ -25,9 +25,10 @@
 
     <!-- Referencias del css -->
     <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="../css/footer.css" rel="stylesheet" type="text/css" />
+    <link href="../css/mobile-navbar.css" rel="stylesheet" type="text/css" />
 
     <!-- Necesarios para la navbar -->
-    <link href="../css/navbar.css" rel="stylesheet" type="text/css" />
     <!-- El css -->
     <script src="../js/navbar.js" type="text/javascript"></script>
     <!-- El js -->
@@ -35,31 +36,18 @@
 
   <body onload="fillContentVexthon()" class="background-info-container">
     <navbar class="navbar">
-      <div class="div-block">
-        <a href="/" class="w-inline-block">
-          <img
-            src="../images/logo-pucra-blanco2-1-536x143.png"
-            loading="lazy"
-            sizes="(max-width: 479px) 100px, (max-width: 767px) 150px, 200px"
-            srcset="
-              ../images/logo-pucra-blanco2-1-536x143-p-500.png 500w,
-              ../images/logo-pucra-blanco2-1-536x143.png       536w
-            "
-            alt="PUCRA Logo"
-            class="image-5"
-          />
-        </a>
-      </div>
-      <div class="div-block">
-        <a href="/vex-thon" class="w-inline-block">
-          <img
-            src="../images/Imagenes-Vex-Thon/Logo VEXThon.png"
-            loading="lazy"
-            alt="VEXThon Logo"
-            class="image-5"
-          />
-        </a>
-      </div>
+      <a href="/">
+        <img
+          src="../images/logo-pucra-blanco2-1-536x143.png"
+          loading="lazy"
+          sizes="(max-width: 479px) 100px, (max-width: 767px) 150px, 200px"
+          srcset="
+            ../images/logo-pucra-blanco2-1-536x143-p-500.png 500w,
+            ../images/logo-pucra-blanco2-1-536x143.png       536w
+          "
+          alt="PUCRA Logo"
+        />
+      </a>
 
       <!-- Menú de escritorio -->
       <div class="desktop-menu">
@@ -117,86 +105,77 @@
 
     <!-- Menú hamburguesa desplegable para móviles -->
     <navbar class="mobile-menu">
-      <div class="close-menu-icon">
-        <span class="close-icon">✕</span>
-      </div>
-      <a href="/" class="home link-2">Inicio</a>
-      <a href="/events" class="events link-2">Eventos</a>
-      <a href="/sponsors" aria-current="page" class="link-2 w--current"
-        >Sponsors</a
-      >
-
-      <!-- "Sobre Nosaltres" con flechita y submenú -->
-      <div class="dropdown">
-        <div id="sobre-nosaltres-toggle">
-          <a
-            href="/about"
-            aria-current="page"
-            class="about-us link-2 w--current"
-            >Sobre Nosotros</a
-          >
-        </div>
-      </div>
+      <button class="close-mobile-menu" onclick="hideMobileMenu()">✕</button>
+      <a href="/" class="home">Inicio</a>
+      <a href="/events" class="events">Eventos</a>
+      <a href="/sponsors">Sponsors</a>
+      <a href="/about" class="about-us">Sobre Nosotros</a>
 
       <!-- Subtítulo IDIOMES -->
-      <div class="menu-subtitle">IDIOMAS</div>
+      <div class="mobile-subtitle langs">IDIOMAS</div>
       <button
-        style="background-color: transparent; color: white"
         id="cat-mobile"
+        class="mobile-lang"
         onclick="changeLanguageVexThon('cat')"
       >
         CAT
       </button>
       <button
-        style="background-color: transparent; color: white"
         id="en-mobile"
+        class="mobile-lang"
         onclick="changeLanguageVexThon('en')"
       >
         EN
       </button>
       <button
-        style="background-color: transparent; color: white"
         id="es-mobile"
+        class="mobile-lang"
         onclick="changeLanguageVexThon('es')"
       >
         ES
       </button>
 
       <!-- Subtítulo XARXES -->
-      <div class="menu-subtitle">REDES</div>
+      <div class="mobile-subtitle networks">REDES</div>
       <div class="social-links">
         <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
         <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
       </div>
 
-      <a href="/contact" class="contact button w-button">Contacto</a>
+      <a href="/contact" class="contact btn-contact">Contacto</a>
     </navbar>
 
     <!-- Inicio de la pagina -->
     <header>
-      <h1>VEX-Thon</h1>
-      <img
-        src="../images/logo-pucra-blanco2-1-536x143.png"
-        loading="lazy"
-        sizes="(max-width: 479px) 100px, (max-width: 767px) 150px, 200px"
-        srcset="
-          ../images/logo-pucra-blanco2-1-536x143-p-500.png 500w,
-          ../images/logo-pucra-blanco2-1-536x143.png       536w
-        "
-        alt="PUCRA Logo"
-      />
-
       <div class="header-container">
-        <img class="shadow-image" src="./images/left-top-route.svg" alt="" />
-        <p class="subtitle">
-          ¡Participa en la <strong>Competición de Robótica</strong> más
-          innovadora!
-        </p>
-        <img class="shadow-image" src="./images/right-top-route.svg" alt="" />
+        <img
+          class="shadow-image header-img"
+          src="./images/left-top-route.svg"
+          alt=""
+        />
+
+        <div class="subtitle">
+          <img
+            class="subtitle"
+            src="../images/Imagenes-Vex-Thon/Logo VEXThon best.png"
+            height="200"
+            width="450"
+            alt=""
+          />
+          <h1 class="header-title">
+            ¡Participa en la <strong>Competición de Robótica</strong> más
+            innovadora!
+          </h1>
+        </div>
+
+        <img
+          class="shadow-image header-img"
+          src="./images/right-top-route.svg"
+          alt=""
+        />
       </div>
 
-      <p>OCTUBRE 2024</p>
       <div class="container-images">
         <div class="relative-wrapper">
           <img

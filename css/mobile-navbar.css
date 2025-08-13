@@ -1,0 +1,61 @@
+.mobile-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 300px;
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 15px 40px 15px 0px;
+  gap: 30px;
+  font-family: "Mollen personal use", sans-serif;
+  font-size: 20px;
+  .mobile-subtitle {
+    color: #c43a69;
+    font-weight: 600;
+  }
+
+  .mobile-lang {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+  a:hover {
+    color: white;
+    transform: scale(1.1);
+  }
+
+  .btn-contact {
+    border: 2px solid #c43a69;
+    border-radius: 50px;
+    background-color: #751938;
+    color: white;
+    padding: 5px 20px 5px 20px;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 15px;
+    a {
+      color: #c43a69;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .mobile-menu {
+    display: none;
+  }
+}
