@@ -25,17 +25,24 @@
 
     <!-- Referencias del css -->
     <link href="index.css" rel="stylesheet" type="text/css" />
-    <link href="../css/footer.css" rel="stylesheet" type="text/css" />
-    <link href="../css/mobile-navbar.css" rel="stylesheet" type="text/css" />
+    <link
+      href="../components/footer/index.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../components/navbar/index.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Necesarios para la navbar -->
     <!-- El css -->
-    <script src="../js/navbar.js" type="text/javascript"></script>
     <!-- El js -->
   </head>
 
   <body onload="fillContentVexthon()" class="background-info-container">
-    <navbar class="navbar">
+    <navbar id="navbar" style="position: sticky; top: 0; left: 0">
       <a href="/">
         <img
           src="../images/logo-pucra-blanco2-1-536x143.png"
@@ -49,16 +56,11 @@
         />
       </a>
 
-      <!-- Menú de escritorio -->
-      <div class="desktop-menu">
-        <a href="/" class="home link-2">Inicio</a>
-        <a href="/events" class="events link-2">Eventos</a>
-        <a href="/sponsors" aria-current="page" class="link-2 w--current"
-          >Sponsors</a
-        >
-        <a href="/about" aria-current="page" class="about-us link-2 w--current"
-          >Sobre Nosotros</a
-        >
+      <div class="navbar-desktop">
+        <a href="/" class="home">Inicio</a>
+        <a href="/events" class="events">Eventos</a>
+        <a href="/sponsors">Sponsors</a>
+        <a href="/about" class="about-us">Sobre Nosotros</a>
         <div class="dropdown">
           <div class="dropdown-toggle w-dropdown-toggle">
             <div id="lang-menu" class="link upper-case">ES</div>
@@ -94,17 +96,14 @@
             </button>
           </nav>
         </div>
-        <a href="/contact" class="contact button w-button">CONTACTO</a>
+        <a href="/contact" class="contact btn-contact">CONTACTO</a>
       </div>
-
+      <button class="navbar-mobile-close" onclick="showMobileMenu()">≡</button>
       <!-- Icono del menú burger (visible en móviles) -->
-      <div class="burger-menu-icon">
-        <span class="burger-icon">≡</span>
-      </div>
     </navbar>
 
     <!-- Menú hamburguesa desplegable para móviles -->
-    <navbar class="mobile-menu">
+    <navbar id="mobile-menu">
       <button class="close-mobile-menu" onclick="hideMobileMenu()">✕</button>
       <a href="/" class="home">Inicio</a>
       <a href="/events" class="events">Eventos</a>
@@ -138,9 +137,9 @@
       <!-- Subtítulo XARXES -->
       <div class="mobile-subtitle networks">REDES</div>
       <div class="social-links">
-        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="https://youtu.be/IH2Nb8DPKt0" class="social-icon"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/pucra.upc" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/pucra-upcc/" class="social-icon"><i class="fab fa-linkedin"></i></a>
       </div>
 
       <a href="/contact" class="contact btn-contact">Contacto</a>
@@ -217,14 +216,14 @@
         <div class="vex-text-container">
           <div>
             <h2 id="vex-thon" class="vex-title-descriptions">VEX-Thon</h2>
-            <p class="vex-text-descriptions">
+            <p class="vex-text-descriptions vex-thon-text">
               ¡Bienvenidos a la <strong>VEX-Thon</strong>! Este emocionante
               evento de <strong>robótica </strong>les ofrece una oportunidad
               única para que demuestren sus habilidades de ingeniería en un
               formato inspirado en la reconocida
               <strong>VEX Robotics Competition</strong>.
             </p>
-            <p class="vex-text-descriptions">
+            <p class="vex-text-descriptions vex-thon-text">
               Los participantes, organizados en equipos, dispondrán de una
               semana para
               <strong>diseñar, construir y programar</strong> un robot capaz de
@@ -238,18 +237,18 @@
             <h2 id="what-is-vex" class="vex-title-descriptions">
               ¿Qué es VEX?
             </h2>
-            <p class="vex-text-descriptions">
+            <p class="vex-text-descriptions what-is-vex-text">
               La <strong>VEX Robotics Competition</strong> es un desafío de
               robótica dirigida a estudiantes de todas las edades, organizado
               por <strong>Robotics Education & Competition Foundation</strong>.
             </p>
-            <p class="vex-text-descriptions">
+            <p class="vex-text-descriptions what-is-vex-text">
               Los equipos participantes tienen que
               <strong>diseñar, construir y programar</strong> un robot con el
               objetivo de superar un desafío y competir contra otros equipos en
               un campo de juego.
             </p>
-            <p class="vex-text-descriptions">
+            <p class="vex-text-descriptions what-is-vex-text">
               Esta competición fomenta habilidades en
               <strong>STEM</strong> (ciencia, tecnología, ingeniería y
               matemáticas), promoviendo la innovación, el trabajo en equipo y la
@@ -499,7 +498,7 @@
             <i class="fab fa-instagram"></i>
           </a>
           <a
-            href="https://www.linkedin.com/company/pucraupc?originalSubdomain=es"
+            href="https://www.linkedin.com/company/pucra-upcc/"
             target="_blank"
             class="footer-social-link"
           >
@@ -544,7 +543,9 @@
       </div>
     </footer>
     <script src="../js/language.js"></script>
+
     <script src="languageVexthon.js"></script>
+    <script src="../components/navbar/index.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
