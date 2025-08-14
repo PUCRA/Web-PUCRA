@@ -1,5 +1,6 @@
-const mobileDOM = document.getElementById("mobile-menu");
 const desktopDOM = document.getElementById("navbar");
+const mobileDOM = document.getElementById("mobile-menu");
+const backgroundDOM = document.getElementById("background-navbar");
 
 function showMobileMenu() {
   mobileDOM.style.opacity = "1";
@@ -13,6 +14,10 @@ function showMobileMenu() {
 `;
   mobileDOM.style.display = "flex";
   mobileDOM.style.transformStyle = "preserve-3d";
+
+  backgroundDOM.style.opacity = "1";
+  backgroundDOM.style.display = "block";
+  backgroundDOM.style.transformStyle = "preserve-3d";
 }
 
 function hideMobileMenu() {
@@ -27,20 +32,42 @@ function hideMobileMenu() {
 `;
   mobileDOM.style.display = "hide";
   mobileDOM.style.transformStyle = "preserve-3d";
+
+  backgroundDOM.style.opacity = "0";
+  backgroundDOM.style.display = "none";
+  backgroundDOM.style.transformStyle = "preserve-3d";
+}
+
+const langsDOM = document.getElementById("dropdown-langs");
+
+function showLangs() {
+  langsDOM.style.display = "flex";
+
+  // Listener para cerrar al clicar fuera
+  const clickOutsideBtn = (e) => {
+    if (!langsDOM.contains(e.target) && e.target !== langsDOM) {
+      hideLangs();
+      document.removeEventListener("click", clickOutsideBtn);
+    }
+  };
+
+  setTimeout(() => {
+    document.addEventListener("click", clickOutsideBtn);
+  }, 0);
+}
+
+function hideLangs() {
+  langsDOM.style.display = "none";
 }
 
 const umbralPorcentaje = 5; // Porcentaje del scroll total
-
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY; // Scroll en píxeles
   const scrollMax = document.documentElement.scrollHeight - window.innerHeight;
   const porcentaje = (scrollY / scrollMax) * 100;
-  console.log(porcentaje > umbralPorcentaje, porcentaje, umbralPorcentaje);
 
   if (porcentaje > umbralPorcentaje) {
     desktopDOM.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
-    console.log(desktopDOM);
-    
   } else {
     desktopDOM.style.backgroundColor = "rgba(0, 0, 0, 0)";
   }

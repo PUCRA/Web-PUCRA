@@ -416,7 +416,6 @@ function fillSpecificContent(mLang) {
   $("cat-mobile").style.display = mLang === "cat" ? "none" : "block";
   $("en-mobile").style.display = mLang === "en" ? "none" : "block";
   $("es-mobile").style.display = mLang === "es" ? "none" : "block";
-  $("actual-year").innerText = new Date().getFullYear(); // returns the current year
 }
 
 function changeLanguage() {
@@ -455,7 +454,6 @@ function fillContentVexthon() {
   );
 
   let contentVexthon = changeLanguage();
-  console.log("Contenido de VEX-Thon:", contentVexthon);
   //Navbar
   for (let i = 0; i < $$("home").length; i++) {
     $$("home")[i].innerHTML = contentVexthon.home;
@@ -537,7 +535,6 @@ function fillContentVexthon() {
   $("links").innerHTML = contentVexthon.links;
   $("contacts").innerHTML = contentVexthon.contacts;
 }
-
 
 function hideMobileMenu() {
   const mobileMenu = document.querySelector(".mobile-menu");
