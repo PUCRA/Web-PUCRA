@@ -4,16 +4,11 @@ function changeLanguageAbout(lang) {
   // window.location.reload(); // Uncomment if you want to reload the page after changing language
 }
 
-function changeLanguageAbout(lang) {
-  localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
-  fillContentAbout();
-}
-
 const timelineHistory = document.getElementById("timeline-historys");
 const timelineCompetition = document.getElementById("timeline-competitions");
 const historyBtn = document.getElementById("historyBtn");
 const competitionBtn = document.getElementById("competitionsBtn");
-const mobileMenuNavbar = document.getElementById("mobile-menu-navbar");
+
 
 function showCompetition() {
   timelineHistory.style.display = "none";
@@ -29,30 +24,3 @@ function showHistory() {
   competitionBtn.style.opacity = 0.4;
 }
 
-function showMobileMenu() {
-  mobileMenuNavbar.style.opacity = "1";
-  mobileMenuNavbar.style.transform = `
-  translate3d(0px, 0px, 0px)
-  scale3d(1, 1, 1)
-  rotateX(0deg)
-  rotateY(0deg)
-  rotateZ(0deg)
-  skew(0deg, 0deg)
-`;
-  mobileMenuNavbar.style.display = "flex";
-  mobileMenuNavbar.style.transformStyle = "preserve-3d";
-}
-
-function hideMobileMenu() {
-  mobileMenuNavbar.style.opacity = "0";
-  mobileMenuNavbar.style.transform = `
-  translate3d(100%, 0px, 0px)
-  scale3d(1, 1, 1)
-  rotateX(0deg)
-  rotateY(0deg)
-  rotateZ(0deg)
-  skew(0deg, 0deg)
-`;
-  mobileMenuNavbar.style.display = "hide";
-  mobileMenuNavbar.style.transformStyle = "preserve-3d";
-}

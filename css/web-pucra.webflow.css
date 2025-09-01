@@ -1588,30 +1588,7 @@ p {
   background-size: cover;
 }
 
-.container-7-sponsors {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 600vh;
-  max-width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: url('../images/pucra-timeline-2000x2829.png');
-  background-position: 50% 50%;
-  background-size: cover;
-}
+
 
 .heading-4 {
   margin-top: 0px;
@@ -1635,47 +1612,6 @@ p {
   text-align: center;
 }
 
-/* Containers Events */
-.container-Vex-2019, .container-Vex-2020, .container-Vex-2021, .container-Vex-2022, 
-.container-Vex-2023, .container-Vex-2024, .container-Vex-Thon{
-  display: flex;
-  max-width: 100%;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911));
-  background-position: 0 0, 50% 50%;
-  background-size: auto, cover;
-}
-
-.container-Vex-2019 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/dsc-207-2000x1326.jpg');
-}
-
-.container-Vex-2020 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/49492274747-891927b4bb-o-1-2000x1335.jpg');
-}
-
-.container-Vex-2021 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/bg_VEX_SPAIN_2021.jpg');
-}
-
-.container-Vex-2022 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/bg_VEX_SPAIN_2022.jpg');
-}
-
-.container-Vex-2023 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/Fondo_VEX_2023_Events.png');
-}
-
-.container-Vex-2024 {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/Foto_Regional_2023.png');
-}
-
-.container-Vex-Thon {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0.911)), url('../images/Imagenes-Vex-Thon/Vex-Thon-Fondo.jpg');
-}
 
 
 /*Imagen de fondo para la sección de eventos*/
@@ -3852,9 +3788,6 @@ p {
     margin-right: 0px;
   }
 
-  .button-4 {
-    margin-top: 20px;
-  }
 
   .container-5 {
     height: auto;
