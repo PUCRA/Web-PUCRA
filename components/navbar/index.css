@@ -9,6 +9,17 @@
   display: none;
 }
 
+.position-fixed {
+  position: fixed;
+  width: 100%;
+}
+
+.position-sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
 #mobile-menu {
   position: fixed;
   z-index: 200;
@@ -80,20 +91,22 @@
   background-color: #751938;
   color: white;
   padding: 5px 20px 5px 20px;
+  margin-right: 25px;
 }
 
 #navbar {
   display: flex;
   z-index: 90;
   justify-content: space-between;
-  padding-left: 25px;
-  padding-right: 25px;
   padding-top: 10px;
   transition: background-color 0.5s;
 
+  a:first-child {
+    margin-left: 25px;
+  }
+
   .navbar-desktop {
     display: flex;
-
     align-items: center;
     gap: 30px;
     color: white;
@@ -116,7 +129,7 @@
   font-size: 2rem;
   color: white;
   padding: 0px;
-  margin: 0px;
+  margin: 0px 25px 0px 0px;
   border: none;
   background-color: transparent;
   cursor: pointer;
