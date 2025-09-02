@@ -12,21 +12,21 @@
     <meta content="Webflow" name="generator" />
     <link href="../css/normalize.css" rel="stylesheet" type="text/css" />
 
-    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="home/index.css" rel="stylesheet" type="text/css" />
     <link
-      href="../images/favicon.png"
+      href="images/favicon.png"
       rel="shortcut icon"
       type="image/x-icon"
     />
-    <link href="../images/webclip.png" rel="apple-touch-icon" />
+    <link href="images/webclip.png" rel="apple-touch-icon" />
 
     <link
-      href="../components/footer/index.css"
+      href="components/footer/index.css"
       rel="stylesheet"
       type="text/css"
     />
     <link
-      href="../components/navbar/index.css"
+      href="components/navbar/index.css"
       rel="stylesheet"
       type="text/css"
     />
@@ -35,19 +35,19 @@
     <navbar id="navbar" class="position-fixed">
       <a href="/">
         <img
-          src="../images/logo-pucra-blanco2-1-536x143.png"
+          src="images/logo-pucra-blanco2-1-536x143.png"
           loading="lazy"
           sizes="(max-width: 479px) 100px, (max-width: 767px) 150px, 200px"
           srcset="
-            ../images/logo-pucra-blanco2-1-536x143-p-500.png 500w,
-            ../images/logo-pucra-blanco2-1-536x143.png       536w
+            images/logo-pucra-blanco2-1-536x143-p-500.png 500w,
+            images/logo-pucra-blanco2-1-536x143.png       536w
           "
           alt="PUCRA Logo"
         />
       </a>
 
       <div class="navbar-desktop">
-        <a href="/home" class="home">Inicio</a>
+        <a href="/" class="home">Inicio</a>
         <a href="/events" class="events">Eventos</a>
         <a href="/sponsors">Sponsors</a>
         <a href="/about" class="about-us">Sobre Nosotros</a>
@@ -138,12 +138,12 @@
 
       <div class="container-2 w-container">
         <img
-          src="../images/logo-pucra-blanco2-1-536x143.png"
+          src="images/logo-pucra-blanco2-1-536x143.png"
           loading="lazy"
           sizes="(max-width: 767px) 200px, (max-width: 991px) 250px, 450px"
           srcset="
-            ../images/logo-pucra-blanco2-1-536x143-p-500.png 500w,
-            ../images/logo-pucra-blanco2-1-536x143.png       536w
+            images/logo-pucra-blanco2-1-536x143-p-500.png 500w,
+            images/logo-pucra-blanco2-1-536x143.png       536w
           "
           alt=""
           class="image_pucra_home"
@@ -238,12 +238,12 @@
         </div>
         <div class="div-block-4">
           <img
-            src="../images/vex-blanco-778x456.png"
+            src="images/vex-blanco-778x456.png"
             loading="lazy"
             sizes="(max-width: 767px) 200px, (max-width: 991px) 250px, 450px"
             srcset="
-              ../images/vex-blanco-778x456-p-500.png 500w,
-              ../images/vex-blanco-778x456.png       778w
+              images/vex-blanco-778x456-p-500.png 500w,
+              images/vex-blanco-778x456.png       778w
             "
             alt=""
             class="image-6"
@@ -324,7 +324,7 @@
         <div class="footer-info">
           <a href="/" class="footer-logo-link">
             <img
-              src="../images/logo-pucra-blanco3-1-186x181.png"
+              src="images/logo-pucra-blanco3-1-186x181.png"
               loading="lazy"
               alt="Logo PUCRA"
               class="footer-logo-image"
@@ -359,9 +359,11 @@
       </footer>
     </div>
 
-    <script src="../js/language.js"></script>
-    <script src="./languageHome.js"></script>
-    <script src="./index.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/languageHome.js"></script>
+    <script src="home/index.js"></script>
+    <script src="components/navbar/index.js"></script>
+    <script src="components/footer/index.js"></script>
 
     <script>
       var endDate = new Date("Apr 28, 2025 00:00:00");
@@ -413,7 +415,5 @@
       }, 1000);
     </script>
 
-    <script src="../components/navbar/index.js"></script>
-    <script src="../components/footer/index.js"></script>
   </body>
 </html>
