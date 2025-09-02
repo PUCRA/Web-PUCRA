@@ -91,7 +91,6 @@
   background-color: #751938;
   color: white;
   padding: 5px 20px 5px 20px;
-  margin-right: 25px;
 }
 
 #navbar {
@@ -103,6 +102,10 @@
 
   a:first-child {
     margin-left: 25px;
+  }
+
+  .navbar-desktop > .btn-contact {
+    margin-right: 25px;
   }
 
   .navbar-desktop {
