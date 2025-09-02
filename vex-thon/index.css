@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-title {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.background-info-container {
+  background: url("../images/pucra-timeline-2000x2829-p-1080.png") no-repeat
+    center center;
+  background-size: cover;
+}
+.subtitle {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  max-width: 650px;
+}
+
+.shadow-image {
+  filter: drop-shadow(0px 1px 16px rgba(0, 0, 0, 0.75));
+}
+
+.container-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  overflow-x: scroll;
+}
+
+.relative-wrapper {
+  position: relative;
+}
+
+.left-route {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  height: 90%;
+  width: auto;
+}
+
+.right-route {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  height: 90%;
+  width: auto;
+}
+
+/* Tint images teams */
+.tint-image {
+  position: relative;
+  width: max-content;
+  height: 100;
+}
+
+.tint-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.blue-image {
+  background-color: blue;
+  -webkit-mask-image: var(--mask);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  mask-image: var(--mask);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.red-image {
+  background-color: red;
+  -webkit-mask-image: var(--mask);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  mask-image: var(--mask);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.tint-image img {
+  opacity: 0.8;
+  object-fit: cover;
+  height: 400px;
+}
+
+.faqs-container {
+  background-image: url("../images/Imagenes-Vex-Thon/Fondo\ FAQs\ VEX-Thon.png");
+  color: white;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 70px;
+  }
+  .summary-faq {
+    list-style: none; /* Elimina el estilo de lista */
+    cursor: pointer;
+    padding: 10px 0px 10px 0px;
+  }
+  .summary-faq::before {
+    content: "+"; /* Tu símbolo */
+    margin-right: 10px; /* Espacio entre símbolo y texto */
+    font-weight: bold;
+  }
+
+  details[open] .summary-faq::before {
+    content: "-";
+  }
+  article {
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    text-align: left;
+
+    section {
+      max-width: 500px;
+      summary {
+        font-weight: bold;
+      }
+    }
+  }
+}
+.vex-location-flex {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.vex-text-container {
+  max-width: 600px;
+}
+.vex-title-descriptions {
+  color: white;
+  text-align: center;
+}
+
+.vex-text-descriptions {
+  padding: 10px;
+  text-align: justify;
+  color: white;
+}
+.vex-thon-text {
+  padding: 10px;
+  text-align: justify;
+  color: white;
+}
+.what-is-vex-text {
+  padding: 10px;
+  text-align: justify;
+  color: white;
+}
+
+.what-is-vex-container {
+  max-width: 600px;
+}
+
+.location-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.btn-register {
+  padding: 10px 30px;
+  color: #ffffff;
+  background-color: #800040;
+  border: 2px solid #a9075b;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 30px;
+  transition: 0.4s ease-in-out; /* Suaviza la transición */
+  box-shadow: 0 0 0px rgba(0, 0, 255, 0); /* Sin sombra inicialmente */
+
+  &&:hover {
+    background-color: #a7245d;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 20px #bd1254, 0 0 40px #ee4798; /* Brillo azul */
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+.card {
+  max-width: 400px;
+  height: 190px;
+  padding: 15px;
+  background: #fff;
+  border: 6px solid #000;
+  box-shadow: 6px 6px 0 #000; /* Reducción de la sombra */
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: black;
+
+  .card-title {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    overflow: hidden;
+    line-height: 1.2; /* Aumenta la anchura de la línea */
+  }
+
+  .card-content {
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  &&:hover {
+    transform: translate(-6px, -6px); /* Ajuste del desplazamiento */
+    box-shadow: 9px 9px 0 #000; /* Ajuste del tamaño de la sombra en hover */
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .separator {
+    display: none;
+  }
+  .header-img {
+    display: none;
+  }
+  .subtitle {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .faqs-container {
+    article {
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
+  }
+}
