@@ -16,7 +16,6 @@ const aboutEs = {
   contact: "Contacto",
   contacts: "Contactos",
   links: "Links",
-  actual_year: "2024", // si es dinámico, puedes omitirlo o actualizarlo por JS
 
   events_container: [
     {
@@ -36,7 +35,6 @@ const aboutEs = {
       container_text:
         "El fin de semana del 4 y 5 de marzo ha tenido lugar en la Escola d´Enginyeria de Barcelona Est la final nacional de la VEX Robotics. Más de 40 equipos de diferentes categorías, han puesto a prueba sus robots y habilidades para conseguir clasificarse para la gran final mundial que ha tenido lugar el pasado mes de abril en Dallas (Texas). Un evento abierto al público que ha prometido un fin de semana repleto de éxitos y emociones.",
       container_button: "Más información",
-      container_button2: "Galería",
     },
     {
       // VEX 2022
@@ -49,21 +47,18 @@ const aboutEs = {
       container_text:
         "En un insólito año tan lleno de dificultades, PUCRA ha podido celebrar una nueva edición de la final de nacional de la VEX Robotics Competition, contando con la presencia de 25 equipos y más de 150 competidores. Reinventándonos y aprovechando las crecientes tendencias del streaming, logramos llegar a más de 2000 espectadores, en una primera edición semipresencial a causa de las restricciones de la Covid-19.",
       container_button: "Más información",
-      container_button2: "Galería",
     },
     {
       // VEX 2020
       container_text:
         "PUCRA ha convertido a Barcelona, durante el mes de febrero, en la capital de la robótica. Por segundo año consecutivo, ha tenido lugar en la Escola d´Enginyeria de Barcelona Est la final regional de Barcelona de la VEX Robotics. Además, en el edificio Vèrtex del Campus Nord de la UPC, se ha celebrado de manera simultánea la final nacional de la VEX Robotics Competion y la primera edición de la VEX Mediterranean Open con la participación de equipos nacionales e internacionales.",
       container_button: "Más información",
-      container_button2: "Galería",
     },
     {
       // VEX 2019
       container_text:
         "En nuestro segundo año como equipo de competición, nos hemos implicado plenamente en la comunidad VEX Robotics de nuestro país, conviertiéndonos en organizadores de la final regional de Barcelona. Siendo el primer año como Event Partners hemos reunido, en la Escola d´Enginyeria de Barceloan Est, más de 700 personas y más de 20 equipos para competir, disfrutar y compartir su pasión por la robótica y la tecnología.",
       container_button: "Más información",
-      container_button2: "Galería",
     },
   ],
 };
@@ -87,7 +82,6 @@ const aboutEn = {
   contacts: "Contacts",
   networks: "NETWORKS",
   links: "Links",
-  actual_year: "2024",
 
   events_container: [
     {
@@ -151,7 +145,6 @@ const aboutCat = {
   contact: "Contacte",
   contacts: "Contactes",
   links: "Enllaços",
-  actual_year: "2024",
 
   events_container: [
     {
@@ -270,10 +263,6 @@ function fillContentAbout() {
     $("title-history").innerHTML = contenAbout.section_title;
   }
 
-  if ($("actual-year")) {
-    $("actual-year").innerHTML = contenAbout.actual_year;
-  }
-
   // Footer
   $("follow-us").innerHTML = contenAbout.follow_us;
   $("address").innerHTML = contenAbout.address;
@@ -288,11 +277,6 @@ function fillContentAbout() {
 
     if (PUCRA_events_item.hasOwnProperty("container_button")) {
       $$("container_button")[i].innerHTML = PUCRA_events_item.container_button;
-    }
-
-    if (PUCRA_events_item.hasOwnProperty("container_button2")) {
-      $$("container_button2")[i].innerHTML =
-        PUCRA_events_item.container_button2;
     }
   }
 }

@@ -6,7 +6,7 @@ body {
 
 .article-header {
   background-color: black;
-  background-image: url("./images/pucra-timeline-2000x2829.png");
+  background-image: url("./images/bg_header.png");
   background-attachment: fixed;
   background-size: cover;
   padding: 100px 0px 130px 0px;
@@ -58,22 +58,48 @@ body {
     line-height: 30px;
     text-align: justify;
   }
+
+  .btn-container {
+    display: flex;
+    gap: 20px;
+  }
 }
 
 .image-vexthon {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("./images/Vex-Thon-Fondo.jpg");
+    url("./images/bg_Vex-Thon.jpg");
 }
 
 .image-regional {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("./images//Foto_Regional_2023.png");
+    url("./images/bg_Regional_2023.png");
 }
 
-.image-vex-23{
+.image-vex-23 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("./images/Fondo_VEX_2023_Events.png");
+    url("./images/bg_VEX_2023_Events.png");
 }
+
+.image-vex-22 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./images/bg_VEX_SPAIN_2022.jpg");
+}
+
+.image-vex-21 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./images/bg_VEX_SPAIN_2021.jpg");
+}
+
+.image-vex-20 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./images/bg_VEX_SPAIN_2020.jpg");
+}
+
+.image-vex-19 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./images/bg_VEX_SPAIN_2019.jpg");
+}
+
 .reverse-grid {
   direction: rtl;
 }
@@ -106,6 +132,11 @@ body {
   background-color: #751938;
   text-align: center;
   max-width: 190px;
+  transition: transform 0.5s;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 }
 /* old +/
 
