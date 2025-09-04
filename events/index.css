@@ -9,7 +9,7 @@ body {
   font-weight: 600;
   text-align: center;
   color: white;
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
 }
 
@@ -34,16 +34,15 @@ body {
   background-color: rgb(42, 42, 42);
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 280px 60px;
+  grid-template-rows: auto auto;
   grid-template-areas:
     "grid-1 grid-2"
     "grid-3 grid-4";
   padding: 50px;
-  justify-content: center;
   place-content: center;
   align-items: center;
   gap: 80px;
-  height: 100vh;
+  min-height: 100vh;
 
   background-attachment: fixed;
   background-size: cover;
@@ -117,20 +116,7 @@ body {
     url("./images/bg_VEX_SPAIN_2019.jpg");
 }
 
-.article-container:nth-child(even) {
-  grid-template-areas:
-    "grid-2 grid-1"
-    "grid-4 grid-3";
-}
-
 @media (max-width: 900px) {
-  .article-container:nth-child(even) {
-    grid-template-areas:
-      "grid-1 grid-1"
-      "grid-2 grid-2"
-      "grid-3 grid-3"
-      "grid-4 grid-4";
-  }
   .article-container {
     height: auto;
     grid-template-columns: auto auto;
@@ -139,8 +125,8 @@ body {
     grid-template-areas:
       "grid-1 grid-1"
       "grid-2 grid-2"
-      "grid-3 grid-3"
-      "grid-4 grid-4";
+      "grid-4 grid-4"
+      "grid-3 grid-3";
 
     gap: 10px;
     place-items: center;
@@ -167,4 +153,9 @@ body {
     transform: scale(1.1);
     cursor: pointer;
   }
+}
+.center-img-p {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
