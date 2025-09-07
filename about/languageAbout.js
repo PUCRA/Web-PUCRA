@@ -358,6 +358,9 @@ function fillContentAbout() {
 
   let contenAbout = changeLanguage();
 
+  $("competitionsBtn").innerHTML = contenAbout.competitions;
+  $("historyBtn").innerHTML = contenAbout.history;
+
   //Navbar
   for (let i = 0; i < $$("home").length; i++) {
     $$("home")[i].innerHTML = contenAbout.home;
