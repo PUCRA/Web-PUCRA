@@ -1,3 +1,55 @@
 body {
   margin: 0px;
+  background-color: gray;
+}
+
+.camera {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "up up up"
+    "left  zoomin right"
+    "left  zoomout right"
+    "down down down";
+  max-width: 100px;
+  gap: 4px;
+
+  button {
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 6px;
+
+    &&:hover {
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      transition: 0.5s background-color;
+    }
+  }
+
+  button:nth-child(1) {
+    grid-area: up;
+  }
+
+  button:nth-child(2) {
+    grid-area: down;
+  }
+
+  button:nth-child(3) {
+    grid-area: left;
+  }
+
+  button:nth-child(4) {
+    grid-area: right;
+  }
+
+  button:nth-child(5) {
+    grid-area: zoomin;
+  }
+
+  button:nth-child(6) {
+    grid-area: zoomout;
+  }
 }
