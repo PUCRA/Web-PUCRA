@@ -333,13 +333,17 @@ function changeLanguage() {
   switch (mLang) {
     case "cat":
       contentLang = aboutCat;
+      $("lang-menu").innerText = contentLang.language_cat;
       break;
     case "en":
       contentLang = aboutEn;
+      $("lang-menu").innerText = contentLang.language_en;
       break;
     default:
       // Default 'es' if no language is set or if the language is not recognized
       contentLang = aboutEs;
+      $("lang-menu").innerText = contentLang.language_es;
+
       break;
   }
   return contentLang;
@@ -357,6 +361,9 @@ function fillContentAbout() {
   );
 
   let contenAbout = changeLanguage();
+
+  $("competitionsBtn").innerHTML = contenAbout.competitions;
+  $("historyBtn").innerHTML = contenAbout.history;
 
   //Navbar
   for (let i = 0; i < $$("home").length; i++) {
@@ -380,8 +387,6 @@ function fillContentAbout() {
     $$("langs")[i].innerHTML = contenAbout.languages;
   }
 
-  
-  
   // Main Section
   $("title-history").innerHTML = contenAbout.section_title;
 
@@ -390,7 +395,6 @@ function fillContentAbout() {
   $("address").innerHTML = contenAbout.address;
   $("links").innerHTML = contenAbout.links;
   $("contacts").innerHTML = contenAbout.contacts;
-
 
   // Contact
   for (let i = 0; i < $$("contact").length; i++) {

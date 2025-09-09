@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <title>PUCRA - Sobre Nosotros</title>
-    <meta content="PUCRA About-ES" property="og:title" />
-    <meta content="PUCRA About-ES" property="twitter:title" />
+    <meta content="PUCRA About" property="og:title" />
+    <meta content="PUCRA About" property="twitter:title" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <meta content="Webflow" name="generator" />
-    <link href="../css/normalize.css" rel="stylesheet" type="text/css" />
     <link href="index.css" rel="stylesheet" type="text/css" />
 
     <link
@@ -30,7 +27,6 @@
     <link href="../images/webclip.png" rel="apple-touch-icon" />
   </head>
   <body onload="fillContentAbout()">
-
     <navbar id="navbar" class="position-fixed">
       <a href="/">
         <img
@@ -118,498 +114,420 @@
 
       <a href="/contact" class="contact btn-contact">Contacto</a>
     </navbar>
+    <h1 id="title-history">SOBRE NOSOTROS</h1>
+    <div class="subtitle-container">
+      <h2>
+        <button
+          onclick="showCompetition()"
+          id="competitionsBtn"
+          class="subtitle-btn upper-case"
+        >
+          COMPETICIONES
+        </button>
+      </h2>
+      <h2>
+        <button
+          onclick="showHistory()"
+          id="historyBtn"
+          class="subtitle-btn upper-case"
+        >
+          HISTORIA
+        </button>
+      </h2>
+    </div>
 
-    <div id="luxy" class="smooth-wrapper">
-      <div class="container-20 w-container">
-        <h1 id="title-history" class="heading-10">SOBRE NOSOTROS</h1>
-        <div class="subtitle-container">
-          <h2 class="subtitle">
-            <button
-              onclick="showCompetition()"
-              id="competitionsBtn"
-              class="upper-case"
-            >
-              COMPETICIONES
-            </button>
-          </h2>
-          <h2 class="subtitle">
-            <button onclick="showHistory()" id="historyBtn" class="upper-case">
-              HISTORIA
-            </button>
-          </h2>
+    <article id="timeline-historys" class="timeline-parent">
+      <!-- timeline Historia-->
+      <p class="timeline-history-date">Septiembre 2017</p>
+      <section class="section-timeline">
+        <img
+          src="./images/logo_pucra_antiguo.jpg"
+          loading="lazy"
+          alt="pucra Polytechnnic University of catalonia Robotics Association"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
         </div>
-
-        <div id="timeline-historys" class="div-block-27">
-          <!-- timeline Historia-->
-          <p class="timeline-history-date paragraph-28">Septiembre 2017</p>
-          <div class="div-block-28">
-            <div class="div-block-30 timeline-image">
-              <img
-                src="../images/logo_pucra_antiguo.jpg"
-                loading="lazy"
-                sizes="(max-width: 479px) 70vw, (max-width: 767px) 43vw, (max-width: 991px) 39vw, 27vw"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="div-block-29 timeline-text">
-              <h1 class="timeline-history-title heading-11">
-                FUNDACIÓN DE PUCRA
-              </h1>
-              <p class="timeline-history-text paragraph-29">
-                La necesidad de continuar aprendiendo fuera del aula y poder
-                compartir sueños e inquietudes con otros estudiantes, hizo que
-                en 2017, se fundara PUCRA, la primera y única asociación de este
-                tipo en todo el territorio español. El objetivo principal ha
-                sido siempre participar y ganar las competiciones
-                internacionales más importantes del sector. <br />
-              </p>
-              <div class="subtitle div-block-20">
-                <button
-                  style="font-size: 20px"
-                  onclick="showCompetition()"
-                  class="timeline-history-link"
-                >
-                  Participaciones del equipo de competición
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <p class="timeline-history-date paragraph-28">Septiembre 2018</p>
-          <div class="div-block-28">
-            <div class="div-block-30 timeline-image">
-              <img
-                src="../images/Timeline_2021.png"
-                loading="lazy"
-                sizes="(max-width: 479px) 70vw, (max-width: 767px) 43vw, (max-width: 991px) 39vw, 27vw"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="div-block-29 timeline-text">
-              <h1 class="timeline-history-title heading-11">
-                INICIO DE PUCRA FACTORY
-              </h1>
-              <p class="timeline-history-text paragraph-29">
-                El proyecto surgió de la necesidad de dar continuidad a las
-                nuevas generaciones de la asociación, fomentando las vocaciones
-                científico-tecnológicas de los más jóvenes. Durante los últimos
-                años hemos tutorizado varios equipos propios de secundaria y
-                bachillerato para participar en la categoría de High School de
-                la VEX Robotics Competition. <br />
-              </p>
-            </div>
-          </div>
-
-          <p class="timeline-history-date paragraph-28">Febrero 2020</p>
-          <div class="div-block-28">
-            <div class="div-block-30 timeline-image">
-              <img
-                src="../images/d6sqcwvw4ayrenb-952x714.jpg"
-                loading="lazy"
-                sizes="(max-width: 479px) 70vw, (max-width: 767px) 43vw, (max-width: 991px) 39vw, 27vw"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="div-block-29 timeline-text">
-              <h1 class="timeline-history-title heading-11">
-                PREMIO ASSOCIACIONES UPC
-              </h1>
-              <p class="timeline-history-text paragraph-29">
-                PUCRA recibió el 1er premio dirigido a las asociaciones de
-                estudiantes de la UPC para reconocer y promover el
-                asociacionismo, su implicación y el fomento de los valores
-                inspiradores de la vida universitaria.<br />
-              </p>
-            </div>
-          </div>
-
-          <p class="timeline-history-date paragraph-28">Septiembre 2020</p>
-          <div class="div-block-28">
-            <div class="div-block-30 timeline-image">
-              <img
-                src="../images/plan_social.PNG"
-                loading="lazy"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="div-block-29 timeline-text">
-              <h1 class="timeline-history-title heading-11">PLAN SOCIAL</h1>
-              <p class="timeline-history-text paragraph-29">
-                Dado que nuestro campus se encuentra entre los barrios del Besòs
-                y la Mina, dentro de las actividades de responsabilidad social
-                que se llevan a cabo desde la dirección de nuestra escuela,
-                hemos colaborado para dar la oportunidad a varios centros
-                socioeducativos del entorno para poder participar en la
-                categoría de IQ de la VEX Robotics Competition, abriendo los
-                horizontes de más de 100 niños en situaciones vulnerables.<br />
-              </p>
-            </div>
-          </div>
-
-          <p class="timeline-history-date paragraph-28">Noviembre 2022</p>
-          <div class="div-block-28">
-            <div class="div-block-30 timeline-image">
-              <img
-                src="../images/Nov_2022_timeline.png"
-                loading="lazy"
-                sizes="(max-width: 479px) 70vw, (max-width: 767px) 43vw, (max-width: 991px) 39vw, 27vw"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="div-block-29 timeline-text">
-              <h1 class="timeline-history-title heading-11">
-                PREMIO ASSOCIACIONES UPC
-              </h1>
-              <p class="timeline-history-text paragraph-29">
-                Una vez más, la UPC corroboró nuestro trabajo e implicación en
-                la vida universitaria, otorgándonos el premio de asociaciones en
-                la disciplina de estudios y formación transversal, demostrando
-                que nuestro proyecto tiene una gran visión de futuro. <br />
-              </p>
-            </div>
-          </div>
+        <div class="timeline-text">
+          <h1 class="timeline-history-title upper-case">FUNDACIÓN DE PUCRA</h1>
+          <p class="timeline-history-text">
+            La necesidad de continuar aprendiendo fuera del aula y poder
+            compartir sueños e inquietudes con otros estudiantes, hizo que en
+            2017, se fundara PUCRA, la primera y única asociación de este tipo
+            en todo el territorio español. El objetivo principal ha sido siempre
+            participar y ganar las competiciones internacionales más importantes
+            del sector.
+          </p>
+          <button
+            onclick="showCompetition()"
+            class="subtitle-btn timeline-history-link"
+          >
+            Participaciones del equipo de competición
+          </button>
         </div>
-
-        <div id="timeline-competitions" class="div-block-27">
-          <!-- timeline competitions-->
-          <p class="timeline-competition-date paragraph-28">Mayo 2025</p>
-
-          <div class="div-block-28">
-            <div class="timeline-image div-block-30">
-              <img
-                src="../images/Imagenes Eventos/SENER_Fondo.jpg"
-                loading="lazy"
-                sizes="(max-width: 479px) 70vw, (max-width: 767px) 43vw, (max-width: 991px) 39vw, 27vw"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="timeline-text div-block-29">
-              <h1 class="timeline-competition-title heading-11">
-                SENER-CEA's Bot Talent 2025
-              </h1>
-              <p class="timeline-competition-text paragraph-29">
-                El 6 de mayo, el equipo PUCRA viajó a Madrid para participar por
-                primera vez en la competición “Sener-CEA's Bot Talent”, un
-                desafío de diseño y programación de robots autónomos inspirado
-                en misiones de la NASA. En ella, se logró una doble victoria,
-                ganando tanto el premio de diseño como el premio absoluto del
-                jurado. El equipo, formado íntegramente por estudiantes de
-                grado, demostró una gran solvencia en visión por computador,
-                navegación inteligente e IA aplicada. Un éxito que refleja el
-                talento, la dedicación y el trabajo en equipo de sus
-                miembros.<br />
-              </p>
-            </div>
-          </div>
-
-          <p class="timeline-competition-date paragraph-28">Febrero 2023</p>
-          <div class="div-block-28">
-            <div class="timeline-image div-block-30">
-              <img
-                src="../images/Timeline_2023.png"
-                loading="lazy"
-                sizes="(max-width: 479px) 70vw, (max-width: 767px) 43vw, (max-width: 991px) 39vw, 27vw"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="timeline-text div-block-29">
-              <h1 class="timeline-competition-title heading-11">
-                VEX ROBOTICS 2023
-              </h1>
-              <p class="timeline-competition-text paragraph-29">
-                Esta temporada, el equipo participó en una modalidad específica
-                de la VEX Robotics Competition, logrando una octava posición en
-                el ranking mundial de Skills autónomo. <br /><br />El equipo
-                participó por segundo año consecutivo en la gran final mundial
-                VEX WORLD CHAMPIONSHIP 2023, celebrada en Dallas (Texas) a
-                finales de abril.<br />
-              </p>
-            </div>
-          </div>
-
-          <p class="timeline-competition-date paragraph-28">Abril 2022</p>
-          <div class="div-block-28">
-            <div class="timeline-image div-block-30">
-              <img
-                src="../images/Timeline_2022.png"
-                loading="lazy"
-                sizes="(max-width: 479px) 70vw, (max-width: 767px) 43vw, (max-width: 991px) 39vw, 27vw"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="timeline-text div-block-29">
-              <h1 class="timeline-competition-title heading-11">
-                VEX ROBOTICS 2022
-              </h1>
-              <p class="timeline-competition-text paragraph-29">
-                En una temporada llena de retos, PUCRA tuvo la oportunidad de
-                volver a participar en la gran final mundial VEX WORLD
-                CHAMPIONSHIP 2022, celebrada en Dallas (Texas). <br /><br />Una
-                gran oportunidad para conocer y colaborar con otros equipos
-                internacionales, aprendiendo de sus metodologías y objetivos,
-                para darle un enfoque muy distinto a la temporada siguiente.
-                <br />
-              </p>
-            </div>
-          </div>
-
-          <p class="timeline-competition-date paragraph-28">Enero 2021</p>
-          <div class="div-block-28">
-            <div class="timeline-image div-block-30">
-              <img
-                src="../images/tahrsis_2021.png"
-                loading="lazy"
-                sizes="(max-width: 479px) 70vw, (max-width: 767px) 43vw, (max-width: 991px) 39vw, 27vw"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="timeline-text div-block-29">
-              <h1 class="timeline-competition-title heading-11">
-                THARSIS 2021
-              </h1>
-              <p class="timeline-competition-text paragraph-29">
-                Tras la participación en la edición online de la ERC, el equipo
-                enfocó todos sus esfuerzos en la evolución y construcción de
-                THARSIS. Desde el diseño mecánico y fabricación de todos los
-                sistemas estructurales y motrices, hasta la implementación de
-                redes neuronales para la navegación y detección autónoma, además
-                del diseño propio de toda la electrónica de potencia y control.
-                <br />
-              </p>
-            </div>
-          </div>
-
-          <p class="timeline-competition-date paragraph-28">Septiembre 2020</p>
-          <div class="div-block-28">
-            <div class="timeline-image div-block-30">
-              <img
-                src="../images/Timeline_2020_Tharsis.jpg"
-                loading="lazy"
-                sizes="(max-width: 479px) 70vw, (max-width: 767px) 43vw, (max-width: 991px) 39vw, 27vw"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="timeline-text div-block-29">
-              <h1 class="timeline-competition-title heading-11">
-                EUROPEAN ROVER CHALLENGE 2020
-              </h1>
-              <p class="timeline-competition-text paragraph-29">
-                En su tercera temporada, PUCRA decidió dar un paso más allá y
-                afrontar un nuevo reto tecnológico: la European Rover Challenge
-                (ERC), una competición universitaria que plantea soluciones a
-                problemas reales de las misiones espaciales actuales.
-                <br /><br />A pesar de los meses de pandemia y la
-                semipresencialidad universitaria, el equipo logró reinventarse,
-                diseñando THARSIS, un robot autónomo enfocado en la exploración
-                espacial, para participar en la ERC 2020 en formato online. Con
-                más de 100 equipos internacionales, PUCRA consiguió llegar a la
-                final en su primer año, alcanzando una orgullosa octava
-                posición. <br />
-              </p>
-            </div>
-          </div>
-
-          <p class="timeline-competition-date paragraph-28">Julio 2019</p>
-          <div class="div-block-28">
-            <div class="timeline-image div-block-30">
-              <img
-                src="../images/b15ea674-4912-4712-9eeb-fd664d7dabac-474x261.jpg"
-                loading="lazy"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="timeline-text div-block-29">
-              <h1 class="timeline-competition-title heading-11">
-                ICE VISION HACK A.I AND M.L.
-              </h1>
-              <p class="timeline-competition-text paragraph-29">
-                Un avance más del equipo de competición, participando en una
-                nueva disciplina. ICE VISION HACK es una competición de
-                inteligencia artificial y Machine Learning, celebrada en Moscú
-                (Rusia). PUCRA consiguió proclamarse campeón europeo de la
-                competición, reafirmando su posición como asociación nacional e
-                internacional de robótica. <br />
-              </p>
-            </div>
-          </div>
-
-          <p class="timeline-competition-date paragraph-28">Febrero 2019</p>
-          <div class="div-block-28">
-            <div class="timeline-image div-block-30">
-              <img
-                src="../images/descarga-1-952x536.png"
-                loading="lazy"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="timeline-text div-block-29">
-              <h1 class="timeline-competition-title heading-11">
-                VEX ROBOTICS 2019
-              </h1>
-              <p class="timeline-competition-text paragraph-29">
-                Tras la participación del primer año en VEX Robotics y la
-                experiencia adquirida en otras competiciones, logramos
-                convertirnos en campeones nacionales, clasificándonos para la
-                gran final mundial VEX WORLD CHAMPIONSHIP 2019, celebrada en
-                Louisville (Kentucky). <br /><br />Luchando codo a codo con los
-                mejores equipos de los cinco continentes, superando las fases
-                eliminatorias, PUCRA obtuvo la mejor clasificación de un equipo
-                europeo en la historia de la competición. Una experiencia
-                inolvidable que impulsó al equipo a otro nivel. <br />
-              </p>
-            </div>
-          </div>
-
-          <p class="timeline-competition-date paragraph-28">Septiembre 2018</p>
-          <div class="div-block-28">
-            <div class="timeline-image div-block-30">
-              <img
-                src="../images/dnoounoxgaalh9s-952x634.jpg"
-                loading="lazy"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="timeline-text div-block-29">
-              <h1 class="timeline-competition-title heading-11">
-                FRA - ROBOT EXTREME
-              </h1>
-              <p class="timeline-competition-text paragraph-29">
-                En la preparación de la segunda temporada, el equipo decidió
-                participar en un formato de competición diferente a todos los
-                anteriores. La lucha de robots es una competición intensa,
-                emocionante y técnicamente muy exigente, donde PUCRA destacó por
-                su potencial. <br /><br />PUCRA consiguió ser finalista y
-                campeón europeo en la Robot Extreme celebrada en Colchester
-                (Reino Unido), compitiendo contra los mejores equipos del
-                mundo.<br />
-              </p>
-            </div>
-          </div>
-
-          <p class="timeline-competition-date paragraph-28">Abril 2018</p>
-          <div class="div-block-28">
-            <div class="timeline-image div-block-30">
-              <img
-                src="../images/eurobot-middlesex-university-1-952x508.jpg"
-                loading="lazy"
-                sizes="(max-width: 479px) 70vw, (max-width: 767px) 43vw, (max-width: 991px) 39vw, 27vw"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="timeline-text div-block-29">
-              <h1 class="timeline-competition-title heading-11">
-                EUROBOT ESPAÑA 2018
-              </h1>
-              <p class="timeline-competition-text paragraph-29">
-                Tan solo dos meses después de su triunfo con VEX, PUCRA
-                participó en Eurobot 2018, donde se consagró como el 25º en el
-                ranking mundial de más de 3000 equipos, logrando la mejor
-                clasificación nacional.<br />
-              </p>
-            </div>
-          </div>
-
-          <p class="timeline-competition-date paragraph-28">Marzo 2018</p>
-          <div class="div-block-28">
-            <div class="timeline-image div-block-30">
-              <img
-                src="../images/dwpgglmwaaeokgg-952x714.jpg"
-                loading="lazy"
-                sizes="(max-width: 479px) 70vw, (max-width: 767px) 43vw, (max-width: 991px) 39vw, 27vw"
-                alt=""
-                class="image-11"
-              />
-            </div>
-            <div class="div-block-31">
-              <div class="div-block-32"></div>
-              <div class="div-block-33"></div>
-            </div>
-            <div class="timeline-text div-block-29">
-              <h1 class="timeline-competition-title heading-11">
-                VEX Robotics 2018
-              </h1>
-              <p class="timeline-competition-text paragraph-29">
-                En nuestro primer año, PUCRA participó en la VEX Robotics
-                Competition, clasificándose para la final estatal. Siendo
-                finalistas nacionales y el primer equipo universitario de la
-                competición, un resultado magnífico para la primera
-                participación del equipo.<br />
-              </p>
-            </div>
-          </div>
+      </section>
+      <div class="mobile-timeline"></div>
+      <p class="timeline-history-date">Septiembre 2018</p>
+      <section class="section-timeline">
+        <img
+          src="./images/Timeline_2021.png"
+          loading="lazy"
+          alt="Robotic Competition 2021"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
         </div>
-      </div>
-
+        <div class="timeline-text">
+          <h1 class="timeline-history-title">INICIO DE PUCRA FACTORY</h1>
+          <p class="timeline-history-text">
+            El proyecto surgió de la necesidad de dar continuidad a las nuevas
+            generaciones de la asociación, fomentando las vocaciones
+            científico-tecnológicas de los más jóvenes. Durante los últimos años
+            hemos tutorizado varios equipos propios de secundaria y bachillerato
+            para participar en la categoría de High School de la VEX Robotics
+            Competition.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+      <p class="timeline-history-date">Febrero 2020</p>
+      <section class="section-timeline">
+        <img
+          src="./images/d6sqcwvw4ayrenb-952x714.jpg"
+          loading="lazy"
+          alt="UPC logo"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-history-title">PREMIO ASSOCIACIONES UPC</h1>
+          <p class="timeline-history-text">
+            PUCRA recibió el 1er premio dirigido a las asociaciones de
+            estudiantes de la UPC para reconocer y promover el asociacionismo,
+            su implicación y el fomento de los valores inspiradores de la vida
+            universitaria.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+      <p class="timeline-history-date">Septiembre 2020</p>
+      <section class="section-timeline">
+        <img
+          src="./images/plan_social.PNG"
+          loading="lazy"
+          alt="Robots en una mesa"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-history-title">PLAN SOCIAL</h1>
+          <p class="timeline-history-text">
+            Dado que nuestro campus se encuentra entre los barrios del Besòs y
+            la Mina, dentro de las actividades de responsabilidad social que se
+            llevan a cabo desde la dirección de nuestra escuela, hemos
+            colaborado para dar la oportunidad a varios centros socioeducativos
+            del entorno para poder participar en la categoría de IQ de la VEX
+            Robotics Competition, abriendo los horizontes de más de 100 niños en
+            situaciones vulnerables.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+      <p class="timeline-history-date">Noviembre 2022</p>
+      <section class="section-timeline">
+        <img
+          src="./images/Nov_2022_timeline.png"
+          loading="lazy"
+          alt="Premi 600€"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-history-title">PREMIO ASSOCIACIONES UPC</h1>
+          <p class="timeline-history-text">
+            Una vez más, la UPC corroboró nuestro trabajo e implicación en la
+            vida universitaria, otorgándonos el premio de asociaciones en la
+            disciplina de estudios y formación transversal, demostrando que
+            nuestro proyecto tiene una gran visión de futuro.
+          </p>
+        </div>
+      </section>
+    </article>
+    <article id="timeline-competitions" class="timeline-parent">
+      <!-- timeline competitions-->
+      <p class="timeline-competition-date">Mayo 2025</p>
+      <section class="section-timeline">
+        <img
+          src="./images/SENER_Fondo.jpg"
+          loading="lazy"
+          alt="SENER-CEA's Bot Talent 2025"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-competition-title upper-case">
+            SENER-CEA's Bot Talent 2025
+          </h1>
+          <p class="timeline-competition-text">
+            El 6 de mayo, el equipo PUCRA viajó a Madrid para participar por
+            primera vez en la competición “Sener-CEA's Bot Talent”, un desafío
+            de diseño y programación de robots autónomos inspirado en misiones
+            de la NASA. En ella, se logró una doble victoria, ganando tanto el
+            premio de diseño como el premio absoluto del jurado. El equipo,
+            formado íntegramente por estudiantes de grado, demostró una gran
+            solvencia en visión por computador, navegación inteligente e IA
+            aplicada. Un éxito que refleja el talento, la dedicación y el
+            trabajo en equipo de sus miembros.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+      <p class="timeline-competition-date">Febrero 2023</p>
+      <section class="section-timeline">
+        <img
+          src="./images/Timeline_2023.png"
+          loading="lazy"
+          alt="Pucra Robot"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-competition-title">VEX ROBOTICS 2023</h1>
+          <p class="timeline-competition-text">
+            Esta temporada, el equipo participó en una modalidad específica de
+            la VEX Robotics Competition, logrando una octava posición en el
+            ranking mundial de Skills autónomo.El equipo participó por segundo
+            año consecutivo en la gran final mundial VEX WORLD CHAMPIONSHIP
+            2023, celebrada en Dallas (Texas) a finales de abril.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+      <p class="timeline-competition-date">Abril 2022</p>
+      <section class="section-timeline">
+        <img
+          src="./images/Timeline_2022.png"
+          loading="lazy"
+          alt="Pucra Spain 2022"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-competition-title">VEX ROBOTICS 2022</h1>
+          <p class="timeline-competition-text">
+            En una temporada llena de retos, PUCRA tuvo la oportunidad de volver
+            a participar en la gran final mundial VEX WORLD CHAMPIONSHIP 2022,
+            celebrada en Dallas (Texas). Una gran oportunidad para conocer y
+            colaborar con otros equipos internacionales, aprendiendo de sus
+            metodologías y objetivos, para darle un enfoque muy distinto a la
+            temporada siguiente.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+      <p class="timeline-competition-date">Enero 2021</p>
+      <section class="section-timeline">
+        <img
+          src="./images/tahrsis_2021.png"
+          loading="lazy"
+          alt="Pucra Robot 2021"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-competition-title">THARSIS 2021</h1>
+          <p class="timeline-competition-text">
+            Tras la participación en la edición online de la ERC, el equipo
+            enfocó todos sus esfuerzos en la evolución y construcción de
+            THARSIS. Desde el diseño mecánico y fabricación de todos los
+            sistemas estructurales y motrices, hasta la implementación de redes
+            neuronales para la navegación y detección autónoma, además del
+            diseño propio de toda la electrónica de potencia y control.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+      <p class="timeline-competition-date">Septiembre 2020</p>
+      <section class="section-timeline">
+        <img
+          src="./images/Timeline_2020_Tharsis.jpg"
+          loading="lazy"
+          alt="Pucra Robot"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-competition-title">
+            EUROPEAN ROVER CHALLENGE 2020
+          </h1>
+          <p class="timeline-competition-text">
+            En su tercera temporada, PUCRA decidió dar un paso más allá y
+            afrontar un nuevo reto tecnológico: la European Rover Challenge
+            (ERC), una competición universitaria que plantea soluciones a
+            problemas reales de las misiones espaciales actuales. A pesar de los
+            meses de pandemia y la semipresencialidad universitaria, el equipo
+            logró reinventarse, diseñando THARSIS, un robot autónomo enfocado en
+            la exploración espacial, para participar en la ERC 2020 en formato
+            online. Con más de 100 equipos internacionales, PUCRA consiguió
+            llegar a la final en su primer año, alcanzando una orgullosa octava
+            posición.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+      <p class="timeline-competition-date">Julio 2019</p>
+      <section class="section-timeline">
+        <img
+          src="./images/b15ea674-4912-4712-9eeb-fd664d7dabac-474x261.jpg"
+          loading="lazy"
+          alt="Pucra People"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-competition-title">
+            ICE VISION HACK A.I AND M.L.
+          </h1>
+          <p class="timeline-competition-text">
+            Un avance más del equipo de competición, participando en una nueva
+            disciplina. ICE VISION HACK es una competición de inteligencia
+            artificial y Machine Learning, celebrada en Moscú (Rusia). PUCRA
+            consiguió proclamarse campeón europeo de la competición, reafirmando
+            su posición como asociación nacional e internacional de robótica.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+      <p class="timeline-competition-date">Febrero 2019</p>
+      <section class="section-timeline">
+        <img
+          src="./images/descarga-1-952x536.png"
+          loading="lazy"
+          alt="Parade of Nation Spain"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-competition-title">VEX ROBOTICS 2019</h1>
+          <p class="timeline-competition-text">
+            Tras la participación del primer año en VEX Robotics y la
+            experiencia adquirida en otras competiciones, logramos convertirnos
+            en campeones nacionales, clasificándonos para la gran final mundial
+            VEX WORLD CHAMPIONSHIP 2019, celebrada en Louisville (Kentucky).
+            Luchando codo a codo con los mejores equipos de los cinco
+            continentes, superando las fases eliminatorias, PUCRA obtuvo la
+            mejor clasificación de un equipo europeo en la historia de la
+            competición. Una experiencia inolvidable que impulsó al equipo a
+            otro nivel.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+      <p class="timeline-competition-date">Septiembre 2018</p>
+      <section class="section-timeline">
+        <img
+          src="./images/dnoounoxgaalh9s-952x634.jpg"
+          loading="lazy"
+          alt="FRA - ROBOT EXTREME"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-competition-title">FRA - ROBOT EXTREME</h1>
+          <p class="timeline-competition-text">
+            En la preparación de la segunda temporada, el equipo decidió
+            participar en un formato de competición diferente a todos los
+            anteriores. La lucha de robots es una competición intensa,
+            emocionante y técnicamente muy exigente, donde PUCRA destacó por su
+            potencial. PUCRA consiguió ser finalista y campeón europeo en la
+            Robot Extreme celebrada en Colchester (Reino Unido), compitiendo
+            contra los mejores equipos del mundo.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+      <p class="timeline-competition-date">Abril 2018</p>
+      <section class="section-timeline">
+        <img
+          src="./images/eurobot-middlesex-university-1-952x508.jpg"
+          loading="lazy"
+          alt="EUROBOT SPAIN 2018"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-competition-title">EUROBOT ESPAÑA 2018</h1>
+          <p class="timeline-competition-text">
+            Tan solo dos meses después de su triunfo con VEX, PUCRA participó en
+            Eurobot 2018, donde se consagró como el 25º en el ranking mundial de
+            más de 3000 equipos, logrando la mejor clasificación nacional.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+      <p class="timeline-competition-date">Marzo 2018</p>
+      <section class="section-timeline">
+        <img
+          src="./images/dwpgglmwaaeokgg-952x714.jpg"
+          loading="lazy"
+          alt="VEX Robotics"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-competition-title">VEX Robotics 2018</h1>
+          <p class="timeline-competition-text">
+            En nuestro primer año, PUCRA participó en la VEX Robotics
+            Competition, clasificándose para la final estatal. Siendo finalistas
+            nacionales y el primer equipo universitario de la competición, un
+            resultado magnífico para la primera participación del equipo.
+          </p>
+        </div>
+      </section>
+    </article>
     <footer class="footer-container">
       <div class="footer-banner">
         <p class="footer-slogan-text">Reinventing the future. PUCRA</p>
@@ -641,7 +559,7 @@
       <div class="footer-info">
         <a href="/" class="footer-logo-link">
           <img
-            src="../images/logo-pucra-blanco3-1-186x181.png"
+            src="./images/logo-pucra-blanco3-1-186x181.png"
             loading="lazy"
             alt="Logo PUCRA"
             class="footer-logo-image"
@@ -675,13 +593,11 @@
       </div>
     </footer>
 
-   
     <script src="../js/language.js"></script>
     <script src="languageAbout.js"></script>
     <script src="index.js"></script>
 
     <script src="../components/navbar/index.js"></script>
     <script src="../components/footer/index.js"></script>
-    
   </body>
 </html>

@@ -16,7 +16,8 @@ const aboutEs = {
   contact: "Contacto",
   contacts: "Contactos",
   links: "Links",
-
+  header_slogan:
+    "HACEMOS POSIBLE LAS COMPETICIONES DE ROBÓTICA MÁS GRANDES EN NUESTRO HOGAR",
   events_container: [
     {
       // Vex-Thon
@@ -82,7 +83,8 @@ const aboutEn = {
   contacts: "Contacts",
   networks: "NETWORKS",
   links: "Links",
-
+  header_slogan:
+    "MAKING THE BIGGEST ROBOTICS COMPETITIONS POSSIBLE IN OUR HOME",
   events_container: [
     {
       container_text:
@@ -145,6 +147,8 @@ const aboutCat = {
   contact: "Contacte",
   contacts: "Contactes",
   links: "Enllaços",
+  header_slogan:
+    "FEM POSSIBLE LES COMPETICIONS DE ROBÒTICA MÉS GRANS A CASA NOSTRA",
 
   events_container: [
     {
@@ -262,6 +266,8 @@ function fillContentAbout() {
   if (contenAbout.section_title) {
     $("title-history").innerHTML = contenAbout.section_title;
   }
+
+  $("header-slogan").innerHTML = contenAbout.header_slogan;
 
   // Footer
   $("follow-us").innerHTML = contenAbout.follow_us;
