@@ -15,7 +15,7 @@ body {
   max-width: 100px;
   gap: 4px;
 
-  button {
+  .moveObj {
     background-color: black;
     border: none;
     color: white;
@@ -29,27 +29,27 @@ body {
     }
   }
 
-  button:nth-child(1) {
+  .moveObj:nth-child(1) {
     grid-area: up;
   }
 
-  button:nth-child(2) {
+  .moveObj:nth-child(2) {
     grid-area: down;
   }
 
-  button:nth-child(3) {
+  .moveObj:nth-child(3) {
     grid-area: left;
   }
 
-  button:nth-child(4) {
+  .moveObj:nth-child(4) {
     grid-area: right;
   }
 
-  button:nth-child(5) {
+  .moveObj:nth-child(5) {
     grid-area: zoomin;
   }
 
-  button:nth-child(6) {
+  .moveObj:nth-child(6) {
     grid-area: zoomout;
   }
 }

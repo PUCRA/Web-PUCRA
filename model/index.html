@@ -50,15 +50,8 @@
 
     <!-- Manual -->
     <!-- https://threejs.org/manual/#en/installation -->
-    <script></script>
 
     <!-- IMPORTANT, ALWAYS USE "type=module" IN THIS PART -->
-    <script src="main.js" type="module">
-      import * as THREE from "three";
-      import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-      import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-      const controls = new OrbitControls(camera, renderer.domElement);
-      const loader = new GLTFLoader();
-    </script>
+    <script src="main.mjs" type="module"></script>
   </body>
 </html>

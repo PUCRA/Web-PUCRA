@@ -1,6 +1,7 @@
 import * as THREE from "three";
+import WebGL from 'three/addons/capabilities/WebGL.js';
 
-const scene = new THREE.Scene();
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 const camera = new THREE.PerspectiveCamera(
   50,
   window.innerWidth / window.innerHeight,
@@ -10,6 +11,9 @@ const camera = new THREE.PerspectiveCamera(
 
 let zoomxyz = { x: 0, y: 0, z: 0 };
 let zoomPressed = false;
+
+const loader = new GLTFLoader();
+const scene = new THREE.Scene();
 
 // Create a renderer and add to id="myCanvas"
 const canvas = document.getElementById("myCanvas");
@@ -26,6 +30,7 @@ scene.add(cube);
 camera.position.z = 5;
 
 function animate() {
+  // This function is called 60 times per second
   cube.rotation.x += 0.01;
   cube.rotation.y += 0.01;
 
