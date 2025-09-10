@@ -1,7 +1,7 @@
 import * as THREE from "three";
 // Import the FBXLoader for .fbx files
-import { FBXLoader } from "https://unpkg.com/three@0.180.0/examples/jsm/loaders/FBXLoader.js";
-import { OrbitControls } from "https://unpkg.com/three@0.180.0/examples/jsm/controls/OrbitControls.js";
+import { FBXLoader } from "three/addons/loaders/FBXLoader.js";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
 // Create a camera
 const camera = createCamera();
@@ -94,5 +94,3 @@ function createCamera() {
   );
   return mCamera;
 }
-
-function centerAndScaleModel(object, scale = 0.01) {}
