@@ -4,17 +4,11 @@ import { FBXLoader } from "https://unpkg.com/three@0.180.0/examples/jsm/loaders/
 import { OrbitControls } from "https://unpkg.com/three@0.180.0/examples/jsm/controls/OrbitControls.js";
 
 // Create a camera
-const camera = new THREE.PerspectiveCamera(
-  50,
-  window.innerWidth / window.innerHeight,
-  0.1,
-  1000
-);
+const camera = createCamera();
 
 // Create a renderer and add to id="myCanvas"
 const canvas = document.getElementById("myCanvas");
-const renderer = new THREE.WebGLRenderer({ canvas });
-renderer.setSize(window.innerWidth, window.innerHeight);
+const renderer = createRenderer(canvas);
 renderer.setAnimationLoop(animate);
 
 // Add orbit controls to control the camera with mouse
@@ -24,13 +18,8 @@ controls.enableDamping = true;
 const scene = new THREE.Scene();
 
 // Add a light to the scene
-const light = new THREE.DirectionalLight(0xffffff, 1);
-light.position.set(5, 10, 5);
+const light = addLights(scene);
 scene.add(light);
-
-// Ambient light
-const ambient = new THREE.AmbientLight(0x404040, 1); // luz suave
-scene.add(ambient);
 
 // Import the FBXLoader for .fbx files
 const pathModelFBX = "./models/cottage_fbx.fbx";
@@ -58,10 +47,12 @@ fbxLoader.load(
     camera.lookAt(0, 0, 0);
 
     // set orbit controls to center of model
+
     controls.target.set(0, 0, 0);
 
     controls.minDistance = cameraZ * 0.5; // max zoom in
     controls.maxDistance = cameraZ * 3; // max zoom out
+
     controls.update();
   },
   (xhr) => {
@@ -73,10 +64,35 @@ fbxLoader.load(
 );
 
 function animate() {
-  // This function is called 60 times per second
-  //cube.rotation.x += 0.01;
-  // cube.rotation.y += 0.01;
-
   controls.update();
   renderer.render(scene, camera);
 }
+
+function createRenderer() {
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setClearColor(0x000000, 0); // transparent background
+  renderer.setAnimationLoop(animate);
+  return renderer;
+}
+
+function addLights(mScene) {
+  const light = new THREE.DirectionalLight(0xffffff, 1);
+  light.position.set(5, 10, 5);
+  mScene.add(light);
+
+  const ambient = new THREE.AmbientLight(0x404040, 1);
+  mScene.add(ambient);
+}
+
+function createCamera() {
+  const mCamera = new THREE.PerspectiveCamera(
+    50,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000
+  );
+  return mCamera;
+}
+
+function centerAndScaleModel(object, scale = 0.01) {}
