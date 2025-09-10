@@ -18,11 +18,17 @@ controls.enableDamping = true;
 const scene = new THREE.Scene();
 
 // Add a light to the scene
-const light = addLights(scene);
+const light = addLights();
 scene.add(light);
+
+const ambient = addAmbientLights();
+scene.add(ambient);
 
 // Import the FBXLoader for .fbx files
 const pathModelFBX = "./models/cottage_fbx.fbx";
+if (!pathModelFBX.includes(".fbx")) {
+  console.error("Error: The model file is not in .fbx format.");
+}
 const fbxLoader = new FBXLoader();
 fbxLoader.load(
   pathModelFBX,
@@ -35,21 +41,19 @@ fbxLoader.load(
     const center = box.getCenter(new THREE.Vector3());
     const size = box.getSize(new THREE.Vector3());
 
-    // Centrar el modelo en el origen (opcional, pero suele ir bien)
+    // Center the object at the origin (optional)
     object.position.sub(center);
 
-    // Colocar la cámara según el tamaño del objeto
+    // Place the camera according to the size of the object
     const maxDim = Math.max(size.x, size.y, size.z);
-    const fov = camera.fov * (Math.PI / 180); // en radianes
+    const fov = camera.fov * (Math.PI / 180); 
     let cameraZ = maxDim / (2 * Math.tan(fov / 2));
 
     camera.position.set(0, 0, cameraZ * 2);
     camera.lookAt(0, 0, 0);
 
     // set orbit controls to center of model
-
     controls.target.set(0, 0, 0);
-
     controls.minDistance = cameraZ * 0.5; // max zoom in
     controls.maxDistance = cameraZ * 3; // max zoom out
 
@@ -76,15 +80,6 @@ function createRenderer() {
   return renderer;
 }
 
-function addLights(mScene) {
-  const light = new THREE.DirectionalLight(0xffffff, 1);
-  light.position.set(5, 10, 5);
-  mScene.add(light);
-
-  const ambient = new THREE.AmbientLight(0x404040, 1);
-  mScene.add(ambient);
-}
-
 function createCamera() {
   const mCamera = new THREE.PerspectiveCamera(
     50,
@@ -93,4 +88,15 @@ function createCamera() {
     1000
   );
   return mCamera;
+}
+
+function addLights() {
+  const light = new THREE.DirectionalLight(0xffffff, 1);
+  light.position.set(5, 10, 5);
+  return light;
+}
+
+function addAmbientLights() {
+  const ambient = new THREE.AmbientLight(0x404040, 1);
+  return ambient;
 }
