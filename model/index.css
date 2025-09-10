@@ -3,53 +3,11 @@ body {
   background-color: gray;
 }
 
-.camera {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas:
-    "up up up"
-    "left  zoomin right"
-    "left  zoomout right"
-    "down down down";
-  max-width: 100px;
-  gap: 4px;
 
-  .moveObj {
-    background-color: black;
-    border: none;
-    color: white;
-    border-radius: 6px;
 
-    &&:hover {
-      cursor: pointer;
-      background-color: white;
-      color: black;
-      transition: 0.5s background-color;
-    }
-  }
 
-  .moveObj:nth-child(1) {
-    grid-area: up;
-  }
-
-  .moveObj:nth-child(2) {
-    grid-area: down;
-  }
-
-  .moveObj:nth-child(3) {
-    grid-area: left;
-  }
-
-  .moveObj:nth-child(4) {
-    grid-area: right;
-  }
-
-  .moveObj:nth-child(5) {
-    grid-area: zoomin;
-  }
-
-  .moveObj:nth-child(6) {
-    grid-area: zoomout;
-  }
+#myCanvas {
+  display: block;
+  width: 100%;
+  height: 200px;
 }
