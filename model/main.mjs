@@ -3,6 +3,11 @@ import * as THREE from "three";
 import { FBXLoader } from "three/addons/loaders/FBXLoader.js";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
+const myModelFbx = {
+  path: "./models/cottage_fbx.fbx",
+  texturePath: "./textures/cottage_diffuse.png",
+};
+
 // Create a camera
 const camera = createCamera();
 
@@ -25,38 +30,17 @@ const ambient = addAmbientLights();
 scene.add(ambient);
 
 // Import the FBXLoader for .fbx files
-const pathModelFBX = "./models/cottage_fbx.fbx";
-if (!pathModelFBX.includes(".fbx")) {
-  console.error("Error: The model file is not in .fbx format.");
-}
+const pathModelFBX = myModelFbx.path;
 const fbxLoader = new FBXLoader();
 fbxLoader.load(
-  pathModelFBX,
+  myModelFbx.path,
   (object) => {
     object.scale.set(0.01, 0.01, 0.01);
+    object = addTexture(object);
     scene.add(object);
 
     // Calcular bounding box
-    const box = new THREE.Box3().setFromObject(object);
-    const center = box.getCenter(new THREE.Vector3());
-    const size = box.getSize(new THREE.Vector3());
-
-    // Center the object at the origin (optional)
-    object.position.sub(center);
-
-    // Place the camera according to the size of the object
-    const maxDim = Math.max(size.x, size.y, size.z);
-    const fov = camera.fov * (Math.PI / 180); 
-    let cameraZ = maxDim / (2 * Math.tan(fov / 2));
-
-    camera.position.set(0, 0, cameraZ * 2);
-    camera.lookAt(0, 0, 0);
-
-    // set orbit controls to center of model
-    controls.target.set(0, 0, 0);
-    controls.minDistance = cameraZ * 0.5; // max zoom in
-    controls.maxDistance = cameraZ * 3; // max zoom out
-
+    controls = configureCameraLimits(object);
     controls.update();
   },
   (xhr) => {
@@ -66,6 +50,43 @@ fbxLoader.load(
     console.log(error);
   }
 );
+
+function configureCameraLimits(object) {
+  const box = new THREE.Box3().setFromObject(object);
+  const center = box.getCenter(new THREE.Vector3());
+  const size = box.getSize(new THREE.Vector3());
+
+  // Center the object at the origin (optional)
+  object.position.sub(center);
+
+  // Place the camera according to the size of the object
+  const maxDim = Math.max(size.x, size.y, size.z);
+  const fov = camera.fov * (Math.PI / 180);
+  let cameraZ = maxDim / (2 * Math.tan(fov / 2));
+
+  camera.position.set(0, 0, cameraZ * 2);
+  camera.lookAt(0, 0, 0);
+
+  // set orbit controls to center of model
+  controls.target.set(0, 0, 0);
+  controls.minDistance = cameraZ * 0.5; // max zoom in
+  controls.maxDistance = cameraZ * 3; // max zoom out
+  return controls;
+}
+
+function addTexture(object) {
+  // Add texture to the model
+  const textureLoader = new THREE.TextureLoader();
+  const texture = textureLoader.load(myModelFbx.texturePath);
+  // Apply texture to all child meshes
+  object.traverse((child) => {
+    if (child.isMesh) {
+      child.material.map = texture;
+      child.material.needsUpdate = true;
+    }
+  });
+  return object;
+}
 
 function animate() {
   controls.update();
