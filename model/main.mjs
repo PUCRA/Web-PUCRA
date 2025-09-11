@@ -4,8 +4,16 @@ import { FBXLoader } from "three/addons/loaders/FBXLoader.js";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
 const myModelFbx = {
+  // https://free3d.com/3d-models/fbx
   path: "./models/cottage_fbx.fbx",
   texturePath: "./textures/cottage_diffuse.png",
+};
+
+const myConfig = {
+  myModelReference: null,
+  autoRotate: true,
+  rotationX: 0.00,
+  rotationY: 0.005,
 };
 
 // Create a camera
@@ -36,8 +44,13 @@ fbxLoader.load(
   myModelFbx.path,
   (object) => {
     object.scale.set(0.01, 0.01, 0.01);
-    object = addTexture(object);
+
+    if (myModelFbx.texturePath !== "") {
+      object = addTexture(object);
+    }
     scene.add(object);
+
+    myConfig.myModelReference = object;
 
     // Calcular bounding box
     controls = configureCameraLimits(object);
@@ -89,6 +102,12 @@ function addTexture(object) {
 }
 
 function animate() {
+  if (myConfig.myModelReference && myConfig.autoRotate) {
+    myConfig.myModelReference.rotation.y += myConfig.rotationY;
+    myConfig.myModelReference.rotation.x += myConfig.rotationX;
+  }
+
+  // Rotate the model for some basic animation
   controls.update();
   renderer.render(scene, camera);
 }
@@ -121,3 +140,10 @@ function addAmbientLights() {
   const ambient = new THREE.AmbientLight(0x404040, 1);
   return ambient;
 }
+
+function toggleRotation(event) {
+  myConfig.autoRotate = !myConfig.autoRotate;
+  event.target.innerText = myConfig.autoRotate ? "PAUSE" : "PLAY";
+}
+// Expose the toggleRotation function to the global scope
+window.toggleRotation = toggleRotation;
