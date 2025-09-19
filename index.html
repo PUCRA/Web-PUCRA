@@ -13,23 +13,15 @@
     <link href="../css/normalize.css" rel="stylesheet" type="text/css" />
 
     <link href="home/index.css" rel="stylesheet" type="text/css" />
-    <link
-      href="images/favicon.png"
-      rel="shortcut icon"
-      type="image/x-icon"
-    />
+    <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="images/webclip.png" rel="apple-touch-icon" />
-
     <link
-      href="components/footer/index.css"
+      href="../components/tablet/index.css"
       rel="stylesheet"
       type="text/css"
     />
-    <link
-      href="components/navbar/index.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="components/footer/index.css" rel="stylesheet" type="text/css" />
+    <link href="components/navbar/index.css" rel="stylesheet" type="text/css" />
   </head>
   <body onload="fillContentAbout()">
     <navbar id="navbar" class="position-fixed">
@@ -120,6 +112,63 @@
       <a href="/contact" class="contact btn-contact">Contacto</a>
     </navbar>
 
+    <article
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 1) 100%
+          ),
+          url('./home/images/robotspinupmundialfliped.jpg') center/cover
+            no-repeat;
+        gap: 100px;
+      "
+    >
+      <div class="tablet">
+        <div class="screen">
+          <iframe
+            style="width: 100%; height: 100%; aspect-ratio: 16/9"
+            src="https://www.youtube-nocookie.com/embed/sgLpsSB65_s?si=awwT8g_KLroWT1ix&amp;controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="camera"></div>
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: column;
+          height: 600px;
+          gap: 20px;
+          max-width: 800px;
+        "
+      >
+        <h1 style="color: white; font-size: 50px; text-align: left; margin: 0px;">PUCRA Barcelona</h1>
+        <p style="color: white; font-size: 25px; max-width: 650px;">
+          Somos una asociación de Robotica. Nos dedicamos a asistir y
+          organizar competiciones superando nuestras metas y objectivos año tras
+          año.
+        </p>
+        <div style="display: flex; gap: 50px; flex-wrap: wrap">
+          <a class="button-2 w-button" style="font-size: 22px" href="/contact"
+            >Únete como miembro</a
+          >
+          <a class="button-2 w-button" style="font-size: 22px" href="/contact"
+            >Apoyanos como partner</a
+          >
+        </div>
+      </div>
+    </article>
+
     <div id="luxy">
       <!-- Slider -->
       <div id="slider-images">
@@ -176,8 +225,10 @@
         <div class="div-block-5">
           <div class="div-block-6">
             <p class="paragraph-3"></p>
-            <p  class="paragraph-4">
-              <strong class="bold-text" id="pillar_title1">Jovenes estudiantes</strong>
+            <p class="paragraph-4">
+              <strong class="bold-text" id="pillar_title1"
+                >Jovenes estudiantes</strong
+              >
             </p>
             <p id="pillar_text1" class="paragraph-2">
               El equipo formado por estudiantes de ingeniería con un futuro
@@ -187,8 +238,10 @@
           </div>
           <div class="div-block-7">
             <p class="paragraph-3"></p>
-            <p  class="paragraph-5">
-              <strong class="bold-text" id="pillar_title2">Event Planner</strong>
+            <p class="paragraph-5">
+              <strong class="bold-text" id="pillar_title2"
+                >Event Planner</strong
+              >
             </p>
             <p id="pillar_text2" class="paragraph-2">
               El trabajo de estos años ha brindado a PUCRA una gran experiencia
@@ -199,7 +252,9 @@
           <div class="div-block-8">
             <p class="paragraph-3"></p>
             <p class="paragraph-6">
-              <strong class="bold-text" id="pillar_title3">Vanguardia tecnológica</strong>
+              <strong class="bold-text" id="pillar_title3"
+                >Vanguardia tecnológica</strong
+              >
             </p>
             <p id="pillar_text3" class="paragraph-2">
               Participar en las competiciones internacionales de robótica más
@@ -254,7 +309,7 @@
       <!-- CONTADOR VEX WORLD-->
       <div class="container-VEX_CH_2023 w-container">
         <h1 class="glow3">VEX WORLD CHAMPIONSHIP 2025</h1>
-        <p  class="paragraph-8">
+        <p class="paragraph-8">
           <strong class="bold-text-2" id="VEX_CH_2025_text">
             Tras tres años consecutivos como representantes de nuestro país
             dentro de la VEX Robotics World Championship, el equipo se enfrenta
@@ -391,7 +446,10 @@
           let daysInMonth = days_per_month[(monthNow + mth) % 12];
 
           // Ajuste por año bisiesto en febrero
-          if ((monthNow + mth) % 12 === 1 && (y % 400 === 0 || (y % 100 !== 0 && y % 4 === 0))) {
+          if (
+            (monthNow + mth) % 12 === 1 &&
+            (y % 400 === 0 || (y % 100 !== 0 && y % 4 === 0))
+          ) {
             daysInMonth = 29;
           }
 
@@ -411,7 +469,5 @@
       // Ejecutar al cargar la página
       updateCountdown();
     </script>
-
-
   </body>
 </html>
