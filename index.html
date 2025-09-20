@@ -10,7 +10,6 @@
     <meta content="PUCRA Home-ESP" property="twitter:title" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
-    <link href="../css/normalize.css" rel="stylesheet" type="text/css" />
 
     <link href="home/index.css" rel="stylesheet" type="text/css" />
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
@@ -22,6 +21,11 @@
     />
     <link href="components/footer/index.css" rel="stylesheet" type="text/css" />
     <link href="components/navbar/index.css" rel="stylesheet" type="text/css" />
+    <!-- material symbols https://fonts.google.com/icons?icon.set=Material+Symbols&icon.size=24&icon.color=%23000000 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
   </head>
   <body onload="fillContentAbout()">
     <navbar id="navbar" class="position-fixed">
@@ -140,14 +144,65 @@
       </div>
     </article>
 
+    <article
+      style="background-attachment: fixed"
+      class="container-3 w-container"
+    >
+      <h1 id="pillarsPUCRA" class="heading">PILARES DE PUCRA</h1>
+      <div class="div-block-5">
+        <div class="div-block-6">
+          <p class="paragraph-3"></p>
+          <p class="paragraph-4">
+            <strong class="bold-text" id="pillar_title1"
+              >Jovenes estudiantes</strong
+            >
+          </p>
+          <p id="pillar_text1" class="paragraph-2">
+            El equipo formado por estudiantes de ingeniería con un futuro
+            repleto de sueños y retos que afrontar, representa el espíritu de
+            superación e implicación con nuestra sociedad
+          </p>
+        </div>
+        <div class="div-block-7">
+          <p class="paragraph-3"></p>
+          <p class="paragraph-5">
+            <strong class="bold-text" id="pillar_title2">Event Planner</strong>
+          </p>
+          <p id="pillar_text2" class="paragraph-2">
+            El trabajo de estos años ha brindado a PUCRA una gran experiencia en
+            la organización de eventos, convirtiéndose en el foco de la robótica
+            de competición del país
+          </p>
+        </div>
+        <div class="div-block-8">
+          <p class="paragraph-3"></p>
+          <p class="paragraph-6">
+            <strong class="bold-text" id="pillar_title3"
+              >Vanguardia tecnológica</strong
+            >
+          </p>
+          <p id="pillar_text3" class="paragraph-2">
+            Participar en las competiciones internacionales de robótica más
+            importantes, nos obliga a explotar todo nuestro potencial en la
+            innovación y el desarrollo tecnológico
+          </p>
+        </div>
+      </div>
+    </article>
     <div id="luxy">
       <!-- Slider -->
       <div id="slider-images">
-        <button class="btn-slider btn-slider-back" onclick="backSlider()">
-          ⬅️
+        <button
+          class="btn-slider btn-slider-back material-symbols-outlined"
+          onclick="backSlider()"
+        >
+          arrow_back_ios
         </button>
-        <button class="btn-slider btn-slider-next" onclick="nextSlider()">
-          ➡️
+        <button
+          class="btn-slider btn-slider-next material-symbols-outlined"
+          onclick="nextSlider()"
+        >
+          arrow_forward_ios
         </button>
         <!--  autogenerared <img class="slider-img" -->
         <div id="menu-slider">
@@ -190,91 +245,6 @@
           >
         </div>
         <div class="div-block-4"></div>
-      </div>
-      <div class="container-3 w-container">
-        <h1 id="pillarsPUCRA" class="heading">PILARES DE PUCRA</h1>
-        <div class="div-block-5">
-          <div class="div-block-6">
-            <p class="paragraph-3"></p>
-            <p class="paragraph-4">
-              <strong class="bold-text" id="pillar_title1"
-                >Jovenes estudiantes</strong
-              >
-            </p>
-            <p id="pillar_text1" class="paragraph-2">
-              El equipo formado por estudiantes de ingeniería con un futuro
-              repleto de sueños y retos que afrontar, representa el espíritu de
-              superación e implicación con nuestra sociedad
-            </p>
-          </div>
-          <div class="div-block-7">
-            <p class="paragraph-3"></p>
-            <p class="paragraph-5">
-              <strong class="bold-text" id="pillar_title2"
-                >Event Planner</strong
-              >
-            </p>
-            <p id="pillar_text2" class="paragraph-2">
-              El trabajo de estos años ha brindado a PUCRA una gran experiencia
-              en la organización de eventos, convirtiéndose en el foco de la
-              robótica de competición del país
-            </p>
-          </div>
-          <div class="div-block-8">
-            <p class="paragraph-3"></p>
-            <p class="paragraph-6">
-              <strong class="bold-text" id="pillar_title3"
-                >Vanguardia tecnológica</strong
-              >
-            </p>
-            <p id="pillar_text3" class="paragraph-2">
-              Participar en las competiciones internacionales de robótica más
-              importantes, nos obliga a explotar todo nuestro potencial en la
-              innovación y el desarrollo tecnológico
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-4 w-container">
-        <div class="div-block-3">
-          <h1 id="Event_Partner_PUCRA" class="heading-2">
-            PUCRA EVENT PLANNER
-          </h1>
-          <p id="Event_Partner_text" class="paragraph">
-            Además de participar en las competiciones internacionales de
-            robótica más importantes, PUCRA ha organizado durante los últimos
-            años las finales de la VEX Robotics en nuestro territorio y todo
-            tipo de actividades y talleres STEAM con el fin de potenciar las
-            vocaciones científico-tecnológicas de los más jóvenes.
-          </p>
-          <div class="div-block-20">
-            <a
-              data-w-id="effefb25-4f39-b72c-9d6d-ee24431bf8de"
-              href="https://www.instagram.com/pucra.upc/"
-              target="_blank"
-              id="Gallery_Button"
-              class="button-3 w-button"
-              >Galería</a
-            >
-            <a id="More_info" href="/events" class="button-4 w-button"
-              >Más información</a
-            >
-          </div>
-        </div>
-        <div class="div-block-4">
-          <img
-            src="images/vex-blanco-778x456.png"
-            loading="lazy"
-            sizes="(max-width: 767px) 200px, (max-width: 991px) 250px, 450px"
-            srcset="
-              images/vex-blanco-778x456-p-500.png 500w,
-              images/vex-blanco-778x456.png       778w
-            "
-            alt=""
-            class="image-6"
-          />
-        </div>
       </div>
 
       <!-- CONTADOR VEX WORLD-->
