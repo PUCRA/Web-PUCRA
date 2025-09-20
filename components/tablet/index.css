@@ -1,6 +1,7 @@
 .tablet {
   border: 2px solid black;
   max-width: 800px;
+  min-width: 300px;
   height: 600px;
   border-radius: 50px;
   background: linear-gradient(38deg, #000000, #1c1c1c);

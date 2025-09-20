@@ -52,6 +52,90 @@
 }
 /*end slider */
 
+.info-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #c43a69;
+  border-radius: 50px;
+  padding: 10px 20px;
+  display: inline-block;
+  background-color: #751938;
+  text-align: center;
+  max-width: 190px;
+  transition: transform 0.5s;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+.article-presentation-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("./images/robotspinupmundialfliped.jpg") center/cover no-repeat;
+  gap: 50px;
+
+  padding: 0px 10px 0px 10px;
+
+  .home-description {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 600px;
+    gap: 20px;
+    max-width: 800px;
+    h1 {
+      color: white;
+      font-size: 50px;
+      text-align: left;
+      margin: 0px;
+    }
+    p {
+      color: white;
+      font-size: 25px;
+      max-width: 650px;
+      min-width: 200px;
+    }
+  }
+
+  .btns-join {
+    display: flex;
+    gap: 50px;
+
+    flex-wrap: wrap;
+    a {
+      font-size: 22px;
+      color: "white";
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .home-description {
+    height: auto !important;
+    p {
+      text-align: center;
+    }
+  }
+  .article-presentation-home {
+    padding: 60px 10px 50px 10px;
+    flex-direction: column-reverse;
+    min-height: 100vh;
+  }
+  .btns-join {
+    justify-content: center;
+  }
+}
+/*end mine */
+
 .container-1 {
   height: 100vh;
   max-width: 100%;
@@ -663,7 +747,6 @@
   background-size: auto, cover;
 }
 
-
 .paragraph-8 {
   margin-right: 25%;
   margin-left: 25%;
@@ -712,15 +795,12 @@
   margin: 0; /* eliminar margen por defecto de <p> */
 }
 
-
 .glow1 {
   color: #fff;
   text-align: center;
   font-size: 49px;
-  text-shadow: 
-    0 0 10px rgba(255, 255, 255, 0.9),
-    0 0 20px rgba(255, 255, 255, 0.7),
-    0 0 40px rgba(0, 150, 255, 0.6),
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9),
+    0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px rgba(0, 150, 255, 0.6),
     0 0 80px rgba(0, 150, 255, 0.4);
 }
 
@@ -728,23 +808,18 @@
   color: #fff;
   text-align: center;
   font-size: 25px;
-  text-shadow: 
-    0 0 6px rgba(255, 255, 255, 0.9),
-    0 0 12px rgba(255, 255, 255, 0.7),
-    0 0 24px rgba(0, 150, 255, 0.5);
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.9),
+    0 0 12px rgba(255, 255, 255, 0.7), 0 0 24px rgba(0, 150, 255, 0.5);
 }
 
 .glow3 {
   color: #fff;
   text-align: center;
   font-size: 49px;
-  text-shadow: 
-    0 0 10px rgba(204, 36, 36, 0.9),
-    0 0 20px rgba(255, 255, 255, 0.7),
-    0 0 40px rgba(216, 72, 28, 0.6),
+  text-shadow: 0 0 10px rgba(204, 36, 36, 0.9),
+    0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px rgba(216, 72, 28, 0.6),
     0 0 80px rgba(223, 61, 20, 0.4);
 }
-
 
 @media screen and (max-width: 912px) {
   .glow3 {
