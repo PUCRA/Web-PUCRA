@@ -12,7 +12,6 @@ const aboutEs = {
   links: "Enlaces",
   contact: "Contacto",
   contacts: "Contactos",
-  actual_year: "2024", // si es dinámico, puedes omitirlo o actualizarlo por JS
   sponsors_description: "ELLOS LO HACEN POSIBLE",
   sponsor_benefits_title: "¿Por qué ser patrocinador de PUCRA?",
 
@@ -93,7 +92,6 @@ const aboutEn = {
   links: "Links",
   contact: "Contact",
   contacts: "Contacts",
-  actual_year: "2024",
   sponsors_description: "THEY MAKE IT POSSIBLE",
   sponsor_benefits_title: "Why become a PUCRA sponsor?",
 
@@ -329,9 +327,6 @@ function fillContentAbout() {
 
   if ($("sponsor-benefits-title"))
     $("sponsor-benefits-title").innerHTML = contenAbout.sponsor_benefits_title;
-
-  if ($("actual-year"))
-    $("actual-year").innerHTML = contenAbout.actual_year;
 
   if ($("web-place"))
     $("web-place").innerHTML = contenAbout.web_place;

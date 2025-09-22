@@ -15,8 +15,6 @@ const aboutEs = {
   address: "Dirección",
   contacts: "Contactos",
   links: "Enlaces",
-  actual_year: "2024",
-
   summary_PUCRA:
     "PUCRA es la asociación de robótica de la Universitat Politècnica de Catalunya, con sede en la Escuela de Ingeniería de Barcelona Este, el campus más innovador de toda la universidad. Fundada en 2017, es la primera y única asociación de este tipo en todo el territorio español.<br><br>Con un equipo técnico multidisciplinar formado por estudiantes de diferentes ramas de la ingeniería, estamos preparados para afrontar cualquier reto. Nuestra cultura de trabajo, esfuerzo y sacrificio, y la ambición de mejorar continuamente, nos lleva cada año a superar nuestros objetivos.",
   Info_button: "Descubre todo sobre PUCRA",
@@ -59,7 +57,6 @@ const aboutEn = {
   address: "Address",
   contacts: "Contacts",
   links: "Links",
-  actual_year: "2024",
 
   summary_PUCRA:
     "PUCRA is the robotics association of the Universitat Politècnica de Catalunya, based at the Escola d’Enginyeria de Barcelona Est — the most innovative campus of the entire university. Founded in 2017, it is the first and only association of its kind in Spain.<br><br>With a multidisciplinary technical team made up of students from various engineering fields, we are ready to face any challenge. Our culture of hard work, effort, and sacrifice, along with our ambition to constantly improve, drives us to exceed our goals every year.",
@@ -102,7 +99,6 @@ const aboutCat = {
   address: "Adreça",
   contacts: "Contactes",
   links: "Enllaços",
-  actual_year: "2024",
 
   summary_PUCRA:
     "PUCRA és l’associació de robòtica de la Universitat Politècnica de Catalunya, amb seu a l’Escola d’Enginyeria de Barcelona Est, el campus més innovador de tota la universitat. Fundada l’any 2017, és la primera i única associació d’aquest tipus a tot l’Estat espanyol.<br><br>Amb un equip tècnic multidisciplinari format per estudiants de diverses branques de l’enginyeria, estem preparats per afrontar qualsevol repte. La nostra cultura de treball, esforç i sacrifici, i l’ambició de millorar contínuament, ens porta cada any a superar els nostres objectius.",
@@ -230,8 +226,6 @@ function fillContentAbout() {
     $("title-history").innerHTML = contenAbout.section_title;
   }
 
-  if ($("actual-year"))
-    $("actual-year").innerHTML = contenAbout.actual_year;
 
  
   

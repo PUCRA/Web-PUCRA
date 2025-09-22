@@ -16,7 +16,6 @@ const aboutEs = {
   address: "Dirección",
   contact3: "Contactos",
   links: "Enlaces",
-  actual_year: "2024",
   contact_us: "Contáctanos",
   phone: "Teléfono",
   form_message: "Completa el formulario y te responderemos lo antes posible.",
@@ -51,8 +50,6 @@ const aboutEn = {
   contact: "Contact",
   contacts: "Contacts",
   links: "Links",
-  actual_year: "2024",
-  actual_year: "2024", // si es dinámico, puedes omitirlo o actualizarlo por JS
   contact_us: "Contact Us",
   phone: "Phone Number",
   form_message: "Complete the form and we will respond as soon as possible!",
@@ -86,7 +83,6 @@ const aboutCat = {
   contact: "Contacte",
   contacts: "Contactes",
   links: "Enllaços",
-  actual_year: "2024",
   contact_us: "Contacta'ns",
   phone: "Telèfon",
   form_message: "Completa el formulari i et respondrem tan aviat com sigui possible.",
@@ -192,8 +188,6 @@ function fillContentAbout() {
   $("submit_text").value = contenAbout.submit_text;
 
 
-  if ($("actual-year"))
-    $("actual-year").innerHTML = contenAbout.actual_year;
 
   if ($("web-place"))
     $("web-place").innerHTML = contenAbout.web_place;
