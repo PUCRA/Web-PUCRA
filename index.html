@@ -24,7 +24,7 @@
     <!-- material symbols https://fonts.google.com/icons?icon.set=Material+Symbols&icon.size=24&icon.color=%23000000 -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
     />
   </head>
   <body onload="fillContentAbout()">
@@ -133,73 +133,71 @@
       </div>
       <div class="home-description">
         <h1>PUCRA Barcelona</h1>
-        <p>
+        <p id="desc-home">
           Somos una asociación de Robotica. Nos dedicamos a asistir y organizar
           competiciones superando nuestras metas y objectivos año tras año.
         </p>
         <div class="btns-join">
-          <a class="info-btn" href="/contact">Únete como miembro</a>
-          <a class="info-btn" href="/contact">Apoyanos como partner</a>
+          <a id="join-student" class="info-btn" href="/contact"
+            >Únete como miembro</a
+          >
+          <a id="join-sponsor" class="info-btn" href="/contact"
+            >Apoyanos como partner</a
+          >
         </div>
       </div>
     </article>
 
-    <article
-      style="background-attachment: fixed"
-      class="container-3 w-container"
-    >
-      <h1 id="pillarsPUCRA" class="heading">PILARES DE PUCRA</h1>
-      <div class="div-block-5">
-        <div class="div-block-6">
-          <p class="paragraph-3"></p>
-          <p class="paragraph-4">
-            <strong class="bold-text" id="pillar_title1"
-              >Jovenes estudiantes</strong
-            >
-          </p>
-          <p id="pillar_text1" class="paragraph-2">
-            El equipo formado por estudiantes de ingeniería con un futuro
-            repleto de sueños y retos que afrontar, representa el espíritu de
-            superación e implicación con nuestra sociedad
-          </p>
-        </div>
-        <div class="div-block-7">
-          <p class="paragraph-3"></p>
-          <p class="paragraph-5">
-            <strong class="bold-text" id="pillar_title2">Event Planner</strong>
-          </p>
-          <p id="pillar_text2" class="paragraph-2">
-            El trabajo de estos años ha brindado a PUCRA una gran experiencia en
-            la organización de eventos, convirtiéndose en el foco de la robótica
-            de competición del país
-          </p>
-        </div>
-        <div class="div-block-8">
-          <p class="paragraph-3"></p>
-          <p class="paragraph-6">
-            <strong class="bold-text" id="pillar_title3"
-              >Vanguardia tecnológica</strong
-            >
-          </p>
-          <p id="pillar_text3" class="paragraph-2">
-            Participar en las competiciones internacionales de robótica más
-            importantes, nos obliga a explotar todo nuestro potencial en la
-            innovación y el desarrollo tecnológico
-          </p>
-        </div>
-      </div>
+    <article class="pilar-container">
+      <h2 id="pillarsPUCRA">
+        <span aria-hidden="true" class="material-symbols-rounded">
+          account_balance </span
+        >PILARES DE PUCRA
+      </h2>
+
+      <section class="pilar-item image-pilar-1">
+        <h3 id="pillar_title1">VEX</h3>
+        <img src="./home/images/vex-pilar.png" height="100" alt="" />
+
+        <p id="pillar_text1">
+          Una competición internacional de robótica abierta a todas las edades,
+          donde se aprenden de forma práctica los conceptos básicos de
+          programación, diseño e ingeniería a través de retos que fomentan la
+          creatividad y el trabajo en equipo.
+        </p>
+      </section>
+      <section class="pilar-item image-pilar-2">
+        <h3 id="pillar_title2">ERC</h3>
+        <img src="./home/images/vex-pilar.png" height="100" alt="" />
+
+        <p id="pillar_text2">
+          Pensada para quienes buscan un mayor reto, con mayor implicación en la
+          robótica, dedicación extra y trabajo en equipo para superar desafíos
+          que ponen a prueba creatividad y estrategia.
+        </p>
+      </section>
+      <section class="pilar-item image-pilar-3">
+        <h3 id="pillar_title3">EVENTOS Y CONGRESOS</h3>
+        <img src="./home/images/logo_VEXThon.png" height="100" alt="" />
+
+        <p id="pillar_text3">
+          Un espacio para mostrar al mundo el esfuerzo, la dedicación y los
+          logros alcanzados, compartiendo con otros participantes y el público
+          los proyectos desarrollados y las soluciones creadas.
+        </p>
+      </section>
     </article>
-    <div id="luxy">
+    <article id="luxy">
       <!-- Slider -->
       <div id="slider-images">
         <button
-          class="btn-slider btn-slider-back material-symbols-outlined"
+          class="btn-slider btn-slider-back material-symbols-rounded"
           onclick="backSlider()"
         >
           arrow_back_ios
         </button>
         <button
-          class="btn-slider btn-slider-next material-symbols-outlined"
+          class="btn-slider btn-slider-next material-symbols-rounded"
           onclick="nextSlider()"
         >
           arrow_forward_ios
@@ -276,73 +274,73 @@
           </div>
         </div>
       </div>
+    </article>
 
-      <!-- Pie de pagina  -->
-      <footer class="footer-container">
-        <div class="footer-banner">
-          <p class="footer-slogan-text">Reinventing the future. PUCRA</p>
-          <p id="follow-us" class="footer-follow-us-text">¡Sigue a PUCRA!</p>
-          <div class="footer-social-links-container">
-            <a
-              href="https://youtu.be/IH2Nb8DPKt0"
-              target="_blank"
-              class="footer-social-link"
-            >
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/pucra.upc/"
-              target="_blank"
-              class="footer-social-link"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/company/pucra-upcc/"
-              target="_blank"
-              class="footer-social-link"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
-        </div>
-        <div class="footer-info">
-          <a href="/" class="footer-logo-link">
-            <img
-              src="images/logo-pucra-blanco3-1-186x181.png"
-              loading="lazy"
-              alt="Logo PUCRA"
-              class="footer-logo-image"
-            />
+    <!-- Pie de pagina  -->
+    <footer class="footer-container">
+      <div class="footer-banner">
+        <p class="footer-slogan-text">Reinventing the future. PUCRA</p>
+        <p id="follow-us" class="footer-follow-us-text">¡Sigue a PUCRA!</p>
+        <div class="footer-social-links-container">
+          <a
+            href="https://youtu.be/IH2Nb8DPKt0"
+            target="_blank"
+            class="footer-social-link"
+          >
+            <i class="fab fa-youtube"></i>
           </a>
-          <div class="footer-section">
-            <p id="address" class="footer-title-text">Dirección</p>
-            <p class="footer-info-text">
-              Avinguda d'Eduard Maristany 16, Edifici A. 08019 Barcelona
-            </p>
-          </div>
-          <div class="footer-section">
-            <p id="contacts" class="footer-title-text">Contactos</p>
-            <p class="footer-info-text">Email: pucra.eebe@upc.edu</p>
-          </div>
-          <div class="footer-section">
-            <p id="links" class="footer-title-text">Enlaces</p>
-            <a
-              href="https://eebe.upc.edu/ca/lescola/associacions/content-associacions/pucra"
-              class="footer-info-text"
-              >UPC - EEBE Escola Enginyeria Barcelona Est</a
-            >
-          </div>
+          <a
+            href="https://www.instagram.com/pucra.upc/"
+            target="_blank"
+            class="footer-social-link"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/pucra-upcc/"
+            target="_blank"
+            class="footer-social-link"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
+      </div>
+      <div class="footer-info">
+        <a href="/" class="footer-logo-link">
+          <img
+            src="images/logo-pucra-blanco3-1-186x181.png"
+            loading="lazy"
+            alt="Logo PUCRA"
+            class="footer-logo-image"
+          />
+        </a>
+        <div class="footer-section">
+          <p id="address" class="footer-title-text">Dirección</p>
+          <p class="footer-info-text">
+            Avinguda d'Eduard Maristany 16, Edifici A. 08019 Barcelona
+          </p>
+        </div>
+        <div class="footer-section">
+          <p id="contacts" class="footer-title-text">Contactos</p>
+          <p class="footer-info-text">Email: pucra.eebe@upc.edu</p>
+        </div>
+        <div class="footer-section">
+          <p id="links" class="footer-title-text">Enlaces</p>
+          <a
+            href="https://eebe.upc.edu/ca/lescola/associacions/content-associacions/pucra"
+            class="footer-info-text"
+            >UPC - EEBE Escola Enginyeria Barcelona Est</a
+          >
+        </div>
+      </div>
 
-        <div class="footer-copyright-text">
-          <span>
-            © Copyright <span id="actual-year">2024</span> PUCRA - All Rights
-            Reserved
-          </span>
-        </div>
-      </footer>
-    </div>
+      <div class="footer-copyright-text">
+        <span>
+          © Copyright <span id="actual-year">2024</span> PUCRA - All Rights
+          Reserved
+        </span>
+      </div>
+    </footer>
 
     <script src="js/language.js"></script>
     <script src="home/languageHome.js"></script>
@@ -350,65 +348,6 @@
     <script src="components/navbar/index.js"></script>
     <script src="components/footer/index.js"></script>
 
-    <script>
-      function updateCountdown() {
-        var now = new Date();
-        var currentYear = now.getFullYear();
-
-        // Fecha objetivo: 28 de abril del año actual
-        var endDate = new Date(`Apr 28, ${currentYear} 00:00:00`);
-
-        // Si ya pasó, usar el 28 de abril del año siguiente
-        if (now > endDate) {
-          endDate = new Date(`Apr 28, ${currentYear + 1} 00:00:00`);
-        }
-
-        var gap = endDate - now; // milisegundos restantes
-
-        // Definir unidades
-        var second = 1000;
-        var minute = second * 60;
-        var hour = minute * 60;
-        var day = hour * 24;
-        var days_per_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-
-        // Calcular días, horas
-        var totalDays = Math.floor(gap / day);
-        var h = Math.floor((gap % day) / hour);
-
-        // Calcular meses aproximados
-        var monthNow = now.getMonth();
-        var yearNow = now.getFullYear();
-        var remaining_days = totalDays;
-        var mth = 0;
-        var y = yearNow;
-
-        while (remaining_days >= days_per_month[(monthNow + mth) % 12]) {
-          let daysInMonth = days_per_month[(monthNow + mth) % 12];
-
-          // Ajuste por año bisiesto en febrero
-          if (
-            (monthNow + mth) % 12 === 1 &&
-            (y % 400 === 0 || (y % 100 !== 0 && y % 4 === 0))
-          ) {
-            daysInMonth = 29;
-          }
-
-          remaining_days -= daysInMonth;
-          mth++;
-          if ((monthNow + mth) % 12 === 0) y++;
-        }
-
-        document.getElementById("month").innerText = mth;
-        document.getElementById("day").innerText = remaining_days;
-        document.getElementById("hour").innerText = h;
-      }
-
-      // Actualizar cada segundo
-      setInterval(updateCountdown, 1000);
-
-      // Ejecutar al cargar la página
-      updateCountdown();
-    </script>
+    <script src="./home/countdown.js"></script>
   </body>
 </html>
