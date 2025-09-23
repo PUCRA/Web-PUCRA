@@ -18,7 +18,7 @@ const aboutEs = {
   links: "Enlaces",
   contact_us: "Contáctanos",
   phone: "Teléfono",
-  form_message: "Completa el formulario y te responderemos lo antes posible.",
+  form_message: "Complete el formulario y le responderemos lo antes posible",
   success_message: "¡Gracias por contactarnos!",
   form_fail: "¡Ups! Algo salió mal al enviar el formulario.",
   direction: "Dirección",
@@ -28,9 +28,7 @@ const aboutEs = {
   follow_us2: "¡SIGUE A PUCRA!",
   address: "Dirección",
   contact2: "Contactos",
-  
 };
-
 
 const aboutEn = {
   home: "Home",
@@ -52,7 +50,8 @@ const aboutEn = {
   links: "Links",
   contact_us: "Contact Us",
   phone: "Phone Number",
-  form_message: "Complete the form and we will respond as soon as possible!",
+  form_message:
+    "Please complete the form, and we will respond as soon as possible",
   success_message: "Thank you for contacting us!",
   form_fail: "Oops! Something went wrong while submitting the form.",
   direction: "Address",
@@ -63,7 +62,6 @@ const aboutEn = {
   address: "Address",
   contact2: "Contacts",
 };
-
 
 const aboutCat = {
   home: "Inici",
@@ -85,7 +83,7 @@ const aboutCat = {
   links: "Enllaços",
   contact_us: "Contacta'ns",
   phone: "Telèfon",
-  form_message: "Completa el formulari i et respondrem tan aviat com sigui possible.",
+  form_message: "Completeu el formulari i us respondrem al més aviat possible",
   success_message: "Gràcies per contactar amb nosaltres!",
   form_fail: "Ups! Alguna cosa ha anat malament en enviar el formulari.",
   direction: "Adreça",
@@ -96,8 +94,6 @@ const aboutCat = {
   address: "Adreça",
   contact2: "Contactes",
 };
-
-
 
 function fillSpecificContent(mLang) {
   document.documentElement.lang = mLang;
@@ -132,7 +128,6 @@ function changeLanguage() {
   return contentLang;
 }
 
-
 // replace document.getElementById with $ NO ES JQUERY
 const $ = (id) => document.getElementById(id);
 
@@ -146,7 +141,6 @@ function fillContentAbout() {
 
   let contenAbout = changeLanguage();
 
-  
   //Navbar
   for (let i = 0; i < $$("home").length; i++) {
     $$("home")[i].innerHTML = contenAbout.home;
@@ -168,8 +162,6 @@ function fillContentAbout() {
   for (let i = 0; i < $$("langs").length; i++) {
     $$("langs")[i].innerHTML = contenAbout.languages;
   }
-  
- 
 
   // Main section title (asegúrate que existe esta clave)
   if (contenAbout.section_title) {
@@ -187,10 +179,9 @@ function fillContentAbout() {
   $("field").placeholder = contenAbout.field;
   $("submit_text").value = contenAbout.submit_text;
 
+  if ($("actual-year")) $("actual-year").innerHTML = contenAbout.actual_year;
 
-
-  if ($("web-place"))
-    $("web-place").innerHTML = contenAbout.web_place;
+  if ($("web-place")) $("web-place").innerHTML = contenAbout.web_place;
 
   // Footer
   $("follow-us").innerHTML = contenAbout.follow_us;

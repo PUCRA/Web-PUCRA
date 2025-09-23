@@ -1,14 +1,13 @@
-/* ================================
-   SECCIÓN CONTACTO
-================================ */
-
-.General_contact {
+body {
+  font-family: "Mollen personal use", sans-serif;
+  margin: 0px;
+  background-color: black;
+}
+.article-section {
+  padding: 15px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap; /* para móviles */
-  padding: 100px 10%;
-  backdrop-filter: blur(8px);
+  gap: 50px;
+  flex-wrap: wrap;
   background-image: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0.4),
@@ -17,9 +16,32 @@
     url("../images/fondo-2000x1333.jpeg");
   background-position: center;
   background-size: cover;
-  max-width: 100%;
-  box-sizing: border-box;
+  justify-content: center;
+
+  align-items: center;
+  min-height: 100vh;
+  .contact-flex {
+    color: white;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 0px;
+    padding: 0px;
+    flex: 1;
+    p {
+      font-size: 20px;
+    }
+  }
 }
+
+#type-student {
+  display: none;
+}
+
+#type-partner {
+  display: block;
+}
+
+/* de aqui pa' bajo no lo he tocao' */
 
 /* ======= LADO IZQUIERDO: INFO ======= */
 .Info_Contact {
@@ -52,16 +74,6 @@
 }
 
 /* ======= LADO DERECHO: FORM ======= */
-.Contact_Form {
-  flex: 1;
-  min-width: 300px;
-  margin-top: 35px;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.3); /* caja translúcida */
-  border-radius: 10px;
-  text-align: center;
-  box-sizing: border-box;
-}
 
 .paragraph-31 {
   margin-bottom: 25px;
