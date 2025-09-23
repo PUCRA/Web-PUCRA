@@ -1,0 +1,9 @@
+body {
+  margin: 0px;
+  background-color: gray;
+}
+
+#myCanvas {
+  background: url("./textures/bg_pucra.png") no-repeat center center;
+  background-size: cover;
+}
