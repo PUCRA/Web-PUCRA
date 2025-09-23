@@ -33,7 +33,7 @@ const aboutEs = {
   pillar_text3:
     "Un espacio para mostrar al mundo el esfuerzo, la dedicación y los logros alcanzados, compartiendo con otros participantes y el público los proyectos desarrollados y las soluciones creadas.",
   VEX_CH_2025_text:
-    "Tras tres años consecutivos como representantes de nuestro país en el VEX Robotics World Championship, el equipo afronta una nueva temporada en la que podrá demostrar la experiencia y aptitudes adquiridas. Con el objetivo de regresar a Dallas (Texas) y competir al máximo nivel, codo a codo con los mejores equipos, en un evento con más de 20.000 participantes de todo el mundo.",
+    "Tras tres años consecutivos como representantes de nuestro país en el VEX Robotics World Championship, el equipo afronta una nueva temporada en la que podrá demostrar la experiencia y aptitudes adquiridas.<br><br> Con el objetivo de regresar a Dallas (Texas) y competir al máximo nivel, codo a codo con los mejores equipos, en un evento con más de 20.000 participantes de todo el mundo.",
 };
 
 const aboutEn = {
@@ -73,7 +73,7 @@ const aboutEn = {
     "A space to showcase effort, dedication, and achievements to the world, sharing with other participants and the public the developed projects and created solutions.",
 
   VEX_CH_2025_text:
-    "After three consecutive years representing our country at the VEX Robotics World Championship, the team is facing a new season to demonstrate the experience and skills acquired. The goal: to return to Dallas (Texas) and compete at the highest level, side by side with the best teams, in an event with more than 20,000 participants from around the world.",
+    "After three consecutive years representing our country at the VEX Robotics World Championship, the team is facing a new season to demonstrate the experience and skills acquired. <br><br>The goal: to return to Dallas (Texas) and compete at the highest level, side by side with the best teams, in an event with more than 20,000 participants from around the world.",
 };
 
 const aboutCat = {
@@ -114,7 +114,7 @@ const aboutCat = {
     "Un espai per mostrar al món l'esforç, la dedicació i els èxits assolits, compartint amb altres participants i el públic els projectes desenvolupats i les solucions creades.",
 
   VEX_CH_2025_text:
-    "Després de tres anys consecutius com a representants del nostre país al VEX Robotics World Championship, l'equip afronta una nova temporada on podrà demostrar l'experiència i les aptituds adquirides. Amb l'objectiu de tornar a Dallas (Texas) i competir al màxim nivell, colze a colze amb els millors equips en un esdeveniment amb més de 20.000 participants d'arreu del món.",
+    "Després de tres anys consecutius com a representants del nostre país al VEX Robotics World Championship, l'equip afronta una nova temporada on podrà demostrar l'experiència i les aptituds adquirides.<br><br>Amb l'objectiu de tornar a Dallas (Texas) i competir al màxim nivell, colze a colze amb els millors equips en un esdeveniment amb més de 20.000 participants d'arreu del món.",
 };
 
 function fillSpecificContent(mLang) {

@@ -86,7 +86,7 @@ function updateCountdown() {
   const now = new Date();
 
   // Date
-  let target = "2025-09-24T00:00:00";
+  let target = "2026-04-28T00:00:00";
   // let target = "2026-04-28T00:00:00";
 
   let result = countdownTo(target);
