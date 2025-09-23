@@ -16,6 +16,7 @@ const aboutEs = {
   address: "Dirección",
   contact3: "Contactos",
   links: "Enlaces",
+  actual_year: "2024",
   contact_us: "Contáctanos",
   phone: "Teléfono",
   form_message: "Complete el formulario y le responderemos lo antes posible",
@@ -48,6 +49,8 @@ const aboutEn = {
   contact: "Contact",
   contacts: "Contacts",
   links: "Links",
+  actual_year: "2024",
+  actual_year: "2024", // si es dinámico, puedes omitirlo o actualizarlo por JS
   contact_us: "Contact Us",
   phone: "Phone Number",
   form_message:
@@ -81,6 +84,7 @@ const aboutCat = {
   contact: "Contacte",
   contacts: "Contactes",
   links: "Enllaços",
+  actual_year: "2024",
   contact_us: "Contacta'ns",
   phone: "Telèfon",
   form_message: "Completeu el formulari i us respondrem al més aviat possible",

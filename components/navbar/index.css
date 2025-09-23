@@ -63,6 +63,9 @@
   a:hover {
     color: white;
     transform: scale(1.1);
+    text-decoration-color: #c43a69;
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
   }
 
   .social-links {
@@ -123,6 +126,9 @@
 
     a:hover {
       transform: scale(1.1);
+      text-decoration-color: #c43a69;
+      text-decoration-line: underline;
+      text-underline-offset: 10px;
     }
   }
 }

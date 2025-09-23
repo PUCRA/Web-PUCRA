@@ -5,7 +5,7 @@
 >
   <head>
     <meta charset="utf-8" />
-    <title>PUCRA Home-ESP</title>
+    <title>PUCRA</title>
     <meta content="PUCRA Home-ESP" property="og:title" />
     <meta content="PUCRA Home-ESP" property="twitter:title" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -28,7 +28,7 @@
     />
   </head>
   <body onload="fillContentAbout()">
-    <navbar id="navbar" class="position-fixed">
+    <navbar id="navbar" class="position-sticky">
       <a href="/">
         <img
           src="images/logo-pucra-blanco2-1-536x143.png"
@@ -47,7 +47,7 @@
         <a href="/events" class="events">Eventos</a>
         <a href="/sponsors">Sponsors</a>
         <a href="/about" class="about-us">Sobre Nosotros</a>
-        <div class="lang-dropdown" style="position: relative">
+        <div class="lang-dropdown">
           <button id="lang-menu" class="upper-case" onclick="showLangs()">
             ES
           </button>
@@ -149,11 +149,7 @@
     </article>
 
     <article class="pilar-container">
-      <h2 id="pillarsPUCRA">
-        <span aria-hidden="true" class="material-symbols-rounded">
-          account_balance </span
-        >PILARES DE PUCRA
-      </h2>
+      <h2 id="pillarsPUCRA">PILARES DE PUCRA</h2>
 
       <section class="pilar-item image-pilar-1">
         <h3 id="pillar_title1">VEX</h3>
@@ -187,9 +183,10 @@
         </p>
       </section>
     </article>
-    <article id="luxy">
+    <article>
       <!-- Slider -->
       <div id="slider-images">
+        <h2 class="slider-title">Álbum de fotos</h2>
         <button
           class="btn-slider btn-slider-back material-symbols-rounded"
           onclick="backSlider()"
@@ -207,73 +204,67 @@
           <!--  autogenerared <button class="slider-menu-btns" -->
         </div>
       </div>
-      <!-- end Slider -->
-
-      <div class="container-2 w-container">
-        <img
-          src="images/logo-pucra-blanco2-1-536x143.png"
-          loading="lazy"
-          sizes="(max-width: 767px) 200px, (max-width: 991px) 250px, 450px"
-          srcset="
-            images/logo-pucra-blanco2-1-536x143-p-500.png 500w,
-            images/logo-pucra-blanco2-1-536x143.png       536w
-          "
-          alt=""
-          class="image_pucra_home"
-        />
-        <div class="div-block-3">
-          <p id="summary_PUCRA" class="paragraph">
-            PUCRA es la asociación de robótica de la Universitat Politècnica de
-            Catalunya, con sede en la Escola d’Enginyeria de Barcelona Est, el
-            campus más innovador de toda la universidad. Fundada en 2017, es la
-            primera y única asociación de este tipo en todo el territorio
-            español. <br /><br />
-            Con un equipo técnico multidisciplinar formado por estudiantes de
-            diferentes ramas de ingeniería, nos disponemos a superar cualquier
-            reto que se nos presente. Nuestra cultura de trabajo, esfuerzo y
-            sacrificio y la ambición de continuar mejorando nos lleva cada año a
-            superar nuestras metas y objetivos.
-          </p>
-          <a
-            data-w-id="04cb5fb6-f35a-b38f-1908-a850de4df6b1"
-            href="/about"
-            id="Info_button"
-            class="button-2 w-button"
-            >Descubre todo sobre PUCRA</a
-          >
-        </div>
-        <div class="div-block-4"></div>
-      </div>
-
-      <!-- CONTADOR VEX WORLD-->
-      <div class="container-VEX_CH_2023 w-container">
-        <h1 class="glow3">VEX WORLD CHAMPIONSHIP 2025</h1>
-        <p class="paragraph-8">
-          <strong class="bold-text-2" id="VEX_CH_2025_text">
-            Tras tres años consecutivos como representantes de nuestro país
-            dentro de la VEX Robotics World Championship, el equipo se enfrenta
-            a una nueva temporada donde poder demostrar la experiencia y
-            aptitudes adquiridas. Con el objetivo de volver de nuevo a Dallas
-            (Texas) a dar nuestro máximo potencial, compitiendo codo a codo con
-            los mejores equipos, en la gran final internacional.
-          </strong>
+    </article>
+    <!-- end Slider -->
+    <article class="innovation-movement">
+      <img
+        width="400px"
+        src="./home/images//wallpaperflare.com_wallpaper.jpg"
+        loading="lazy"
+        alt=""
+      />
+      <div class="innovation-description">
+        <h2>Innovación en movimiento</h2>
+        <p id="summary_PUCRA">
+          PUCRA es la asociación de robótica de la Universitat Politècnica de
+          Catalunya, con sede en la Escola d'Enginyeria de Barcelona Est, el
+          campus más innovador de toda la universidad. Fundada en 2017, es la
+          primera y única asociación de este tipo en todo el territorio español.
+          Con un equipo técnico multidisciplinar formado por estudiantes de
+          diferentes ramas de ingeniería, nos disponemos a superar cualquier
+          reto que se nos presente. Nuestra cultura de trabajo, esfuerzo y
+          sacrificio y la ambición de continuar mejorando nos lleva cada año a
+          superar nuestras metas y objetivos.
         </p>
-
-        <div class="countdown">
-          <div class="countdown-block">
-            <p id="month" class="glow1">NA</p>
-            <p class="glow2">Meses</p>
-          </div>
-          <div class="countdown-block">
-            <p id="day" class="glow1">NA</p>
-            <p class="glow2">Días</p>
-          </div>
-          <div class="countdown-block">
-            <p id="hour" class="glow1">NA</p>
-            <p class="glow2">Horas</p>
-          </div>
-        </div>
+        <a href="/about" class="info-btn" id="Info_button"
+          >Descubre todo sobre PUCRA</a
+        >
       </div>
+    </article>
+    <article class="vex-world-champions-image innovation-description">
+      <!-- CONTADOR VEX WORLD-->
+      <h2>VEX WORLD CHAMPIONSHIP 2025</h2>
+      <p id="VEX_CH_2025_text">
+        Tras tres años consecutivos como representantes de nuestro país dentro
+        de la VEX Robotics World Championship, el equipo se enfrenta a una nueva
+        temporada donde poder demostrar la experiencia y aptitudes adquiridas.
+        Con el objetivo de volver de nuevo a Dallas (Texas) a dar nuestro máximo
+        potencial, compitiendo codo a codo con los mejores equipos, en la gran
+        final internacional.
+      </p>
+
+      <section class="countdown" style="justify-content: center">
+        <div id="month-parent" class="countdown-block">
+          <p id="month" class="glow-timer">0</p>
+          <span class="glow2">Meses</span>
+        </div>
+        <div id="day-parent" class="countdown-block">
+          <p id="day" class="glow-timer">0</p>
+          <span class="glow2">Días</span>
+        </div>
+        <div id="hour-parent" class="countdown-block">
+          <p id="hour" class="glow-timer">0</p>
+          <span class="glow2">Horas</span>
+        </div>
+        <div id="minute-parent" class="countdown-block">
+          <p id="minute" class="glow-timer">0</p>
+          <span class="glow2">Minutos</span>
+        </div>
+        <div id="seconds-parent" class="countdown-block">
+          <p id="seconds" class="glow-timer">0</p>
+          <span class="glow2">Segundos</span>
+        </div>
+      </section>
     </article>
 
     <!-- Pie de pagina  -->

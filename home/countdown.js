@@ -9,7 +9,7 @@ function countdownTo(targetDate) {
   let secondsLeft = targetUnix - nowUnix;
 
   if (secondsLeft <= 0) {
-     return "¡La fecha ya ha pasado!";
+    return "¡La fecha ya ha pasado!";
   }
 
   // Calcular años bisiestos y ajustar meses/días
@@ -72,22 +72,32 @@ function isLeapYear(year) {
   return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 }
 function updateCountdown() {
-  const monthDom = document.getElementById("month");
+  const month = document.getElementById("month");
   const day = document.getElementById("day");
   const hour = document.getElementById("hour");
   const minute = document.getElementById("minute");
   const seconds = document.getElementById("seconds");
+
+  const monthParent = document.getElementById("month-parent");
+  const dayParent = document.getElementById("day-parent");
+  // const hourParent = document.getElementById("hour-parent"); display none not used
+  const minuteParent = document.getElementById("minute-parent");
+  const secondsParent = document.getElementById("seconds-parent");
   const now = new Date();
 
   // Date
-  let target = "2026-04-28T00:00:00";
-
-  if (now > target) {
-    // Si la fecha ya pasó, se pone para el año siguiente
-    target.setFullYear(target.getFullYear() + 1);
-  }
+  let target = "2025-09-24T00:00:00";
+  // let target = "2026-04-28T00:00:00";
 
   let result = countdownTo(target);
+  month.innerText = result.months;
+  day.innerText = result.days;
+  hour.innerText = result.hours;
+  minute.innerText = result.minutes;
+  seconds.innerText = result.seconds;
+
+  if (now.getFullYear() < result.years) {
+  }
 
   if (
     now.getFullYear() === result.years &&
@@ -95,38 +105,29 @@ function updateCountdown() {
     now.getDate() === result.days
   ) {
     // Hoy es el día
-    monthDom.style.display = "none";
+    month.style.display = "none";
     day.style.display = "none";
     hour.style.display = "none";
     minute.style.display = "none";
     seconds.style.display = "none";
-    document.getElementById("today-is-the.day").innerText = "¡Hoy es el día!";
+    //  document.getElementById("today-is-the.day").innerText = "¡Hoy es el día!";
     return;
   }
 
   if (result.months > 0) {
-    monthDom.innerText = result.months;
-    day.innerText = result.days;
-    hour.innerText = result.hours;
-    minute.style.display = "none";
-    seconds.style.display = "none";
+    minuteParent.style.display = "none";
+    secondsParent.style.display = "none";
   }
 
   if (result.days === 0) {
-    monthDom.style.display = "none";
-    day.style.display = "none";
-    hour.innerText = result.hours;
-    minute.innerText = result.minutes;
-    seconds.innerText = result.seconds;
+    monthParent.style.display = "none";
+    dayParent.style.display = "none";
     return;
   }
 
   if (result.months === 0) {
-    monthDom.style.display = "none";
-    day.innerText = result.days;
-    hour.innerText = result.hours;
-    minute.innerText = result.minutes;
-    seconds.style.display = "none";
+    monthParent.style.display = "none";
+    secondsParent.style.display = "none";
     return;
   }
 
