@@ -45,6 +45,7 @@ p {
   align-items: center;
   gap: 10px;
 }
+
 .pilar-container {
   position: relative;
   display: flex;
@@ -322,6 +323,7 @@ p {
     padding: 60px 10px 50px 10px;
     flex-direction: column-reverse;
     min-height: 100vh;
+    background-attachment: scroll;
   }
   .btns-join {
     justify-content: center;
@@ -334,6 +336,7 @@ p {
     flex-direction: column;
     .pilar-item {
       min-height: 200px;
+      background-attachment: scroll;
     }
   }
 
@@ -351,10 +354,14 @@ p {
   }
   .innovation-movement {
     flex-direction: column-reverse;
+    background-attachment: scroll;
   }
 
-  .vex-world-champions > p {
-    max-width: 400px;
+  .vex-world-champions {
+    background-attachment: scroll;
+    p {
+      max-width: 400px;
+    }
   }
   .media-image {
     width: 100% !important;
