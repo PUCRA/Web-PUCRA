@@ -3,6 +3,14 @@ body {
   margin: 0px;
   background-color: black;
 }
+
+h1,
+h2,
+h3 {
+  text-decoration-color: #c43a69;
+  text-decoration-line: underline;
+  text-underline-offset: 10px;
+}
 .article-section {
   padding: 15px;
   display: flex;

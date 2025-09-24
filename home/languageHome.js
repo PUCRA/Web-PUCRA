@@ -15,32 +15,37 @@ const aboutEs = {
   address: "Dirección",
   contacts: "Contactos",
   links: "Enlaces",
-
+  photo_album: "Álbum de fotos",
+  month: "Mes",
+  days: "Días",
+  hours: "Horas",
+  minutes: "Minutos",
+  seconds: "Segundos",
+  inovation_movement: "Innovación en movimiento",
+  accesibility: {
+    select_language: "Seleccionar idioma",
+    back: "Anterior",
+    next: "Siguiente",
+  },
   desc_home:
     "Somos una asociación de Robotica. Nos dedicamos a asistir y organizar competiciones superando nuestras metas y objectivos año tras año",
   join_sponsor: "Apóyanos como partner",
   join_student: "Únete como miembro",
-
   summary_PUCRA:
-    "PUCRA es la asociación de robótica de la Universitat Politècnica de Catalunya, con sede en la Escuela de Ingeniería de Barcelona Este, el campus más innovador de toda la universidad. Fundada en 2017, es la primera y única asociación de este tipo en todo el territorio español.<br><br>Con un equipo técnico multidisciplinar formado por estudiantes de diferentes ramas de la ingeniería, estamos preparados para afrontar cualquier reto. Nuestra cultura de trabajo, esfuerzo y sacrificio, y la ambición de mejorar continuamente, nos lleva cada año a superar nuestros objetivos.",
+    "Fundada en 2017 y con base en la EEBE es la asociación de robótica de la UPC. Diseñamos y competimos con robots, organizamos eventos y representamos a la universidad en torneos nacionales; nuestra actividad nos sitúa entre las asociaciones de robótica más destacadas de España.<br><br>Con un equipo técnico multidisciplinar formado por estudiantes de diferentes ramas de la ingeniería, estamos preparados para afrontar cualquier reto. Nuestra cultura de trabajo, esfuerzo y sacrificio, y la ambición de mejorar continuamente, nos lleva cada año a superar nuestros objetivos.",
   Info_button: "Descubre todo sobre PUCRA",
-
   pillarsPUCRA: "PILARES DE PUCRA",
-
-  pillar_title1: "Jóvenes estudiantes",
+  pillar_title1: "VEX",
   pillar_text1:
-    "El equipo formado por estudiantes de ingeniería con un futuro lleno de sueños y retos representa el espíritu de superación y compromiso con nuestra sociedad.",
-
-  pillar_title2: "Organización de eventos",
+    "Una competición internacional de robótica abierta a todas las edades, donde se aprenden de forma práctica los conceptos básicos de programación, diseño e ingeniería a través de retos que fomentan la creatividad y el trabajo en equipo.",
+  pillar_title2: "ERC",
   pillar_text2:
-    "El trabajo realizado durante estos años ha proporcionado a PUCRA una gran experiencia en la organización de eventos, convirtiéndose en el centro de la robótica de competición en el país.",
-
-  pillar_title3: "Vanguardia tecnológica",
+    "Pensada para quienes buscan un mayor reto, con mayor implicación en la robótica, dedicación extra y trabajo en equipo para superar desafíos que ponen a prueba creatividad y estrategia.",
+  pillar_title3: "EVENTOS Y CONGRESOS",
   pillar_text3:
-    "Participar en las competiciones internacionales de robótica más importantes nos obliga a sacar el máximo provecho de nuestro potencial en innovación y desarrollo tecnológico.",
-
+    "Un espacio para mostrar al mundo el esfuerzo, la dedicación y los logros alcanzados, compartiendo con otros participantes y el público los proyectos desarrollados y las soluciones creadas.",
   VEX_CH_2025_text:
-    "Tras tres años consecutivos como representantes de nuestro país en el VEX Robotics World Championship, el equipo afronta una nueva temporada en la que podrá demostrar la experiencia y aptitudes adquiridas. Con el objetivo de regresar a Dallas (Texas) y competir al máximo nivel, codo a codo con los mejores equipos, en un evento con más de 20.000 participantes de todo el mundo.",
+    "Tras tres años consecutivos como representantes de nuestro país en el VEX Robotics World Championship, el equipo afronta una nueva temporada en la que podrá demostrar la experiencia y aptitudes adquiridas.<br><br> Con el objetivo de regresar a Dallas (Texas) y competir al máximo nivel, codo a codo con los mejores equipos, en un evento con más de 20.000 participantes de todo el mundo.",
 };
 
 const aboutEn = {
@@ -60,32 +65,39 @@ const aboutEn = {
   address: "Address",
   contacts: "Contacts",
   links: "Links",
-
+  photo_album: "Photo Album",
+  month: "Month",
+  days: "Days",
+  hours: "Hours",
+  minutes: "Minutes",
+  seconds: "Seconds",
+  inovation_movement: "Innovation in motion",
+  accesibility: {
+    select_language: "Select language",
+    back: "Back",
+    next: "Next",
+  },
   desc_home:
     "We are a Robotics association. We are dedicated to assisting and organizing competitions, surpassing our goals and objectives year after year.",
   join_sponsor: "Support us as a partner",
   join_student: "Join us now as a member",
-
   summary_PUCRA:
-    "PUCRA is the robotics association of the Universitat Politècnica de Catalunya, based at the Escola d'Enginyeria de Barcelona Est — the most innovative campus of the entire university. Founded in 2017, it is the first and only association of its kind in Spain.<br><br>With a multidisciplinary technical team made up of students from various engineering fields, we are ready to face any challenge. Our culture of hard work, effort, and sacrifice, along with our ambition to constantly improve, drives us to exceed our goals every year.",
+    "Founded in 2017 and based at EEBE, we are the UPC's robotics association. We design and compete with robots, organize events, and represent the university in national tournaments; our activity places us among the leading robotics associations in Spain.<br><br>With a multidisciplinary technical team made up of students from various engineering fields, we are ready to face any challenge. Our culture of hard work, effort, and sacrifice, along with our ambition to constantly improve, drives us to exceed our goals every year.",
   Info_button: "Discover everything about PUCRA",
 
   pillarsPUCRA: "PUCRA PILLARS",
-
-  pillar_title1: "Young Students",
+  pillar_title1: "VEX",
   pillar_text1:
-    "The team, made up of engineering students with a future full of dreams and challenges, represents the spirit of self-improvement and commitment to our society.",
-
-  pillar_title2: "Event Organization",
+    "An international robotics competition open to all ages, where participants learn the basics of programming, design, and engineering through hands-on challenges that foster creativity and teamwork.",
+  pillar_title2: "ERC",
   pillar_text2:
-    "The work carried out over the years has given PUCRA extensive experience in organizing events, becoming the hub of competitive robotics in the country.",
-
-  pillar_title3: "Technological Vanguard",
+    "Designed for those seeking a greater challenge, with deeper involvement in robotics, extra dedication, and teamwork to overcome tasks that test creativity and strategy.",
+  pillar_title3: "EVENTS AND CONFERENCES",
   pillar_text3:
-    "Taking part in the most important international robotics competitions pushes us to fully exploit our potential in innovation and technological development.",
+    "A space to showcase effort, dedication, and achievements to the world, sharing with other participants and the public the developed projects and created solutions.",
 
   VEX_CH_2025_text:
-    "After three consecutive years representing our country at the VEX Robotics World Championship, the team is facing a new season to demonstrate the experience and skills acquired. The goal: to return to Dallas (Texas) and compete at the highest level, side by side with the best teams, in an event with more than 20,000 participants from around the world.",
+    "After three consecutive years representing our country at the VEX Robotics World Championship, the team is facing a new season to demonstrate the experience and skills acquired. <br><br>The goal: to return to Dallas (Texas) and compete at the highest level, side by side with the best teams, in an event with more than 20,000 participants from around the world.",
 };
 
 const aboutCat = {
@@ -105,32 +117,40 @@ const aboutCat = {
   address: "Adreça",
   contacts: "Contactes",
   links: "Enllaços",
-
+  photo_album: "Àlbum de fotos",
+  month: "Mes",
+  days: "Dies",
+  hours: "Hores",
+  minutes: "Minuts",
+  seconds: "Segons",
+  inovation_movement: "Innovació en moviment",
+  accesibility: {
+    select_language: "Selecciona l'idioma",
+    back: "Anterior",
+    next: "Següent",
+  },
   desc_home:
     "Som una associació de Robòtica. Ens dediquem a assistir i organitzar competicions, superant les nostres metes i objectius any rere any.",
   join_sponsor: "Dona'ns suport com a partner",
   join_student: "Uneix-te com a membre",
-
   summary_PUCRA:
-    "PUCRA és l'associació de robòtica de la Universitat Politècnica de Catalunya, amb seu a l'Escola d'Enginyeria de Barcelona Est, el campus més innovador de tota la universitat. Fundada l'any 2017, és la primera i única associació d'aquest tipus a tot l'Estat espanyol.<br><br>Amb un equip tècnic multidisciplinari format per estudiants de diverses branques de l'enginyeria, estem preparats per afrontar qualsevol repte. La nostra cultura de treball, esforç i sacrifici, i l'ambició de millorar contínuament, ens porta cada any a superar els nostres objectius.",
+    "Fundada el 2017 i amb seu a l'EEBE, som l'associació de robòtica de la UPC. Dissenyem i competim amb robots, organitzem esdeveniments i representem la universitat en tornejos nacionals; la nostra activitat ens situa entre les associacions de robòtica més destacades d'Espanya.<br><br>Amb un equip tècnic multidisciplinari format per estudiants de diverses branques de l'enginyeria, estem preparats per afrontar qualsevol repte. La nostra cultura de treball, esforç i sacrifici, i l'ambició de millorar contínuament, ens porta cada any a superar els nostres objectius.",
   Info_button: "Descobreix tot sobre PUCRA",
 
   pillarsPUCRA: "PILARES DE PUCRA",
 
-  pillar_title1: "Joves estudiants",
+  pillar_title1: "VEX",
   pillar_text1:
-    "L'equip format per estudiants d'enginyeria amb un futur ple de somnis i reptes representa l'esperit de superació i compromís amb la nostra societat.",
-
-  pillar_title2: "Organització d'esdeveniments",
+    "Una competició internacional de robòtica oberta a totes les edats, on s'aprenen de manera pràctica els conceptes bàsics de programació, disseny i enginyeria a través de reptes que fomenten la creativitat i el treball en equip.",
+  pillar_title2: "ERC",
   pillar_text2:
-    "La feina feta durant aquests anys ha proporcionat a PUCRA una gran experiència en l'organització d'esdeveniments, convertint-se en el centre de la robòtica de competició al país.",
-
-  pillar_title3: "Vanguarda tecnològica",
+    "Pensada per a aquells que busquen un repte més gran, amb una major implicació en la robòtica, dedicació extra i treball en equip per superar desafiaments que posen a prova la creativitat i l'estratègia.",
+  pillar_title3: "ESDEVENIMENTS I CONGRESSOS",
   pillar_text3:
-    "Participar en les competicions internacionals de robòtica més importants ens obliga a treure el màxim rendiment del nostre potencial en innovació i desenvolupament tecnològic.",
+    "Un espai per mostrar al món l'esforç, la dedicació i els èxits assolits, compartint amb altres participants i el públic els projectes desenvolupats i les solucions creades.",
 
   VEX_CH_2025_text:
-    "Després de tres anys consecutius com a representants del nostre país al VEX Robotics World Championship, l'equip afronta una nova temporada on podrà demostrar l'experiència i les aptituds adquirides. Amb l'objectiu de tornar a Dallas (Texas) i competir al màxim nivell, colze a colze amb els millors equips en un esdeveniment amb més de 20.000 participants d'arreu del món.",
+    "Després de tres anys consecutius com a representants del nostre país al VEX Robotics World Championship, l'equip afronta una nova temporada on podrà demostrar l'experiència i les aptituds adquirides.<br><br>Amb l'objectiu de tornar a Dallas (Texas) i competir al màxim nivell, colze a colze amb els millors equips en un esdeveniment amb més de 20.000 participants d'arreu del món.",
 };
 
 function fillSpecificContent(mLang) {
@@ -155,13 +175,16 @@ function changeLanguage() {
   switch (mLang) {
     case "cat":
       contentLang = aboutCat;
+      $("lang-menu").innerText = contentLang.language_cat;
       break;
     case "en":
       contentLang = aboutEn;
+      $("lang-menu").innerText = contentLang.language_en;
       break;
     default:
       // Default 'es' if no language is set or if the language is not recognized
       contentLang = aboutEs;
+      $("lang-menu").innerText = contentLang.language_es;
       break;
   }
   return contentLang;
@@ -210,8 +233,9 @@ function fillContentAbout() {
   $("join-sponsor").innerHTML = contenAbout.join_sponsor;
   $("join-student").innerHTML = contenAbout.join_student;
 
+  $("inovation_movement").innerHTML = contenAbout.inovation_movement;
   // Pillars
-  /*
+
   $("pillarsPUCRA").innerHTML = contenAbout.pillarsPUCRA;
   $("pillar_title1").innerHTML = contenAbout.pillar_title1;
   $("pillar_text1").innerHTML = contenAbout.pillar_text1;
@@ -220,12 +244,26 @@ function fillContentAbout() {
   $("pillar_title3").innerHTML = contenAbout.pillar_title3;
   $("pillar_text3").innerHTML = contenAbout.pillar_text3;
   $("VEX_CH_2025_text").innerHTML = contenAbout.VEX_CH_2025_text;
-*/
+
   // Main section title (asegúrate que existe esta clave)
   if (contenAbout.section_title) {
     $("title-history").innerHTML = contenAbout.section_title;
   }
 
+  // Accessibility
+  $("lang-menu").title = contenAbout.accesibility.select_language;
+  $("btn-slider-back").title = contenAbout.accesibility.back;
+  $("btn-slider-next").title = contenAbout.accesibility.next;
+
+  // Countdown
+  $("month_text").innerHTML = contenAbout.month;
+  $("day_text").innerHTML = contenAbout.days;
+  $("hour_text").innerHTML = contenAbout.hours;
+  $("minute_text").innerHTML = contenAbout.minutes;
+  $("seconds_text").innerHTML = contenAbout.seconds;
+
+  // Slider
+  $("photo_album").innerHTML = contenAbout.photo_album;
 
   // Footer
   $("follow-us").innerHTML = contenAbout.follow_us;
