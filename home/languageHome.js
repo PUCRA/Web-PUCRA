@@ -15,6 +15,18 @@ const aboutEs = {
   address: "Dirección",
   contacts: "Contactos",
   links: "Enlaces",
+  photo_album: "Álbum de fotos",
+  month: "Mes",
+  days: "Días",
+  hours: "Horas",
+  minutes: "Minutos",
+  seconds: "Segundos",
+  inovation_movement: "Innovación en movimiento",
+  accesibility: {
+    select_language: "Seleccionar idioma",
+    back: "Anterior",
+    next: "Siguiente",
+  },
   desc_home:
     "Somos una asociación de Robotica. Nos dedicamos a asistir y organizar competiciones superando nuestras metas y objectivos año tras año",
   join_sponsor: "Apóyanos como partner",
@@ -53,6 +65,18 @@ const aboutEn = {
   address: "Address",
   contacts: "Contacts",
   links: "Links",
+  photo_album: "Photo Album",
+  month: "Month",
+  days: "Days",
+  hours: "Hours",
+  minutes: "Minutes",
+  seconds: "Seconds",
+  inovation_movement: "Innovation in motion",
+  accesibility: {
+    select_language: "Select language",
+    back: "Back",
+    next: "Next",
+  },
   desc_home:
     "We are a Robotics association. We are dedicated to assisting and organizing competitions, surpassing our goals and objectives year after year.",
   join_sponsor: "Support us as a partner",
@@ -93,6 +117,18 @@ const aboutCat = {
   address: "Adreça",
   contacts: "Contactes",
   links: "Enllaços",
+  photo_album: "Àlbum de fotos",
+  month: "Mes",
+  days: "Dies",
+  hours: "Hores",
+  minutes: "Minuts",
+  seconds: "Segons",
+  inovation_movement: "Innovació en moviment",
+  accesibility: {
+    select_language: "Selecciona l'idioma",
+    back: "Anterior",
+    next: "Següent",
+  },
   desc_home:
     "Som una associació de Robòtica. Ens dediquem a assistir i organitzar competicions, superant les nostres metes i objectius any rere any.",
   join_sponsor: "Dona'ns suport com a partner",
@@ -139,13 +175,16 @@ function changeLanguage() {
   switch (mLang) {
     case "cat":
       contentLang = aboutCat;
+      $("lang-menu").innerText = contentLang.language_cat;
       break;
     case "en":
       contentLang = aboutEn;
+      $("lang-menu").innerText = contentLang.language_en;
       break;
     default:
       // Default 'es' if no language is set or if the language is not recognized
       contentLang = aboutEs;
+      $("lang-menu").innerText = contentLang.language_es;
       break;
   }
   return contentLang;
@@ -194,6 +233,7 @@ function fillContentAbout() {
   $("join-sponsor").innerHTML = contenAbout.join_sponsor;
   $("join-student").innerHTML = contenAbout.join_student;
 
+  $("inovation_movement").innerHTML = contenAbout.inovation_movement;
   // Pillars
 
   $("pillarsPUCRA").innerHTML = contenAbout.pillarsPUCRA;
@@ -209,6 +249,21 @@ function fillContentAbout() {
   if (contenAbout.section_title) {
     $("title-history").innerHTML = contenAbout.section_title;
   }
+
+  // Accessibility
+  $("lang-menu").title = contenAbout.accesibility.select_language;
+  $("btn-slider-back").title = contenAbout.accesibility.back;
+  $("btn-slider-next").title = contenAbout.accesibility.next;
+
+  // Countdown
+  $("month_text").innerHTML = contenAbout.month;
+  $("day_text").innerHTML = contenAbout.days;
+  $("hour_text").innerHTML = contenAbout.hours;
+  $("minute_text").innerHTML = contenAbout.minutes;
+  $("seconds_text").innerHTML = contenAbout.seconds;
+
+  // Slider
+  $("photo_album").innerHTML = contenAbout.photo_album;
 
   // Footer
   $("follow-us").innerHTML = contenAbout.follow_us;

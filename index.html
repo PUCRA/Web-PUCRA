@@ -6,10 +6,9 @@
   <head>
     <meta charset="utf-8" />
     <title>PUCRA</title>
-    <meta content="PUCRA Home-ESP" property="og:title" />
-    <meta content="PUCRA Home-ESP" property="twitter:title" />
+    <meta content="PUCRA Home" property="og:title" />
+    <meta content="PUCRA Home" property="twitter:title" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="Webflow" name="generator" />
 
     <link href="home/index.css" rel="stylesheet" type="text/css" />
     <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
@@ -28,15 +27,15 @@
     />
   </head>
   <body onload="fillContentAbout()">
-    <navbar id="navbar" class="position-sticky">
+    <navbar id="navbar" class="position-fixed">
       <a href="/">
         <img
-          src="images/logo-pucra-blanco2-1-536x143.png"
+          src="../images/logo-pucra-blanco2-1-536x143.png"
           loading="lazy"
           sizes="(max-width: 479px) 100px, (max-width: 767px) 150px, 200px"
           srcset="
-            images/logo-pucra-blanco2-1-536x143-p-500.png 500w,
-            images/logo-pucra-blanco2-1-536x143.png       536w
+            ../images/logo-pucra-blanco2-1-536x143-p-500.png 500w,
+            ../images/logo-pucra-blanco2-1-536x143.png       536w
           "
           alt="PUCRA Logo"
         />
@@ -47,7 +46,7 @@
         <a href="/events" class="events">Eventos</a>
         <a href="/sponsors">Sponsors</a>
         <a href="/about" class="about-us">Sobre Nosotros</a>
-        <div class="lang-dropdown">
+        <div class="lang-dropdown" style="position: relative">
           <button id="lang-menu" class="upper-case" onclick="showLangs()">
             ES
           </button>
@@ -132,7 +131,7 @@
         <div class="camera"></div>
       </div>
       <div class="home-description">
-        <h1>PUCRA Barcelona</h1>
+        <h1>PUCRA BARCELONA</h1>
         <p id="desc-home">
           Somos una asociación de Robotica. Nos dedicamos a asistir y organizar
           competiciones superando nuestras metas y objectivos año tras año.
@@ -153,7 +152,12 @@
 
       <section class="pilar-item image-pilar-1">
         <h3 id="pillar_title1">VEX</h3>
-        <img src="./home/images/vex-pilar.png" height="100" alt="" />
+        <img
+          src="./home/images/vex-pilar.png"
+          loading="lazy"
+          height="100"
+          alt=""
+        />
 
         <p id="pillar_text1">
           Una competición internacional de robótica abierta a todas las edades,
@@ -164,7 +168,12 @@
       </section>
       <section class="pilar-item image-pilar-2">
         <h3 id="pillar_title2">ERC</h3>
-        <img src="./home/images/vex-pilar.png" height="100" alt="" />
+        <img
+          src="./home/images/vex-pilar.png"
+          loading="lazy"
+          height="100"
+          alt=""
+        />
 
         <p id="pillar_text2">
           Pensada para quienes buscan un mayor reto, con mayor implicación en la
@@ -174,7 +183,13 @@
       </section>
       <section class="pilar-item image-pilar-3">
         <h3 id="pillar_title3">EVENTOS Y CONGRESOS</h3>
-        <img src="./home/images/logo_VEXThon.png" height="100" alt="" />
+        <img
+          class="media-image"
+          src="./home/images/logo_VEXThon.png"
+          height="100"
+          loading="lazy"
+          alt=""
+        />
 
         <p id="pillar_text3">
           Un espacio para mostrar al mundo el esfuerzo, la dedicación y los
@@ -186,14 +201,18 @@
     <article>
       <!-- Slider -->
       <div id="slider-images">
-        <h2 class="slider-title">Álbum de fotos</h2>
+        <h2 id="photo_album" class="slider-title">Álbum de fotos</h2>
         <button
+          title="Anterior"
+          id="btn-slider-back"
           class="btn-slider btn-slider-back material-symbols-rounded"
           onclick="backSlider()"
         >
           arrow_back_ios
         </button>
         <button
+          title="Siguiente"
+          id="btn-slider-next"
           class="btn-slider btn-slider-next material-symbols-rounded"
           onclick="nextSlider()"
         >
@@ -208,13 +227,14 @@
     <!-- end Slider -->
     <article class="innovation-movement">
       <img
+        class="media-image"
         width="400px"
         src="./home/images//wallpaperflare.com_wallpaper.jpg"
         loading="lazy"
         alt=""
       />
       <div class="innovation-description">
-        <h2>Innovación en movimiento</h2>
+        <h2 id="inovation_movement">Innovación en movimiento</h2>
         <p id="summary_PUCRA">
           PUCRA es la asociación de robótica de la Universitat Politècnica de
           Catalunya, con sede en la Escola d'Enginyeria de Barcelona Est, el
@@ -233,7 +253,7 @@
     </article>
     <article class="vex-world-champions" style="padding: 20px 10px 20px 10px">
       <!-- CONTADOR VEX WORLD-->
-      <h2>VEX WORLD CHAMPIONSHIP 2025</h2>
+      <h2>VEX CHAMPIONSHIP WORLD 2025</h2>
       <p id="VEX_CH_2025_text">
         Tras tres años consecutivos como representantes de nuestro país dentro
         de la VEX Robotics World Championship, el equipo se enfrenta a una nueva
@@ -242,27 +262,27 @@
         potencial, compitiendo codo a codo con los mejores equipos, en la gran
         final internacional.
       </p>
-
-      <section class="countdown">
+      <p id="event-info"></p>
+      <section id="countdown-end" class="countdown">
         <div id="month-parent" class="countdown-block">
           <p id="month" class="glow-timer">0</p>
-          <span class="glow-text">Meses</span>
+          <span id="month_text" class="glow-text">Meses</span>
         </div>
         <div id="day-parent" class="countdown-block">
           <p id="day" class="glow-timer">0</p>
-          <span class="glow-text">Días</span>
+          <span id="day_text" class="glow-text">Días</span>
         </div>
         <div id="hour-parent" class="countdown-block">
           <p id="hour" class="glow-timer">0</p>
-          <span class="glow-text">Horas</span>
+          <span id="hour_text" class="glow-text">Horas</span>
         </div>
         <div id="minute-parent" class="countdown-block">
           <p id="minute" class="glow-timer">0</p>
-          <span class="glow-text">Minutos</span>
+          <span id="minute_text" class="glow-text">Minutos</span>
         </div>
         <div id="seconds-parent" class="countdown-block">
           <p id="seconds" class="glow-timer">0</p>
-          <span class="glow-text">Segundos</span>
+          <span id="seconds_text" class="glow-text">Segundos</span>
         </div>
       </section>
     </article>

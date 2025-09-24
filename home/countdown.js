@@ -1,3 +1,35 @@
+const month = document.getElementById("month");
+const day = document.getElementById("day");
+const hour = document.getElementById("hour");
+const minute = document.getElementById("minute");
+const seconds = document.getElementById("seconds");
+
+const monthParent = document.getElementById("month-parent");
+const dayParent = document.getElementById("day-parent");
+const minuteParent = document.getElementById("minute-parent");
+const secondsParent = document.getElementById("seconds-parent");
+const countdownTitle = document.getElementById("countdown-end");
+const eventInfo = document.getElementById("event-info");
+
+// Date
+const dateEventStart = "2026-04-28T17:00:00";
+const dateEventEnd = "2026-05-05T00:00:00";
+// let target = "2026-04-28T00:00:00";
+
+let myDateStart = new Date(dateEventStart);
+let myDateEnd = new Date(dateEventEnd);
+
+if (myDateStart > myDateEnd) {
+  // reverse if start is after end
+  console.log("Reversing dates");
+  let aux = myDateStart;
+  myDateStart = myDateEnd;
+  myDateEnd = aux;
+}
+
+function pad(num) {
+  return num.toString().padStart(2, "0");
+}
 function countdownTo(targetDate) {
   const now = new Date();
   const target = new Date(targetDate);
@@ -71,33 +103,41 @@ function countdownTo(targetDate) {
 function isLeapYear(year) {
   return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
 }
-function updateCountdown() {
-  const month = document.getElementById("month");
-  const day = document.getElementById("day");
-  const hour = document.getElementById("hour");
-  const minute = document.getElementById("minute");
-  const seconds = document.getElementById("seconds");
 
-  const monthParent = document.getElementById("month-parent");
-  const dayParent = document.getElementById("day-parent");
-  // const hourParent = document.getElementById("hour-parent"); display none not used
-  const minuteParent = document.getElementById("minute-parent");
-  const secondsParent = document.getElementById("seconds-parent");
+function updateCountdown() {
   const now = new Date();
 
-  // Date
-  let target = "2026-04-28T00:00:00";
-  // let target = "2026-04-28T00:00:00";
-
-  let result = countdownTo(target);
-  month.innerText = result.months;
-  day.innerText = result.days;
-  hour.innerText = result.hours;
-  minute.innerText = result.minutes;
-  seconds.innerText = result.seconds;
-
-  if (now.getFullYear() < result.years) {
+  if (now > myDateEnd) {
+    // event ended
+    countdownTitle.style.display = "none";
+    eventInfo.innerText = "¡El evento ha finalizado! Nos vemos el próximo año.";
+    return;
   }
+
+  if (now < myDateEnd && now > myDateStart) {
+    // event is happening
+    countdownTitle.style.display = "none";
+    eventInfo.innerText = "¡El evento está en curso!";
+    return;
+  }
+
+  if (myDateStart - now < 0) {
+    // event started
+    monthParent.style.display = "none";
+    dayParent.style.display = "none";
+    hour.style.display = "none";
+    minuteParent.style.display = "none";
+    secondsParent.style.display = "none";
+    return;
+  }
+
+  let result = countdownTo(dateEventStart);
+
+  month.innerText = pad(result.months);
+  day.innerText = pad(result.days);
+  hour.innerText = pad(result.hours);
+  minute.innerText = pad(result.minutes);
+  seconds.innerText = pad(result.seconds);
 
   if (
     now.getFullYear() === result.years &&
