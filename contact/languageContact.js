@@ -29,6 +29,16 @@ const aboutEs = {
   follow_us2: "¡SIGUE A PUCRA!",
   address: "Dirección",
   contact2: "Contactos",
+  be_a_partner: "Apóyanos como partner",
+  be_a_partner_text: [
+    "Convertirte en Sponsor de PUCRA te brinda visibilidad en nuestras redes sociales y en cada uno de los eventos que organizamos. Tu logo estará presente en nuestras camisetas y materiales de difusión, además de explorar juntos formas de colaboración dentro de nuestra universidad.",
+    "Todo esto con el objetivo de que tu marca llegue al mayor número posible de estudiantes.",
+  ],
+  be_a_member: "Únete como miembro",
+  be_a_member_text: [
+    "Formar parte de PUCRA significa integrarte en un equipo multidisciplinario, donde podrás aprender, experimentar y aplicar conocimientos de ingeniería en proyectos reales a través de la robótica.",
+    "Es una oportunidad única para desarrollar habilidades técnicas y de trabajo en equipo, mientras vives experiencias que van más allá del aula.",
+  ],
 };
 
 const aboutEn = {
@@ -64,6 +74,16 @@ const aboutEn = {
   follow_us2: "FOLLOW PUCRA!",
   address: "Address",
   contact2: "Contacts",
+  be_a_partner: "Support us as a partner",
+  be_a_partner_text: [
+    "Becoming a PUCRA sponsor gives you visibility on our social networks and at every event we organize. Your logo will appear on our t-shirts and promotional materials, and we'll also explore ways to collaborate within our university.",
+    "All with the goal of bringing your brand to as many students as possible.",
+  ],
+  be_a_member: "Join as a member",
+  be_a_member_text: [
+    "Being part of PUCRA means joining a multidisciplinary team where you can learn, experiment, and apply engineering knowledge to real projects through robotics.",
+    "It's a unique opportunity to develop technical and teamwork skills while enjoying experiences that go beyond the classroom.",
+  ],
 };
 
 const aboutCat = {
@@ -97,6 +117,16 @@ const aboutCat = {
   follow_us2: "SEGUEIX PUCRA!",
   address: "Adreça",
   contact2: "Contactes",
+  be_a_partner: "Dona'ns suport com a partner",
+  be_a_partner_text: [
+    "Convertir-te en patrocinador de PUCRA et dona visibilitat a les nostres xarxes socials i en cada esdeveniment que organitzem. El teu logotip apareixerà a les nostres samarretes i materials de difusió, a més d'explorar junts formes de col·laboració dins la nostra universitat.",
+    "Tot això amb l'objectiu que la teva marca arribi al màxim nombre possible d'estudiants.",
+  ],
+  be_a_member: "Uneix-te com a membre",
+  be_a_member_text: [
+    "Formar part de PUCRA significa integrar-te en un equip multidisciplinari, on podràs aprendre, experimentar i aplicar coneixements d'enginyeria en projectes reals a través de la robòtica.",
+    "És una oportunitat única per desenvolupar habilitats tècniques i de treball en equip, mentre vius experiències que van més enllà de l'aula.",
+  ],
 };
 
 function fillSpecificContent(mLang) {
@@ -178,11 +208,21 @@ function fillContentAbout() {
   $("success_message").innerHTML = contenAbout.success_message;
   $("form_fail").innerHTML = contenAbout.form_fail;
   $("phone").innerHTML = contenAbout.phone;
-  $("direction").innerHTML = contenAbout.direction;
+  $("address").innerHTML = contenAbout.direction;
   $("name").placeholder = contenAbout.name;
   $("field").placeholder = contenAbout.field;
   $("submit_text").value = contenAbout.submit_text;
 
+  // Specific sections
+  $("be-a-partner").innerHTML = contenAbout.be_a_partner;
+  for (let i = 0; i < $$("be-a-partner-text").length; i++) {
+    $$("be-a-partner-text")[i].innerHTML = contenAbout.be_a_partner_text[i];
+  }
+
+  $("be-a-member").innerHTML = contenAbout.be_a_member;
+  for (let i = 0; i < $$("be-a-member-text").length; i++) {
+    $$("be-a-member-text")[i].innerHTML = contenAbout.be_a_member_text[i];
+  }
   if ($("actual-year")) $("actual-year").innerHTML = contenAbout.actual_year;
 
   if ($("web-place")) $("web-place").innerHTML = contenAbout.web_place;
