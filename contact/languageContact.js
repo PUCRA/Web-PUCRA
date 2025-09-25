@@ -59,8 +59,6 @@ const aboutEn = {
   contact: "Contact",
   contacts: "Contacts",
   links: "Links",
-  actual_year: "2024",
-  actual_year: "2024", // si es dinámico, puedes omitirlo o actualizarlo por JS
   contact_us: "Contact Us",
   phone: "Phone Number",
   form_message:
@@ -104,7 +102,6 @@ const aboutCat = {
   contact: "Contacte",
   contacts: "Contactes",
   links: "Enllaços",
-  actual_year: "2024",
   contact_us: "Contacta'ns",
   phone: "Telèfon",
   form_message: "Completeu el formulari i us respondrem al més aviat possible",
@@ -223,7 +220,6 @@ function fillContentAbout() {
   for (let i = 0; i < $$("be-a-member-text").length; i++) {
     $$("be-a-member-text")[i].innerHTML = contenAbout.be_a_member_text[i];
   }
-  if ($("actual-year")) $("actual-year").innerHTML = contenAbout.actual_year;
 
   if ($("web-place")) $("web-place").innerHTML = contenAbout.web_place;
 
