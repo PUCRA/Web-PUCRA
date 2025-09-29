@@ -1,5 +1,16 @@
 
 
+h1, h2, h3 {
+  text-transform: uppercase;
+  color: white;
+  text-decoration-color: #c43a69;
+  text-decoration-line: underline;
+  text-underline-offset: 10px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.49);
+}
+
+
 
 /* Cosas que arreglar */ 
 
@@ -315,6 +326,7 @@
   justify-content: center;
   align-items: center;
   border: 4px solid #751938; /* Añadir borde de color */
+  box-sizing: border-box;
   
 }
 
