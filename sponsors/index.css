@@ -498,7 +498,7 @@ h1, h2, h3 {
     height: auto;
     box-sizing: border-box;
     overflow-x: hidden;
-    padding-top: 70px;   /* 👈 espacio superior */
+    padding-top: 70px;   
   }
 
   /* Títulos beneficios */

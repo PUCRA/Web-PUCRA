@@ -313,7 +313,7 @@ function fillContentAbout() {
   for (let i = 0; i < $$("langs").length; i++) {
     $$("langs")[i].innerHTML = contenAbout.languages;
   }
-
+  
  
 
   // Main section title (asegúrate que existe esta clave)
