@@ -37,7 +37,7 @@
         color: #c43a69;
         text-decoration: none;
         transition: transform 0.3s;
-        &&:hover{
+        &&:hover {
           transform: scale(1.3);
         }
       }
@@ -104,5 +104,42 @@
   }
   .footer-section {
     width: 250px;
+  }
+}
+
+#sponsors-parent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Mollen personal use", sans-serif;
+
+  .sponsors-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    a {
+      padding: 20px;
+      /*   background: linear-gradient(180deg, #00000060 0%, transparent 100%); */
+    }
+    img {
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  #sponsors-primary img {
+    height: auto;
+    max-width: 400px;
+  }
+
+  #sponsors-secondary img {
+    height: auto;
+    max-width: 250px;
+  }
+  #sponsors-others img {
+    height: auto;
+    max-width: 100px;
   }
 }
