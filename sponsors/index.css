@@ -15,29 +15,20 @@ h1, h2, h3 {
 /* Cosas que arreglar */ 
 
 .container-7 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  height: 50vh;
-  max-width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-image: url('../images/pucra-timeline-2000x2829.png');
-  background-position: 50% 50%;
-  background-size: cover;
+  flex-direction: column;      /* apila hijos en columna */
+  justify-content: center;     /* centra vertical */
+  align-items: center;         /* centra horizontal */
+  
+  height: 50vh;                /* altura relativa a la pantalla */
+  width: 100%;                 /* ocupa todo el ancho disponible */
+  max-width: 100vw;            /* nunca más ancho que la pantalla */
+  box-sizing: border-box;      /* padding no suma al ancho */
+  overflow-x: hidden;          /* evita desbordes horizontales */
+
+  background: url('../images/pucra-timeline-2000x2829.png') center/cover no-repeat;
 }
+
 
 .heading-4 {
   margin-top: 0px;
@@ -396,53 +387,121 @@ h1, h2, h3 {
   transition: all 0.5s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
   
+  /* Contenedor común para sponsors */
   .container-sponsors-mitsubishi,
   .container-sponsors-schneider,
   .container-sponsors-mecalux,
   .container-sponsors-mutua,
   .container-sponsors-colegio {
-    flex-direction: column;
-    padding: 30px;
-    gap: 20px;
-    height: auto; 
+    display: flex;
+    flex-direction: column;   /* Apila logo, textos y botón */
+    align-items: center;      /* Centra horizontal */
+    text-align: center;       /* Centra textos */
+    padding: 20px 15px;
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
-  
+  /* Logos */
+  .container-sponsors-mitsubishi img,
+  .container-sponsors-schneider img,
+  .container-sponsors-mecalux img,
+  .container-sponsors-mutua img,
+  .container-sponsors-colegio img {
+    max-width: 60%;      /* Ajusta al móvil */
+    height: auto;
+    margin: 0 auto 15px; /* Espacio bajo el logo */
+    display: block;
+  }
 
+  /* Encabezados (nombre + tagline) */
+  .container-sponsors-mitsubishi h1,
+  .container-sponsors-schneider h1,
+  .container-sponsors-mecalux h1,
+  .container-sponsors-mutua h1,
+  .container-sponsors-colegio h1,
+  .container-sponsors-mitsubishi h2,
+  .container-sponsors-schneider h2,
+  .container-sponsors-mecalux h2,
+  .container-sponsors-mutua h2,
+  .container-sponsors-colegio h2 {
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 5px 0;
+    text-align: center;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Párrafos */
+  .container-sponsors-mitsubishi p,
+  .container-sponsors-schneider p,
+  .container-sponsors-mecalux p,
+  .container-sponsors-mutua p,
+  .container-sponsors-colegio p {
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 60%;       /* Que no se pegue a los bordes */
+    margin: 0 auto 15px;
+    text-align: center;
+    word-break: break-word;   /* Rompe palabras largas */
+    overflow-wrap: break-word;
+  }
+
+  /* Botones */
+  .container-sponsors-mitsubishi a.sponsor-button,
+  .container-sponsors-schneider a.sponsor-button,
+  .container-sponsors-mecalux a.sponsor-button,
+  .container-sponsors-mutua a.sponsor-button,
+  .container-sponsors-colegio a.sponsor-button {
+    font-size: 16px;
+    padding: 12px 20px;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+  }
+
+  /* Caja de cada sponsor */
+  .sponsor-box {
+    width: 95%;
+    height: auto;
+    margin: 0 auto 20px;
+  }
+
+  .sponsor-box-content {
+    padding: 15px;
+  }
+
+  /* Beneficios sponsors */
   .container-beneficios-sponsors {
     flex-direction: column;
     padding: 20px;
     gap: 20px;
+    width: 100%;
+    max-width: 100vw;
     height: auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
     background-size: cover;
     background-position: center;
   }
 
-  .container-convertirse-sponsors {
-    flex-direction: column;
-    padding: 20px;
+  .container-beneficios-sponsors-dentro,
+  .container-7 {
+    width: 100%;
+    max-width: 100vw;
     height: auto;
-    background-size: cover;
-    background-position: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding-top: 70px;   /* 👈 espacio superior */
   }
 
-  .image-sponsors {
-    width: 80vw;
-    height: auto;
-  }
-
-  .sponsor-box {
-    width: 90%;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .sponsor-box-content {
-    padding: 10px;
-  }
-
+  /* Títulos beneficios */
   .letra-titulo-sponsors {
     font-size: 28px;
     text-align: center;
@@ -457,10 +516,4 @@ h1, h2, h3 {
     align-items: center;
     text-align: center;
   }
-
-  .container-beneficios-sponsors-dentro {
-    padding-top: 200px;
-    padding-bottom: 100px;
-  }
-  
 }
