@@ -1,6 +1,12 @@
+body {
+  font-family: "Mollen personal use", sans-serif;
+  margin: 0px;
+  background-color: white;
+}
 
-
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-transform: uppercase;
   color: white;
   text-decoration-color: #c43a69;
@@ -10,30 +16,28 @@ h1, h2, h3 {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.49);
 }
 
-
-
-/* Cosas que arreglar */ 
+/* Cosas que arreglar */
 
 .container-7 {
   display: flex;
-  flex-direction: column;      /* apila hijos en columna */
-  justify-content: center;     /* centra vertical */
-  align-items: center;         /* centra horizontal */
-  
-  height: 50vh;                /* altura relativa a la pantalla */
-  width: 100%;                 /* ocupa todo el ancho disponible */
-  max-width: 100vw;            /* nunca más ancho que la pantalla */
-  box-sizing: border-box;      /* padding no suma al ancho */
-  overflow-x: hidden;          /* evita desbordes horizontales */
+  flex-direction: column; /* apila hijos en columna */
+  justify-content: center; /* centra vertical */
+  align-items: center; /* centra horizontal */
 
-  background: url('../images/pucra-timeline-2000x2829.png') center/cover no-repeat;
+  height: 50vh; /* altura relativa a la pantalla */
+  width: 100%; /* ocupa todo el ancho disponible */
+  max-width: 100vw; /* nunca más ancho que la pantalla */
+  box-sizing: border-box; /* padding no suma al ancho */
+  overflow-x: hidden; /* evita desbordes horizontales */
+
+  background: url("../images/pucra-timeline-2000x2829.png") center/cover
+    no-repeat;
 }
-
 
 .heading-4 {
   margin-top: 0px;
   margin-bottom: 20px;
-  font-family: 'Mollen personal use', sans-serif;
+  font-family: "Mollen personal use", sans-serif;
   color: #fff;
   font-size: 50px;
   line-height: 60px;
@@ -44,7 +48,7 @@ h1, h2, h3 {
 .paragraph-23 {
   margin-right: 10%;
   margin-left: 10%;
-  font-family: 'Mollen personal use', sans-serif;
+  font-family: "Mollen personal use", sans-serif;
   color: #fff;
   font-size: 25px;
   line-height: 30px;
@@ -109,7 +113,7 @@ h1, h2, h3 {
   margin-top: 0px;
   margin-right: 15px;
   margin-bottom: 0px;
-  font-family: 'Mollen personal use', sans-serif;
+  font-family: "Mollen personal use", sans-serif;
   color: #000;
   font-weight: 600;
 }
@@ -117,13 +121,13 @@ h1, h2, h3 {
 .heading-8 {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: 'Mollen personal use', sans-serif;
+  font-family: "Mollen personal use", sans-serif;
   color: #000;
   font-weight: 400;
 }
 
 .paragraph-26 {
-  font-family: 'Mollen personal use', sans-serif;
+  font-family: "Mollen personal use", sans-serif;
   color: #000;
   font-size: 20px;
   line-height: 25px;
@@ -136,16 +140,14 @@ h1, h2, h3 {
   border-radius: 50px;
   background-color: #1a1a1a;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
-  font-family: 'Mollen personal use', sans-serif;
+  font-family: "Mollen personal use", sans-serif;
   color: #fff;
   font-size: 18px;
   line-height: 18px;
   font-weight: 600;
 }
 
-
 @media screen and (max-width: 768px) {
-
   .paragraph-26 {
     font-size: 18px;
     line-height: 24px;
@@ -160,7 +162,6 @@ h1, h2, h3 {
     font-size: 30px;
     line-height: 30px;
   }
-
 
   .heading-4 {
     font-size: 40px;
@@ -178,7 +179,6 @@ h1, h2, h3 {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-
   }
 
   .div-block-24 {
@@ -188,10 +188,7 @@ h1, h2, h3 {
     -ms-flex-align: center;
     align-items: center;
   }
-
-
 }
-
 
 /* Estilos base para todos los sponsors */
 .container-sponsors-mitsubishi,
@@ -212,7 +209,7 @@ h1, h2, h3 {
   z-index: 0;
 }
 
-.container-sponsors-mecalux{
+.container-sponsors-mecalux {
   gap: 120px;
 }
 /* Fondos personalizados */
@@ -244,7 +241,7 @@ h1, h2, h3 {
   background-color: #ffffff; /* Blanco Colegio */
 }
 
-.container-beneficios-sponsors{
+.container-beneficios-sponsors {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -268,10 +265,10 @@ h1, h2, h3 {
   box-sizing: border-box;
   margin: 0;
   z-index: 0;
-  background-image:  url("../images/Imagenes-Sponsors/fondo PUCRA.png");
+  background-image: url("../images/Imagenes-Sponsors/fondo PUCRA.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;    
+  background-repeat: no-repeat;
 }
 
 .image-sponsors {
@@ -281,7 +278,6 @@ h1, h2, h3 {
   object-fit: contain;
   border-radius: 10px; /* Opcional para estética */
 }
-
 
 .sponsor-box {
   position: relative;
@@ -299,16 +295,19 @@ h1, h2, h3 {
   overflow: hidden;
   top: 30px;
   transition: transform 0.3s ease; /* Añadir transición para suavizar el cambio de escala */
-  
 }
-
 
 .sponsor-box:hover {
   transform: scale(1.1); /* Aplicar el efecto de zoom */
 }
 
 .sponsor-box-content {
-  background-color: rgba(0, 0, 0, 0.7); /* Aumentar opacidad para mejor contraste */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Aumentar opacidad para mejor contraste */
   padding: 20px;
   width: 100%;
   height: 100%;
@@ -318,7 +317,6 @@ h1, h2, h3 {
   align-items: center;
   border: 4px solid #751938; /* Añadir borde de color */
   box-sizing: border-box;
-  
 }
 
 .sponsor-box h2 {
@@ -335,16 +333,16 @@ h1, h2, h3 {
 
 .letra-titulo-sponsors {
   margin-bottom: 50px;
-  font-family: 'Mollen personal use', sans-serif;
+  font-family: "Mollen personal use", sans-serif;
   color: #fff;
   font-size: 40px;
   font-weight: 600;
   text-align: left;
-  font-family: 'Helvetica Now', sans-serif;
+  font-family: "Helvetica Now", sans-serif;
 }
 
 .container-beneficios-sponsors-dentro {
-  position: relative; 
+  position: relative;
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -358,12 +356,11 @@ h1, h2, h3 {
 }
 
 .title-sponsors-container {
-  position: relative; 
-  top: 0px; 
-  left: 0px; 
+  position: relative;
+  top: 0px;
+  left: 0px;
   display: flex;
   justify-content: center;
-  
 }
 
 .sponsors-row {
@@ -371,9 +368,7 @@ h1, h2, h3 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-} 
-
-
+}
 
 /* Images */
 .logo-sponsors {
@@ -388,7 +383,6 @@ h1, h2, h3 {
 }
 
 @media screen and (max-width: 998px) {
-  
   /* Contenedor común para sponsors */
   .container-sponsors-mitsubishi,
   .container-sponsors-schneider,
@@ -396,9 +390,9 @@ h1, h2, h3 {
   .container-sponsors-mutua,
   .container-sponsors-colegio {
     display: flex;
-    flex-direction: column;   /* Apila logo, textos y botón */
-    align-items: center;      /* Centra horizontal */
-    text-align: center;       /* Centra textos */
+    flex-direction: column; /* Apila logo, textos y botón */
+    align-items: center; /* Centra horizontal */
+    text-align: center; /* Centra textos */
     padding: 20px 15px;
     gap: 15px;
     width: 100%;
@@ -413,7 +407,7 @@ h1, h2, h3 {
   .container-sponsors-mecalux img,
   .container-sponsors-mutua img,
   .container-sponsors-colegio img {
-    max-width: 60%;      /* Ajusta al móvil */
+    max-width: 60%; /* Ajusta al móvil */
     height: auto;
     margin: 0 auto 15px; /* Espacio bajo el logo */
     display: block;
@@ -446,10 +440,10 @@ h1, h2, h3 {
   .container-sponsors-colegio p {
     font-size: 15px;
     line-height: 1.5;
-    max-width: 60%;       /* Que no se pegue a los bordes */
+    max-width: 60%; /* Que no se pegue a los bordes */
     margin: 0 auto 15px;
     text-align: center;
-    word-break: break-word;   /* Rompe palabras largas */
+    word-break: break-word; /* Rompe palabras largas */
     overflow-wrap: break-word;
   }
 
@@ -498,7 +492,7 @@ h1, h2, h3 {
     height: auto;
     box-sizing: border-box;
     overflow-x: hidden;
-    padding-top: 70px;   
+    padding-top: 70px;
   }
 
   /* Títulos beneficios */
