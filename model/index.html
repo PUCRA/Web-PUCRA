@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pucra Model</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="../images/favicon.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <!-- IMPORTANT, ALWAYS USE THE SAME VERSION OF THREE.JS  -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      quasi repudiandae praesentium nulla nesciunt fuga, delectus facilis
+      corporis quia eligendi. Velit ea fuga, earum facere a consequuntur
+      possimus voluptas vitae?
+    </p>
+    <button onclick="toggleRotation(event)">PAUSE</button>
+    <canvas id="myCanvas"></canvas>
+
+    <img src="https://cataas.com/cat" height="400" width="auto" alt="" />
+
+    <!-- Manual -->
+    <!-- https://threejs.org/manual/#en/installation -->
+
+    <!-- IMPORTANT, ALWAYS USE "type=module" IN THIS PART -->
+    <script src="main.mjs" type="module"></script>
+  </body>
+</html>
