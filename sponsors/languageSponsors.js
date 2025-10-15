@@ -45,38 +45,9 @@ const aboutEs = {
       sponsor_description:
         "Referente institucional que impulsa el desarrollo profesional, la innovación y el compromiso social de la ingeniería industrial en Cataluña. El Colegio promueve el talento y la excelencia técnica.",
       web_place: "Sitio Web",
-    }
+    },
   ],
-
-  sponsor_benefits: [
-    {
-      sponsor_box_title: "TENDRÁS MÁXIMA VISIBILIDAD",
-      sponsor_box_text:
-        "Tus productos llegarán a ingenieros y profesionales de todo el mundo gracias a nuestra red global."
-    },
-    {
-      sponsor_box_title: "PRESENCIA EN LOS EVENTOS",
-      sponsor_box_text:
-        "Promocionaremos tu marca en nuestros eventos y competiciones junto a la UPC."
-    },
-    {
-      sponsor_box_title: "PUBLICIDAD EN REDES SOCIALES",
-      sponsor_box_text:
-        "Difusión de tu empresa en nuestras redes como Instagram y LinkedIn."
-    },
-    {
-      sponsor_box_title: "LOGO EN LA CAMISETA",
-      sponsor_box_text:
-        "Incluirémos tu logo en la camiseta de competición que llevamos a eventos internacionales."
-    },
-    {
-      sponsor_box_title: "TALENTO JOVEN Y ALTAMENTE CUALIFICADO",
-      sponsor_box_text:
-        "Acceso directo a estudiantes de la UPC para prácticas y futuros proyectos profesionales."
-    }
-  ]
 };
-
 
 const aboutEn = {
   home: "Home",
@@ -124,39 +95,10 @@ const aboutEn = {
       sponsor_subtitle: "INDUSTRIAL ENGINEERING OF CATALONIA",
       sponsor_description:
         "An institutional benchmark promoting professional development, innovation, and social commitment of industrial engineering in Catalonia. The College supports talent and technical excellence.",
-      web_place: "Website"
-    }
+      web_place: "Website",
+    },
   ],
-
-  sponsor_benefits: [
-    {
-      sponsor_box_title: "MAXIMUM VISIBILITY",
-      sponsor_box_text:
-        "Your products will reach engineers and professionals worldwide through our global network."
-    },
-    {
-      sponsor_box_title: "PRESENCE AT EVENTS",
-      sponsor_box_text:
-        "We will promote your brand at our events and competitions alongside the UPC."
-    },
-    {
-      sponsor_box_title: "SOCIAL MEDIA ADVERTISING",
-      sponsor_box_text:
-        "Promotion of your company through our networks like Instagram and LinkedIn."
-    },
-    {
-      sponsor_box_title: "LOGO ON THE T-SHIRT",
-      sponsor_box_text:
-        "We will include your logo on the competition shirt we wear at international events."
-    },
-    {
-      sponsor_box_title: "YOUNG AND HIGHLY QUALIFIED TALENT",
-      sponsor_box_text:
-        "Direct access to UPC students for internships and future professional projects."
-    }
-  ]
 };
-
 
 const aboutCat = {
   home: "Inici",
@@ -180,69 +122,34 @@ const aboutCat = {
       sponsor_subtitle: "AUTOMATITZACIÓ INDUSTRIAL",
       sponsor_description:
         "El progrés tecnològic és el motor del canvi en la vida moderna. Durant més de 90 anys, Mitsubishi Electric ha contribuït a aquest procés amb tecnologia capdavantera, innovació i productes d’alta qualitat.",
-      web_place: "Lloc web"
+      web_place: "Lloc web",
     },
     {
       sponsor_subtitle: "SOLUCIONS D’EMMAGATZEMATGE",
       sponsor_description:
         "Mecalux és líder en solucions d’emmagatzematge i sistemes automatitzats. Amb més de 50 anys d’experiència, ofereix innovació, tecnologia i eficiència per a la logística i la gestió de mercaderies.",
-      web_place: "Lloc web"
+      web_place: "Lloc web",
     },
     {
       sponsor_subtitle: "AUTOMATITZACIÓ INDUSTRIAL",
       sponsor_description:
         "Líder mundial en automatització i gestió de l’energia. Schneider Electric impulsa la transformació digital amb solucions eficients i sostenibles per a la indústria moderna.",
-      web_place: "Lloc web"
+      web_place: "Lloc web",
     },
     {
       sponsor_subtitle: "MÚTUA DELS ENGINYERS",
       sponsor_description:
         "La Mútua dels Enginyers ofereix solucions asseguradores, financeres i de previsió social adaptades a les necessitats d’enginyers i professionals tècnics. Compromesa amb la protecció i el futur dels seus mutualistes.",
-      web_place: "Lloc web"
+      web_place: "Lloc web",
     },
     {
       sponsor_subtitle: "ENGINYERIA INDUSTRIAL DE CATALUNYA",
       sponsor_description:
         "Referent institucional que impulsa el desenvolupament professional, la innovació i el compromís social de l’enginyeria industrial a Catalunya. El Col·legi promou el talent i l’excel·lència tècnica.",
-      web_place: "Lloc web"
-    }
+      web_place: "Lloc web",
+    },
   ],
-
-  sponsor_benefits: [
-    {
-      sponsor_box_title: "MÀXIMA VISIBILITAT",
-      sponsor_box_text:
-        "Els teus productes arribaran a enginyers i professionals d’arreu del món gràcies a la nostra xarxa global.",
-      
-    },
-    {
-      sponsor_box_title: "PRESÈNCIA ALS ESDEVENIMENTS",
-      sponsor_box_text:
-        "Promocionarem la teva marca als nostres esdeveniments i competicions conjuntament amb la UPC.",
-      
-    },
-    {
-      sponsor_box_title: "PUBLICITAT A LES XARXES SOCIALS",
-      sponsor_box_text:
-        "Difusió de la teva empresa a les nostres xarxes com Instagram i LinkedIn.",
-      
-    },
-    {
-      sponsor_box_title: "LOGO A LA SAMARRETA",
-      sponsor_box_text:
-        "Inclourem el teu logo a la samarreta de competició que portem a esdeveniments internacionals.",
-      
-    },
-    {
-      sponsor_box_title: "TALENT JOVE I ALTAMENT QUALIFICAT",
-      sponsor_box_text:
-        "Accés directe a estudiants de la UPC per a pràctiques i futurs projectes professionals.",
-      
-    }
-  ]
 };
-
-
 
 function fillSpecificContent(mLang) {
   document.documentElement.lang = mLang;
@@ -278,7 +185,6 @@ function changeLanguage() {
   return contentLang;
 }
 
-
 // replace document.getElementById with $ NO ES JQUERY
 const $ = (id) => document.getElementById(id);
 
@@ -313,24 +219,19 @@ function fillContentAbout() {
   for (let i = 0; i < $$("langs").length; i++) {
     $$("langs")[i].innerHTML = contenAbout.languages;
   }
-  
- 
 
   // Main section title (asegúrate que existe esta clave)
   if (contenAbout.section_title) {
     $("title-history").innerHTML = contenAbout.section_title;
   }
 
-  
   if ($("sponsors-description"))
     $("sponsors-description").innerHTML = contenAbout.sponsors_description;
 
   if ($("sponsor-benefits-title"))
     $("sponsor-benefits-title").innerHTML = contenAbout.sponsor_benefits_title;
 
-  if ($("web-place"))
-    $("web-place").innerHTML = contenAbout.web_place;
-
+  if ($("web-place")) $("web-place").innerHTML = contenAbout.web_place;
 
   // Footer
   $("follow-us").innerHTML = contenAbout.follow_us;
@@ -339,17 +240,11 @@ function fillContentAbout() {
   $("contacts").innerHTML = contenAbout.contacts;
 
   // Sponsors
-    for (let i = 0; i < contenAbout.PUCRA_sponsors.length; i++) {
+  for (let i = 0; i < contenAbout.PUCRA_sponsors.length; i++) {
     const PUCRA_sponsors_item = contenAbout.PUCRA_sponsors[i];
-        $$("sponsor_subtitle")[i].innerHTML = PUCRA_sponsors_item.sponsor_subtitle;
-        $$("sponsor_description")[i].innerHTML = PUCRA_sponsors_item.sponsor_description;
-        $$("web_place")[i].innerHTML = PUCRA_sponsors_item.web_place;
-    }
-
-    for (let i = 0; i < contenAbout.sponsor_benefits.length; i++) {
-    const sponsor_benefits_item = contenAbout.sponsor_benefits[i];
-        $$("sponsor_box_title")[i].innerHTML = sponsor_benefits_item.sponsor_box_title;
-        $$("sponsor_box_text")[i].innerHTML = sponsor_benefits_item.sponsor_box_text;
-    }
-
+    $$("sponsor_subtitle")[i].innerHTML = PUCRA_sponsors_item.sponsor_subtitle;
+    $$("sponsor_description")[i].innerHTML =
+      PUCRA_sponsors_item.sponsor_description;
+    $$("web_place")[i].innerHTML = PUCRA_sponsors_item.web_place;
+  }
 }

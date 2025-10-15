@@ -39,6 +39,29 @@ const aboutEs = {
     "Formar parte de PUCRA significa integrarte en un equipo multidisciplinario, donde podrás aprender, experimentar y aplicar conocimientos de ingeniería en proyectos reales a través de la robótica.",
     "Es una oportunidad única para desarrollar habilidades técnicas y de trabajo en equipo, mientras vives experiencias que van más allá del aula.",
   ],
+  sponsor_benefits: [
+    {
+      sponsor_box_title: "MÁXIMA VISIBILIDAD",
+      sponsor_box_text:
+        "Tus productos llegarán a ingenieros y profesionales de todo el mundo gracias a nuestra red internacional de contactos y colaboradores.",
+    },
+    {
+      sponsor_box_title: "PRESENCIA EN EVENTOS",
+      sponsor_box_text:
+        "Tu marca estará presente en nuestros eventos y competiciones oficiales organizadas junto a la UPC.",
+    },
+    {
+      sponsor_box_title: "PROMOCIÓN EN REDES SOCIALES",
+      sponsor_box_text:
+        "Daremos difusión a tu empresa a través de nuestras redes, como Instagram y LinkedIn, con publicaciones personalizadas y menciones destacadas.",
+    },
+
+    {
+      sponsor_box_title: "ACCESO A TALENTO JOVEN",
+      sponsor_box_text:
+        "Acceso directo a estudiantes de la UPC altamente cualificados para prácticas, colaboraciones y futuros proyectos profesionales.",
+    },
+  ],
 };
 
 const aboutEn = {
@@ -82,6 +105,28 @@ const aboutEn = {
     "Being part of PUCRA means joining a multidisciplinary team where you can learn, experiment, and apply engineering knowledge to real projects through robotics.",
     "It's a unique opportunity to develop technical and teamwork skills while enjoying experiences that go beyond the classroom.",
   ],
+  sponsor_benefits: [
+    {
+      sponsor_box_title: "MAXIMUM VISIBILITY",
+      sponsor_box_text:
+        "Your products will reach engineers and professionals around the world through our international network of contacts and partners.",
+    },
+    {
+      sponsor_box_title: "PRESENCE AT EVENTS",
+      sponsor_box_text:
+        "Your brand will be showcased at our official events and competitions organized in collaboration with the UPC.",
+    },
+    {
+      sponsor_box_title: "SOCIAL MEDIA PROMOTION",
+      sponsor_box_text:
+        "We will promote your company on our social media channels, such as Instagram and LinkedIn, with personalized posts and featured mentions.",
+    },
+    {
+      sponsor_box_title: "ACCESS TO TOP YOUNG TALENT",
+      sponsor_box_text:
+        "Gain direct access to highly qualified UPC students for internships, collaborations, and future professional projects.",
+    },
+  ],
 };
 
 const aboutCat = {
@@ -123,6 +168,28 @@ const aboutCat = {
   be_a_member_text: [
     "Formar part de PUCRA significa integrar-te en un equip multidisciplinari, on podràs aprendre, experimentar i aplicar coneixements d'enginyeria en projectes reals a través de la robòtica.",
     "És una oportunitat única per desenvolupar habilitats tècniques i de treball en equip, mentre vius experiències que van més enllà de l'aula.",
+  ],
+  sponsor_benefits: [
+    {
+      sponsor_box_title: "MÀXIMA VISIBILITAT",
+      sponsor_box_text:
+        "Els teus productes arribaran a enginyers i professionals de tot el món gràcies a la nostra xarxa internacional de contactes i col·laboradors.",
+    },
+    {
+      sponsor_box_title: "PRESÈNCIA EN ESDEVENIMENTS",
+      sponsor_box_text:
+        "La teva marca estarà present en els nostres esdeveniments i competicions oficials organitzades conjuntament amb la UPC.",
+    },
+    {
+      sponsor_box_title: "PROMOCIÓ A LES XARXES SOCIALS",
+      sponsor_box_text:
+        "Donarem difusió a la teva empresa a través de les nostres xarxes, com Instagram i LinkedIn, amb publicacions personalitzades i mencions destacades.",
+    },
+    {
+      sponsor_box_title: "ACCÉS A TALENT JOVE",
+      sponsor_box_text:
+        "Accés directe a estudiants de la UPC altament qualificats per a pràctiques, col·laboracions i futurs projectes professionals.",
+    },
   ],
 };
 
@@ -222,6 +289,14 @@ function fillContentAbout() {
   }
 
   if ($("web-place")) $("web-place").innerHTML = contenAbout.web_place;
+
+  for (let i = 0; i < contenAbout.sponsor_benefits.length; i++) {
+    const sponsor_benefits_item = contenAbout.sponsor_benefits[i];
+    $$("sponsor_box_title")[i].innerHTML =
+      sponsor_benefits_item.sponsor_box_title;
+    $$("sponsor_box_text")[i].innerHTML =
+      sponsor_benefits_item.sponsor_box_text;
+  }
 
   // Footer
   $("follow-us").innerHTML = contenAbout.follow_us;
