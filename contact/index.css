@@ -2,6 +2,20 @@ body {
   font-family: "Mollen personal use", sans-serif;
   margin: 0px;
   background-color: black;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../images/fondo-2000x1333.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  justify-content: center;
+}
+.center-title {
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 h1,
@@ -20,18 +34,8 @@ h3 {
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
-    ),
-    url("../images/fondo-2000x1333.jpeg");
-  background-position: center;
-  background-size: cover;
   justify-content: center;
 
-  align-items: center;
-  min-height: 100vh;
   .contact-flex {
     color: white;
     max-width: 700px;
@@ -41,7 +45,8 @@ h3 {
   }
 }
 
-#type-student {
+#type-student,
+#be-a-member {
   display: none;
 }
 

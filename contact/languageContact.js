@@ -19,7 +19,6 @@ const aboutEs = {
   actual_year: "2024",
   contact_us: "Contáctanos",
   phone: "Teléfono",
-  form_message: "Complete el formulario y le responderemos lo antes posible",
   success_message: "¡Gracias por contactarnos!",
   form_fail: "¡Ups! Algo salió mal al enviar el formulario.",
   direction: "Dirección",
@@ -84,8 +83,7 @@ const aboutEn = {
   links: "Links",
   contact_us: "Contact Us",
   phone: "Phone Number",
-  form_message:
-    "Please complete the form, and we will respond as soon as possible",
+
   success_message: "Thank you for contacting us!",
   form_fail: "Oops! Something went wrong while submitting the form.",
   direction: "Address",
@@ -149,7 +147,7 @@ const aboutCat = {
   links: "Enllaços",
   contact_us: "Contacta'ns",
   phone: "Telèfon",
-  form_message: "Completeu el formulari i us respondrem al més aviat possible",
+
   success_message: "Gràcies per contactar amb nosaltres!",
   form_fail: "Ups! Alguna cosa ha anat malament en enviar el formulari.",
   direction: "Adreça",
@@ -268,7 +266,6 @@ function fillContentAbout() {
 
   // Main section description
   $("contact_us").innerHTML = contenAbout.contact_us;
-  $("form_message").innerHTML = contenAbout.form_message;
   $("success_message").innerHTML = contenAbout.success_message;
   $("form_fail").innerHTML = contenAbout.form_fail;
   $("phone").innerHTML = contenAbout.phone;
