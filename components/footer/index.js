@@ -4,31 +4,31 @@ const sponsors = {
   primary: [
     {
       url: "https://eu3a.mitsubishielectric.com/",
-      logo: "/components/footer/images/mitsubishii.png",
+      logo: "/images/sponsors/mitsubishi.webp",
       alt: "Logo de MITSUBISHI ELECTRIC AUTOMATIZACIÓN INDUSTRIAL",
     },
   ],
   secondary: [
     {
       url: "https://www.se.com/",
-      logo: "/components/footer/images/Schneider-logo.png",
+      logo: "/images/sponsors/Schneider.webp",
       alt: "Logo de Schneider Electric",
     },
     {
       url: "https://www.mecalux.es/",
-      logo: "/components/footer/images/Mecalux-logo.png",
+      logo: "/images/sponsors/mecalux.webp",
       alt: "Logo de Mecalux",
     },
   ],
   others: [
     {
       url: "https://www.eic.cat/",
-      logo: "/components/footer/images/cole-logo.png",
+      logo: "/images/sponsors/enginyers-catalunya.webp",
       alt: "Logo del Colegio de Ingenieros Industriales de Cataluña",
     },
     {
       url: "https://www.mutua-ingenieros.com/",
-      logo: "/components/footer/images/Mutua-logo.png",
+      logo: "/images/sponsors/mutua_enginyers.webp",
       alt: "Logo de La Mutua de los Ingenieros",
     },
   ],

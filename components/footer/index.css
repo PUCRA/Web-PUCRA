@@ -120,9 +120,10 @@
     gap: 20px;
     a {
       padding: 20px;
-      /*   background: linear-gradient(180deg, #00000060 0%, transparent 100%); */
     }
     img {
+      /* adding black and white filter*/
+      filter: brightness(0) invert(1);
       transition: all 0.3s;
       &:hover {
         transform: scale(1.05);
