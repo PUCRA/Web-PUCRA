@@ -19,6 +19,16 @@ const sponsors = {
       logo: "/images/sponsors/mecalux.webp",
       alt: "Logo de Mecalux",
     },
+    {
+      url: "https://www.motedis.es/es",
+      logo: "/images/sponsors/motedis.webp",
+      alt: "Logo de Motedis",
+    },
+    {
+      url: "https://www.bossard.com/es-es/",
+      logo: "/images/sponsors/bossard.webp",
+      alt: "Logo de Bossard",
+    },
   ],
   others: [
     {
@@ -30,6 +40,11 @@ const sponsors = {
       url: "https://www.mutua-ingenieros.com/",
       logo: "/images/sponsors/mutua_enginyers.webp",
       alt: "Logo de La Mutua de los Ingenieros",
+    },
+    {
+      url: "https://odriverobotics.com/",
+      logo: "/images/sponsors/odrive.webp",
+      alt: "Logo de Odrive",
     },
   ],
 };
