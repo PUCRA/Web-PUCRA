@@ -61,6 +61,29 @@ const aboutEs = {
         "Acceso directo a estudiantes de la UPC altamente cualificados para prácticas, colaboraciones y futuros proyectos profesionales.",
     },
   ],
+  student_benefits: [
+    {
+      student_box_title: "DESARROLLO PROFESIONAL",
+      student_box_text:
+        "Mejora tus competencias técnicas y de trabajo en equipo, adquiriendo una experiencia que marcará la diferencia en tu futuro profesional.",
+    },
+    {
+      student_box_title: "EXPERIENCIAS ÚNICAS",
+      student_box_text:
+        "Vive momentos que van más allá del aula, participando en competiciones, eventos y proyectos que te conectan con el mundo real de la ingeniería.",
+    },
+    {
+      student_box_title: "TRABAJO MULTIDISCIPLINAR",
+      student_box_text:
+        "Forma parte de un equipo con estudiantes de diferentes ámbitos, compartiendo ideas y experiencias.",
+    },
+
+    {
+      student_box_title: "APRENDIZAJE PRÁCTICO",
+      student_box_text:
+        "Aplica tus conocimientos de ingeniería en proyectos reales de robótica, donde cada reto es una oportunidad para crecer y poner a prueba tus habilidades.",
+    },
+  ],
 };
 
 const aboutEn = {
@@ -123,6 +146,28 @@ const aboutEn = {
       sponsor_box_title: "ACCESS TO TOP YOUNG TALENT",
       sponsor_box_text:
         "Gain direct access to highly qualified UPC students for internships, collaborations, and future professional projects.",
+    },
+  ],
+  student_benefits: [
+    {
+      student_box_title: "PROFESSIONAL DEVELOPMENT",
+      student_box_text:
+        "Enhance your technical and teamwork skills while gaining experience that will make a real difference in your professional future.",
+    },
+    {
+      student_box_title: "UNIQUE EXPERIENCES",
+      student_box_text:
+        "Live moments that go beyond the classroom by taking part in competitions, events, and projects that connect you with the real world of engineering.",
+    },
+    {
+      student_box_title: "MULTIDISCIPLINARY TEAMWORK",
+      student_box_text:
+        "Join a team of students from diverse fields, sharing ideas and experiences.",
+    },
+    {
+      student_box_title: "HANDS-ON LEARNING",
+      student_box_text:
+        "Apply your engineering knowledge to real-world robotics projects, where every challenge is an opportunity to grow and test your skills.",
     },
   ],
 };
@@ -189,6 +234,29 @@ const aboutCat = {
         "Accés directe a estudiants de la UPC altament qualificats per a pràctiques, col·laboracions i futurs projectes professionals.",
     },
   ],
+
+  student_benefits: [
+    {
+      student_box_title: "DESENVOLUPAMENT PROFESSIONAL",
+      student_box_text:
+        "Millora les teves competències tècniques i de treball en equip, adquirint experiència que marcarà la diferència en el teu futur professional.",
+    },
+    {
+      student_box_title: "EXPERIÈNCIES ÚNIQUES",
+      student_box_text:
+        "Viu moments que van més enllà de les aules, participant en competicions, esdeveniments i projectes que et connecten amb el món real de l'enginyeria.",
+    },
+    {
+      student_box_title: "TREBALL MULTIDISCIPLINARI",
+      student_box_text:
+        "Forma part d'un equip amb estudiants de diferents àmbits, compartint idees i experiències.",
+    },
+    {
+      student_box_title: "APRENENTATGE PRÀCTIC",
+      student_box_text:
+        "Aplica els teus coneixements d'enginyeria en projectes reals de robòtica, on cada repte és una oportunitat per créixer i posar a prova les teves habilitats.",
+    },
+  ],
 };
 
 function fillSpecificContent(mLang) {
@@ -212,13 +280,16 @@ function changeLanguage() {
   switch (mLang) {
     case "cat":
       contentLang = aboutCat;
+      $("lang-menu").innerText = contentLang.language_cat;
       break;
     case "en":
       contentLang = aboutEn;
+      $("lang-menu").innerText = contentLang.language_en;
       break;
     default:
       // Default 'es' if no language is set or if the language is not recognized
       contentLang = aboutEs;
+      $("lang-menu").innerText = contentLang.language_es;
       break;
   }
   return contentLang;
@@ -293,6 +364,14 @@ function fillContentAbout() {
       sponsor_benefits_item.sponsor_box_title;
     $$("sponsor_box_text")[i].innerHTML =
       sponsor_benefits_item.sponsor_box_text;
+  }
+
+  for (let i = 0; i < contenAbout.student_benefits.length; i++) {
+    const student_benefits_item = contenAbout.student_benefits[i];
+    $$("student_box_title")[i].innerHTML =
+      student_benefits_item.student_box_title;
+    $$("student_box_text")[i].innerHTML =
+      student_benefits_item.student_box_text;
   }
 
   // Footer

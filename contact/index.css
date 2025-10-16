@@ -92,7 +92,7 @@ h3 {
   display: none;
 }
 
-.sponsor-benefits-container {
+.sponsor-benefits-container, .student-benefits-container {
   color: white;
   display: grid;
   grid-template-columns: auto auto;
