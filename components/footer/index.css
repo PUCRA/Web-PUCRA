@@ -146,20 +146,24 @@
   #sponsors-primary img {
     height: auto;
     max-width: 400px;
+    width: 100%;
   }
 
   #sponsors-secondary img {
     height: auto;
     max-width: 250px;
+    width: 100%;
   }
 
   #sponsors-third img {
     height: auto;
     max-width: 150px;
+    width: 100%;
   }
 
   #sponsors-others img {
     height: auto;
     max-width: 90px;
+    width: 100%;
   }
 }
