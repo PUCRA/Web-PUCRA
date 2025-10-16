@@ -53,6 +53,11 @@ const sponsors = {
       logo: "/images/sponsors/mutua_enginyers.webp",
       alt: "Logo de La Mutua de los Ingenieros",
     },
+    {
+      url: "https://www.stepperonline.es/",
+      logo: "/images/sponsors/stepper.webp",
+      alt: "Logo de Stepper",
+    },
   ],
 };
 const footerP = document.getElementsByClassName("footer-banner");
