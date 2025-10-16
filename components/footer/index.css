@@ -112,6 +112,18 @@
   flex-direction: column;
   gap: 20px;
   font-family: "Mollen personal use", sans-serif;
+  .slogan-sponsor {
+    text-align: center;
+    margin: 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration-color: #c43a69;
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.49);
+  }
 
   .sponsors-section {
     display: flex;

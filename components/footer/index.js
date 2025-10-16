@@ -52,6 +52,9 @@ const footerP = document.getElementsByClassName("footer-banner");
 const parentFooter = footerP[footerP.length - 1];
 const sponsorsParent = document.createElement("article");
 sponsorsParent.id = "sponsors-parent";
+const sloganSponsor = document.createElement("p");
+sloganSponsor.className = "slogan-sponsor";
+sloganSponsor.innerText = "SPONSORS";
 
 const sponsorsPrimary = document.createElement("section");
 sponsorsPrimary.className = "sponsors-section";
@@ -112,7 +115,7 @@ sponsors.others.forEach((sponsor) => {
   link.appendChild(img);
   sponsorOthers.appendChild(link);
 });
-
+sponsorsParent.appendChild(sloganSponsor);
 sponsorsParent.appendChild(sponsorsPrimary);
 sponsorsParent.appendChild(sponsorsSecondary);
 sponsorsParent.appendChild(sponsorOthers);

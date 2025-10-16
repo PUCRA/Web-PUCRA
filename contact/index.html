@@ -159,64 +159,89 @@
           </div>
         </section>
         <section id="type-student" class="contact-flex">
-          <p class="be-a-member-text">
-            Formar parte de PUCRA significa integrarte en un equipo
-            multidisciplinario, donde podrás aprender, experimentar y aplicar
-            conocimientos de ingeniería en proyectos reales a través de la
-            robótica.
-          </p>
-          <p class="be-a-member-text">
-            Es una oportunidad única para desarrollar habilidades técnicas y de
-            trabajo en equipo, mientras vives experiencias que van más allá del
-            aula.
-          </p>
+          <div class="sponsor-benefits-container">
+            <section>
+              <h2 class="sponsor_box_title">APRENDIZAJE PRÁCTICO</h2>
+              <p class="sponsor_box_text">
+                Aplica tus conocimientos de ingeniería en proyectos reales de
+                robótica, donde cada reto es una oportunidad para crecer y poner
+                a prueba tus habilidades.
+              </p>
+            </section>
+            <section>
+              <h2 class="sponsor_box_title">TRABAJO MULTIDISCIPLINAR</h2>
+              <p class="sponsor_box_text">
+                Forma parte de un equipo con estudiantes de diferentes ámbitos,
+                compartiendo ideas y experiencias.
+              </p>
+            </section>
+            <section>
+              <h2 class="sponsor_box_title">DESARROLLO PROFESIONAL</h2>
+              <p class="sponsor_box_text">
+                Mejora tus competencias técnicas y de trabajo en equipo,
+                adquiriendo una experiencia que marcará la diferencia en tu
+                futuro profesional.
+              </p>
+            </section>
+            <section>
+              <h2 class="sponsor_box_title">EXPERIENCIAS ÚNICAS</h2>
+              <p class="sponsor_box_text">
+                Vive momentos que van más allá del aula, participando en
+                competiciones, eventos y proyectos que te conectan con el mundo
+                real de la ingeniería.
+              </p>
+            </section>
+          </div>
         </section>
 
         <aside class="contact-flex">
           <!-- <h1 class="heading-14">CONTACT US</h1> -->
-          <div class="w-form">
-            <form action="mail-form.php" method="post">
-              <div class="div-block-35">
-                <input
-                  type="text"
-                  class="text-field w-input"
-                  maxlength="256"
-                  name="name"
-                  placeholder="Nombre"
-                  id="name"
-                />
-                <input
-                  type="email"
-                  class="text-field-2 w-input"
-                  maxlength="256"
-                  name="email"
-                  placeholder="E-mail"
-                  id="email"
-                  required=""
-                />
-              </div>
-              <textarea
-                placeholder="Mensaje"
-                maxlength="5000"
-                id="field"
-                name="message"
-                class="textarea w-input"
-              ></textarea>
+          <form
+            class="contact-form-container"
+            action="mail-form.php"
+            method="post"
+          >
+            <div class="contact-form-subcontainer">
               <input
-                type="submit"
-                id="submit_text"
-                data-wait="Please wait..."
-                class="submit-button w-button"
+                class="contact-form-input large-input"
+                type="text"
+                maxlength="256"
+                name="name"
+                placeholder="Nombre"
+                id="name"
               />
-            </form>
-            <div class="success-message-2 w-form-done">
-              <div id="success_message" class="text-block-4">
-                Thank you! Your submission has been received!
-              </div>
+              <input
+                class="contact-form-input"
+                type="email"
+                maxlength="256"
+                name="email"
+                placeholder="E-mail"
+                id="email"
+                required=""
+              />
             </div>
-            <div id="form_fail" class="w-form-fail">
-              <div>Oops! Something went wrong while submitting the form.</div>
+            <textarea
+              class="contact-form-input"
+              placeholder="Mensaje"
+              maxlength="5000"
+              id="field"
+              name="message"
+              style="resize: none; height: 150px"
+            ></textarea>
+            <input
+              type="submit"
+              id="submit_text"
+              data-wait="Please wait..."
+              class="btn-contact"
+            />
+          </form>
+          <div>
+            <div id="success_message">
+              Thank you! Your submission has been received!
             </div>
+          </div>
+          <div id="form_fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
           </div>
 
           <h2>E-mail:</h2>
@@ -226,9 +251,9 @@
         </aside>
       </article>
       <h1 class="center-title">Testimonials</h1>
-      <p style="color: white;">
-        Poner aqui el logo de los sponsors y hace cuantos nos apoyan y un poco sobre
-        ellos, utiliza esto para un gancho para atraer a otros.
+      <p style="color: white">
+        Poner aqui el logo de los sponsors y hace cuantos nos apoyan y un poco
+        sobre ellos, utiliza esto para un gancho para atraer a otros.
       </p>
       <div class="container-22 w-container">
         <div class="div-block-34">
