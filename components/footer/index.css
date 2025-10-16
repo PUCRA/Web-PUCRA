@@ -152,8 +152,14 @@
     height: auto;
     max-width: 250px;
   }
+
+  #sponsors-third img {
+    height: auto;
+    max-width: 150px;
+  }
+
   #sponsors-others img {
     height: auto;
-    max-width: 100px;
+    max-width: 90px;
   }
 }

@@ -19,6 +19,8 @@ const sponsors = {
       logo: "/images/sponsors/mecalux.webp",
       alt: "Logo de Mecalux",
     },
+  ],
+  third: [
     {
       url: "https://www.motedis.es/es",
       logo: "/images/sponsors/motedis.webp",
@@ -32,6 +34,16 @@ const sponsors = {
   ],
   others: [
     {
+      url: "https://odriverobotics.com/",
+      logo: "/images/sponsors/odrive.webp",
+      alt: "Logo de Odrive",
+    },
+    {
+      url: "https://booant.com/es-es",
+      logo: "/images/sponsors/booant.webp",
+      alt: "Logo de Booant",
+    },
+    {
       url: "https://www.eic.cat/",
       logo: "/images/sponsors/enginyers-catalunya.webp",
       alt: "Logo del Colegio de Ingenieros Industriales de Cataluña",
@@ -40,11 +52,6 @@ const sponsors = {
       url: "https://www.mutua-ingenieros.com/",
       logo: "/images/sponsors/mutua_enginyers.webp",
       alt: "Logo de La Mutua de los Ingenieros",
-    },
-    {
-      url: "https://odriverobotics.com/",
-      logo: "/images/sponsors/odrive.webp",
-      alt: "Logo de Odrive",
     },
   ],
 };
@@ -63,6 +70,10 @@ sponsorsPrimary.id = "sponsors-primary";
 const sponsorsSecondary = document.createElement("section");
 sponsorsSecondary.className = "sponsors-section";
 sponsorsSecondary.id = "sponsors-secondary";
+
+const sponsorsThird = document.createElement("section");
+sponsorsThird.className = "sponsors-section";
+sponsorsThird.id = "sponsors-third";
 
 const sponsorOthers = document.createElement("section");
 sponsorOthers.className = "sponsors-section";
@@ -100,6 +111,22 @@ sponsors.secondary.forEach((sponsor) => {
   sponsorsSecondary.appendChild(link);
 });
 
+sponsors.third.forEach((sponsor) => {
+  const link = document.createElement("a");
+  link.className = "company-link";
+  link.href = sponsor.url;
+  link.target = "_blank";
+  const img = document.createElement("img");
+  img.className = "company-logo";
+  img.src = sponsor.logo;
+  img.alt = sponsor.alt;
+  // img.width = sponsor.width;
+
+  img.loading = "lazy";
+  link.appendChild(img);
+  sponsorsThird.appendChild(link);
+});
+
 sponsors.others.forEach((sponsor) => {
   const link = document.createElement("a");
   link.className = "company-link";
@@ -118,6 +145,8 @@ sponsors.others.forEach((sponsor) => {
 sponsorsParent.appendChild(sloganSponsor);
 sponsorsParent.appendChild(sponsorsPrimary);
 sponsorsParent.appendChild(sponsorsSecondary);
+sponsorsParent.appendChild(sponsorsThird);
+
 sponsorsParent.appendChild(sponsorOthers);
 
 parentFooter.prepend(sponsorsParent);
