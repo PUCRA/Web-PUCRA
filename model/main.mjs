@@ -4,7 +4,7 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { DRACOLoader } from "three/addons/loaders/DRACOLoader.js";
 
 const myModelGlb = {
-  path: "https://pub-8613fbc289aa403484fb17e13e7b0525.r2.dev/modelo_draco.glb",
+  path: "AQUI VA LA URL DEL MODELO",
   texturePath: "",
 };
 const myConfig = {
