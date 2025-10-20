@@ -5,12 +5,14 @@ function changeLanguageHome(lang) {
 
 const sliderimages = [
   // all images of slider
-  "./images/49580183558-39fbf5eafb-k-2000x1333.jpg",
   "./images/factoryalan3.jpg",
   "./images/mundial2023.jpg",
+  "home/images/slider_premio_sener.webp",
   "./images/photo5834468752857610489.jpg",
   "./images/robotspinupmundial.jpg",
+  "home/images/slider_phoenyx.webp",
 ];
+
 const parentSlides = document.getElementById("slider-images");
 const parentMenuSlider = document.getElementById("menu-slider");
 
