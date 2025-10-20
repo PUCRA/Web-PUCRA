@@ -37,7 +37,7 @@
         color: #c43a69;
         text-decoration: none;
         transition: transform 0.3s;
-        &&:hover{
+        &&:hover {
           transform: scale(1.3);
         }
       }
@@ -104,5 +104,66 @@
   }
   .footer-section {
     width: 250px;
+  }
+}
+
+#sponsors-parent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Mollen personal use", sans-serif;
+  .slogan-sponsor {
+    text-align: center;
+    margin: 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration-color: #c43a69;
+    text-decoration-line: underline;
+    text-underline-offset: 10px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.49);
+  }
+
+  .sponsors-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    a {
+      padding: 20px;
+    }
+    img {
+      /* adding black and white filter*/
+      filter: brightness(0) invert(1);
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  #sponsors-primary img {
+    height: auto;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  #sponsors-secondary img {
+    height: auto;
+    max-width: 250px;
+    width: 100%;
+  }
+
+  #sponsors-third img {
+    height: auto;
+    max-width: 150px;
+    width: 100%;
+  }
+
+  #sponsors-others img {
+    height: auto;
+    max-width: 90px;
+    width: 100%;
   }
 }

@@ -72,3 +72,9 @@ window.addEventListener("scroll", () => {
     desktopDOM.style.backgroundColor = "rgba(0, 0, 0, 0)";
   }
 });
+
+const links = document.querySelectorAll('a[href="/sponsors"]');
+
+links.forEach((link) => {
+  link.style.display = "none";
+});
