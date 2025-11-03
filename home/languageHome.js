@@ -38,7 +38,7 @@ const aboutEs = {
   pillar_title1: "VEX",
   pillar_text1:
     "Una competición internacional de robótica abierta a todas las edades, donde se aprenden de forma práctica los conceptos básicos de programación, diseño e ingeniería a través de retos que fomentan la creatividad y el trabajo en equipo.",
-  pillar_title2: "ERC",
+  pillar_title2: "ROVERS",
   pillar_text2:
     "Pensada para quienes buscan un mayor reto, con mayor implicación en la robótica, dedicación extra y trabajo en equipo para superar desafíos que ponen a prueba creatividad y estrategia.",
   pillar_title3: "EVENTOS Y CONGRESOS",
@@ -89,7 +89,7 @@ const aboutEn = {
   pillar_title1: "VEX",
   pillar_text1:
     "An international robotics competition open to all ages, where participants learn the basics of programming, design, and engineering through hands-on challenges that foster creativity and teamwork.",
-  pillar_title2: "ERC",
+  pillar_title2: "ROVERS",
   pillar_text2:
     "Designed for those seeking a greater challenge, with deeper involvement in robotics, extra dedication, and teamwork to overcome tasks that test creativity and strategy.",
   pillar_title3: "EVENTS AND CONFERENCES",
@@ -142,7 +142,7 @@ const aboutCat = {
   pillar_title1: "VEX",
   pillar_text1:
     "Una competició internacional de robòtica oberta a totes les edats, on s'aprenen de manera pràctica els conceptes bàsics de programació, disseny i enginyeria a través de reptes que fomenten la creativitat i el treball en equip.",
-  pillar_title2: "ERC",
+  pillar_title2: "ROVERS",
   pillar_text2:
     "Pensada per a aquells que busquen un repte més gran, amb una major implicació en la robòtica, dedicació extra i treball en equip per superar desafiaments que posen a prova la creativitat i l'estratègia.",
   pillar_title3: "ESDEVENIMENTS I CONGRESSOS",
