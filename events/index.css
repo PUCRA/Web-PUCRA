@@ -122,7 +122,9 @@ h1, h2, h3 {
   gap: 50px;
   flex-wrap: wrap;
   align-items: center;
+  
 }
+
 
 .vex-text-container, .erc-text-container {
   max-width: 600px;
@@ -151,6 +153,7 @@ h1, h2, h3 {
 .what-is-vex-container {
   max-width: 600px;
 }
+
 
 .location-info {
   display: flex;
@@ -225,6 +228,24 @@ h1, h2, h3 {
     }
   }
 }
+
+/* MODIFICAR ABAJO SI SE AÑADE LA VEX-THON O OTRO EVENTO*/ 
+.separator {
+  display: none !important;
+}
+
+.vex-text-container {
+  display: none !important;
+}
+
+.faqs-container {
+  display: none !important;
+}
+
+.erc-text-container {
+  display: block !important;
+}
+/* MODIFICAR ARRIBA SI SE AÑADE LA VEX-THON O OTRO EVENTO*/ 
 
 
 @media screen and (max-width: 1240px) {

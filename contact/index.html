@@ -115,98 +115,151 @@
         ></a>
       </div>
 
-      <a id="contact_us" href="/contact" class="contact btn-contact">Contacto</a>
+      <a id="contact_us" href="/contact" class="contact btn-contact"
+        >Contacto</a
+      >
     </navbar>
 
-    <main id="luxy">
-      <div class="article-section">
-        <article id="type-partner" class="contact-flex">
-          <h1 id="be-a-partner">Apóyanos como partner</h1>
-          <p class="be-a-partner-text">
-            Convertirte en Sponsor de PUCRA te brinda visibilidad en nuestras
-            redes sociales y en cada uno de los eventos que organizamos. Tu logo
-            estará presente en nuestras camisetas y materiales de difusión,
-            además de explorar juntos formas de colaboración dentro de nuestra
-            universidad.
-          </p>
-          <p class="be-a-partner-text">
-            Todo esto con el objetivo de que tu marca llegue al mayor número
-            posible de estudiantes.
-          </p>
-        </article>
-
-        <article id="type-student" class="contact-flex">
-          <h1 id="be-a-member">Únete como miembro</h1>
-          <p class="be-a-member-text">
-            Formar parte de PUCRA significa integrarte en un equipo
-            multidisciplinario, donde podrás aprender, experimentar y aplicar
-            conocimientos de ingeniería en proyectos reales a través de la
-            robótica.
-          </p>
-          <p class="be-a-member-text">
-            Es una oportunidad única para desarrollar habilidades técnicas y de
-            trabajo en equipo, mientras vives experiencias que van más allá del
-            aula.
-          </p>
-        </article>
-
+    <main id="luxy" style="padding-top: 80px">
+      <h1 class="center-title" id="be-a-member">Únete como miembro</h1>
+      <h1 class="center-title" id="be-a-partner">Apóyanos como partner</h1>
+      <article class="article-section">
+        <section id="type-partner" class="contact-flex">
+          <div class="sponsor-benefits-container">
+            <section>
+              <h2 class="sponsor_box_title">MÁXIMA VISIBILIDAD</h2>
+              <p class="sponsor_box_text">
+                Tus productos llegarán a ingenieros y profesionales de todo el
+                mundo gracias a nuestra red global.
+              </p>
+            </section>
+            <section>
+              <h2 class="sponsor_box_title">PRESENCIA EN LOS EVENTOS</h2>
+              <p class="sponsor_box_text">
+                Promocionaremos tu marca en nuestros eventos y competiciones
+                junto a la UPC.
+              </p>
+            </section>
+            <section>
+              <h2 class="sponsor_box_title">PUBLICIDAD EN REDES SOCIALES</h2>
+              <p class="sponsor_box_text">
+                Difusión de tu empresa en nuestras redes como Instagram y
+                LinkedIn.
+              </p>
+            </section>
+            <section>
+              <h2 class="sponsor_box_title">
+                TALENTO JOVEN
+              </h2>
+              <p class="sponsor_box_text">
+                Acceso directo a estudiantes de la UPC para prácticas y futuros
+                proyectos profesionales.
+              </p>
+            </section>
+          </div>
+        </section>
+        <section id="type-student" class="contact-flex">
+          <div class="student-benefits-container">
+            <section>
+              <h2 class="student_box_title">DESARROLLO PROFESIONAL</h2>
+              <p class="student_box_text">
+                Mejora tus competencias técnicas y de trabajo en equipo,
+                adquiriendo una experiencia que marcará la diferencia en tu
+                futuro profesional.
+              </p>
+            </section>
+            <section>
+              <h2 class="student_box_title">EXPERIENCIAS ÚNICAS</h2>
+              <p class="student_box_text">
+                Vive momentos que van más allá del aula, participando en
+                competiciones, eventos y proyectos que te conectan con el mundo
+                real de la ingeniería.
+              </p>
+            </section>
+            <section>
+              <h2 class="student_box_title">TRABAJO MULTIDISCIPLINAR</h2>
+              <p class="student_box_text">
+                Forma parte de un equipo con estudiantes de diferentes ámbitos,
+                compartiendo ideas y experiencias.
+              </p>
+            </section>
+            <section>
+              <h2 class="student_box_title">APRENDIZAJE PRÁCTICO</h2>
+              <p class="student_box_text">
+                Aplica tus conocimientos de ingeniería en proyectos reales de
+                robótica, donde cada reto es una oportunidad para crecer y poner
+                a prueba tus habilidades.
+              </p>
+            </section>
+          </div>
+        </section>
+        
         <aside class="contact-flex">
           <!-- <h1 class="heading-14">CONTACT US</h1> -->
-          <p id="form_message" class="paragraph-31">
-            Complete el formulario y responderemos lo antes posible!
-          </p>
-          <div class="w-form">
-            <form action="mail-form.php" method="post">
-              <div class="div-block-35">
-                <input
-                  type="text"
-                  class="text-field w-input"
-                  maxlength="256"
-                  name="name"
-                  placeholder="Nombre"
-                  id="name"
-                />
-                <input
-                  type="email"
-                  class="text-field-2 w-input"
-                  maxlength="256"
-                  name="email"
-                  placeholder="E-mail"
-                  id="email"
-                  required=""
-                />
-              </div>
-              <textarea
-                placeholder="Mensaje"
-                maxlength="5000"
-                id="field"
-                name="message"
-                class="textarea w-input"
-              ></textarea>
+          <form
+            class="contact-form-container"
+            action="mail-form.php"
+            method="post"
+          >
+            <div class="contact-form-subcontainer">
               <input
-                type="submit"
-                id="submit_text"
-                data-wait="Please wait..."
-                class="submit-button w-button"
+                class="contact-form-input large-input"
+                type="text"
+                maxlength="80"
+                name="name"
+                placeholder="Nombre"
+                id="name"
+                required=""
               />
-            </form>
-            <div class="success-message-2 w-form-done">
-              <div id="success_message" class="text-block-4">
-                Thank you! Your submission has been received!
-              </div>
+              <input
+                class="contact-form-input"
+                type="email"
+                maxlength="80"
+                name="email"
+                placeholder="E-mail"
+                id="email"
+                required=""
+              />
             </div>
-            <div id="form_fail" class="w-form-fail">
-              <div>Oops! Something went wrong while submitting the form.</div>
+            <textarea
+              class="contact-form-input"
+              placeholder="Mensaje"
+              maxlength="5000"
+              id="field"
+              name="message"
+              style="resize: none; height: 150px"
+              required=""
+            ></textarea>
+            <input
+              type="submit"
+              id="submit_text"
+              data-wait="Please wait..."
+              class="btn-contact"
+            />
+          </form>
+          <!-- 
+                   <div>
+            <div id="success_message">
+              Thank you! Your submission has been received!
             </div>
           </div>
+          <div id="form_fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+          -->
 
           <h2>E-mail:</h2>
           <p>recursos.pucra@upc.edu</p>
-          <h2 id="phone">Teléfono:</h2>
-          <p>+34 644 35 49 93</p>
+          <h2 id="ubication">Ubicación:</h2>
+          <p>Escola d'Ingeniería de Barcelona Est (EEBE) Planta 9.2</p>
         </aside>
-      </div>
-
+      </article>
+      <!-- 
+      <h1 class="center-title">Testimonials</h1>
+      <p style="color: white">
+        Poner aqui el logo de los sponsors y hace cuantos nos apoyan y un poco
+        sobre ellos, utiliza esto para un gancho para atraer a otros.
+      </p>-->
       <div class="container-22 w-container">
         <div class="div-block-34">
           <div class="html-embed w-embed w-iframe">

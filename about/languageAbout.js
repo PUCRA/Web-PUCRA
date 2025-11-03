@@ -47,6 +47,12 @@ const aboutEs = {
       title: "PREMIO ASSOCIACIONES UPC",
       text: "Una vez más, la UPC corroboró nuestro trabajo e implicación en la vida universitaria, otorgándonos el premio de asociaciones en la disciplina de estudios y formación transversal, demostrando que nuestro proyecto tiene una gran visión de futuro.",
     },
+    {
+      date: "Septiembre 2025",
+      title: "JORNADAS AUTOMÁTICAS",
+      text: "Tras nuestra doble victoria en SENER-CEA Bot Talent fuimos invitados a las Jornadas de Automática 2025 en Cartagena, donde exhibimos junto a los mejores equipos de la competición nuestros rovers ante profesionales y estudiantes.",
+    },
+    
   ],
 
   timeline_competitions: [
@@ -152,6 +158,12 @@ const aboutEn = {
       title: "UPC ASSOCIATIONS AWARD",
       text: "Once again, UPC recognized our work and involvement in university life by awarding us the associations prize in the field of interdisciplinary studies and training, proving that our project has great long-term vision.",
     },
+    {
+      date: "September 2025",
+      title: "AUTOMATICS CONFERENCE",
+      text: "After our double victory at the SENER-CEA Bot Talent, we were invited to the 2025 Automatics Conference in Cartagena, where we showcased our rovers alongside the top teams of the competition to professionals and students.",
+    },
+
   ],
   timeline_competitions: [
     {
@@ -256,6 +268,12 @@ const aboutCat = {
       title: "PREMI ASSOCIACIONS UPC",
       text: "Una vegada més, la UPC va corroborar la nostra tasca i implicació en la vida universitària, atorgant-nos el premi d'associacions en la disciplina d'estudis i formació transversal, demostrant que el nostre projecte té una gran visió de futur.",
     },
+    {
+      date: "Setembre 2025",
+      title: "JORNADES D’AUTOMÀTICA",
+      text: "Després de la nostra doble victòria al SENER-CEA Bot Talent vam ser convidats a les Jornades d’Automàtica 2025 a Cartagena, on vam exhibir, juntament amb els millors equips de la competició, els nostres rovers davant de professionals i estudiants.",
+    },
+
   ],
   timeline_competitions: [
     {

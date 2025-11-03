@@ -1,4 +1,15 @@
 <?php
+session_start();
+
+$delaySegundos = 5;
+
+if (isset($_SESSION['ultimo_envio']) && time() - $_SESSION['ultimo_envio'] < $delaySegundos) {
+    die("Demasiado rápido, espera unos segundos antes de enviar de nuevo.");
+}
+
+$_SESSION['ultimo_envio'] = time();
+
+sleep(2);
 //get data from form  
 $name = $_POST['name'];
 $email= $_POST['email'];
