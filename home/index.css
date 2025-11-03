@@ -336,7 +336,7 @@ p {
   #pillarsPUCRA {
     top: 15px;
   }
-
+  
   .pilar-container {
     flex-direction: column;
     .pilar-item {
@@ -344,6 +344,11 @@ p {
       background-attachment: scroll;
     }
   }
+
+  .image-pilar-2 {
+    background-size: cover !important;    
+  }
+  
 
   .innovation-description {
     display: flex;
@@ -369,7 +374,8 @@ p {
     }
   }
   .media-image {
-    width: 100% !important;
+    width: 80% !important;
     height: auto !important;
   }
+  
 }
