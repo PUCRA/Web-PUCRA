@@ -64,7 +64,7 @@ const sponsors = [
   },
   {
     type: tierOther,
-    url: "https://www.stepperonline.es/",
+    url: "https://www.omc-stepperonline.com/",
     logo: "/images/sponsors/stepper.webp",
     alt: "Logo de Stepper",
   },
