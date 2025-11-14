@@ -43,10 +43,10 @@ const vexthonEs = {
   },
 
   location2: {
-    description: "En la sala de actos de la EEBE",
+    description: "En la sala de actos de la EEBE en el Edificio A",
   },
   date2: {
-    description: "Finales de Noviembre",
+    description: "28 Noviembre a las 15:00h",
   },
 
   about_vex_thon: {
@@ -186,10 +186,10 @@ const vexthonEn = {
   },
   
   location2: {
-    description: "In the EEBE auditorium",
+    description: "In the EEBE assembly hall in Building A",
   },
   date2: {
-    description: "End of November",
+    description: "November 28th at 3:00 p.m",
   },
 
 
@@ -326,10 +326,10 @@ const vexthonCat = {
   },
   
   location2: {
-    description: "A la sala d'actes de l'EEBE",
+    description: "A la sala d’actes de l’EEBE a l’Edifici A",
   },
   date2: {
-    description: "Finals de Novembre",
+    description: "28 de novembre a les 15:00 h",
   },
 
 
