@@ -12,12 +12,12 @@ let images = [
   "https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg",
   "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg",
   "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg",
-  "https://images.pexels.com/photos/3866555/pexels-photo-3866555.png",
-  
-
-
+  "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg",
+  "https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg",
+  "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg",
 ];
 
-let row = document.getElementsByClassName("row-first");
-console.log(row);
-
+let row = document.getElementsByClassName("team-item");
+for (let i = 0; i < row.length; i++) {
+  row[i].style.backgroundImage = "url('" + images[i] + "')";
+}
