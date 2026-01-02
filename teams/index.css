@@ -1,8 +1,8 @@
 body {
-  font-family: "Mollen personal use", sans-serif;
   margin: 0px;
-  background-color: black;
-  background-image: url("../images/pucra-timeline-2000x2829.png");
+  font-family: "Poppins", sans-serif;
+  background: url("../images/pucra-timeline-2000x2829-p-1080.png") no-repeat
+    center center;
   background-size: cover;
 }
 
@@ -20,13 +20,14 @@ h3 {
 
 .panal {
   img {
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
     margin-left: 10px;
     object-fit: contain;
     background-color: rgba(255, 255, 255, 0.199);
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
     transition: all 0.3s ease;
+    object-fit: cover;
     &&:hover {
       transform: scale(0.95);
       filter: brightness(1.1);
@@ -40,12 +41,28 @@ h3 {
   .row-second {
     display: flex;
     justify-content: center;
-    margin-top: -4.5%;
+    margin-top: -6.1%;
   }
   .row-third {
     display: flex;
     justify-content: center;
-    margin-top: -4.5%;
+    margin-top: -6.1%;
+  }
+}
+
+.teams-parent {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40% 59%;
+}
+.teams-parraf {
+  text-align: center;
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    color: white;
+    font-size: 30px;
   }
 }
 
@@ -54,17 +71,20 @@ h3 {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 50px;
   gap: 30px;
 }
 .team-item {
   position: sticky;
+  top: 15vh;
+  left: 10vh;
   width: 100%;
   max-width: 600px;
-  top: 15vh;
-  border: 1px solid white;
+  border: 4px solid #751938;
   border-radius: 6px;
   color: white;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.913);
   max-width: 600px;
   padding: 0px 10px 0px 10px;
   text-align: center;
@@ -73,10 +93,7 @@ h3 {
 
 .team-item:nth-child(odd) {
   transform: rotate(1deg);
-  background-color: rgb(70, 70, 70);
 }
 .team-item:nth-child(even) {
   transform: rotate(-1deg);
-
-  background-color: rgb(100, 100, 100);
 }
