@@ -37,7 +37,12 @@ const sponsors = [
     logo: "/components/images/sponsors/bossard.webp",
     alt: "Logo de Bossard",
   },
-
+  {
+    type: tierThird,
+    url: "https://www.tracopower.com/int/es",
+    logo: "/components/images/sponsors/Traco-power-logo.png",
+    alt: "Logo de Tracopower",
+  },
   {
     type: tierOther,
     url: "https://odriverobotics.com/",
@@ -55,6 +60,12 @@ const sponsors = [
     url: "https://www.omc-stepperonline.com/",
     logo: "/components/images/sponsors/stepper.webp",
     alt: "Logo de Stepper",
+  },
+  {
+    type: tierOther,
+    url: "https://zakfactory.com",
+    logo: "/components/images/sponsors/Zak-factory-logo.png",
+    alt: "Logo de Zakfactory",
   },
 ];
 

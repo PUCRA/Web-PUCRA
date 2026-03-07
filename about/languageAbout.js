@@ -22,13 +22,23 @@ const aboutEs = {
   links: "Links",
   timeline_history: [
   {
-    date: "Septiembre 2025",
-    title: "JORNADAS AUTOMÁTICAS",
-    text: "Tras nuestra doble victoria en SENER-CEA Bot Talent fuimos invitados a las Jornadas de Automática 2025 en Cartagena, donde exhibimos junto a los mejores equipos de la competición nuestros rovers ante profesionales y estudiantes.",
+    date: "Enero 2026",
+    title: "LA NASA RECONOCIÓ NUESTRO TALENTO",
+    text: "Gracias a nuestro desempeño en la competición, el equipo contribuyó con código para el rover open source del JPL de la NASA. Como reconocimiento a este trabajo, nuestro aporte fue incluido en el repositorio oficial de GitHub del proyecto.",
+  },
+  {
+    date: "Noviembre 2025",
+    title: "PREMIO ASOCIACIONES UPC 2025",
+    text: "Por el proyecto desarrollado para la competición de SENER, la UPC volvió a reconocer el trabajo de PUCRA otorgándonos el Premio a la Educación y Formación Transversal. Además del reconocimiento institucional, la asociación recibió una dotación económica para seguir impulsando nuevos proyectos.",
+  },
+  {
+    date: "Noviembre 2025",
+    title: "CHARLA EN ROSCON",
+    text: "Nuestros logros nos permitieron participar en ROSCon con una charla en la que compartimos la historia de PUCRA, nuestro recorrido y la experiencia desarrollando proyectos de robótica en un entorno rodeado de profesionales y entusiastas del sector.",
   },
   {
     date: "Noviembre 2022",
-    title: "PREMIO ASSOCIACIONES UPC",
+    title: "PREMIO ASSOCIACIONES UPC 2022",
     text: "Una vez más, la UPC corroboró nuestro trabajo e implicación en la vida universitaria, otorgándonos el premio de asociaciones en la disciplina de estudios y formación transversal, demostrando que nuestro proyecto tiene una gran visión de futuro.",
   },
   {
@@ -38,7 +48,7 @@ const aboutEs = {
   },
   {
     date: "Febrero 2020",
-    title: "PREMIO ASSOCIACIONES UPC",
+    title: "PREMIO ASSOCIACIONES UPC 2020",
     text: "PUCRA recibió el 1er premio dirigido a las asociaciones de estudiantes de la UPC para reconocer y promover el asociacionismo, su implicación y el fomento de los valores inspiradores de la vida universitaria.",
   },
   {
@@ -56,9 +66,29 @@ const aboutEs = {
 
   timeline_competitions: [
     {
+      date: "Marzo 2026",
+      title: "VEX ROBOTICS 2026",
+      text: "En esta edición, un equipo de PUCRA formado recientemente logró un gran resultado al alcanzar el segundo puesto de España. La competición también sirvió como una valiosa experiencia de aprendizaje para seguir consolidando conocimientos en robótica.",
+    },
+    {
+      date: "Noviembre 2025",
+      title: "HACKATHON LE ROBOT",
+      text: "El equipo de PUCRA viajó a Bilbao para participar en la Hackathon LeRobot, un desafío en el que se centraron en la recogida autónoma de probetas utilizando la plataforma de pruebas LeKiwi. Aunque el equipo no obtuvo la victoria, su trabajo fue reconocido con un premio especial que les otorgó acceso a formaciones exclusivas impartidas por NVIDIA.",
+    },
+    {
       date: "Mayo 2025",
       title: "SENER-CEA's Bot Talent 2025",
       text: "El 6 de mayo, el equipo PUCRA viajó a Madrid para participar por primera vez en la competición “Sener-CEA's Bot Talent”, un desafío de diseño y programación de robots autónomos inspirado en misiones de la NASA. En ella, se logró una doble victoria, ganando tanto el premio de diseño como el premio absoluto del jurado. El equipo, formado íntegramente por estudiantes de grado, demostró una gran solvencia en visión por computador, navegación inteligente e IA aplicada. Un éxito que refleja el talento, la dedicación y el trabajo en equipo de sus miembros.",
+    },
+    {
+      date: "Febrero 2025",
+      title: "VEX ROBOTICS 2025",
+      text: "Gracias al esfuerzo constante del equipo de PUCRA, se obtuvieron los premios Design Award, Tournament Champion y Robot Skills Champion, demostrando el alto nivel del equipo y asegurando por tercer año consecutivo la clasificación para la World Championship 2025 en Texas.",
+    },
+    {
+      date: "Febrero 2024",
+      title: "VEX ROBOTICS 2024",
+      text: "Este año el equipo de PUCRA volvió a competir en la fase nacional de la VEX Robotics Competition. Aprovechando el reto de la temporada, el equipo integró una Raspberry Pi en el hardware del robot, lo que posteriormente les permitió clasificarse para la World Championship 2024 en Dallas.",
     },
     {
       date: "Febrero 2023",
@@ -108,6 +138,24 @@ const aboutEs = {
   ],
 
   timeline_events: [
+    {
+      date: "Marzo 2026",
+      title: "ROS MEETUP",
+      text: "Próximamente...",
+      button: "Más información" 
+    },
+    {
+      date: "Marzo 2026",
+      title: "TALENT ARENA",
+      text: "Gracias a sus logros, PUCRA pudo realizar una charla en el Talent Arena, donde explicaron su historia y el recorrido del equipo a lo largo de todos estos años.",
+      button: "Más información" 
+    },
+    {
+      date: "Septiembre 2025",
+      title: "JORNADAS AUTOMÁTICAS",
+      text: "Tras nuestra doble victoria en SENER-CEA Bot Talent fuimos invitados a las Jornadas de Automática 2025 en Cartagena, donde exhibimos junto a los mejores equipos de la competición nuestros rovers ante profesionales y estudiantes.",
+      button: "Más información" 
+    },
     { 
       date: "Octubre 2024", title: "VEX-THON",
       text: "En octubre de 2024, PUCRA se reinventó con un evento innovador en formato Hackathon, donde estudiantes de todos los grados universitarios aprendieron a construir y programar un robot desde cero.",
@@ -170,13 +218,23 @@ const aboutEn = {
   links: "Links",
   timeline_history: [
   {
-    date: "September 2025",
-    title: "AUTOMATICS CONFERENCE",
-    text: "After our double victory at the SENER-CEA Bot Talent, we were invited to the 2025 Automatics Conference in Cartagena, where we showcased our rovers alongside the top teams of the competition to professionals and students.",
+    date: "January 2026",
+    title: "NASA RECOGNIZED OUR TALENT",
+    text: "Thanks to our performance in the competition, the team contributed code to NASA JPL’s open-source rover project. In recognition of this work, our contribution was included in the project’s official GitHub repository.",
+  },
+  {
+    date: "November 2025",
+    title: "UPC ASSOCIATIONS AWARD 2025",
+    text: "Because of the project developed for the SENER competition, UPC once again recognized the work of PUCRA by awarding us the Prize for Transversal Education and Training. Along with the institutional recognition, the association received financial support to continue developing new projects.",
+  },
+  {
+    date: "November 2025",
+    title: "TALK AT ROSCON",
+    text: "Our achievements gave us the opportunity to give a talk at ROSCon, where we shared the story of PUCRA, our journey, and our experience developing robotics projects in an environment surrounded by professionals and enthusiasts from the robotics community.",
   },
   {
     date: "November 2022",
-    title: "UPC ASSOCIATIONS AWARD",
+    title: "UPC ASSOCIATIONS AWARD 2022",
     text: "Once again, UPC recognized our work and involvement in university life by awarding us the associations prize in the field of interdisciplinary studies and training, proving that our project has great long-term vision.",
   },
   {
@@ -186,7 +244,7 @@ const aboutEn = {
   },
   {
     date: "February 2020",
-    title: "UPC ASSOCIATIONS AWARD",
+    title: "UPC ASSOCIATIONS AWARD 2020",
     text: "PUCRA received the 1st prize awarded to UPC student associations in recognition of their involvement and for promoting the inspiring values of university life.",
   },
   {
@@ -203,9 +261,29 @@ const aboutEn = {
 ],
   timeline_competitions: [
     {
+      date: "March 2026",
+      title: "VEX ROBOTICS 2026",
+      text: "In this edition, a newly formed PUCRA team achieved an excellent result by finishing second in Spain. The competition also served as a valuable learning experience to further strengthen their robotics knowledge.",
+    },
+    {
+      date: "November 2025",
+      title: "LEROBOT HACKATHON",
+      text: "The PUCRA team traveled to Bilbao to participate in the LeRobot Hackathon, a challenge wich they focused on autonomous test tube collection using the LeKiwi testing platform. Although the team did not win the competition, their work was recognized with a special award granting them access to exclusive training sessions provided by NVIDIA.",
+    },
+    {
       date: "May 2025",
       title: "SENER-CEA's Bot Talent 2025",
       text: "On May 6th, the PUCRA team traveled to Madrid to participate for the first time in the 'Sener-CEA's Bot Talent' competition, a challenge focused on the design and programming of autonomous robots inspired by NASA missions. The team achieved a double victory, winning both the design award and the overall jury prize. Composed entirely of undergraduate students, the team demonstrated strong capabilities in computer vision, intelligent navigation, and applied AI. A success that reflects the talent, dedication, and teamwork of its members.",
+    },
+    { 
+      date: "February 2025",
+      title: "VEX ROBOTICS 2025",
+      text: "Thanks to the constant effort of the PUCRA team, they won the Design Award, Tournament Champion, and Robot Skills Champion, demonstrating the team’s high level and securing qualification for the 2025 World Championship in Texas for the third consecutive year.",
+    },
+    {
+      date: "February 2024",
+      title: "VEX ROBOTICS 2024",
+      text: "This year the PUCRA team competed again in the national stage of the VEX Robotics Competition. Taking advantage of the season’s challenge, the team integrated a Raspberry Pi into the robot’s hardware, which later helped them qualify for the 2024 World Championship in Dallas.",
     },
     {
       date: "February 2023",
@@ -255,6 +333,24 @@ const aboutEn = {
   ],
 
   timeline_events: [
+    {
+      date: "March 2026",
+      title: "ROS MEETUP",
+      text: "Coming soon...",
+      button: "More information"
+    },
+    {
+      date: "March 2026",
+      title: "TALENT ARENA",
+      text: "Thanks to its achievements, PUCRA was able to give a talk at Talent Arena, where the team explained their history and the journey they have taken over the years.",
+      button: "More information"
+    },
+    {
+      date: "September 2025",
+      title: "AUTOMATICS CONFERENCE",
+      text: "After our double victory at the SENER-CEA Bot Talent, we were invited to the 2025 Automatics Conference in Cartagena, where we showcased our rovers alongside the top teams of the competition to professionals and students.",
+      button: "More information"
+    },
     {
       date: "October 2024", title: "VEX-THON",
       text: "In October 2024, PUCRA reinvented itself with an innovative Hackathon-style event, where students from all university degrees had the opportunity to learn how to build and program a robot from scratch.",
@@ -317,13 +413,23 @@ const aboutCat = {
   links: "Enllaços",
   timeline_history: [
   {
-    date: "Setembre 2025",
-    title: "JORNADES D’AUTOMÀTICA",
-    text: "Després de la nostra doble victòria al SENER-CEA Bot Talent vam ser convidats a les Jornades d’Automàtica 2025 a Cartagena, on vam exhibir, juntament amb els millors equips de la competició, els nostres rovers davant de professionals i estudiants.",
+    date: "Gener 2026",
+    title: "LA NASA VA RECONÈIXER EL NOSTRE TALENT",
+    text: "Gràcies al nostre rendiment a la competició, l’equip va contribuir amb codi per al rover open source del JPL de la NASA. Com a reconeixement a aquest treball, la nostra aportació va ser inclosa al repositori oficial de GitHub del projecte.",
+  },
+  {
+    date: "Novembre 2025",
+    title: "PREMI ASSOCIACIONS UPC 2025",
+    text: "Per el projecte desenvolupat per a la competició de SENER, la UPC va tornar a reconèixer la feina de PUCRA atorgant-nos el Premi a l’Educació i Formació Transversal. A més del reconeixement institucional, l’associació va rebre una dotació econòmica per continuar impulsant nous projectes.",
+  },
+  {
+    date: "Novembre 2025",
+    title: "XERRADA A ROSCON",
+    text: "Els nostres assoliments ens van permetre participar a ROSCon amb una xerrada on vam compartir la història de PUCRA, el nostre recorregut i l’experiència desenvolupant projectes de robòtica en un entorn ple de professionals i entusiastes del sector.",
   },
   {
     date: "Novembre 2022",
-    title: "PREMI ASSOCIACIONS UPC",
+    title: "PREMI ASSOCIACIONS UPC 2022",
     text: "Una vegada més, la UPC va corroborar la nostra tasca i implicació en la vida universitària, atorgant-nos el premi d'associacions en la disciplina d'estudis i formació transversal, demostrant que el nostre projecte té una gran visió de futur.",
   },
   {
@@ -333,7 +439,7 @@ const aboutCat = {
   },
   {
     date: "Febrer 2020",
-    title: "PREMI ASSOCIACIONS UPC",
+    title: "PREMI ASSOCIACIONS UPC 2020",
     text: "PUCRA va rebre el 1r premi destinat a les associacions d'estudiants de la UPC per reconèixer i promoure l'associacionisme, la seva implicació i el foment dels valors inspiradors de la vida universitària.",
   },
   {
@@ -350,9 +456,29 @@ const aboutCat = {
 ],
   timeline_competitions: [
     {
+      date: "Març 2026",
+      title: "VEX ROBOTICS 2026",
+      text: "En aquesta edició, un equip de PUCRA format recentment va aconseguir un gran resultat arribant a la segona posició d’Espanya. La competició també va servir com una valuosa experiència d’aprenentatge per continuar consolidant coneixements en robòtica.",
+    },
+    {
+      date: "Novembre 2025",
+      title: "HACKATHON LE ROBOT",
+      text: "L’equip de PUCRA va viatjar a Bilbao per participar en la Hackathon LeRobot, un repte en el que es van centrar en la recollida autònoma de provetes utilitzant la plataforma de proves LeKiwi. Tot i no aconseguir la victòria, el seu treball va ser reconegut amb un premi especial que els va donar accés a formacions exclusives impartides per NVIDIA.",
+    },
+    {
       date: "Maig 2025",
       title: "SENER-CEA's Bot Talent 2025",
       text: "El 6 de maig, l'equip PUCRA va viatjar a Madrid per participar per primera vegada a la competició 'Sener-CEA's Bot Talent', un repte de disseny i programació de robots autònoms inspirat en missions de la NASA. Es va aconseguir una doble victòria, guanyant tant el premi de disseny com el premi absolut del jurat. L'equip, format íntegrament per estudiants de grau, va demostrar una gran solvència en visió per computador, navegació intel·ligent i IA aplicada. Un èxit que reflecteix el talent, la dedicació i el treball en equip dels seus membres.",
+    },
+    {
+      date: "Febrer 2025",
+      title: "VEX ROBOTICS 2025",
+      text: "Gràcies a l’esforç constant de l’equip de PUCRA, es van aconseguir els premis Design Award, Tournament Champion i Robot Skills Champion, demostrant l’alt nivell de l’equip i assegurant per tercer any consecutiu la classificació per a la World Championship 2025 a Texas.",
+    },
+    {
+      date: "Febrer 2024",
+      title: "VEX ROBOTICS 2024",
+      text: "Aquest any l’equip de PUCRA va tornar a competir a la fase nacional de la VEX Robotics Competition. Aprofitant el repte de la temporada, l’equip va integrar una Raspberry Pi al maquinari del robot, fet que posteriorment els va permetre classificar-se per a la World Championship 2024 a Dallas.",
     },
     {
       date: "Febrer 2023",
@@ -401,6 +527,24 @@ const aboutCat = {
     },
   ],
   timeline_events: [
+    {
+      date: "Març 2026",
+      title: "ROS MEETUP",
+      text: "Pròximament...",
+      button: "Més informació"
+    },
+    {
+      date: "Març 2026",
+      title: "TALENT ARENA",
+      text: "Gràcies als seus èxits, PUCRA va poder fer una xerrada al Talent Arena, on van explicar la seva història i el recorregut de l’equip al llarg de tots aquests anys.",
+      button: "Més informació"
+    },
+    {
+      date: "Setembre 2025",
+      title: "JORNADES D’AUTOMÀTICA",
+      text: "Després de la nostra doble victòria al SENER-CEA Bot Talent vam ser convidats a les Jornades d’Automàtica 2025 a Cartagena, on vam exhibir, juntament amb els millors equips de la competició, els nostres rovers davant de professionals i estudiants.",
+      button: "Més informació"
+    },
     {
       date: "Octubre 2024", title: "VEX-THON",
       text: "A l'octubre del 2024, PUCRA es va reinventar amb un esdeveniment innovador en format Hackathon, on estudiants de tots els graus universitaris van tenir l'oportunitat d'aprendre a construir i programar un robot des de zero.",
