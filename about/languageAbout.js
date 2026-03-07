@@ -73,7 +73,7 @@ const aboutEs = {
     {
       date: "Noviembre 2025",
       title: "HACKATHON LE ROBOT",
-      text: "El equipo de PUCRA viajó a Bilbao para participar en la Hackathon LeRobot, un desafío en el que se centraron en la recogida autónoma de probetas utilizando la plataforma de pruebas LeKiwi. Aunque el equipo no obtuvo la victoria, su trabajo fue reconocido con un premio especial que les otorgó acceso a formaciones exclusivas impartidas por NVIDIA.",
+      text: "El equipo de PUCRA viajó a Bilbao para participar en la Hackathon LeRobot, un desafío en el que se centraron en la recogida autónoma de probetas utilizando la plataforma de pruebas LeKiwi. Finalmente, su trabajo fue reconocido con un premio especial que les otorgó acceso a formaciones exclusivas impartidas por NVIDIA.",
     },
     {
       date: "Mayo 2025",
@@ -88,7 +88,7 @@ const aboutEs = {
     {
       date: "Febrero 2024",
       title: "VEX ROBOTICS 2024",
-      text: "Este año el equipo de PUCRA volvió a competir en la fase nacional de la VEX Robotics Competition. Aprovechando el reto de la temporada, el equipo integró una Raspberry Pi en el hardware del robot, lo que posteriormente les permitió clasificarse para la World Championship 2024 en Dallas.",
+      text: "Este año el equipo de PUCRA volvió a competir en la fase nacional de la VEX Robotics Competition. Aprovechando el reto de la temporada, el equipo integró una Jetson Nano en el hardware del robot, lo que posteriormente les permitió ser invitados a la World Championship 2024 en Dallas.",
     },
     {
       date: "Febrero 2023",
@@ -268,7 +268,7 @@ const aboutEn = {
     {
       date: "November 2025",
       title: "LEROBOT HACKATHON",
-      text: "The PUCRA team traveled to Bilbao to participate in the LeRobot Hackathon, a challenge wich they focused on autonomous test tube collection using the LeKiwi testing platform. Although the team did not win the competition, their work was recognized with a special award granting them access to exclusive training sessions provided by NVIDIA.",
+      text: "The PUCRA team traveled to Bilbao to participate in the LeRobot Hackathon, a challenge wich they focused on autonomous test tube collection using the LeKiwi testing platform. Finally their work was recognized with a special award granting them access to exclusive training sessions provided by NVIDIA.",
     },
     {
       date: "May 2025",
@@ -283,7 +283,7 @@ const aboutEn = {
     {
       date: "February 2024",
       title: "VEX ROBOTICS 2024",
-      text: "This year the PUCRA team competed again in the national stage of the VEX Robotics Competition. Taking advantage of the season’s challenge, the team integrated a Raspberry Pi into the robot’s hardware, which later helped them qualify for the 2024 World Championship in Dallas.",
+      text: "This year the PUCRA team competed again in the national stage of the VEX Robotics Competition. Taking advantage of the season’s challenge, the team integrated a Jetson Nano into the robot’s hardware, which later helped them be invited for the 2024 World Championship in Dallas.",
     },
     {
       date: "February 2023",
@@ -463,7 +463,7 @@ const aboutCat = {
     {
       date: "Novembre 2025",
       title: "HACKATHON LE ROBOT",
-      text: "L’equip de PUCRA va viatjar a Bilbao per participar en la Hackathon LeRobot, un repte en el que es van centrar en la recollida autònoma de provetes utilitzant la plataforma de proves LeKiwi. Tot i no aconseguir la victòria, el seu treball va ser reconegut amb un premi especial que els va donar accés a formacions exclusives impartides per NVIDIA.",
+      text: "L’equip de PUCRA va viatjar a Bilbao per participar en la Hackathon LeRobot, un repte en el que es van centrar en la recollida autònoma de provetes utilitzant la plataforma de proves LeKiwi. Finalment, el seu treball va ser reconegut amb un premi especial que els va donar accés a formacions exclusives impartides per NVIDIA.",
     },
     {
       date: "Maig 2025",
@@ -478,7 +478,7 @@ const aboutCat = {
     {
       date: "Febrer 2024",
       title: "VEX ROBOTICS 2024",
-      text: "Aquest any l’equip de PUCRA va tornar a competir a la fase nacional de la VEX Robotics Competition. Aprofitant el repte de la temporada, l’equip va integrar una Raspberry Pi al maquinari del robot, fet que posteriorment els va permetre classificar-se per a la World Championship 2024 a Dallas.",
+      text: "Aquest any l’equip de PUCRA va tornar a competir a la fase nacional de la VEX Robotics Competition. Aprofitant el repte de la temporada, l’equip va integrar una Jetson Nano al maquinari del robot, fet que posteriorment els va permetre ser invitats a la World Championship 2024 a Dallas.",
     },
     {
       date: "Febrer 2023",
