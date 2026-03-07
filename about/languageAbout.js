@@ -21,38 +21,37 @@ const aboutEs = {
   address: "Dirección",
   links: "Links",
   timeline_history: [
-    {
-      date: "Septiembre 2017",
-      title: "Fundación de PUCRA",
-      text: "La necesidad de continuar aprendiendo fuera del aula y poder compartir sueños e inquietudes con otros estudiantes, hizo que en 2017, se fundara PUCRA, la primera y única asociación de este tipo en todo el territorio español. El objetivo principal ha sido siempre participar y ganar las competiciones internacionales más importantes del sector.",
-      button: "Participaciones del equipo de competición",
-    },
-    {
-      date: "Septiembre 2018",
-      title: "INICIO DE PUCRA FACTORY",
-      text: "El proyecto surgió de la necesidad de dar continuidad a las nuevas generaciones de la asociación, fomentando las vocaciones científico-tecnológicas de los más jóvenes. Durante los últimos años hemos tutorizado varios equipos propios de secundaria y bachillerato para participar en la categoría de High School de la VEX Robotics Competition.",
-    },
-    {
-      date: "Febrero 2020",
-      title: "PREMIO ASSOCIACIONES UPC",
-      text: "PUCRA recibió el 1er premio dirigido a las asociaciones de estudiantes de la UPC para reconocer y promover el asociacionismo, su implicación y el fomento de los valores inspiradores de la vida universitaria.",
-    },
-    {
-      date: "Septiembre 2020",
-      title: "PLAN SOCIAL",
-      text: "Dado que nuestro campus se encuentra entre los barrios del Besòs y la Mina, dentro de las actividades de responsabilidad social que se llevan a cabo desde la dirección de nuestra escuela, hemos colaborado para dar la oportunidad a varios centros socioeducativos del entorno para poder participar en la categoría de IQ de la VEX Robotics Competition, abriendo los horizontes de más de 100 niños en situaciones vulnerables.",
-    },
-    {
-      date: "Noviembre 2022",
-      title: "PREMIO ASSOCIACIONES UPC",
-      text: "Una vez más, la UPC corroboró nuestro trabajo e implicación en la vida universitaria, otorgándonos el premio de asociaciones en la disciplina de estudios y formación transversal, demostrando que nuestro proyecto tiene una gran visión de futuro.",
-    },
-    {
-      date: "Septiembre 2025",
-      title: "JORNADAS AUTOMÁTICAS",
-      text: "Tras nuestra doble victoria en SENER-CEA Bot Talent fuimos invitados a las Jornadas de Automática 2025 en Cartagena, donde exhibimos junto a los mejores equipos de la competición nuestros rovers ante profesionales y estudiantes.",
-    },
-    
+  {
+    date: "Septiembre 2025",
+    title: "JORNADAS AUTOMÁTICAS",
+    text: "Tras nuestra doble victoria en SENER-CEA Bot Talent fuimos invitados a las Jornadas de Automática 2025 en Cartagena, donde exhibimos junto a los mejores equipos de la competición nuestros rovers ante profesionales y estudiantes.",
+  },
+  {
+    date: "Noviembre 2022",
+    title: "PREMIO ASSOCIACIONES UPC",
+    text: "Una vez más, la UPC corroboró nuestro trabajo e implicación en la vida universitaria, otorgándonos el premio de asociaciones en la disciplina de estudios y formación transversal, demostrando que nuestro proyecto tiene una gran visión de futuro.",
+  },
+  {
+    date: "Septiembre 2020",
+    title: "PLAN SOCIAL",
+    text: "Dado que nuestro campus se encuentra entre los barrios del Besòs y la Mina, dentro de las actividades de responsabilidad social que se llevan a cabo desde la dirección de nuestra escuela, hemos colaborado para dar la oportunidad a varios centros socioeducativos del entorno para poder participar en la categoría de IQ de la VEX Robotics Competition, abriendo los horizontes de más de 100 niños en situaciones vulnerables.",
+  },
+  {
+    date: "Febrero 2020",
+    title: "PREMIO ASSOCIACIONES UPC",
+    text: "PUCRA recibió el 1er premio dirigido a las asociaciones de estudiantes de la UPC para reconocer y promover el asociacionismo, su implicación y el fomento de los valores inspiradores de la vida universitaria.",
+  },
+  {
+    date: "Septiembre 2018",
+    title: "INICIO DE PUCRA FACTORY",
+    text: "El proyecto surgió de la necesidad de dar continuidad a las nuevas generaciones de la asociación, fomentando las vocaciones científico-tecnológicas de los más jóvenes. Durante los últimos años hemos tutorizado varios equipos propios de secundaria y bachillerato para participar en la categoría de High School de la VEX Robotics Competition.",
+  },
+  {
+    date: "Septiembre 2017",
+    title: "Fundación de PUCRA",
+    text: "La necesidad de continuar aprendiendo fuera del aula y poder compartir sueños e inquietudes con otros estudiantes, hizo que en 2017, se fundara PUCRA, la primera y única asociación de este tipo en todo el territorio español. El objetivo principal ha sido siempre participar y ganar las competiciones internacionales más importantes del sector.",
+    button: "Participaciones del equipo de competición",
+  },
   ],
 
   timeline_competitions: [
@@ -107,6 +106,44 @@ const aboutEs = {
       text: "En nuestro primer año, PUCRA participó en la VEX Robotics Competition, clasificándose para la final estatal. Siendo finalistas nacionales y el primer equipo universitario de la competición, un resultado magnífico para la primera participación del equipo.",
     },
   ],
+
+  timeline_events: [
+    { 
+      date: "Octubre 2024", title: "VEX-THON",
+      text: "En octubre de 2024, PUCRA se reinventó con un evento innovador en formato Hackathon, donde estudiantes de todos los grados universitarios aprendieron a construir y programar un robot desde cero.",
+      button: "Más información" 
+    },
+    { 
+      date: "Febrero 2024", title: "VEX SPAIN REGIONAL 2024",
+      text: "El sábado 3 de febrero PUCRA organizó la regional en la Escuela de Ingeniería de Barcelona Este donde compitieron 13 equipos de Cataluña y Castellón.",
+      button: "Más información" 
+    },
+    { 
+      date: "Marzo 2023", title: "VEX SPAIN CHAMPIONSHIP 2023",
+      text: "El fin de semana del 4 y 5 de marzo tuvo lugar en la Escola d'Enginyeria de Barcelona Est la final nacional de la VEX Robotics con más de 40 equipos.",
+      button: "Más información" 
+    },
+    { 
+      date: "Febrero 2022", title: "VEX SPAIN CHAMPIONSHIP 2022",
+      text: "Después de tres años como Event Partners, PUCRA volvió a traer la final nacional a Barcelona. Una edición que batió récords de participación.",
+      button: "Más información" 
+    },
+    { 
+      date: "Mayo 2021", title: "VEX SPAIN CHAMPIONSHIP 2021",
+      text: "En un año lleno de dificultades, celebramos la final nacional con 25 equipos y más de 150 competidores, llegando a más de 2000 espectadores en streaming.",
+      button: "Más información" 
+    },
+    { 
+      date: "Febrero 2020", title: "VEX MEDITERRANEAN OPEN 2020",
+      text: "PUCRA convirtió Barcelona en la capital de la robótica celebrando la primera edición del VEX Mediterranean Open con equipos nacionales e internacionales.",
+      button: "Más información" 
+    },
+    { 
+      date: "Febrero 2019", title: "VEX REGIONAL BARCELONA 2019",
+      text: "En nuestro primer año como Event Partners reunimos más de 700 personas y más de 20 equipos en la Escola d'Enginyeria de Barcelona Est.",
+      button: "Más información" 
+    },
+  ],
 };
 
 const aboutEn = {
@@ -124,7 +161,7 @@ const aboutEn = {
   menu_icon: "Menu",
   close_icon: "Close",
   languages: "LANGUAGES",
-  networks: "SOCIAL",
+  networks: "NETWORKS",
   section_title: "ABOUT US",
   subtitle_history: "History",
   subtitle_competitions: "Competitions",
@@ -132,39 +169,38 @@ const aboutEn = {
   address: "Address",
   links: "Links",
   timeline_history: [
-    {
-      date: "September 2017",
-      title: "PUCRA is Founded",
-      text: "The need to continue learning outside the classroom and share dreams and concerns with other students led to the founding of PUCRA in 2017 — the first and only association of its kind in all of Spain. The main goal has always been to participate in and win the most important international competitions in the field.",
-      button: "Competition Team Participation",
-    },
-    {
-      date: "September 2018",
-      title: "START OF PUCRA FACTORY",
-      text: "The project was born from the need to ensure continuity for new generations in the association, encouraging scientific and technological vocations in young people. In recent years, we have mentored several secondary and high school teams to compete in the High School category of the VEX Robotics Competition.",
-    },
-    {
-      date: "February 2020",
-      title: "UPC ASSOCIATIONS AWARD",
-      text: "PUCRA received the 1st prize awarded to UPC student associations in recognition of their involvement and for promoting the inspiring values of university life.",
-    },
-    {
-      date: "September 2020",
-      title: "SOCIAL PLAN",
-      text: "Since our campus is located between the neighborhoods of Besòs and La Mina, and in line with the social responsibility activities promoted by our school, we have collaborated to give several nearby socio-educational centers the opportunity to participate in the IQ category of the VEX Robotics Competition — expanding the horizons of over 100 children in vulnerable situations.",
-    },
-    {
-      date: "November 2022",
-      title: "UPC ASSOCIATIONS AWARD",
-      text: "Once again, UPC recognized our work and involvement in university life by awarding us the associations prize in the field of interdisciplinary studies and training, proving that our project has great long-term vision.",
-    },
-    {
-      date: "September 2025",
-      title: "AUTOMATICS CONFERENCE",
-      text: "After our double victory at the SENER-CEA Bot Talent, we were invited to the 2025 Automatics Conference in Cartagena, where we showcased our rovers alongside the top teams of the competition to professionals and students.",
-    },
-
-  ],
+  {
+    date: "September 2025",
+    title: "AUTOMATICS CONFERENCE",
+    text: "After our double victory at the SENER-CEA Bot Talent, we were invited to the 2025 Automatics Conference in Cartagena, where we showcased our rovers alongside the top teams of the competition to professionals and students.",
+  },
+  {
+    date: "November 2022",
+    title: "UPC ASSOCIATIONS AWARD",
+    text: "Once again, UPC recognized our work and involvement in university life by awarding us the associations prize in the field of interdisciplinary studies and training, proving that our project has great long-term vision.",
+  },
+  {
+    date: "September 2020",
+    title: "SOCIAL PLAN",
+    text: "Since our campus is located between the neighborhoods of Besòs and La Mina, and in line with the social responsibility activities promoted by our school, we have collaborated to give several nearby socio-educational centers the opportunity to participate in the IQ category of the VEX Robotics Competition — expanding the horizons of over 100 children in vulnerable situations.",
+  },
+  {
+    date: "February 2020",
+    title: "UPC ASSOCIATIONS AWARD",
+    text: "PUCRA received the 1st prize awarded to UPC student associations in recognition of their involvement and for promoting the inspiring values of university life.",
+  },
+  {
+    date: "September 2018",
+    title: "START OF PUCRA FACTORY",
+    text: "The project was born from the need to ensure continuity for new generations in the association, encouraging scientific and technological vocations in young people. In recent years, we have mentored several secondary and high school teams to compete in the High School category of the VEX Robotics Competition.",
+  },
+  {
+    date: "September 2017",
+    title: "PUCRA is Founded",
+    text: "The need to continue learning outside the classroom and share dreams and concerns with other students led to the founding of PUCRA in 2017 — the first and only association of its kind in all of Spain. The main goal has always been to participate in and win the most important international competitions in the field.",
+    button: "Competition Team Participation",
+  },
+],
   timeline_competitions: [
     {
       date: "May 2025",
@@ -217,6 +253,44 @@ const aboutEn = {
       text: "In our first year, PUCRA participated in the VEX Robotics Competition, qualifying for the state finals. As national finalists and the first university team in the competition, it was an outstanding result for our debut season.",
     },
   ],
+
+  timeline_events: [
+    {
+      date: "October 2024", title: "VEX-THON",
+      text: "In October 2024, PUCRA reinvented itself with an innovative Hackathon-style event, where students from all university degrees had the opportunity to learn how to build and program a robot from scratch.",
+      button: "More information"
+    },
+    {
+      date: "February 2024", title: "VEX SPAIN REGIONAL 2024",
+      text: "On Saturday, February 3rd, PUCRA organized the regional event at the Barcelona East School of Engineering, where 13 teams from Catalonia and Castellón competed, some part of the VEX social plan, benefiting over 50 children and 5 schools.",
+      button: "More information"
+    },
+    {
+      date: "March 2023", title: "VEX SPAIN CHAMPIONSHIP 2023",
+      text: "On the weekend of March 4th and 5th, the national final of VEX Robotics took place at the Barcelona East School of Engineering. Over 40 teams from different categories tested their robots and skills.",
+      button: "More information"
+    },
+    {
+      date: "February 2022", title: "VEX SPAIN CHAMPIONSHIP 2022",
+      text: "After three years as Event Partners, PUCRA once again brought the national final to Barcelona. A record-breaking edition in terms of participation across all categories.",
+      button: "More information"
+    },
+    {
+      date: "May 2021", title: "VEX SPAIN CHAMPIONSHIP 2021",
+      text: "In an unusual year full of challenges, we held the national final with 25 teams and over 150 competitors, reaching more than 2,000 viewers through streaming.",
+      button: "More information"
+    },
+    {
+      date: "February 2020", title: "VEX MEDITERRANEAN OPEN 2020",
+      text: "PUCRA turned Barcelona into the capital of robotics, hosting simultaneously the regional final and the first edition of the VEX Mediterranean Open with national and international teams.",
+      button: "More information"
+    },
+    {
+      date: "February 2019", title: "VEX REGIONAL BARCELONA 2019",
+      text: "In our first year as Event Partners, we gathered over 700 people and more than 20 teams at the Barcelona East School of Engineering to compete and share their passion for robotics.",
+      button: "More information"
+    },
+  ],
 };
 
 const aboutCat = {
@@ -242,39 +316,38 @@ const aboutCat = {
   address: "Adreça",
   links: "Enllaços",
   timeline_history: [
-    {
-      date: "Setembre 2017",
-      title: "Fundació de PUCRA",
-      text: "La necessitat de continuar aprenent fora de l'aula i de poder compartir somnis i inquietuds amb altres estudiants va portar, l'any 2017, a la fundació de PUCRA, la primera i única associació d'aquest tipus a tot el territori espanyol. L'objectiu principal sempre ha estat participar i guanyar les competicions internacionals més importants del sector.",
-      button: "Participacions de l'equip de competició",
-    },
-    {
-      date: "Setembre 2018",
-      title: "INICI DE PUCRA FACTORY",
-      text: "El projecte va sorgir de la necessitat de donar continuïtat a les noves generacions de l'associació, fomentant les vocacions científiques i tecnològiques dels més joves. Durant els darrers anys hem tutoritzat diversos equips propis de secundària i batxillerat per participar en la categoria de High School de la VEX Robotics Competition.",
-    },
-    {
-      date: "Febrer 2020",
-      title: "PREMI ASSOCIACIONS UPC",
-      text: "PUCRA va rebre el 1r premi destinat a les associacions d'estudiants de la UPC per reconèixer i promoure l'associacionisme, la seva implicació i el foment dels valors inspiradors de la vida universitària.",
-    },
-    {
-      date: "Setembre 2020",
-      title: "PLA SOCIAL",
-      text: "Atès que el nostre campus es troba entre els barris del Besòs i la Mina, i dins de les activitats de responsabilitat social que es duen a terme des de la direcció de la nostra escola, hem col·laborat per oferir a diversos centres socioeducatius de l'entorn l'oportunitat de participar en la categoria IQ de la VEX Robotics Competition, obrint els horitzons de més de 100 infants en situacions vulnerables.",
-    },
-    {
-      date: "Novembre 2022",
-      title: "PREMI ASSOCIACIONS UPC",
-      text: "Una vegada més, la UPC va corroborar la nostra tasca i implicació en la vida universitària, atorgant-nos el premi d'associacions en la disciplina d'estudis i formació transversal, demostrant que el nostre projecte té una gran visió de futur.",
-    },
-    {
-      date: "Setembre 2025",
-      title: "JORNADES D’AUTOMÀTICA",
-      text: "Després de la nostra doble victòria al SENER-CEA Bot Talent vam ser convidats a les Jornades d’Automàtica 2025 a Cartagena, on vam exhibir, juntament amb els millors equips de la competició, els nostres rovers davant de professionals i estudiants.",
-    },
-
-  ],
+  {
+    date: "Setembre 2025",
+    title: "JORNADES D’AUTOMÀTICA",
+    text: "Després de la nostra doble victòria al SENER-CEA Bot Talent vam ser convidats a les Jornades d’Automàtica 2025 a Cartagena, on vam exhibir, juntament amb els millors equips de la competició, els nostres rovers davant de professionals i estudiants.",
+  },
+  {
+    date: "Novembre 2022",
+    title: "PREMI ASSOCIACIONS UPC",
+    text: "Una vegada més, la UPC va corroborar la nostra tasca i implicació en la vida universitària, atorgant-nos el premi d'associacions en la disciplina d'estudis i formació transversal, demostrant que el nostre projecte té una gran visió de futur.",
+  },
+  {
+    date: "Setembre 2020",
+    title: "PLA SOCIAL",
+    text: "Atès que el nostre campus es troba entre els barris del Besòs i la Mina, i dins de les activitats de responsabilitat social que es duen a terme des de la direcció de la nostra escola, hem col·laborat per oferir a diversos centres socioeducatius de l'entorn l'oportunitat de participar en la categoria IQ de la VEX Robotics Competition, obrint els horitzons de més de 100 infants en situacions vulnerables.",
+  },
+  {
+    date: "Febrer 2020",
+    title: "PREMI ASSOCIACIONS UPC",
+    text: "PUCRA va rebre el 1r premi destinat a les associacions d'estudiants de la UPC per reconèixer i promoure l'associacionisme, la seva implicació i el foment dels valors inspiradors de la vida universitària.",
+  },
+  {
+    date: "Setembre 2018",
+    title: "INICI DE PUCRA FACTORY",
+    text: "El projecte va sorgir de la necessitat de donar continuïtat a les noves generacions de l'associació, fomentant les vocacions científiques i tecnològiques dels més joves. Durant els darrers anys hem tutoritzat diversos equips propis de secundària i batxillerat per participar en la categoria de High School de la VEX Robotics Competition.",
+  },
+  {
+    date: "Setembre 2017",
+    title: "Fundació de PUCRA",
+    text: "La necessitat de continuar aprenent fora de l'aula i de poder compartir somnis i inquietuds amb altres estudiants va portar, l'any 2017, a la fundació de PUCRA, la primera i única associació d'aquest tipus a tot el territori espanyol. L'objectiu principal sempre ha estat participar i guanyar les competicions internacionals més importants del sector.",
+    button: "Participacions de l'equip de competició",
+  },
+],
   timeline_competitions: [
     {
       date: "Maig 2025",
@@ -325,6 +398,43 @@ const aboutCat = {
       date: "Març 2018",
       title: "VEX Robotics",
       text: "En el nostre primer any, PUCRA va participar a la VEX Robotics Competition, classificant-se per a la final estatal. Sent finalistes nacionals i el primer equip universitari de la competició, va ser un resultat magnífic per a la primera participació de l'equip.",
+    },
+  ],
+  timeline_events: [
+    {
+      date: "Octubre 2024", title: "VEX-THON",
+      text: "A l'octubre del 2024, PUCRA es va reinventar amb un esdeveniment innovador en format Hackathon, on estudiants de tots els graus universitaris van tenir l'oportunitat d'aprendre a construir i programar un robot des de zero.",
+      button: "Més informació"
+    },
+    {
+      date: "Febrer 2024", title: "VEX SPAIN REGIONAL 2024",
+      text: "El dissabte 3 de febrer PUCRA va organitzar la regional a l'Escola d'Enginyeria de Barcelona Est, on van competir 13 equips de Catalunya i Castelló, alguns del pla social VEX, beneficiant més de 50 infants i 5 centres.",
+      button: "Més informació"
+    },
+    {
+      date: "Març 2023", title: "VEX SPAIN CHAMPIONSHIP 2023",
+      text: "El cap de setmana del 4 i 5 de març va tenir lloc a l'Escola d'Enginyeria de Barcelona Est la final nacional de VEX Robotics. Més de 40 equips de diferents categories van posar a prova els seus robots i habilitats.",
+      button: "Més informació"
+    },
+    {
+      date: "Febrer 2022", title: "VEX SPAIN CHAMPIONSHIP 2022",
+      text: "Després de tres anys com a Event Partners, PUCRA va tornar a portar la final nacional a Barcelona. Una edició que va batre rècords de participació a totes les categories.",
+      button: "Més informació"
+    },
+    {
+      date: "Maig 2021", title: "VEX SPAIN CHAMPIONSHIP 2021",
+      text: "En un any ple de dificultats, vam celebrar la final nacional amb 25 equips i més de 150 competidors, arribant a més de 2.000 espectadors gràcies a l'streaming.",
+      button: "Més informació"
+    },
+    {
+      date: "Febrer 2020", title: "VEX MEDITERRANEAN OPEN 2020",
+      text: "PUCRA va convertir Barcelona en la capital de la robòtica, celebrant simultàniament la final regional i la primera edició del VEX Mediterranean Open amb equips nacionals i internacionals.",
+      button: "Més informació"
+    },
+    {
+      date: "Febrer 2019", title: "VEX REGIONAL BARCELONA 2019",
+      text: "En el nostre primer any com a Event Partners vam reunir més de 700 persones i més de 20 equips a l'Escola d'Enginyeria de Barcelona Est per competir i compartir la seva passió per la robòtica.",
+      button: "Més informació"
     },
   ],
 };
@@ -382,7 +492,7 @@ function fillContentAbout() {
 
   $("competitionsBtn").innerHTML = contenAbout.competitions;
   $("historyBtn").innerHTML = contenAbout.history;
-
+  $("eventsBtn").innerHTML = contenAbout.events;
   //Navbar
   for (let i = 0; i < $$("home").length; i++) {
     $$("home")[i].innerHTML = contenAbout.home;
@@ -424,9 +534,7 @@ function fillContentAbout() {
     $$("timeline-history-date")[i].innerHTML = timelineItem.date;
     $$("timeline-history-title")[i].innerHTML = timelineItem.title;
     $$("timeline-history-text")[i].innerHTML = timelineItem.text;
-    if (timelineItem.hasOwnProperty("button")) {
-      $$("timeline-history-link")[i].innerHTML = timelineItem.button;
-    }
+    
   }
 
   for (let i = 0; i < contenAbout.timeline_competitions.length; i++) {
@@ -436,6 +544,17 @@ function fillContentAbout() {
     $$("timeline-competition-text")[i].innerHTML = timelineItem.text;
     if (timelineItem.hasOwnProperty("button")) {
       $$("timeline-competition-link")[i].innerHTML = timelineItem.button;
+    }
+  }
+
+
+  for (let i = 0; i < contenAbout.timeline_events.length; i++) {
+    const item = contenAbout.timeline_events[i];
+    $$("timeline-event-date")[i].innerHTML = item.date;
+    $$("timeline-event-title")[i].innerHTML = item.title;
+    $$("timeline-event-text")[i].innerHTML = item.text;
+    if (item.hasOwnProperty("button")) {
+      $$("timeline-event-link")[i].innerHTML = item.button;
     }
   }
 }

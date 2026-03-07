@@ -52,18 +52,6 @@ const sponsors = [
   },
   {
     type: tierOther,
-    url: "https://www.eic.cat/",
-    logo: "/images/sponsors/enginyers-catalunya.webp",
-    alt: "Logo del Colegio de Ingenieros Industriales de Cataluña",
-  },
-  {
-    type: tierOther,
-    url: "https://www.mutua-ingenieros.com/",
-    logo: "/images/sponsors/mutua_enginyers.webp",
-    alt: "Logo de La Mutua de los Ingenieros",
-  },
-  {
-    type: tierOther,
     url: "https://www.omc-stepperonline.com/",
     logo: "/images/sponsors/stepper.webp",
     alt: "Logo de Stepper",
@@ -154,4 +142,9 @@ addFooterIcon(
   `${imageUrl}/linkedin-circled--v1.png`,
   "LinkedIn Icon",
   socialLinks[2]
+);
+addFooterIcon(
+  `${imageUrl}/github.png`,
+  "Github Icon",
+  socialLinks[3]
 );

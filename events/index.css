@@ -229,23 +229,7 @@ h1, h2, h3 {
   }
 }
 
-/* MODIFICAR ABAJO SI SE AÑADE LA VEX-THON O OTRO EVENTO*/ 
-.separator {
-  display: none !important;
-}
 
-.vex-text-container {
-  display: none !important;
-}
-
-.faqs-container {
-  display: none !important;
-}
-
-.erc-text-container {
-  display: block !important;
-}
-/* MODIFICAR ARRIBA SI SE AÑADE LA VEX-THON O OTRO EVENTO*/ 
 
 
 @media screen and (max-width: 1240px) {

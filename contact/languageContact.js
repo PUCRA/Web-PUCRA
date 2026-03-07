@@ -17,7 +17,6 @@ const aboutEs = {
   contact3: "Contactos",
   links: "Enlaces",
   actual_year: "2024",
-  contact_us: "Contáctanos",
   ubication: "Ubicación",
   direction: "Dirección",
   name: "Nombre",
@@ -102,7 +101,6 @@ const aboutEn = {
   contact: "Contact",
   contacts: "Contacts",
   links: "Links",
-  contact_us: "Contact Us",
   ubication: "Location",
   direction: "Address",
   name: "Name",
@@ -185,7 +183,6 @@ const aboutCat = {
   contact: "Contacte",
   contacts: "Contactes",
   links: "Enllaços",
-  contact_us: "Contacta'ns",
   ubication: "Ubicació",
   direction: "Adreça",
   name: "Nom",
@@ -328,7 +325,6 @@ function fillContentAbout() {
   }
 
   // Main section description
-  $("contact_us").innerHTML = contenAbout.contact_us;
   $("ubication").innerHTML = contenAbout.ubication;
   $("address").innerHTML = contenAbout.direction;
   $("name").placeholder = contenAbout.name;

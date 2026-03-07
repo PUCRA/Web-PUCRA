@@ -8,6 +8,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="index.css" rel="stylesheet" type="text/css" />
 
+    <!-- Font Family-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Referencias de los logos (Youtube,linkedin...) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      href="../images/favicon.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link href="../images/webclip.png" rel="apple-touch-icon" />
+
+
     <link
       href="../components/footer/index.css"
       rel="stylesheet"
@@ -110,6 +129,11 @@
           class="social-icon"
           ><i class="fab fa-linkedin"></i
         ></a>
+        <a
+          href="https://github.com/PUCRA"
+          class="social-icon"
+          ><i class="fab fa-github"></i
+        ></a>
       </div>
 
       <a href="/contact" class="contact btn-contact">Contacto</a>
@@ -117,27 +141,144 @@
     <h1 id="title-history">SOBRE NOSOTROS</h1>
     <div class="subtitle-container">
       <h2>
-        <button
-          onclick="showCompetition()"
-          id="competitionsBtn"
-          class="subtitle-btn upper-case"
-        >
-          COMPETICIONES
-        </button>
+        <button onclick="showCompetition()" id="competitionsBtn" class="subtitle-btn upper-case">COMPETICIONES</button>
       </h2>
       <h2>
-        <button
-          onclick="showHistory()"
-          id="historyBtn"
-          class="subtitle-btn upper-case"
-        >
-          HISTORIA
-        </button>
+        <button onclick="showEvents()" id="eventsBtn" class="subtitle-btn upper-case">EVENTOS</button>
+      </h2>
+      <h2>
+        <button onclick="showHistory()" id="historyBtn" class="subtitle-btn upper-case">HISTORIA</button>
       </h2>
     </div>
 
     <article id="timeline-historys" class="timeline-parent">
       <!-- timeline Historia-->
+
+      <p class="timeline-history-date">Septiembre 2025</p>
+      <section class="section-timeline">
+        <img
+          src="./images/JA_timeline.webp"
+          loading="lazy"
+          alt="JJAA"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-history-title">Jornadas Automáticas</h1>
+          <p class="timeline-history-text">
+            Tras nuestra doble victoria en SENER-CEA Bot Talent fuimos invitados 
+            a las Jornadas de Automática 2025 en Cartagena, donde exhibimos junto 
+            a los mejores equipos de la competición nuestros rovers ante profesionales 
+            y estudiantes.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+
+      <p class="timeline-history-date">Noviembre 2022</p>
+      <section class="section-timeline">
+        <img
+          src="./images/Nov_2022_timeline.png"
+          loading="lazy"
+          alt="Premi 600€"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-history-title">PREMIO ASSOCIACIONES UPC</h1>
+          <p class="timeline-history-text">
+            Una vez más, la UPC corroboró nuestro trabajo e implicación en la
+            vida universitaria, otorgándonos el premio de asociaciones en la
+            disciplina de estudios y formación transversal, demostrando que
+            nuestro proyecto tiene una gran visión de futuro.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+
+      <p class="timeline-history-date">Septiembre 2020</p>
+      <section class="section-timeline">
+        <img
+          src="./images/plan_social.PNG"
+          loading="lazy"
+          alt="Robots en una mesa"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-history-title">PLAN SOCIAL</h1>
+          <p class="timeline-history-text">
+            Dado que nuestro campus se encuentra entre los barrios del Besòs y
+            la Mina, dentro de las actividades de responsabilidad social que se
+            llevan a cabo desde la dirección de nuestra escuela, hemos
+            colaborado para dar la oportunidad a varios centros socioeducativos
+            del entorno para poder participar en la categoría de IQ de la VEX
+            Robotics Competition, abriendo los horizontes de más de 100 niños en
+            situaciones vulnerables.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+
+      <p class="timeline-history-date">Febrero 2020</p>
+      <section class="section-timeline">
+        <img
+          src="./images/d6sqcwvw4ayrenb-952x714.jpg"
+          loading="lazy"
+          alt="UPC logo"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-history-title">PREMIO ASSOCIACIONES UPC</h1>
+          <p class="timeline-history-text">
+            PUCRA recibió el 1er premio dirigido a las asociaciones de
+            estudiantes de la UPC para reconocer y promover el asociacionismo,
+            su implicación y el fomento de los valores inspiradores de la vida
+            universitaria.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+
+      <p class="timeline-history-date">Septiembre 2018</p>
+      <section class="section-timeline">
+        <img
+          src="./images/Timeline_2021.png"
+          loading="lazy"
+          alt="Robotic Competition 2021"
+          class="timeline-image"
+        />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-history-title">INICIO DE PUCRA FACTORY</h1>
+          <p class="timeline-history-text">
+            El proyecto surgió de la necesidad de dar continuidad a las nuevas
+            generaciones de la asociación, fomentando las vocaciones
+            científico-tecnológicas de los más jóvenes. Durante los últimos años
+            hemos tutorizado varios equipos propios de secundaria y bachillerato
+            para participar en la categoría de High School de la VEX Robotics
+            Competition.
+          </p>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+
       <p class="timeline-history-date">Septiembre 2017</p>
       <section class="section-timeline">
         <img
@@ -168,127 +309,8 @@
           </button>
         </div>
       </section>
-      <div class="mobile-timeline"></div>
-      <p class="timeline-history-date">Septiembre 2018</p>
-      <section class="section-timeline">
-        <img
-          src="./images/Timeline_2021.png"
-          loading="lazy"
-          alt="Robotic Competition 2021"
-          class="timeline-image"
-        />
-        <div class="timeline-separator-parent">
-          <div class="timeline-separator-dot"></div>
-          <div class="timeline-separator-line"></div>
-        </div>
-        <div class="timeline-text">
-          <h1 class="timeline-history-title">INICIO DE PUCRA FACTORY</h1>
-          <p class="timeline-history-text">
-            El proyecto surgió de la necesidad de dar continuidad a las nuevas
-            generaciones de la asociación, fomentando las vocaciones
-            científico-tecnológicas de los más jóvenes. Durante los últimos años
-            hemos tutorizado varios equipos propios de secundaria y bachillerato
-            para participar en la categoría de High School de la VEX Robotics
-            Competition.
-          </p>
-        </div>
-      </section>
-      <div class="mobile-timeline"></div>
-      <p class="timeline-history-date">Febrero 2020</p>
-      <section class="section-timeline">
-        <img
-          src="./images/d6sqcwvw4ayrenb-952x714.jpg"
-          loading="lazy"
-          alt="UPC logo"
-          class="timeline-image"
-        />
-        <div class="timeline-separator-parent">
-          <div class="timeline-separator-dot"></div>
-          <div class="timeline-separator-line"></div>
-        </div>
-        <div class="timeline-text">
-          <h1 class="timeline-history-title">PREMIO ASSOCIACIONES UPC</h1>
-          <p class="timeline-history-text">
-            PUCRA recibió el 1er premio dirigido a las asociaciones de
-            estudiantes de la UPC para reconocer y promover el asociacionismo,
-            su implicación y el fomento de los valores inspiradores de la vida
-            universitaria.
-          </p>
-        </div>
-      </section>
-      <div class="mobile-timeline"></div>
-      <p class="timeline-history-date">Septiembre 2020</p>
-      <section class="section-timeline">
-        <img
-          src="./images/plan_social.PNG"
-          loading="lazy"
-          alt="Robots en una mesa"
-          class="timeline-image"
-        />
-        <div class="timeline-separator-parent">
-          <div class="timeline-separator-dot"></div>
-          <div class="timeline-separator-line"></div>
-        </div>
-        <div class="timeline-text">
-          <h1 class="timeline-history-title">PLAN SOCIAL</h1>
-          <p class="timeline-history-text">
-            Dado que nuestro campus se encuentra entre los barrios del Besòs y
-            la Mina, dentro de las actividades de responsabilidad social que se
-            llevan a cabo desde la dirección de nuestra escuela, hemos
-            colaborado para dar la oportunidad a varios centros socioeducativos
-            del entorno para poder participar en la categoría de IQ de la VEX
-            Robotics Competition, abriendo los horizontes de más de 100 niños en
-            situaciones vulnerables.
-          </p>
-        </div>
-      </section>
-      <div class="mobile-timeline"></div>
-      <p class="timeline-history-date">Noviembre 2022</p>
-      <section class="section-timeline">
-        <img
-          src="./images/Nov_2022_timeline.png"
-          loading="lazy"
-          alt="Premi 600€"
-          class="timeline-image"
-        />
-        <div class="timeline-separator-parent">
-          <div class="timeline-separator-dot"></div>
-          <div class="timeline-separator-line"></div>
-        </div>
-        <div class="timeline-text">
-          <h1 class="timeline-history-title">PREMIO ASSOCIACIONES UPC</h1>
-          <p class="timeline-history-text">
-            Una vez más, la UPC corroboró nuestro trabajo e implicación en la
-            vida universitaria, otorgándonos el premio de asociaciones en la
-            disciplina de estudios y formación transversal, demostrando que
-            nuestro proyecto tiene una gran visión de futuro.
-          </p>
-        </div>
-      </section>
-      <div class="mobile-timeline"></div>
-      <p class="timeline-history-date">Septiembre 2025</p>
-      <section class="section-timeline">
-        <img
-          src="./images/JA_timeline.webp"
-          loading="lazy"
-          alt="JJAA"
-          class="timeline-image"
-        />
-        <div class="timeline-separator-parent">
-          <div class="timeline-separator-dot"></div>
-          <div class="timeline-separator-line"></div>
-        </div>
-        <div class="timeline-text">
-          <h1 class="timeline-history-title">Jornadas Automáticas</h1>
-          <p class="timeline-history-text">
-            Tras nuestra doble victoria en SENER-CEA Bot Talent fuimos invitados 
-            a las Jornadas de Automática 2025 en Cartagena, donde exhibimos junto 
-            a los mejores equipos de la competición nuestros rovers ante profesionales 
-            y estudiantes.
-          </p>
-        </div>
-      </section>
     </article>
+    
     <article id="timeline-competitions" class="timeline-parent">
       <!-- timeline competitions-->
       <p class="timeline-competition-date">Mayo 2025</p>
@@ -551,6 +573,151 @@
         </div>
       </section>
     </article>
+    
+    <article id="timeline-events" class="timeline-parent">
+
+      <p class="timeline-event-date">Octubre 2024</p>
+      <section class="section-timeline">
+        <img src="images/events/Logo VEXThon best.png" loading="lazy" alt="VEX-Thon" class="timeline-image" />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-event-title">VEX-THON</h1>
+          <p class="timeline-event-text">
+            En octubre de 2024, PUCRA se reinventó con un evento innovador en formato Hackathon,
+            donde estudiantes de todos los grados universitarios aprendieron a construir y programar
+            un robot desde cero. La experiencia fue tan enriquecedora que muchos decidieron
+            postularse para formar parte de PUCRA.
+          </p>
+          <a href="https://eebe.upc.edu/ca/noticies/pucra-organitza-la-primera-edicio-de-la-vex-thon-a-leebe"
+            target="_blank" class="subtitle-btn timeline-event-link">Más información</a>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+
+      <p class="timeline-event-date">Febrero 2024</p>
+      <section class="section-timeline">
+        <img src="images/events/vexweb_SPAIN_2024.png" loading="lazy" alt="VEX Spain 2024" class="timeline-image" />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-event-title">VEX SPAIN REGIONAL 2024</h1>
+          <p class="timeline-event-text">
+            El sábado 3 de febrero PUCRA organizó la regional en la Escuela de Ingeniería de
+            Barcelona Este donde compitieron 13 equipos de Cataluña y Castellón, algunos del
+            plan social VEX, favoreciendo a más de 50 niños y 5 centros.
+          </p>
+          <a href="https://www.robotevents.com/es/robot-competitions/vex-robotics-competition/RE-VRC-23-5099.html"
+            target="_blank" class="subtitle-btn timeline-event-link">Más información</a>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+
+      <p class="timeline-event-date">Marzo 2023</p>
+      <section class="section-timeline">
+        <img src="images/events/vexweb_SPAIN_2023.png" loading="lazy" alt="VEX Spain 2023" class="timeline-image" />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-event-title">VEX SPAIN CHAMPIONSHIP 2023</h1>
+          <p class="timeline-event-text">
+            El fin de semana del 4 y 5 de marzo tuvo lugar en la Escola d'Enginyeria de
+            Barcelona Est la final nacional de la VEX Robotics. Más de 40 equipos pusieron
+            a prueba sus robots y habilidades.
+          </p>
+          <a href="https://www.robotevents.com/es/robot-competitions/vex-robotics-competition/RE-VRC-22-0926.html"
+            target="_blank" class="subtitle-btn timeline-event-link">Más información</a>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+
+      <p class="timeline-event-date">Febrero 2022</p>
+      <section class="section-timeline">
+        <img src="images/events/vexweb_SPAIN_2022.png" loading="lazy" alt="VEX Spain 2022" class="timeline-image" />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-event-title">VEX SPAIN CHAMPIONSHIP 2022</h1>
+          <p class="timeline-event-text">
+            Después de tres años como Event Partners, PUCRA volvió a traer la final nacional
+            a la Escola d'Enginyeria de Barcelona Est. Una edición que batió récords de
+            participación en todas las categorías.
+          </p>
+          <a href="https://www.robotevents.com/es/robot-competitions/vex-robotics-competition/RE-VRC-22-7545.html"
+            target="_blank" class="subtitle-btn timeline-event-link">Más información</a>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+
+      <p class="timeline-event-date">Mayo 2021</p>
+      <section class="section-timeline">
+        <img src="images/events/vexweb_SPAIN_2021.png" loading="lazy" alt="VEX Spain 2021" class="timeline-image" />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-event-title">VEX SPAIN CHAMPIONSHIP 2021</h1>
+          <p class="timeline-event-text">
+            En un año lleno de dificultades, celebramos la final nacional con 25 equipos
+            y más de 150 competidores. Aprovechando el streaming, llegamos a más de
+            2000 espectadores en esta primera edición semipresencial.
+          </p>
+          <a href="https://www.robotevents.com/robot-competitions/vex-robotics-competition/RE-VRC-21-3392.html"
+            target="_blank" class="subtitle-btn timeline-event-link">Más información</a>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+
+      <p class="timeline-event-date">Febrero 2020</p>
+      <section class="section-timeline">
+        <img src="images/events/vexweb_SPAIN_2020.png" loading="lazy" alt="VEX Spain 2020" class="timeline-image" />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-event-title">VEX MEDITERRANEAN OPEN 2020</h1>
+          <p class="timeline-event-text">
+            PUCRA convirtió Barcelona en la capital de la robótica celebrando simultáneamente
+            la final regional y la primera edición del VEX Mediterranean Open con equipos
+            nacionales e internacionales.
+          </p>
+          <a href="https://www.robotevents.com/es/robot-competitions/vex-robotics-competition/RE-VRC-19-1151.html"
+            target="_blank" class="subtitle-btn timeline-event-link">Más información</a>
+        </div>
+      </section>
+      <div class="mobile-timeline"></div>
+
+      <p class="timeline-event-date">Febrero 2019</p>
+      <section class="section-timeline">
+        <img src="images/events/vexweb_BCN_2019.png" loading="lazy" alt="VEX BCN 2019" class="timeline-image" />
+        <div class="timeline-separator-parent">
+          <div class="timeline-separator-dot"></div>
+          <div class="timeline-separator-line"></div>
+        </div>
+        <div class="timeline-text">
+          <h1 class="timeline-event-title">VEX REGIONAL BARCELONA 2019</h1>
+          <p class="timeline-event-text">
+            En nuestro primer año como Event Partners reunimos en la Escola d'Enginyeria de
+            Barcelona Est más de 700 personas y más de 20 equipos para competir y compartir
+            su pasión por la robótica.
+          </p>
+          <a href="https://www.robotevents.com/es/robot-competitions/vex-robotics-competition/RE-VRC-18-6082.html"
+            target="_blank" class="subtitle-btn timeline-event-link">Más información</a>
+        </div>
+      </section>
+    </article>
+
+    
     <footer class="footer-container">
       <div class="footer-banner">
         <p class="footer-slogan-text">Reinventing the future. PUCRA</p>
@@ -576,6 +743,13 @@
             class="footer-social-link"
           >
             <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/PUCRA"
+            target="_blank"
+            class="footer-social-link"
+          >
+            <i class="fab fa-github"></i>
           </a>
         </div>
       </div>
