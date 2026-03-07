@@ -5,11 +5,11 @@ function changeLanguageHome(lang) {
 
 const sliderimages = [
   // all images of slider
-  "./images/factoryalan3.jpg",
-  "./images/mundial2023.jpg",
+  "home/images/factoryalan3.jpg",
+  "home/images/mundial2023.jpg",
   "home/images/slider_premio_sener.webp",
-  "./images/photo5834468752857610489.jpg",
-  "./images/robotspinupmundial.jpg",
+  "home/images/tharsis_home.jpg",
+  "home/images/robotspinupmundial.jpg",
   "home/images/slider_phoenyx.webp",
 ];
 

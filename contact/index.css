@@ -7,7 +7,7 @@ body {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url("../images/fondo-2000x1333.jpeg");
+    url("./images/fondo_contact.jpeg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -127,7 +127,7 @@ h3 {
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
       ),
-      url("../images/Sponsors_Robot_UPC.jpg");
+      url("./images/Sponsors_Robot_UPC.jpg");
   }
   section:nth-child(2) {
     background-image: linear-gradient(
@@ -135,7 +135,7 @@ h3 {
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
       ),
-      url("../images/Sponsors_VEX_Mundial.png");
+      url("./images/Sponsors_VEX_Mundial.png");
   }
   section:nth-child(3) {
     background-image: linear-gradient(
@@ -143,7 +143,7 @@ h3 {
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
       ),
-      url("../images/Sponsors_Equipo.png");
+      url("./images/Sponsors_Equipo.png");
   }
   section:nth-child(4) {
     background-image: linear-gradient(
@@ -151,7 +151,7 @@ h3 {
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
       ),
-      url("../images/plan_social.PNG");
+      url("/about/images/history_timeline/plan_social.PNG");
   }
 }
 

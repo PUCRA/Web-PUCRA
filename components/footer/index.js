@@ -10,50 +10,50 @@ const sponsors = [
   {
     type: tierFirst,
     url: "https://eu3a.mitsubishielectric.com/",
-    logo: "/images/sponsors/mitsubishi.webp",
+    logo: "/components/images/sponsors/mitsubishi.webp",
     alt: "Logo de MITSUBISHI ELECTRIC AUTOMATIZACIÓN INDUSTRIAL",
   },
   {
     type: tierSecond,
     url: "https://www.se.com/",
-    logo: "/images/sponsors/Schneider.webp",
+    logo: "/components/images/sponsors/Schneider.webp",
     alt: "Logo de Schneider Electric",
   },
   {
     type: tierSecond,
     url: "https://www.mecalux.es/",
-    logo: "/images/sponsors/mecalux.webp",
+    logo: "/components/images/sponsors/mecalux.webp",
     alt: "Logo de Mecalux",
   },
   {
     type: tierThird,
     url: "https://www.motedis.es/es",
-    logo: "/images/sponsors/motedis.webp",
+    logo: "/components/images/sponsors/motedis.webp",
     alt: "Logo de Motedis",
   },
   {
     type: tierThird,
     url: "https://www.bossard.com/es-es/",
-    logo: "/images/sponsors/bossard.webp",
+    logo: "/components/images/sponsors/bossard.webp",
     alt: "Logo de Bossard",
   },
 
   {
     type: tierOther,
     url: "https://odriverobotics.com/",
-    logo: "/images/sponsors/odrive.webp",
+    logo: "/components/images/sponsors/odrive.webp",
     alt: "Logo de Odrive",
   },
   {
     type: tierOther,
     url: "https://booant.com/es-es",
-    logo: "/images/sponsors/booant.webp",
+    logo: "/components/images/sponsors/booant.webp",
     alt: "Logo de Booant",
   },
   {
     type: tierOther,
     url: "https://www.omc-stepperonline.com/",
-    logo: "/images/sponsors/stepper.webp",
+    logo: "/components/images/sponsors/stepper.webp",
     alt: "Logo de Stepper",
   },
 ];

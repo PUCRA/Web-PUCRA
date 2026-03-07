@@ -2,7 +2,7 @@ body {
   font-family: "Mollen personal use", sans-serif;
   margin: 0px;
   background-color: black;
-  background-image: url("../images/pucra-timeline-2000x2829.png");
+  background-image: url("/components/images/fondo_burdeos.png");
   background-size: cover;
 }
 
