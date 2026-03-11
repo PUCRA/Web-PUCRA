@@ -1,4 +1,10 @@
-let teamsInfo = [
+function changeLanguageAbout(lang) {
+  localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
+  fillContentTeams();
+  // window.location.reload(); // Uncomment if you want to reload the page after changing language
+}
+
+const teamsInfo = [
   {
     name: "Elena Villalba",
     role: "Team Leader",

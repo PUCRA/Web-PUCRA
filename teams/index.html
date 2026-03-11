@@ -26,7 +26,7 @@
     />
     <link href="../images/webclip.png" rel="apple-touch-icon" />
   </head>
-  <body>
+  <body onload="fillContentTeams()">
     <navbar id="navbar" class="position-sticky">
       <a href="/">
         <img
@@ -116,15 +116,15 @@
     </navbar>
 
     <main style="margin: 0 auto; max-width: 1600px">
-      <h1 style="text-align: center; font-size: 50px">Nuestro equipo</h1>
+      <h1 id="our-team">Nuestro equipo</h1>
       <article class="teams-parent">
         <div class="teams-parraf">
-          <p>
+          <p class="teams-parrafs">
             PUCRA es un equipo multidisciplinar donde ingeniería, organización y
             creatividad trabajan juntas con un objetivo claro: diseñar,
             construir y competir al más alto nivel en robótica.
           </p>
-          <p>
+          <p class="teams-parrafs">
             Detrás de cada robot, cada competición y cada logro hay personas que
             dedican tiempo, conocimiento y esfuerzo para que el proyecto avance.
           </p>
@@ -207,10 +207,9 @@
           </div>
         </div>
       </article>
-      <h2 class="meet-members">Conoce a cada miembro</h2>
+      <h2 id="meet-members">Conoce a cada miembro</h2>
       <div id="teams">
         <!-- Teams will be dynamically inserted here -->
-      
       </div>
     </main>
     <footer class="footer-container">
@@ -278,6 +277,8 @@
       </div>
     </footer>
 
+    <script src="../js/language.js"></script>
+    <script src="languageTeams.js"></script>
     <script src="index.js"></script>
 
     <script src="../components/navbar/index.js"></script>
