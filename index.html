@@ -48,14 +48,23 @@
   </head>
   <body onload="fillContentAbout()">
     <navbar id="navbar" class="position-fixed">
-      <a href="/">
-        <img
-          src="/components/images/logo-pucra-blanco.png "
-          loading="lazy"
-          alt="PUCRA Logo"
-          style="width: 200px; height: auto;"
-        />
-      </a>
+      <div class="navbar-left">
+        <a href="/">
+          <img
+            src="/components/images/logo-pucra-blanco.png"
+            loading="lazy"
+            alt="PUCRA Logo"
+            style="width: 200px; height: auto;"
+          />
+        </a>
+
+        <div class="navbar-social-desktop">
+          <a href="https://youtu.be/IH2Nb8DPKt0"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/pucra.upc"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/pucra-upcc/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/PUCRA"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
 
       <div class="navbar-desktop">
         <a href="/" class="home">Inicio</a>
@@ -170,55 +179,36 @@
 
     <article class="pilar-container">
       <h2 id="pillarsPUCRA">PILARES DE PUCRA</h2>
-
-      <section class="pilar-item image-pilar-1">
-        <h3 id="pillar_title1">VEX</h3>
-        <img
-          src="home/images/vex-pilar.png"
-          loading="lazy"
-          height="100"
-          alt=""
-        />
-
-        <p id="pillar_text1">
-          Una competición internacional de robótica abierta a todas las edades,
-          donde se aprenden de forma práctica los conceptos básicos de
-          programación, diseño e ingeniería a través de retos que fomentan la
-          creatividad y el trabajo en equipo.
-        </p>
-      </section>
-      <section class="pilar-item image-pilar-2">
-        <h3 id="pillar_title2">ROVERS</h3>
-        <img
-          src="./home/images/Phoenyx_Pilar.webp"
-          loading="lazy"
-          height="120"
-          width: auto;
-          alt=""
-        />
-
-        <p id="pillar_text2">
-          Pensada para quienes buscan un mayor reto, con mayor implicación en la
-          robótica, dedicación extra y trabajo en equipo para superar desafíos
-          que ponen a prueba creatividad y estrategia.
-        </p>
-      </section>
-      <section class="pilar-item image-pilar-3">
-        <h3 id="pillar_title3">EVENTOS Y CONGRESOS</h3>
-        <img
-          class="media-image-phoenyx"
-          src="./home/images/logo_VEXThon.png"
-          height="100"
-          loading="lazy"
-          alt=""
-        />
-
-        <p id="pillar_text3">
-          Un espacio para mostrar al mundo el esfuerzo, la dedicación y los
-          logros alcanzados, compartiendo con otros participantes y el público
-          los proyectos desarrollados y las soluciones creadas.
-        </p>
-      </section>
+      <div class="pilars-wrapper">
+        <section class="pilar-item image-pilar-1">
+          <h3 id="pillar_title1">VEX</h3>
+          <img src="home/images/vex-pilar.png" loading="lazy" height="100" alt="" />
+          <p id="pillar_text1">
+            Una competición internacional de robótica abierta a todas las edades,
+            donde se aprenden de forma práctica los conceptos básicos de
+            programación, diseño e ingeniería a través de retos que fomentan la
+            creatividad y el trabajo en equipo.
+          </p>
+        </section>
+        <section class="pilar-item image-pilar-2">
+          <h3 id="pillar_title2">ROVERS</h3>
+          <img src="./home/images/Phoenyx_Pilar.webp" loading="lazy" height="120" alt="" />
+          <p id="pillar_text2">
+            Pensada para quienes buscan un mayor reto, con mayor implicación en la
+            robótica, dedicación extra y trabajo en equipo para superar desafíos
+            que ponen a prueba creatividad y estrategia.
+          </p>
+        </section>
+        <section class="pilar-item image-pilar-3">
+          <h3 id="pillar_title3">EVENTOS Y CONGRESOS</h3>
+          <img class="media-image-phoenyx" src="./home/images/logo_VEXThon.png" height="100" loading="lazy" alt="" />
+          <p id="pillar_text3">
+            Un espacio para mostrar al mundo el esfuerzo, la dedicación y los
+            logros alcanzados, compartiendo con otros participantes y el público
+            los proyectos desarrollados y las soluciones creadas.
+          </p>
+        </section>
+      </div>
     </article>
     <article>
       <!-- Slider -->

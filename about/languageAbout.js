@@ -420,7 +420,7 @@ const aboutCat = {
   {
     date: "Novembre 2025",
     title: "PREMI ASSOCIACIONS UPC 2025",
-    text: "Per el projecte desenvolupat per a la competició de SENER, la UPC va tornar a reconèixer la feina de PUCRA atorgant-nos el Premi a l’Educació i Formació Transversal. A més del reconeixement institucional, l’associació va rebre una dotació econòmica per continuar impulsant nous projectes.",
+    text: "Pel projecte desenvolupat per a la competició de SENER, la UPC va tornar a reconèixer la feina de PUCRA atorgant-nos el Premi a l’Educació i Formació Transversal. A més del reconeixement institucional, l’associació va rebre una dotació econòmica per continuar impulsant nous projectes.",
   },
   {
     date: "Novembre 2025",

@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>PUCRA - Sobre Nosotros</title>
+    <title>ABOUT US</title>
     <meta content="PUCRA About" property="og:title" />
     <meta content="PUCRA About" property="twitter:title" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,14 +41,23 @@
   </head>
   <body onload="fillContentAbout()">
     <navbar id="navbar" class="position-fixed">
-      <a href="/">
-        <img
-          src="/components/images/logo-pucra-blanco.png "
-          loading="lazy"
-          alt="PUCRA Logo"
-          style="width: 200px; height: auto;"
-        />
-      </a>
+      <div class="navbar-left">
+        <a href="/">
+          <img
+            src="/components/images/logo-pucra-blanco.png"
+            loading="lazy"
+            alt="PUCRA Logo"
+            style="width: 200px; height: auto;"
+          />
+        </a>
+
+        <div class="navbar-social-desktop">
+          <a href="https://youtu.be/IH2Nb8DPKt0"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/pucra.upc"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/pucra-upcc/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/PUCRA"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
 
       <div class="navbar-desktop">
         <a href="/" class="home">Inicio</a>
@@ -338,12 +347,6 @@
             participar y ganar las competiciones internacionales más importantes
             del sector.
           </p>
-          <button
-            onclick="showCompetition()"
-            class="subtitle-btn timeline-history-link"
-          >
-            Participaciones del equipo de competición
-          </button>
         </div>
       </section>
     </article>
