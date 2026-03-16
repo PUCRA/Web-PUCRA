@@ -3,6 +3,7 @@ const aboutEs = {
   events: "Eventos",
   sponsors: "Patrocinadores",
   about_us: "Sobre Nosotros",
+  teams: "Equipo",
   history: "Historia",
   competitions: "Competencias",
   language_es: "ES",
@@ -17,7 +18,6 @@ const aboutEs = {
   contact3: "Contactos",
   links: "Enlaces",
   actual_year: "2024",
-  contact_us: "Contáctanos",
   ubication: "Ubicación",
   direction: "Dirección",
   name: "Nombre",
@@ -89,6 +89,7 @@ const aboutEn = {
   events: "Events",
   sponsors: "Sponsors",
   about_us: "About Us",
+  teams: "Team",
   history: "History",
   competitions: "Competitions",
   language_es: "ES",
@@ -102,7 +103,6 @@ const aboutEn = {
   contact: "Contact",
   contacts: "Contacts",
   links: "Links",
-  contact_us: "Contact Us",
   ubication: "Location",
   direction: "Address",
   name: "Name",
@@ -172,6 +172,7 @@ const aboutCat = {
   events: "Esdeveniments",
   sponsors: "Patrocinadors",
   about_us: "Sobre Nosaltres",
+  teams: "Equip",
   history: "Història",
   competitions: "Competències",
   language_es: "ES",
@@ -185,7 +186,6 @@ const aboutCat = {
   contact: "Contacte",
   contacts: "Contactes",
   links: "Enllaços",
-  contact_us: "Contacta'ns",
   ubication: "Ubicació",
   direction: "Adreça",
   name: "Nom",
@@ -310,6 +310,9 @@ function fillContentAbout() {
   for (let i = 0; i < $$("about-us").length; i++) {
     $$("about-us")[i].innerHTML = contenAbout.about_us;
   }
+  for (let i = 0; i < $$("teams").length; i++) {
+    $$("teams")[i].innerHTML = contenAbout.teams;
+  }
   for (let i = 0; i < $$("contact").length; i++) {
     $$("contact")[i].innerHTML = contenAbout.contact;
   }
@@ -328,7 +331,6 @@ function fillContentAbout() {
   }
 
   // Main section description
-  $("contact_us").innerHTML = contenAbout.contact_us;
   $("ubication").innerHTML = contenAbout.ubication;
   $("address").innerHTML = contenAbout.direction;
   $("name").placeholder = contenAbout.name;

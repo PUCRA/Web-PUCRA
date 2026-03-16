@@ -17,7 +17,7 @@
     />
 
     <link
-      href="../images/favicon.png"
+      href="/components/images/favicon.png"
       rel="shortcut icon"
       type="image/x-icon"
     />
@@ -36,32 +36,36 @@
       type="text/css"
     />
 
-    <!-- Necesarios para la navbar -->
-    <!-- El css -->
-    <!-- El js -->
   </head>
 
   <body onload="fillContentVexthon()" class="background-info-container">
     <!-- style position sticky in this case, on /home position: fixed-->
     <navbar id="navbar" class="position-sticky">
-      <a href="/">
-        <img
-          src="../images/logo-pucra-blanco2-1-536x143.png"
-          loading="lazy"
-          sizes="(max-width: 479px) 100px, (max-width: 767px) 150px, 200px"
-          srcset="
-            ../images/logo-pucra-blanco2-1-536x143-p-500.png 500w,
-            ../images/logo-pucra-blanco2-1-536x143.png       536w
-          "
-          alt="PUCRA Logo"
-        />
-      </a>
+      <div class="navbar-left">
+        <a href="/">
+          <img
+            src="/components/images/logo-pucra-blanco.png"
+            loading="lazy"
+            alt="PUCRA Logo"
+            style="width: 200px; height: auto;"
+          />
+        </a>
+
+        <div class="navbar-social-desktop">
+          <a href="https://youtu.be/IH2Nb8DPKt0"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/pucra.upc"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/pucra-upcc/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/PUCRA"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      
 
       <div class="navbar-desktop">
         <a href="/" class="home">Inicio</a>
         <a href="/events" class="events">Eventos</a>
         <a href="/sponsors">Sponsors</a>
         <a href="/about" class="about-us">Sobre Nosotros</a>
+        <a href="/teams" class="teams_navbar">Equipo</a>
         <div class="lang-dropdown" style="position: relative">
           <button id="lang-menu" class="upper-case" onclick="showLangs()">
             ES
@@ -87,6 +91,7 @@
       <a href="/events" class="events">Eventos</a>
       <a href="/sponsors">Sponsors</a>
       <a href="/about" class="about-us">Sobre Nosotros</a>
+      <a href="/teams" class="teams_navbar">Equipo</a>
 
       <!-- Subtítulo IDIOMES -->
       <div class="mobile-subtitle langs">IDIOMAS</div>
@@ -126,6 +131,11 @@
           class="social-icon"
           ><i class="fab fa-linkedin"></i
         ></a>
+        <a
+          href="https://github.com/PUCRA"
+          class="social-icon"
+          ><i class="fab fa-github"></i
+        ></a>
       </div>
 
       <a href="/contact" class="contact btn-contact">Contacto</a>
@@ -147,7 +157,7 @@
             width="450"
             alt=""
           />
-          <h1 class="header-title">
+          <h1 class="firstDescription header-title">
             ¡Participa en los <strong>Eventos de Robótica</strong> más
             innovadores!
           </h1>
@@ -197,7 +207,8 @@
       </div>
     </header>
 
-    <div class="vex-location-flex">
+    
+    <!-- <div class="vex-location-flex">
 
       <div class="vex-text-container">
 
@@ -237,48 +248,49 @@
 
       <img
         class="separator"
-        src="../images/Imagenes-Vex-Thon/barra_vertical_VEX-Thon.png"
+        src="./barra_vertical_VEX-Thon.png"
         alt="Imagen-Separador"
         aria-hidden="true"
       />
 
-      <div class="erc-text-container">
+        <div class="erc-text-container">
 
-        <h2 id="erc-event" class="erc-title-descriptions">Join the Mission: Phoenyx II</h2>
+          <h2 id="erc-event" class="erc-title-descriptions">Join the Mission: Phoenyx II</h2>
 
-        <p class="erc-text-descriptions erc-event-text">
-          A finales de noviembre celebraremos una presentación abierta donde compartiremos nuestros avances y explicaremos cómo puedes sumarte al Proyecto ERC. 
-        </p>
-
-        <p class="erc-text-descriptions erc-event-text">
-          El evento está dirigido a estudiantes de Grado, Máster y Doctorado que quieran vivir una experiencia única en el ámbito de la investigación y la tecnología espacial.
-        </p>
-
-        <div class="location-info">
-          <h2 class="location_text">Localización</h2>
-          <p id="location2-info">
-            En la sala de actos de la EEBE en el Edificio A
+          <p class="erc-text-descriptions erc-event-text">
+            A finales de noviembre celebraremos una presentación abierta donde compartiremos nuestros avances y explicaremos cómo puedes sumarte al Proyecto ERC. 
           </p>
-          <h2 class="date_text">Fecha</h2>
-          <p id="date2-info">28 Noviembre a las 15:00h</p>
-          <a
-            id="register"
-            href="https://forms.gle/Yydcusz3DuWekVFYA"
-            class="btn_register"
-            >¡Inscríbete!</a
-          >
+
+          <p class="erc-text-descriptions erc-event-text">
+            El evento está dirigido a estudiantes de Grado, Máster y Doctorado que quieran vivir una experiencia única en el ámbito de la investigación y la tecnología espacial.
+          </p>
+
+          <div class="location-info">
+            <h2 class="location_text">Localización</h2>
+            <p id="location2-info">
+              En la sala de actos de la EEBE en el Edificio A
+            </p>
+            <h2 class="date_text">Fecha</h2>
+            <p id="date2-info">28 Noviembre a las 15:00h</p>
+            <a
+              id="register"
+              href="https://forms.gle/Yydcusz3DuWekVFYA"
+              class="btn_register"
+              >¡Inscríbete!</a
+            >
+          </div>
         </div>
-      </div>
 
       
-    </div>
+    </div> -->
 
-
-    <div class="faqs-container">
+    
+    <!-- <div class="faqs-container">
       <h1>FAQs VEX-Thon</h1>
 
+     
       <article>
-        <!-- ================= SOBRE LA VEX-THON ================= -->
+        
         <section>
           <h2 id="about-vex-thon">Sobre la VEX-Thon</h2>
 
@@ -310,7 +322,7 @@
           </details>
         </section>
 
-        <!-- ================= COMPETICIÓN ================= -->
+        
         <section>
           <h2 id="competition">Competición</h2>
 
@@ -342,7 +354,7 @@
           </details>
         </section>
 
-        <!-- ================= PARTICIPACIÓN ================= -->
+        
         <section>
           <h2 id="participation">Participación</h2>
 
@@ -383,7 +395,7 @@
           </details>
         </section>
 
-        <!-- ================= EQUIPOS ================= -->
+        
         <section>
           <h2 id="teams">Equipos</h2>
 
@@ -415,7 +427,7 @@
           </details>
         </section>
       </article>
-    </div>
+    </div> -->
 
 
     <!-- Pie de pagina  -->
@@ -446,12 +458,19 @@
           >
             <i class="fab fa-linkedin"></i>
           </a>
+          <a
+            href="https://github.com/PUCRA"
+            target="_blank"
+            class="footer-social-link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
         </div>
       </div>
       <div class="footer-info">
         <a href="/" class="footer-logo-link">
           <img
-            src="../images/logo-pucra-blanco3-1-186x181.png"
+            src="/components/images/logo-pucra-blanco-peque.png"
             loading="lazy"
             alt="Logo PUCRA"
             class="footer-logo-image"
@@ -465,7 +484,7 @@
         </div>
         <div class="footer-section">
           <p id="contacts" class="footer-title-text">Contactos</p>
-          <p class="footer-info-text">Email: pucra.eebe@upc.edu</p>
+          <p class="footer-info-text">Email: recursos.pucra@upc.edu</p>
         </div>
         <div class="footer-section">
           <p id="links" class="footer-title-text">Enlaces</p>

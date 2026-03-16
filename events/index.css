@@ -26,7 +26,7 @@ h1, h2, h3 {
 }
 
 .background-info-container {
-  background: url("../images/pucra-timeline-2000x2829-p-1080.png") no-repeat
+  background: url("/components/images/fondo_burdeos.png") no-repeat
     center center;
   background-size: cover;
 }
@@ -188,7 +188,7 @@ h1, h2, h3 {
 
 
 .faqs-container {
-  background-image: url("../images/Imagenes-Vex-Thon/Fondo\ FAQs\ VEX-Thon.png");
+  background-image: url("./images/Fondo\ FAQs\ VEX-Thon.png");
   color: white;
   padding: 40px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -229,23 +229,7 @@ h1, h2, h3 {
   }
 }
 
-/* MODIFICAR ABAJO SI SE AÑADE LA VEX-THON O OTRO EVENTO*/ 
-.separator {
-  display: none !important;
-}
 
-.vex-text-container {
-  display: none !important;
-}
-
-.faqs-container {
-  display: none !important;
-}
-
-.erc-text-container {
-  display: block !important;
-}
-/* MODIFICAR ARRIBA SI SE AÑADE LA VEX-THON O OTRO EVENTO*/ 
 
 
 @media screen and (max-width: 1240px) {
