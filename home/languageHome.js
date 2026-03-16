@@ -3,6 +3,7 @@ const aboutEs = {
   events: "Eventos",
   sponsors: "Patrocinadores",
   about_us: "Sobre nosotros",
+  teams: "Equipo",
   history: "Historia",
   competitions: "Competiciones",
   language_es: "ES",
@@ -53,6 +54,7 @@ const aboutEn = {
   events: "Events",
   sponsors: "Sponsors",
   about_us: "About Us",
+  teams: "Team",
   history: "History",
   competitions: "Competitions",
   language_es: "ES",
@@ -105,6 +107,7 @@ const aboutCat = {
   events: "Esdeveniments",
   sponsors: "Patrocinadors",
   about_us: "Sobre nosaltres",
+  teams: "Equip",
   history: "Història",
   competitions: "Competicions",
   language_es: "ES",
@@ -212,6 +215,9 @@ function fillContentAbout() {
   }
   for (let i = 0; i < $$("about-us").length; i++) {
     $$("about-us")[i].innerHTML = contenAbout.about_us;
+  }
+  for (let i = 0; i < $$("teams").length; i++) {
+    $$("teams")[i].innerHTML = contenAbout.teams;
   }
   for (let i = 0; i < $$("contact").length; i++) {
     $$("contact")[i].innerHTML = contenAbout.contact;

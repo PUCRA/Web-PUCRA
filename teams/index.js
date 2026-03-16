@@ -211,7 +211,7 @@ for (let i = 0; i < teamsInfo.length; i++) {
 
   let article = document.createElement("article");
   article.className = "team-item";
-  article.style.top = `${num + i + i}vh`;
+  article.style.top = `${num + i*0.5 + i*0.1}vh`;
 
   article.id = `team-${i + 1}`;
   article.style.backgroundImage = `url('${e.img}')`;

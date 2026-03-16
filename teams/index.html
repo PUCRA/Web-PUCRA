@@ -20,7 +20,12 @@
     />
 
     <link
-      href="../images/favicon.png"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      href="/components/images/favicon.png"
       rel="shortcut icon"
       type="image/x-icon"
     />
@@ -28,24 +33,30 @@
   </head>
   <body onload="fillContentTeams()">
     <navbar id="navbar" class="position-sticky">
-      <a href="/">
-        <img
-          src="../images/logo-pucra-blanco2-1-536x143.png"
-          loading="lazy"
-          sizes="(max-width: 479px) 100px, (max-width: 767px) 150px, 200px"
-          srcset="
-            ../images/logo-pucra-blanco2-1-536x143-p-500.png 500w,
-            ../images/logo-pucra-blanco2-1-536x143.png       536w
-          "
-          alt="PUCRA Logo"
-        />
-      </a>
+      <div class="navbar-left">
+        <a href="/">
+          <img
+            src="/components/images/logo-pucra-blanco.png"
+            loading="lazy"
+            alt="PUCRA Logo"
+            style="width: 200px; height: auto;"
+          />
+        </a>
+
+        <div class="navbar-social-desktop">
+          <a href="https://youtu.be/IH2Nb8DPKt0"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.instagram.com/pucra.upc"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/pucra-upcc/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/PUCRA"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
 
       <div class="navbar-desktop">
         <a href="/" class="home">Inicio</a>
         <a href="/events" class="events">Eventos</a>
         <a href="/sponsors">Sponsors</a>
         <a href="/about" class="about-us">Sobre Nosotros</a>
+        <a href="/teams" class="teams">Equipo</a>
         <div class="lang-dropdown" style="position: relative">
           <button id="lang-menu" class="upper-case" onclick="showLangs()">
             ES
@@ -71,6 +82,7 @@
       <a href="/events" class="events">Eventos</a>
       <a href="/sponsors">Sponsors</a>
       <a href="/about" class="about-us">Sobre Nosotros</a>
+      <a href="/teams" class="teams">Equipo</a>
 
       <!-- Subtítulo IDIOMES -->
       <div class="mobile-subtitle langs">IDIOMAS</div>
@@ -110,6 +122,11 @@
           class="social-icon"
           ><i class="fab fa-linkedin"></i
         ></a>
+        <a
+          href="https://github.com/PUCRA"
+          class="social-icon"
+          ><i class="fab fa-github"></i
+        ></a>
       </div>
 
       <a href="/contact" class="contact btn-contact">Contacto</a>
@@ -134,18 +151,18 @@
           <div class="row-first">
             <a href="#team-1">
               <img
-                src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg"
+                src="/components/images/logo-pucra-blanco-peque.png"
                 alt="Clefable"
               />
             </a>
             <a href="#team-2">
               <img
-                src="https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg"
+                src="/components/images/logo-pucra-blanco-peque.png"
                 alt="porygon"
             /></a>
             <a href="#team-3">
               <img
-                src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg"
+                src="/components/images/logo-pucra-blanco-peque.png"
                 alt="jigglypuff"
               />
             </a>
@@ -154,12 +171,12 @@
           <div class="row-secuence">
             <a href="#team-4">
               <img
-                src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg"
+                src="/components/images/logo-pucra-blanco-peque.png"
                 alt="tangela"
             /></a>
             <a href="#team-5">
               <img
-                src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg"
+                src="/components/images/logo-pucra-blanco-peque.png"
                 alt="ponyta"
               />
             </a>
@@ -167,19 +184,19 @@
           <div class="row-secuence">
             <a href="#team-6">
               <img
-                src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg"
+                src="/components/images/logo-pucra-blanco-peque.png"
                 alt="psyduck"
               />
             </a>
             <a href="#team-7">
               <img
-                src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg"
+                src="/components/images/logo-pucra-blanco-peque.png"
                 alt="dratini"
               />
             </a>
             <a href="#team-8">
               <img
-                src="https://images.pexels.com/photos/1212984/pexels-photo-1212984.jpeg"
+                src="/components/images/logo-pucra-blanco-peque.png"
                 alt="cubone"
               />
             </a>
@@ -187,12 +204,12 @@
           <div class="row-secuence">
             <a href="#team-9">
               <img
-                src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg"
+                src="/components/images/logo-pucra-blanco-peque.png"
                 alt="tangela"
             /></a>
             <a href="#team-10">
               <img
-                src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg"
+                src="/components/images/logo-pucra-blanco-peque.png"
                 alt="ponyta"
               />
             </a>
@@ -200,7 +217,7 @@
           <div class="row-secuence">
             <a href="#team-11">
               <img
-                src="https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg"
+                src="/components/images/logo-pucra-blanco-peque.png"
                 alt="psyduck"
               />
             </a>
@@ -238,12 +255,19 @@
           >
             <i class="fab fa-linkedin"></i>
           </a>
+          <a
+            href="https://github.com/PUCRA"
+            target="_blank"
+            class="footer-social-link"
+          >
+            <i class="fab fa-github"></i>
+          </a>
         </div>
       </div>
       <div class="footer-info">
         <a href="/" class="footer-logo-link">
           <img
-            src="./images/logo-pucra-blanco3-1-186x181.png"
+            src="/components/images/logo-pucra-blanco-peque.png"
             loading="lazy"
             alt="Logo PUCRA"
             class="footer-logo-image"

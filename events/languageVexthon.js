@@ -2,6 +2,7 @@ const vexthonEs = {
   home: "Inicio",
   events: "Eventos",
   about_us: "Sobre Nosotros",
+  teams_navbar: "Equipo",
   language_es: "ES",
   language_en: "ENG",
   language_cat: "CAT",
@@ -145,6 +146,7 @@ const vexthonEn = {
   home: "Home",
   events: "Events",
   about_us: "About Us",
+  teams_navbar: "Team",
   language_es: "ES",
   language_en: "ENG",
   language_cat: "CAT",
@@ -285,6 +287,7 @@ const vexthonCat = {
   home: "Inici",
   events: "Esdeveniments",
   about_us: "Sobre Nosaltres",  
+  teams_navbar: "Equip",
   language_es: "ES",
   language_en: "ENG",
   language_cat: "CAT",
@@ -478,6 +481,9 @@ function fillContentVexthon() {
   }
   for (let i = 0; i < $$("about-us").length; i++) {
     $$("about-us")[i].innerHTML = contentVexthon.about_us;
+  }
+  for (let i = 0; i < $$("teams_navbar").length; i++) {
+    $$("teams_navbar")[i].innerHTML = contentVexthon.teams_navbar;
   }
   for (let i = 0; i < $$("contact").length; i++) {
     $$("contact")[i].innerHTML = contentVexthon.contact;

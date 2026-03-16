@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   font-family: "Poppins", sans-serif;
-  background: url("../images/pucra-timeline-2000x2829-p-1080.png") no-repeat
+  background: url("/components/images/fondo_burdeos.png") no-repeat
     center center;
   background-size: cover;
 }

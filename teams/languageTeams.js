@@ -3,6 +3,7 @@ const teamsEn = {
   events: "Events",
   sponsors: "Sponsors",
   about_us: "About Us",
+  teams: "Team",
   history: "History",
   competitions: "Competitions",
   language_es: "ES",
@@ -27,6 +28,7 @@ const teamsEs = {
   events: "Eventos",
   sponsors: "Patrocinadores",
   about_us: "Sobre nosotros",
+  teams: "Equipo",
   history: "Historia",
   competitions: "Competiciones",
   language_es: "ES",
@@ -51,6 +53,7 @@ const teamsCat = {
   events: "Esdeveniments",
   sponsors: "Patrocinadors",
   about_us: "Sobre nosaltres",
+  teams: "Equip",
   history: "Història",
   competitions: "Competicions",
   language_es: "ES",
@@ -118,7 +121,27 @@ function fillContentTeams() {
     "Hay 10 tipos de personas: Las que saben binario y las que no. Att: Kevin",
   );
 
+  
   let contentTeams = changeLanguage();
+
+    //Navbar
+  for (let i = 0; i < $$("home").length; i++) {
+    $$("home")[i].innerHTML = contentTeams.home;
+  }
+  for (let i = 0; i < $$("events").length; i++) {
+    $$("events")[i].innerHTML = contentTeams.events;
+  }
+  for (let i = 0; i < $$("about-us").length; i++) {
+    $$("about-us")[i].innerHTML = contentTeams.about_us;
+  }
+  for (let i = 0; i < $$("teams").length; i++) {
+    $$("teams")[i].innerHTML = contentTeams.teams;
+  }
+  for (let i = 0; i < $$("contact").length; i++) {
+    $$("contact")[i].innerHTML = contentTeams.contact;
+  }
+
+
   $("our-team").innerText = contentTeams.titleTeam;
 
   for (let i = 0; i < $$("teams-parrafs").length; i++) {
