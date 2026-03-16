@@ -3,6 +3,7 @@ const aboutEs = {
   events: "Eventos",
   sponsors: "Patrocinadores",
   about_us: "Sobre nosotros",
+  teams: "Equipo",
   history: "Historia",
   competitions: "Competiciones",
   language_es: "ES",
@@ -53,6 +54,7 @@ const aboutEn = {
   events: "Events",
   sponsors: "Sponsors",
   about_us: "About Us",
+  teams: "Team",
   history: "History",
   competitions: "Competitions",
   language_es: "ES",
@@ -105,6 +107,7 @@ const aboutCat = {
   events: "Esdeveniments",
   sponsors: "Patrocinadors",
   about_us: "Sobre nosaltres",
+  teams: "Equip",
   history: "Història",
   competitions: "Competicions",
   language_es: "ES",
@@ -137,7 +140,7 @@ const aboutCat = {
     "Fundada el 2017 i amb seu a l'EEBE, som l'associació de robòtica de la UPC. Dissenyem i competim amb robots, organitzem esdeveniments i representem la universitat en tornejos nacionals; la nostra activitat ens situa entre les associacions de robòtica més destacades d'Espanya.<br><br>Amb un equip tècnic multidisciplinari format per estudiants de diverses branques de l'enginyeria, estem preparats per afrontar qualsevol repte. La nostra cultura de treball, esforç i sacrifici, i l'ambició de millorar contínuament, ens porta cada any a superar els nostres objectius.",
   Info_button: "Descobreix tot sobre PUCRA",
 
-  pillarsPUCRA: "PILARES DE PUCRA",
+  pillarsPUCRA: "PILARS DE PUCRA",
 
   pillar_title1: "VEX",
   pillar_text1:
@@ -212,6 +215,9 @@ function fillContentAbout() {
   }
   for (let i = 0; i < $$("about-us").length; i++) {
     $$("about-us")[i].innerHTML = contenAbout.about_us;
+  }
+  for (let i = 0; i < $$("teams").length; i++) {
+    $$("teams")[i].innerHTML = contenAbout.teams;
   }
   for (let i = 0; i < $$("contact").length; i++) {
     $$("contact")[i].innerHTML = contenAbout.contact;

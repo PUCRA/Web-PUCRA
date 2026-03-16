@@ -10,63 +10,62 @@ const sponsors = [
   {
     type: tierFirst,
     url: "https://eu3a.mitsubishielectric.com/",
-    logo: "/images/sponsors/mitsubishi.webp",
+    logo: "/components/images/sponsors/mitsubishi.webp",
     alt: "Logo de MITSUBISHI ELECTRIC AUTOMATIZACIÓN INDUSTRIAL",
   },
   {
     type: tierSecond,
     url: "https://www.se.com/",
-    logo: "/images/sponsors/Schneider.webp",
+    logo: "/components/images/sponsors/Schneider.webp",
     alt: "Logo de Schneider Electric",
   },
   {
     type: tierSecond,
     url: "https://www.mecalux.es/",
-    logo: "/images/sponsors/mecalux.webp",
+    logo: "/components/images/sponsors/mecalux.webp",
     alt: "Logo de Mecalux",
   },
   {
     type: tierThird,
     url: "https://www.motedis.es/es",
-    logo: "/images/sponsors/motedis.webp",
+    logo: "/components/images/sponsors/motedis.webp",
     alt: "Logo de Motedis",
   },
   {
     type: tierThird,
     url: "https://www.bossard.com/es-es/",
-    logo: "/images/sponsors/bossard.webp",
+    logo: "/components/images/sponsors/bossard.webp",
     alt: "Logo de Bossard",
   },
-
+  {
+    type: tierThird,
+    url: "https://www.tracopower.com/int/es",
+    logo: "/components/images/sponsors/Traco-power-logo.png",
+    alt: "Logo de Tracopower",
+  },
   {
     type: tierOther,
     url: "https://odriverobotics.com/",
-    logo: "/images/sponsors/odrive.webp",
+    logo: "/components/images/sponsors/odrive.webp",
     alt: "Logo de Odrive",
   },
   {
     type: tierOther,
     url: "https://booant.com/es-es",
-    logo: "/images/sponsors/booant.webp",
+    logo: "/components/images/sponsors/booant.webp",
     alt: "Logo de Booant",
   },
   {
     type: tierOther,
-    url: "https://www.eic.cat/",
-    logo: "/images/sponsors/enginyers-catalunya.webp",
-    alt: "Logo del Colegio de Ingenieros Industriales de Cataluña",
-  },
-  {
-    type: tierOther,
-    url: "https://www.mutua-ingenieros.com/",
-    logo: "/images/sponsors/mutua_enginyers.webp",
-    alt: "Logo de La Mutua de los Ingenieros",
-  },
-  {
-    type: tierOther,
-    url: "https://www.stepperonline.es/",
-    logo: "/images/sponsors/stepper.webp",
+    url: "https://www.omc-stepperonline.com/",
+    logo: "/components/images/sponsors/stepper.webp",
     alt: "Logo de Stepper",
+  },
+  {
+    type: tierOther,
+    url: "https://zakfactory.com",
+    logo: "/components/images/sponsors/Zak-factory-logo.png",
+    alt: "Logo de Zakfactory",
   },
 ];
 
@@ -154,4 +153,9 @@ addFooterIcon(
   `${imageUrl}/linkedin-circled--v1.png`,
   "LinkedIn Icon",
   socialLinks[2]
+);
+addFooterIcon(
+  `${imageUrl}/github.png`,
+  "Github Icon",
+  socialLinks[3]
 );

@@ -10,17 +10,32 @@ const historyBtn = document.getElementById("historyBtn");
 const competitionBtn = document.getElementById("competitionsBtn");
 
 
-function showCompetition() {
-  timelineHistory.style.display = "none";
-  timelineCompetition.style.display = "flex";
-  historyBtn.style.opacity = 0.4;
-  competitionBtn.style.opacity = 1;
-}
-
 function showHistory() {
-  timelineCompetition.style.display = "none";
-  timelineHistory.style.display = "flex";
-  historyBtn.style.opacity = 1;
-  competitionBtn.style.opacity = 0.4;
+  document.getElementById("timeline-historys").style.display = "flex";
+  document.getElementById("timeline-competitions").style.display = "none";
+  document.getElementById("timeline-events").style.display = "none";
+
+  document.getElementById("historyBtn").style.opacity = "1";
+  document.getElementById("competitionsBtn").style.opacity = "0.7";
+  document.getElementById("eventsBtn").style.opacity = "0.7";
 }
 
+function showCompetition() {
+  document.getElementById("timeline-historys").style.display = "none";
+  document.getElementById("timeline-competitions").style.display = "flex";
+  document.getElementById("timeline-events").style.display = "none";
+
+  document.getElementById("historyBtn").style.opacity = "0.7";
+  document.getElementById("competitionsBtn").style.opacity = "1";
+  document.getElementById("eventsBtn").style.opacity = "0.7";
+}
+
+function showEvents() {
+  document.getElementById("timeline-historys").style.display = "none";
+  document.getElementById("timeline-competitions").style.display = "none";
+  document.getElementById("timeline-events").style.display = "flex";
+
+  document.getElementById("historyBtn").style.opacity = "0.7";
+  document.getElementById("competitionsBtn").style.opacity = "0.7";
+  document.getElementById("eventsBtn").style.opacity = "1";
+}
