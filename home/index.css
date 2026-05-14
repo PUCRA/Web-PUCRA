@@ -126,6 +126,13 @@ p {
   .image-pilar-2 {
     background-size: cover !important;
   }
+
+}
+
+@media (max-width: 400px) {
+  .media-image-phoenyx {
+    width: 100%;
+  }
 }
 
 /*slider */

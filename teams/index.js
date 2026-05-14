@@ -105,23 +105,6 @@ const teamsInfo = [
         "https://www.linkedin.com/in/santiago-pallar%C3%A8s-ocampo-b06b91343/",
     },
   },
-  /*
-  {
-    name: "Àngel Pons",
-    role: "Mechanical Engineer",
-    img: "",
-    socials: {
-      mail: "angel.pons.gomila@estudiantat.upc.edu",
-    },
-  },
-  {
-    name: "Arnau Rosell", // waitlist member
-    role: "Mechanical Engineer",
-    img: "",
-    socials: {
-      mail: "arnau.rosell.olcina@estudiantat.upc.edu",
-    },
-  },
   {
     name: "Carlos Cervera", // waitlist member
     role: "Telecom Engineer",
@@ -129,6 +112,35 @@ const teamsInfo = [
     socials: {
       linkedin: "https://www.linkedin.com/in/carlos-cervera-853a283a0/",
       mail: "carlos.cervera@estudiantat.upc.edu",
+    },
+  },
+  {
+    name: "Santiago Villar", 
+    role: "Software Developer",
+    img: "./images/SantiagoVillar.webp",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/santiago-villar-fernandez/",
+      mail: "santiago.villar@estudiantat.upc.edu",
+    },
+  },
+  {
+    name: "Vitalii Kryvoruchko", 
+    role: "Software Developer",
+    img: "./images/VitaliiKryvoruchko.webp",
+    socials: {
+      linkedin:
+        "https://www.linkedin.com/in/sidi-navil-garcia-echchaouy-02508a232/",
+      mail: "vitaliy.kryvoru@gmail.com",
+    },
+  },
+  /*
+
+  {
+    name: "Arnau Rosell", // waitlist member
+    role: "Mechanical Engineer",
+    img: "",
+    socials: {
+      mail: "arnau.rosell.olcina@estudiantat.upc.edu",
     },
   },
   {
