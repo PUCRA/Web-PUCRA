@@ -85,6 +85,7 @@ const teamsInfo = [
     img: "./images/PolGarcia.webp",
     socials: {
       linkedin: "https://www.linkedin.com/in/polgarcia/",
+      mail: "pol.garcia@estudiantat.upc.edu"
     },
   },
   {
@@ -103,6 +104,7 @@ const teamsInfo = [
     socials: {
       linkedin:
         "https://www.linkedin.com/in/santiago-pallar%C3%A8s-ocampo-b06b91343/",
+      mail: "santi.pallares@estudiantat.upc.edu"
     },
   },
   {
@@ -128,31 +130,26 @@ const teamsInfo = [
     role: "Software Developer",
     img: "./images/VitaliiKryvoruchko.webp",
     socials: {
-      linkedin:
-        "https://www.linkedin.com/in/sidi-navil-garcia-echchaouy-02508a232/",
       mail: "vitaliy.kryvoru@gmail.com",
     },
-  },
-  
-  /*
-
+  }, 
   {
     name: "Eric Cuenca",
     role: "Mechanical Engineer",
-    img: "",
+    img: "./images/EricCuenca.webp",
     socials: {
       mail: "eric.cuenca@estudiantat.upc.edu",
     },
   },
   {
-    name: "Santiago Villar", // waitlist member
-    role: "Software Developer",
-    img: "",
+    name: "Angel Pons",
+    role: "Mechanical Engineer",
+    img: "./images/AngelPons.webp",
     socials: {
-      linkedin: "https://www.linkedin.com/in/santiago-villar-fernandez/",
-      mail: "santiago.villar@estudiantat.upc.edu",
+      mail: "angel.pons@estudiantat.upc.edu",
     },
-  },*/
+  },
+
 ];
 
 let kevinProfile = {
@@ -182,7 +179,7 @@ panelImages.forEach((img, i) => {
   img.alt = member.name;
   img.title = member.name;
 });
-let num = 15;
+let num = 16;
 
 const teams = document.getElementById("teams");
 

@@ -1,7 +1,7 @@
 const startEvent = {
   day: 28,
   month: 4,
-  year: 2026,
+  year: 2027,
   hour: 17,
   minute: 15,
   second: 0,
@@ -10,7 +10,7 @@ const startEvent = {
 const endEvent = {
   day: 28,
   month: 4,
-  year: 2026,
+  year: 2027,
   hour: 17,
   minute: 48,
   second: 0,
