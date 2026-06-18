@@ -16,7 +16,7 @@ const teamsInfo = [
   },
   {
     name: "Judith Salvador",
-    role: "Software Developer",
+    role: "Science Lead",
     img: "./images/JudithSalvador.webp",
     socials: {
       linkedin:
@@ -44,7 +44,7 @@ const teamsInfo = [
   },
   {
     name: "Marc Redolad",
-    role: "Software Developer",
+    role: "Software Lead",
     img: "./images/MarcRedolad.webp",
     socials: {
       linkedin: "https://www.linkedin.com/in/marc-redolad-ramos-9983242a3/",
@@ -98,7 +98,7 @@ const teamsInfo = [
   },
   {
     name: "Santi Pallarès",
-    role: "Electronic Engineer",
+    role: "Electronic Lead",
     img: "./images/SantiPallares.webp",
     socials: {
       linkedin:
@@ -106,7 +106,7 @@ const teamsInfo = [
     },
   },
   {
-    name: "Carlos Cervera", // waitlist member
+    name: "Carlos Cervera", 
     role: "Telecom Engineer",
     img: "./images/CarlosCervera.webp",
     socials: {
@@ -133,16 +133,9 @@ const teamsInfo = [
       mail: "vitaliy.kryvoru@gmail.com",
     },
   },
+  
   /*
 
-  {
-    name: "Arnau Rosell", // waitlist member
-    role: "Mechanical Engineer",
-    img: "",
-    socials: {
-      mail: "arnau.rosell.olcina@estudiantat.upc.edu",
-    },
-  },
   {
     name: "Eric Cuenca",
     role: "Mechanical Engineer",
@@ -152,47 +145,12 @@ const teamsInfo = [
     },
   },
   {
-    name: "Guillem Rubirola", // waitlist member
-    role: "Electronic Engineer",
-    img: "",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/guillem-rubirola-437323364/",
-      mail: "guillem.rubirola@estudiantat.upc.edu",
-    },
-  },
-  {
-    name: "Marc Martínez", // waitlist member
-    role: "Mechanical Engineer",
-    img: "",
-    socials: {
-      mail: "marc.martinez.lorente@estudiantat.upc.edu",
-    },
-  },
-  {
-    name: "Max Simón", // waitlist member
-    role: "Software Developer",
-    img: "",
-    socials: {
-      mail: "max.simon@estudiantat.upc.edu",
-    },
-  },
-  {
     name: "Santiago Villar", // waitlist member
     role: "Software Developer",
     img: "",
     socials: {
       linkedin: "https://www.linkedin.com/in/santiago-villar-fernandez/",
       mail: "santiago.villar@estudiantat.upc.edu",
-    },
-  },
-  {
-    name: "Vitalii Kryvoruchko", // waitlist member
-    role: "Software Developer",
-    img: "",
-    socials: {
-      linkedin:
-        "https://www.linkedin.com/in/sidi-navil-garcia-echchaouy-02508a232/",
-      mail: "vitaliy.kryvoru@gmail.com",
     },
   },*/
 ];
@@ -207,17 +165,27 @@ let kevinProfile = {
     web: "https://www.zksama.com/sobre-mi/",
   },
 };
+
+teamsInfo.push(kevinProfile);
+
 const panelImages = document.querySelectorAll(".panal img");
 
 panelImages.forEach((img, i) => {
-  img.src = teamsInfo[i].img;
-  img.alt = teamsInfo[i].name;
-  img.title = teamsInfo[i].name;
+  const member = teamsInfo[i];
+
+  if (!member) {
+    console.warn(`No team member for image ${i}`);
+    return;
+  }
+
+  img.src = member.img;
+  img.alt = member.name;
+  img.title = member.name;
 });
 let num = 15;
 
 const teams = document.getElementById("teams");
-teamsInfo.push(kevinProfile);
+
 for (let i = 0; i < teamsInfo.length; i++) {
   const e = teamsInfo[i];
 
