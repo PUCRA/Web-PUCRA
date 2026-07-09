@@ -149,6 +149,15 @@ const teamsInfo = [
       mail: "angel.pons@estudiantat.upc.edu",
     },
   },
+      {
+    name: "Gerard Perez",
+    role: "Software Developer",
+    img: "./images/GerardPerez.webp",
+    socials: {
+      mail: "gerardworkhub@gmail.com",
+      linkedin: "https://www.linkedin.com/in/gerard-perez-971058280/"
+    },
+  },
 
 ];
 
