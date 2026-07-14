@@ -19,6 +19,13 @@ const vexthonEs = {
   location_text: "Localización",
   date_text: "Fecha",
   
+  comingSoonTitle: "Próximamente más eventos",
+  comingSoonText1:
+    "En PUCRA organizamos y participamos en competiciones, talleres, jornadas de puertas abiertas y actividades relacionadas con la robótica y la ingeniería.",
+  comingSoonText2:
+    "Actualmente no hay inscripciones abiertas, pero ya estamos preparando nuevos eventos. ¡Síguenos en redes o contáctanos si quieres recibir más información!",
+  comingSoonButton: "Contáctanos",
+
   ERC: {
     title: "Únete a la Misión: Phoenyx II",
     description: [
@@ -163,6 +170,13 @@ const vexthonEn = {
   location_text: "Location",
   date_text: "Date",
 
+  comingSoonTitle: "More events coming soon",
+  comingSoonText1:
+    "At PUCRA we organize and participate in competitions, workshops, open days and activities related to robotics and engineering.",
+  comingSoonText2:
+    "There are currently no open registrations, but we are already preparing new events. Follow us on social media or contact us if you would like to receive more information!",
+  comingSoonButton: "Contact us",
+
   ERC: {
     title: "Join the Mission: Phoenyx II",
     description: [
@@ -303,6 +317,13 @@ const vexthonCat = {
   contacts: "Contactes",
   location_text: "Localització",
   date_text: "Data",
+
+  comingSoonTitle: "Properament més esdeveniments",
+  comingSoonText1:
+    "A PUCRA organitzem i participem en competicions, tallers, jornades de portes obertes i activitats relacionades amb la robòtica i l'enginyeria.",
+  comingSoonText2:
+    "Actualment no hi ha inscripcions obertes, però ja estem preparant nous esdeveniments. Segueix-nos a les xarxes o contacta amb nosaltres si vols rebre més informació!",
+  comingSoonButton: "Contacta'ns",
 
   ERC: {
   title: "Uneix-te a la Missió: Phoenyx II",
@@ -511,6 +532,12 @@ function fillContentVexthon() {
   for (let i = 0; i < $$("firstDescription").length; i++) {
     $$("firstDescription")[i].innerHTML = contentVexthon.firstDescription;
   }
+  
+  // Coming Soon section
+  $("coming-soon-title").innerHTML = contentVexthon.comingSoonTitle;
+  $("coming-soon-text1").innerHTML = contentVexthon.comingSoonText1;
+  $("coming-soon-text2").innerHTML = contentVexthon.comingSoonText2;
+  $("coming-soon-button").innerHTML = contentVexthon.comingSoonButton;
 
   // Explanations
   // $("erc-event").innerHTML = contentVexthon.ERC.title;

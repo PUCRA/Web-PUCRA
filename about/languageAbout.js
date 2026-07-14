@@ -142,7 +142,7 @@ const aboutEs = {
     {
       date: "Marzo 2026",
       title: "ROS MEETUP",
-      text: "Próximamente...",
+      text: "La 7ª edición del ROS Meetup Barcelona, organizada por PUCRA y la EEBE (UPC), reunió a estudiantes, investigadores y profesionales apasionados por la robótica. El evento combinó demostraciones de robots, charlas técnicas sobre ROS2 e innovación tecnológica, y espacios de networking que fomentaron el intercambio de conocimientos y la colaboración dentro de la comunidad robótica de Barcelona.",
       button: "Más información" 
     },
     {
@@ -338,7 +338,7 @@ const aboutEn = {
     {
       date: "March 2026",
       title: "ROS MEETUP",
-      text: "Coming soon...",
+      text: "The 7th edition of the ROS Meetup Barcelona, organized by PUCRA and EEBE (UPC), brought together students, researchers, and robotics professionals. The event featured robot demonstrations, technical talks on ROS2 and technological innovation, as well as networking opportunities that encouraged knowledge sharing and collaboration within Barcelona’s robotics community.",
       button: "More information"
     },
     {
@@ -533,7 +533,7 @@ const aboutCat = {
     {
       date: "Març 2026",
       title: "ROS MEETUP",
-      text: "Pròximament...",
+      text: "La 7a edició del ROS Meetup Barcelona, organitzada per PUCRA i l’EEBE (UPC), va reunir estudiants, investigadors i professionals apassionats per la robòtica. L’esdeveniment va combinar demostracions de robots, xerrades tècniques sobre ROS2 i innovació tecnològica, així com espais de networking que van fomentar l’intercanvi de coneixement i la col·laboració dins de la comunitat robòtica de Barcelona.",
       button: "Més informació"
     },
     {

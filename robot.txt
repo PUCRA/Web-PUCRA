@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pucra.upc.edu/sitemap.xml
