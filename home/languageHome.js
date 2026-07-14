@@ -46,9 +46,9 @@ const aboutEs = {
   pillar_text3:
     "Compartir conocimiento y construir comunidad. PUCRA participa y organiza eventos para conectar estudiantes, profesionales y entusiastas de la robótica, promoviendo la divulgación tecnológica, el intercambio de ideas y la colaboración dentro del ecosistema STEM.",
   VEX_CH_2025_text:
-    "Tras tres años consecutivos como representantes de nuestro país en el VEX Robotics World Championship, el equipo afronta una nueva temporada en la que podrá demostrar la experiencia y aptitudes adquiridas.<br><br> Con el objetivo de regresar a Dallas (Texas) y competir al máximo nivel, codo a codo con los mejores equipos, en un evento con más de 20.000 participantes de todo el mundo.",
+    "Tras muchos años consecutivos como representantes de nuestro país en el VEX Robotics World Championship, el equipo afronta una nueva temporada en la que podrá demostrar la experiencia y aptitudes adquiridas.<br><br> Con el objetivo de regresar a Estados Unidos y competir al máximo nivel, codo a codo con los mejores equipos, en un evento con más de 20.000 participantes de todo el mundo.",
   ERC_text:
-    "La European Rover Challenge (ERC) es una prestigiosa competición internacional de robótica espacial en la que equipos universitarios desarrollan rovers para superar desafíos inspirados en misiones reales de exploración de Marte. PUCRA participa en esta competición, aplicando conocimientos de mecánica, electrónica, software y robótica para diseñar y operar su propio rover.",
+    "La European Rover Challenge (ERC) es una competición internacional de robótica espacial en la que equipos universitarios desarrollan rovers para superar desafíos inspirados en misiones reales de exploración de Marte. PUCRA participa en esta competición, aplicando conocimientos de mecánica, electrónica, software y robótica para diseñar y operar su propio rover.",
 };
 
 const aboutEn = {
@@ -99,9 +99,9 @@ const aboutEn = {
   pillar_text3:
     "Sharing knowledge and building community. PUCRA participates in and organizes events to connect students, professionals, and robotics enthusiasts, promoting technology outreach, the exchange of ideas, and collaboration within the STEM ecosystem.",
   VEX_CH_2025_text:
-    "After three consecutive years representing our country at the VEX Robotics World Championship, the team is facing a new season to demonstrate the experience and skills acquired. <br><br>The goal: to return to Dallas (Texas) and compete at the highest level, side by side with the best teams, in an event with more than 20,000 participants from around the world.",
+    "After a lot of consecutive years representing our country at the VEX Robotics World Championship, the team is facing a new season to demonstrate the experience and skills acquired. <br><br>The goal: to return to United States and compete at the highest level, side by side with the best teams, in an event with more than 20,000 participants from around the world.",
   ERC_text:
-    "The European Rover Challenge (ERC) is a prestigious international space robotics competition where university teams develop rovers to complete challenges inspired by real Mars exploration missions. PUCRA competes in this event, applying expertise in mechanical engineering, electronics, software, and robotics to design and operate its own rover.",
+    "The European Rover Challenge (ERC) is a international space robotics competition where university teams develop rovers to complete challenges inspired by real Mars exploration missions. PUCRA competes in this event, applying expertise in mechanical engineering, electronics, software, and robotics to design and operate its own rover.",
 };
 
 const aboutCat = {
@@ -152,9 +152,9 @@ const aboutCat = {
   pillar_text3:
     "Compartir coneixement i construir comunitat. PUCRA participa i organitza esdeveniments per connectar estudiants, professionals i entusiastes de la robòtica, promovent la divulgació tecnològica, l'intercanvi d'idees i la col·laboració dins de l'ecosistema STEM.",
   VEX_CH_2025_text:
-    "Després de tres anys consecutius com a representants del nostre país al VEX Robotics World Championship, l'equip afronta una nova temporada on podrà demostrar l'experiència i les aptituds adquirides.<br><br>Amb l'objectiu de tornar a Dallas (Texas) i competir al màxim nivell, colze a colze amb els millors equips en un esdeveniment amb més de 20.000 participants d'arreu del món.",
+    "Després de molts anys consecutius com a representants del nostre país al VEX Robotics World Championship, l'equip afronta una nova temporada on podrà demostrar l'experiència i les aptituds adquirides.<br><br>Amb l'objectiu de tornar a Estats Units i competir al màxim nivell, colze a colze amb els millors equips en un esdeveniment amb més de 20.000 participants d'arreu del món.",
   ERC_text:
-    "L'European Rover Challenge (ERC) és una prestigiosa competició internacional de robòtica espacial en què equips universitaris desenvolupen rovers per superar reptes inspirats en missions reals d'exploració de Mart. PUCRA participa en aquesta competició, aplicant coneixements de mecànica, electrònica, programari i robòtica per dissenyar i operar el seu propi rover.",
+    "L'European Rover Challenge (ERC) és una competició internacional de robòtica espacial en què equips universitaris desenvolupen rovers per superar reptes inspirats en missions reals d'exploració de Mart. PUCRA participa en aquesta competició, aplicant coneixements de mecànica, electrònica, programari i robòtica per dissenyar i operar el seu propi rover.",
 };
 
 function fillSpecificContent(mLang) {
