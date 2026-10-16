@@ -89,15 +89,6 @@ const teamsInfo = [
     },
   },
   {
-    name: "Roi Seoane",
-    role: "Software Developer",
-    img: "./images/RoiSeoane.webp",
-    socials: {
-      linkedin: "https://www.linkedin.com/in/roi-seoane-punti/",
-      mail: "roi.seoane@estudiantat.upc.edu",
-    },
-  },
-  {
     name: "Santi Pallarès",
     role: "Electronic Lead",
     img: "./images/SantiPallares.webp",

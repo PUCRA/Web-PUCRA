@@ -67,6 +67,11 @@ const aboutEs = {
 
   timeline_competitions: [
     {
+      date: "Setiembre 2026",
+      title: "PHOENYX-II ERC 2026",
+      text: "Después de mucho esfuerzo y trabajo, el equipo de PUCRA consiguió clasificarse en la European Rover Challenge 2026, con un nuevo rover PHOENYX-II, quedando así en la posición 22 de 124 equipos inscritos. Habiendo ido a Polonia a competir, pudieron aprender y mejorar sus habilidades en robótica, además de conocer a otros equipos y compartir experiencias sobre robotica.",
+    },
+    {
       date: "Marzo 2026",
       title: "VEX ROBOTICS 2026",
       text: "En esta edición, un equipo de PUCRA formado recientemente logró un gran resultado al alcanzar el segundo puesto de España. La competición también sirvió como una valiosa experiencia de aprendizaje para seguir consolidando conocimientos en robótica.",
@@ -263,6 +268,11 @@ const aboutEn = {
 ],
   timeline_competitions: [
     {
+      date: "September 2026",
+      title: "PHOENYX-II ERC 2026",
+      text: "After a great deal of hard work and dedication, the PUCRA team qualified for the European Rover Challenge 2026 with their new PHOENYX-II rover, securing 22nd place out of 124 registered teams. By travelling to Poland to compete, the team gained valuable experience, improved their robotics skills, and had the opportunity to meet other teams and share their experiences in robotics."
+    },
+    {
       date: "March 2026",
       title: "VEX ROBOTICS 2026",
       text: "In this edition, a newly formed PUCRA team achieved an excellent result by finishing second in Spain. The competition also served as a valuable learning experience to further strengthen their robotics knowledge.",
@@ -458,6 +468,11 @@ const aboutCat = {
   },
 ],
   timeline_competitions: [
+    {
+      date: "Setembre 2026",
+      title: "PHOENYX-II ERC 2026",
+      text: "Després de molt esforç i treball, l’equip de PUCRA va aconseguir classificar-se per a l’European Rover Challenge 2026 amb el nou rover PHOENYX-II, assolint la 22a posició entre els 124 equips inscrits. Després de viatjar a Polònia per competir, van poder aprendre i millorar les seves habilitats en robòtica, així com conèixer altres equips i compartir experiències sobre robòtica."
+    },
     {
       date: "Març 2026",
       title: "VEX ROBOTICS 2026",
