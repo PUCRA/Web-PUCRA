@@ -13,12 +13,12 @@ const sponsors = [
     logo: "/components/images/sponsors/mitsubishi.webp",
     alt: "Logo de MITSUBISHI ELECTRIC AUTOMATIZACIÓN INDUSTRIAL",
   },
-  {
-    type: tierSecond,
-    url: "https://www.se.com/",
-    logo: "/components/images/sponsors/Schneider.webp",
-    alt: "Logo de Schneider Electric",
-  },
+  // {
+  //   type: tierSecond,
+  //   url: "https://www.se.com/",
+  //   logo: "/components/images/sponsors/Schneider.webp",
+  //   alt: "Logo de Schneider Electric",
+  // },
   {
     type: tierSecond,
     url: "https://www.mecalux.es/",
