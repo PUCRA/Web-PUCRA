@@ -23,6 +23,11 @@ const aboutEs = {
   links: "Links",
   timeline_history: [
   {
+    date: "Noviembre 2026",
+    title: "CHARLA EN ROSCON 2026",
+    text: "Tras nuestro buen desempeño en la competición ERC 2026, el equipo PUCRA fue invitado a dar una charla en la ROSCON 2026, donde compartimos las experiencias y los conocimientos adquiridos durante la competición, así como los retos y logros alcanzados durante el desarrollo de nuestro rover PHOENYX-II.",
+  },
+  {
     date: "Enero 2026",
     title: "LA NASA RECONOCIÓ NUESTRO TALENTO",
     text: "Gracias a nuestro desempeño en la competición, el equipo contribuyó con código para el rover open source del JPL de la NASA. Como reconocimiento a este trabajo, nuestro aporte fue incluido en el repositorio oficial de GitHub del proyecto.",
@@ -34,7 +39,7 @@ const aboutEs = {
   },
   {
     date: "Noviembre 2025",
-    title: "CHARLA EN ROSCON",
+    title: "CHARLA EN ROSCON 2025",
     text: "Nuestros logros nos permitieron participar en ROSCon con una charla en la que compartimos la historia de PUCRA, nuestro recorrido y la experiencia desarrollando proyectos de robótica en un entorno rodeado de profesionales y entusiastas del sector.",
   },
   {
@@ -66,6 +71,11 @@ const aboutEs = {
   ],
 
   timeline_competitions: [
+    {
+      date: "Setiembre 2026",
+      title: "PHOENYX-II ERC 2026",
+      text: "Después de mucho esfuerzo y trabajo, el equipo de PUCRA consiguió clasificarse en la European Rover Challenge 2026, con un nuevo rover PHOENYX-II, quedando así en la posición 22 de 124 equipos inscritos. Habiendo ido a Polonia a competir, pudieron aprender y mejorar sus habilidades en robótica, además de conocer a otros equipos y compartir experiencias sobre robotica.",
+    },
     {
       date: "Marzo 2026",
       title: "VEX ROBOTICS 2026",
@@ -220,6 +230,11 @@ const aboutEn = {
   links: "Links",
   timeline_history: [
   {
+    date: "November 2026",
+    title: "TALK AT ROSCON 2026",
+    text: "Following our strong performance at the ERC 2026 competition, the PUCRA team was invited to give a talk at ROSCON 2026, where we shared the experience and knowledge gained during the competition, as well as the challenges and achievements we encountered while developing our PHOENYX-II rover.",
+  },
+  {
     date: "January 2026",
     title: "NASA RECOGNIZED OUR TALENT",
     text: "Thanks to our performance in the competition, the team contributed code to NASA JPL’s open-source rover project. In recognition of this work, our contribution was included in the project’s official GitHub repository.",
@@ -231,7 +246,7 @@ const aboutEn = {
   },
   {
     date: "November 2025",
-    title: "TALK AT ROSCON",
+    title: "TALK AT ROSCON 2025",
     text: "Our achievements gave us the opportunity to give a talk at ROSCon, where we shared the story of PUCRA, our journey, and our experience developing robotics projects in an environment surrounded by professionals and enthusiasts from the robotics community.",
   },
   {
@@ -262,6 +277,11 @@ const aboutEn = {
   },
 ],
   timeline_competitions: [
+    {
+      date: "September 2026",
+      title: "PHOENYX-II ERC 2026",
+      text: "After a great deal of hard work and dedication, the PUCRA team qualified for the European Rover Challenge 2026 with their new PHOENYX-II rover, securing 22nd place out of 124 registered teams. By travelling to Poland to compete, the team gained valuable experience, improved their robotics skills, and had the opportunity to meet other teams and share their experiences in robotics."
+    },
     {
       date: "March 2026",
       title: "VEX ROBOTICS 2026",
@@ -416,6 +436,11 @@ const aboutCat = {
   links: "Enllaços",
   timeline_history: [
   {
+    date: "Novembre 2026",
+    title: "XERRADA A ROSCON 2026",
+    text: "Després del nostre bon resultat a la competició ERC 2026, l’equip PUCRA va ser convidat a fer una xerrada a la ROSCON 2026, on vam compartir les experiències i els coneixements adquirits durant la competició, així com els reptes i èxits assolits durant el desenvolupament del nostre rover PHOENYX-II.",
+  },
+  {
     date: "Gener 2026",
     title: "LA NASA VA RECONÈIXER EL NOSTRE TALENT",
     text: "Gràcies al nostre rendiment a la competició, l’equip va contribuir amb codi per al rover open source del JPL de la NASA. Com a reconeixement a aquest treball, la nostra aportació va ser inclosa al repositori oficial de GitHub del projecte.",
@@ -427,7 +452,7 @@ const aboutCat = {
   },
   {
     date: "Novembre 2025",
-    title: "XERRADA A ROSCON",
+    title: "XERRADA A ROSCON 2025",
     text: "Els nostres assoliments ens van permetre participar a ROSCon amb una xerrada on vam compartir la història de PUCRA, el nostre recorregut i l’experiència desenvolupant projectes de robòtica en un entorn ple de professionals i entusiastes del sector.",
   },
   {
@@ -458,6 +483,11 @@ const aboutCat = {
   },
 ],
   timeline_competitions: [
+    {
+      date: "Setembre 2026",
+      title: "PHOENYX-II ERC 2026",
+      text: "Després de molt esforç i treball, l’equip de PUCRA va aconseguir classificar-se per a l’European Rover Challenge 2026 amb el nou rover PHOENYX-II, assolint la 22a posició entre els 124 equips inscrits. Després de viatjar a Polònia per competir, van poder aprendre i millorar les seves habilitats en robòtica, així com conèixer altres equips i compartir experiències sobre robòtica."
+    },
     {
       date: "Març 2026",
       title: "VEX ROBOTICS 2026",

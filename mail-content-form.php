@@ -3,7 +3,7 @@
 $name = $_POST['name'];
 $email= $_POST['email'];
 $message= $_POST['message'];
-$to = "pucra.eebe@upc.edu";
+$to = "recursos.pucra@upc.edu";
 $subject = "Mail From website";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
 $headers = "From: content-creator@yoursite.com" . "\r\n" .
